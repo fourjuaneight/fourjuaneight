@@ -1,0 +1,48 @@
+baseURL = "https://www.cleverlaziness.com/"
+languageCode = "en-us"
+title = "Clever Laziness"
+theme = ""
+copyright = "2017 Clever Laziness"
+
+googleAnalytics = ""
+
+enableRobotsTXT = "true"
+
+[author]
+  name = "Juan"
+
+SectionPagesMenu = "main"
+
+[[menu.main]]
+  name = "Posts"
+  weight = -120
+  identifier = "post"
+  url = "/post/"
+
+[[menu.main]]
+  name = "Tags"
+  weight = -110
+  identifier = "tag"
+  url = "/tags/"
+
+[[menu.main]]
+  name = "About"
+  weight = -110
+  identifier = "about"
+  url = "/about/"
+
+[params.meta]
+  keywords = "automation, iOS, macOS, web, Apple"
+  description = "A blog about automation and productivity"
+
+[params]
+  github = ""
+  twitter = "cleverlaziness"
+
+[outputs]
+  home = ["html", "jsonfeed", "rss"]
+
+[outputFormats.jsonfeed]
+  mediaType = "application/json"
+  baseName = "feed"
+  isPlainText = true
