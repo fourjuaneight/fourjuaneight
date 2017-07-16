@@ -25,4 +25,4 @@ build:
         code: |
           echo "hello world!"
 steps:
-  - arjen/hugo-build@1.19.0
+  - arjen/hugo_0.19
