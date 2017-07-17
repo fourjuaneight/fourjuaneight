@@ -6,6 +6,3 @@
 
 [context.branch-deploy]
   HUGO_VERSION = "0.19"
-  
-[context.feature]
-  HUGO_VERSION = "0.19"
