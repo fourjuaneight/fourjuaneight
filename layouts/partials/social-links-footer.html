@@ -3,7 +3,6 @@
     {{with .Site.Params.twitter}}
     <a href="https://twitter.com/{{.}}"><img class="social-link" src="img/twitter.svg" /></a>
     {{end}}
-  <!-- <a href="{{ with .OutputFormats.Get "jsonfeed"  }}{{ .Permalink }}{{ end }}" target="_blank"><div class="social-link">JSON</div></a> -->
     <a href="{{ .Site.RSSLink }}" target="_blank"><img class="social-link" src="img/rss.svg" /></a>
   </div>
 </nav>
