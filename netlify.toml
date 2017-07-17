@@ -1,5 +1,26 @@
 # Global settings applied to the whole site.
 [build]
-  base    = "hugo_0.19"
+  base    = "site"
   publish = "public"
-  command = "build"
+  command = "make"
+
+# Production context: All deploys to the main
+# repository branch will inherit these settings.
+[context.production]
+  command = "make production"
+
+# Deploy Preview context: All Deploy Previews
+# will inherit these settings.
+[context.deploy-preview]
+  command = "hugo --buildDrafts --buildFuture"
+
+# Branch Deploy context: All deploys that are not in
+# an active Deploy Preview will inherit these settings.
+[context.branch-deploy]
+  command = "make staging"
+
+# Specific branch context: Deploys from this branch
+# will take these settings and override their
+# current ones.
+[context.feature]
+  command = "make feature"
