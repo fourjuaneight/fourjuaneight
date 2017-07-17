@@ -2,4 +2,4 @@
 [build]
   base    = "hugo_0.19"
   publish = "public"
-  command = "hugo"
+  command = "build"
