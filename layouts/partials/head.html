@@ -18,8 +18,6 @@
 
 {{ template "_internal/google_analytics_async.html" . }}
 
-<link href="{{ with .OutputFormats.Get "jsonfeed"  }}{{ .Permalink }}{{ end }}" rel="alternate" type="application/json" title="{{ .Site.Title }}"/>
-
 {{ if .RSSLink }}
 <link href="{{ .RSSLink }}" rel="alternate feed" type="application/rss+xml" title="{{ .Site.Title }}"/>
 {{ end }}
