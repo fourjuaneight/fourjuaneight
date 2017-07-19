@@ -10,7 +10,7 @@ The amount of work I'm able to accomplish on any given day is directly dependent
 [Hugo](https://gohugo.io) is a static HTML and CSS website generator written in Go. It is optimized for speed, easy use and configurability. Hugo takes a directory with content and templates and renders them into a full HTML website. Hugo relies on [Markdown](https://daringfireball.net/projects/markdown/syntax) files with front matter for meta data.
 
 ### Look
-Although Hugo has a plethora of community made [the is hosted on Github. I also used [Netlify](https://www.netlify.com) as my CDN and [Let’s Encrypt](https://letsencrypt.org) for encryption.
+Although Hugo has a plethora of community made [themes](https://themes.gohugo.io), I decided on styling the site on my own. The Google Fonts used are [Oswald](https://fonts.google.com/specimen/Oswald) and [Rubik](https://fonts.google.com/specimen/Rubik). The logo was design solely by me with [Affinity Designer](https://itunes.apple.com/us/app/affinity-designer/id824171161?mt=12).
 
 ## Licensing
 Clever Laziness is written and created by [Juan](https://www.twitter.com/theverylastjuan). Links to apps or other items may include affiliate links, because money is needed to run the site.
