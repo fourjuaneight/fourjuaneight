@@ -1,9 +1,9 @@
-baseURL = "http://www.cleverlaziness.com/"
+baseURL = "https://www.cleverlaziness.com/"
 languageCode = "en-us"
 title = "Clever Laziness"
 copyright = "2017 Clever Laziness"
 
-googleAnalytics = "UA-102517378-1"
+# googleAnalytics = "UA-102517378-1"
 
 enableRobotsTXT = "true"
 
