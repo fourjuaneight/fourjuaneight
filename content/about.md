@@ -18,9 +18,10 @@ I also use mostly Apple so you might get the occasional post about my opinions o
 * Made [Hugo](https://gohugo.io) do it
 * Threw it on [GitHub](https://github.com)
 * Had [Netlify](https://www.netlify.com) pass it around
-* Bouncer provided by [Let's Encrypt](https://letsencrypt.org)
-* Coded on Mac using Atom and/or iPad using Textastic and Working Copy
+* [Let's Encrypt](https://letsencrypt.org) protec
+* Mac using Atom and/or iPad using Textastic and Working Copy
 * Links to apps or other items may include affiliate links, because money is needed to run the site
 
 
-I'm always open to conversation about my writing, so if you have questions or suggestions, hit me up on Twitter. You can also subscribe to my RSS feed if you're into that sort of stuff.
+I'm always open to conversation about my writing, so if you have questions or suggestions, hit me up on [Twitter](https://www.twitter.com/cleverlaziness)
+* Made [Hugo](https://gohugo.io) do it. You can also subscribe to my RSS feed if you're into that sort of stuff.
