@@ -1,5 +1,13 @@
 <head>
 <meta charset="utf-8" />
+<title>
+  {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+  {{ if eq $url "/" }}
+    {{ .Site.Title }}
+  {{ else }}
+    {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}
+  {{ end }}
+</title>
 <meta name="author" content="{{ .Site.Author.name }}" />
 <meta name="description" content="{{ .Site.Params.meta.description }}" />
 <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
@@ -7,22 +15,40 @@
 {{ .Hugo.Generator }}
 
 <link rel="canonical" href="{{ .Permalink }}">
+{{ if .RSSLink }}
+<link href="{{ .RSSLink }}" rel="alternate feed" type="application/rss+xml" title="{{ .Site.Title }}"/>
+{{ end }}
 <base href="{{ .Site.BaseURL }}" />
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
 {{ template "_internal/schema.html" . }}
 
+<!-- CSS and Google Fonts -->
 <link rel="stylesheet" href={{ "/css/layout.css" | relURL }} />
 <link href="https://fonts.googleapis.com/css?family=Oswald:500|Rubik:400,500" rel="stylesheet">
 
 <!-- Favicon -->
 <link rel="shortcut icon" href={{ "./favicon.ico" | relURL }}>
-<link rel="icon" type="image/png" href={{ "./favicon-32x32.png" | relURL }} sizes="32x32">
-<link rel="icon" type="image/png" href={{ "./favicon-96x96.png" | relURL }} sizes="96x96">
-<link rel="icon" type="image/png" href={{ "./favicon-194x194.png" | relURL }} sizes="194x194">
+<link rel="icon" type="image/png" sizes="32x32" href={{ "/favicon-32x32.png" | relURL }}>
+<link rel="icon" type="image/png" sizes="96x96" href={{ "/favicon-96x96.png" | relURL }}>
+<link rel="icon" type="image/png" sizes="194x194" href={{ "/favicon-194x194.png" | relURL }}>
 
-<!-- {{ template "_internal/google_analytics_async.html" . }} -->
+<!-- Webclip -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Clever Laziness">
+<link rel="apple-touch-icon" sizes="57x57" href="{{ /apple-touch-icon-57x57.png" | relURL }}>
+<link rel="apple-touch-icon" sizes="60x60" href="{{ /apple-touch-icon-60x60.png" | relURL }}>
+<link rel="apple-touch-icon" sizes="72x72" href="{{ /apple-touch-icon-72x72.png" | relURL }}>
+<link rel="apple-touch-icon" sizes="76x76" href="{{ /apple-touch-icon-76x76.png" | relURL }}>
+<link rel="apple-touch-icon" sizes="114x114" href="{{ /apple-touch-icon-114x114.png" | relURL }}>
+<link rel="apple-touch-icon" sizes="120x120" href="{{ /apple-touch-icon-120x120.png" | relURL }}>
+<link rel="apple-touch-icon" sizes="144x144" href="{{ /apple-touch-icon-144x144.png" | relURL }}>
+<link rel="apple-touch-icon" sizes="152x152" href="{{ /apple-touch-icon-152x152.png" | relURL }}>
+<link rel="apple-touch-icon" sizes="180x180" href="{{ /apple-touch-icon-180x180.png" | relURL }}>
+<link rel="mask-icon" color="#39A4FE" href={{ "/safari-pinned-tab.svg" | relURL }}>
 
+<!-- Google Analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -33,18 +59,5 @@
   ga('send', 'pageview');
 
 </script>
-
-{{ if .RSSLink }}
-<link href="{{ .RSSLink }}" rel="alternate feed" type="application/rss+xml" title="{{ .Site.Title }}"/>
-{{ end }}
-
-<title>
-{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
-{{ if eq $url "/" }}
-    {{ .Site.Title }}
-{{ else }}
-    {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}
-{{ end }}
-</title>
 
 </head>
