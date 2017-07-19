@@ -36,7 +36,8 @@ SectionPagesMenu = "main"
 
 [params]
   twitter = "cleverlaziness"
+  Favicon = "favicon.ico"
+  OpenLinksInNewWindow = true
 
 [outputs]
   home = ["html", "rss"]
-
