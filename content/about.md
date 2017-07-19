@@ -27,4 +27,4 @@ The amount of work I'm able to accomplish on any given day is directly dependent
 * Unless otherwise noted, the source content on this site is released under the [MIT License](https://opensource.org/licenses/MIT).
 
 
-I'm always open to conversation about my writing, so if you have questions or suggestions, hit me up on [Twitter](https://www.twitter.com/cleverlaziness)
+I'm always open to conversation about my writing, so if you have questions or suggestions, hit me up on [Twitter](https://www.twitter.com/theverylastjuan)
