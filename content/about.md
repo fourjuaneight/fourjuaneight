@@ -18,7 +18,7 @@ I also use mostly Apple so you might get the occasional post about my opinions o
 * Made [Hugo](https://gohugo.io) do it
 * Threw it on [GitHub](https://github.com)
 * Had [Netlify](https://www.netlify.com) pass it around
-* Encryption provided by [Let's Encrypt](https://letsencrypt.org)
+* Bouncer provided by [Let's Encrypt](https://letsencrypt.org)
 * Coded on Mac using Atom and/or iPad using Textastic and Working Copy
 * Links to apps or other items may include affiliate links, because money is needed to run the site
 
