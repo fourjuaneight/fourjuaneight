@@ -6,7 +6,7 @@ weight = 100
 showthedate = false
 +++
 
-Clever Laziness is written and created by [Juan](https://www.twitter.com/theverylastjuan). Links to apps or other items may include affiliate links, because money is needed to run the site.
+Links to apps or other items may include affiliate links, because money is needed to run the site.
 
 ## Text Content License
 Unless otherwise noted, the text content on this site is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License, “[CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)”.
