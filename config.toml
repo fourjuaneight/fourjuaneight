@@ -1,7 +1,7 @@
 baseURL = "https://www.cleverlaziness.com/"
 languageCode = "en-us"
 title = "Clever Laziness"
-copyright = "2017 Clever Laziness"
+copyright = " 2017 Clever Laziness"
 
 # googleAnalytics = "UA-102517378-1"
 # {{ template "_internal/google_analytics_async.html" . }}
@@ -30,6 +30,12 @@ SectionPagesMenu = "main"
   weight = -110
   identifier = "about"
   url = "/about/"
+
+[[menu.main]]
+  name = "License"
+  weight = -110
+  identifier = "license"
+  url = "/license/"
 
 [params.meta]
   keywords = "automation, iOS, macOS, web, Apple"

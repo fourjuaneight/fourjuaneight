@@ -1,10 +1,10 @@
 # Clever Laziness
-The amount of work I'm able to accomplish on any given day is directly dependent on how much effort I have to put into it. Obviously, I can't get very far in life being that lazy, so a while ago I started to come up with clever ways to get a lot done with the minimal amount of effort. This blog chronicles my attempt to get things done, lazily.
+The amount of work I'm able to accomplish on any given day depends on how much effort I have to put into it. It’s evident I won’t get very far in life being this lazy, so a while ago I started to come up with clever ways to get a lot done with the minimal amount of effort. This blog chronicles my attempt to get things done — lazily — with the help of automation, a bit of code and some creative thinking.
 
 ## Creation
 * Coded on macOS using [Atom](https://atom.io)
-* Maintained on iPad using [Coda for iOS](https://itunes.apple.com/us/app/coda/id500906297?mt=8), [Textastic](https://itunes.apple.com/us/app/textastic-code-editor-6/id1049254261?mt=8) and [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8)
-* Written in [Markdown](https://daringfireball.net/projects/markdown/syntax) on [Bear](https://itunes.apple.com/us/app/bear/id1016366447?mt=8) and/or [Ulysses](https://itunes.apple.com/us/app/ulysses-the-ultimate-writing-app/id950335311?mt=8) on iOS
+* Further development on iPad using [Coda for iOS](https://itunes.apple.com/us/app/coda/id500906297?mt=8), [Textastic](https://itunes.apple.com/us/app/textastic-code-editor-6/id1049254261?mt=8) and [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8)
+* Articles written in [Markdown](https://daringfireball.net/projects/markdown/syntax) on [Bear](https://itunes.apple.com/us/app/bear/id1016366447?mt=8) and/or [Ulysses](https://itunes.apple.com/us/app/ulysses-the-ultimate-writing-app/id950335311?mt=8) on iOS
 
 ### Made with Hugo
 [Hugo](https://gohugo.io) is a static HTML and CSS website generator written in Go. It is optimized for speed, easy use and configurability. Hugo takes a directory with content and templates and renders them into a full HTML website. Hugo relies on [Markdown](https://daringfireball.net/projects/markdown/syntax) files with front matter for meta data.
@@ -34,5 +34,5 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 ## Contact
 Any questions or concerns, you are welcome to tweet me or email me for any business inquiries.
 
-Twitter: [@cleverlaziness](https://www.twitter.com/cleverlaziness)
-Email: cleverlaziness@gmail.com
+* Twitter: [@cleverlaziness](https://www.twitter.com/cleverlaziness)
+* Email: [cleverlaziness@gmail.com](mailto:cleverlaziness@gmail.com)
