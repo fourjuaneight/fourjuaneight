@@ -21,4 +21,4 @@ The amount of work I'm able to accomplish on any given day depends on how much e
 * Articles written in [Markdown](https://daringfireball.net/projects/markdown/syntax) on [Bear](https://itunes.apple.com/us/app/bear/id1016366447?mt=8) and/or [Ulysses](https://itunes.apple.com/us/app/ulysses-the-ultimate-writing-app/id950335311?mt=8) on iOS
 
 
-I'm always open to conversation about my writing, so if you have questions or suggestions, hit me up on [Twitter](https://www.twitter.com/theverylastjuan)
+I'm always open to conversation about my writing, so if you have questions or suggestions, hit me up on [Twitter](https://www.twitter.com/cleverlaziness)
