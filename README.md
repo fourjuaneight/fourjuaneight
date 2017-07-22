@@ -3,7 +3,7 @@ The amount of work I'm able to accomplish on any given day depends on how much e
 
 ## Creation
 * Coded on macOS using [Atom](https://atom.io)
-* Further development on iPad using [Coda for iOS](https://itunes.apple.com/us/app/coda/id500906297?mt=8), [Textastic](https://itunes.apple.com/us/app/textastic-code-editor-6/id1049254261?mt=8) and [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8)
+* Further development on iPad using [Textastic](https://itunes.apple.com/us/app/textastic-code-editor-6/id1049254261?mt=8) and [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8)
 * Articles written in [Markdown](https://daringfireball.net/projects/markdown/syntax) on [Bear](https://itunes.apple.com/us/app/bear/id1016366447?mt=8) and/or [Ulysses](https://itunes.apple.com/us/app/ulysses-the-ultimate-writing-app/id950335311?mt=8) on iOS
 
 ### Made with Hugo
@@ -34,5 +34,5 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 ## Contact
 Feel free to reach out with any questions or concerns.
 
-* Twitter: [@cleverlaziness](https://www.twitter.com/cleverlaziness)
-* Email: [cleverlaziness@gmail.com](mailto:cleverlaziness@gmail.com)
+* Twitter: [@theverylastjuan](https://www.twitter.com/theverylastjuan)
+* Email: [theverylastjuan@gmail.com](mailto:theverylastjuan@gmail.com)
