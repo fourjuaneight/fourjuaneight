@@ -1,5 +1,5 @@
 # Clever Laziness
-The amount of work I'm able to accomplish on any given day depends on how much effort I have to put into it. It’s evident I won’t get very far in life being this lazy, so a while ago I started to come up with clever ways to get a lot done with the minimal amount of effort. This blog chronicles my attempt to get things done — lazily — with the help of automation, a bit of code and some creative thinking.
+This blog chronicles my attempt to get things done — lazily — with the help of automation, a bit of code and some creative thinking.
 
 ## Creation
 * Coded on macOS using [Atom](https://atom.io)

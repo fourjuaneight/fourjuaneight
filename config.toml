@@ -7,6 +7,7 @@ copyright = " 2017 Clever Laziness"
 # {{ template "_internal/google_analytics_async.html" . }}
 
 enableRobotsTXT = "true"
+enableEmoji = "true"
 
 [author]
   name = "[Juan](https://www.twitter.com/theverylastjuan)"
