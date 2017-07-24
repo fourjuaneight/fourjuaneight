@@ -105,8 +105,18 @@ nav {
 }
 
 .brand {
-  max-width: 150px;
-  margin: 6px 5px;
+  display: flex;
+}
+
+.logo {
+  max-width: 50px;
+  margin: 8px 5px;
+  border-radius: 50%;
+}
+
+.name {
+  max-height: 50px;
+  margin: 8px 5px;
 }
 
 .nav-item {
@@ -361,12 +371,6 @@ nav {
 
 /* Page Navigation */
 .page-nav {
-  /*display: -webkit-flex;
-  -webkit-justify-content: center;
-  -webkit-flex-flow: row wrap;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;*/
   display: grid;
   padding: 1em;
   font-weight: 500;
@@ -418,16 +422,11 @@ nav {
   }
 
   .social-links-footer {
-    /*font: 500 16px 'Oswald', sans-serif;
-    text-align: center;*/
-    -webkit-justify-content: center;
-    -webkit-flex-flow: row wrap;
     justify-content: center;
     flex-flow: row wrap;
   }
 
   .social-links-footer a {
-    /*text-decoration: none;*/
     padding: 0 12px 20px 10px;
   }
 

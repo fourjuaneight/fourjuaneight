@@ -9,12 +9,13 @@
 <header>
 <div class="header-bar">
   <nav class="siteTitle">
-    <div>
-  		<a href='{{ .Site.BaseURL }}'><img class="brand" src="img/brand.svg" /></a>
+    <div class="brand">
+  		<a href='{{ .Site.BaseURL }}' title="Autobot"><img class="logo" src="img/logo.png" rel="Autobot"/></a>
+      <a href='{{ .Site.BaseURL }}' title="Clever Laziness"><img class="name" src="img/brand.png" rel="Clever Laziness"/></a>
     </div>
     <div class="nav-item">
-      <a class="nav-item-title" href='{{ .Site.BaseURL }}post'>{{ with .Site.Params.posts }}{{ . }}{{ else }}Posts{{ end }}</a>
-  	  <a class="nav-item-title" href='{{ .Site.BaseURL }}about'>{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
+      <a class="nav-item-title" href='{{ .Site.BaseURL }}post' title="Previous articles">{{ with .Site.Params.posts }}{{ . }}{{ else }}Posts{{ end }}</a>
+  	  <a class="nav-item-title" href='{{ .Site.BaseURL }}about' title="About this site">{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
     </div>
   </nav>
 </div>
