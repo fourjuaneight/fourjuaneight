@@ -7,7 +7,6 @@
       {{ if .Params.showthedate }}
         {{ .Date.Format "Jan 2, 2006" }}
       {{ end }}
-      <!-- {{ .Date.Format "Jan 2, 2006" }} -->
       {{ partial "tags.html" . }}
     </div>
 </article>

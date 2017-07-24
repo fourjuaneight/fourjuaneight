@@ -48,10 +48,6 @@ img {
   margin-right: auto;
 }
 
-figure {
-  margin: 0em;
-}
-
 figcaption {
   text-align: center;
   font-size: 0.9em;
@@ -215,7 +211,7 @@ nav {
 }
 
 .post .content {
-  margin: 0.5em 0em;
+  margin: 0.5em 0;
 }
 
 .post .meta {
@@ -271,11 +267,6 @@ nav {
 
 
 /* Tags */
-.tags {
-  margin: 0.3em;
-  padding-bottom: 10px;
-}
-
 .tag a {
   text-decoration: none;
   font-size: 14px;
@@ -289,7 +280,6 @@ nav {
 
 .terms a {
   text-decoration: none;
-  text-transform: ;
 }
 
 .terms .term {
