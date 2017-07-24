@@ -105,18 +105,23 @@ nav {
 }
 
 .brand {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.2em;
+  padding-top: 3px;
+}
+
+.brand a {
   display: flex;
+  text-decoration: none;
 }
 
 .logo {
   max-width: 50px;
-  margin: 8px 5px;
+  margin: 5px;
+  padding: 0 5px;
   border-radius: 50%;
-}
-
-.name {
-  max-height: 50px;
-  margin: 8px 5px;
 }
 
 .nav-item {
