@@ -1,6 +1,6 @@
 +++
 title = "Procrastinating With Automation"
-date = 2017-07-24
+date = "2017-07-24"
 draft = false
 tags = ["productivity"]
 showthedate = true
