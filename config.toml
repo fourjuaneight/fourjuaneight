@@ -3,9 +3,6 @@ languageCode = "en-us"
 title = "Clever Laziness"
 copyright = " 2017 Clever Laziness"
 
-# googleAnalytics = "UA-102517378-1"
-# {{ template "_internal/google_analytics_async.html" . }}
-
 enableRobotsTXT = "true"
 enableEmoji = "true"
 

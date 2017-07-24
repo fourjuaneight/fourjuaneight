@@ -74,10 +74,6 @@ a {
   color: #3d3d3d;
 }
 
-a:hover, a:active, a:focus {
-  outline: 0;
-}
-
 .post .content a {
   text-decoration: none;
   border-bottom: 1px solid #6DBDFE;
@@ -104,7 +100,6 @@ nav {
 }
 
 .siteTitle {
-  justify-self: start;
   display: flex;
   justify-content: space-between;
 }
@@ -112,11 +107,9 @@ nav {
 .brand {
   max-width: 150px;
   margin: 6px 5px;
-  border-radius: 0%;
 }
 
 .nav-item {
-  justify-self: end;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -126,7 +119,7 @@ nav {
 
 .nav-item-title {
   border-bottom: 1.5px solid #6DBDFE;
-  margin: 0px 5px;
+  margin: 0 5px;
   /*padding: 3px;*/
   font-weight: 500;
 }
@@ -159,10 +152,6 @@ nav {
 
 .post-preview a {
   text-decoration: none;
-}
-
-.post-preview .title a:hover {
-
 }
 
 .post-preview .date {
@@ -242,8 +231,6 @@ nav {
 }
 
 .post-list {
-  display: -webkit-flex;
-  -webkit-justify-content: center;
   display: flex;
   justify-content: space-between;
 }
@@ -298,9 +285,6 @@ nav {
 .social-links-footer {
   font-family: 'Oswald', sans-serif;
   text-align: center;
-  display: -webkit-flex;
-  -webkit-justify-content: center;
-  -webkit-flex-flow: row wrap;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -314,12 +298,6 @@ nav {
 .social-link {
   margin: 20px 0 1px 0;
   max-width: 20px;
-  /*font-size: 16px;
-  border-bottom: 2px solid #6DBDFE;*/
-}
-
-.social-link:hover {
-  /*border-bottom: 2px solid #39A4FE;*/
 }
 
 
@@ -329,8 +307,6 @@ nav {
 }
 
 .post-footer-menu {
-  display: -webkit-flex;
-  -webkit-justify-content: space-between;
   display: flex;
   justify-content: space-between;
   font-size: 0.8em;
@@ -422,7 +398,6 @@ nav {
 @media only screen and (min-width: 400px) {
 
   .siteTitle {
-    justify-self: start;
     display: flex;
     justify-content: space-between;
     flex-grow: 2;
@@ -439,7 +414,7 @@ nav {
     font-family: 'Oswald', sans-serif;
     font-size: 0.85em;
     font-weight: 500;
-    margin: 0px 5px;
+    margin: 0 5px;
   }
 
   .social-links-footer {
@@ -459,11 +434,6 @@ nav {
   .social-link {
     margin: 20px 0 1px 0;
     max-width: 20px;
-    /*font-size: 16px;
-    border-bottom: 2px solid #6DBDFE;*/
   }
 
-  .social-link:hover {
-    /*border-bottom: 2px solid #39A4FE;*/
-  }
 }

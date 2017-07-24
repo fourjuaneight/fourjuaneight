@@ -34,5 +34,5 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 ## Contact
 Feel free to reach out with any questions or concerns.
 
-* Twitter: [@cleverlaziness](https://www.twitter.com/cleverlaziness)
+* Twitter: @[cleverlaziness](https://www.twitter.com/cleverlaziness)
 * Email: [cleverlaziness@gmail.com](mailto:cleverlaziness@gmail.com)
