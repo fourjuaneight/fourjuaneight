@@ -53,7 +53,7 @@ SectionPagesMenu = "main"
 
       name = "Juan"
       thumbnail	= "/static/logo.png"
-      images = [{{ "/logo.png" | relURL }}]
+      images = "/static/logo.png"
       bio	= "The Empire did nothing wrong"
       email	= "cleverlaziness@gmail.com"
 
