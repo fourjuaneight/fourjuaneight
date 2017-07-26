@@ -44,22 +44,5 @@ SectionPagesMenu = "main"
   Favicon = "favicon.ico"
   OpenLinksInNewWindow = true
 
-  [params.social]
-    facebook = "cleverlaziness"
-    twitter = "cleverlaziness"
-
-  [params.authors]
-    [params.authors.Juan]
-
-      name = "Juan"
-      thumbnail	= "/static/logo.png"
-      images = "/static/logo.png"
-      bio	= "The Empire did nothing wrong"
-      email	= "cleverlaziness@gmail.com"
-
-      [params.authors.Juan.social]
-        github = "theverylastjuan"
-        twitter	= "theverylastjuan"
-
 [outputs]
   home = ["html", "rss"]
