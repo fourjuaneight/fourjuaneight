@@ -6,7 +6,7 @@ tags = ["todoist"]
 showthedate = true
 +++
 
-After leaving my day job, I decided to take a month and focus on myself. I later found out how short-sited it was and the issues this would bring. Any semblance of a structure I had before was gone. Although completing tasks has never been an issue for me, I do lack the motivation to get started. So after several Google searches, I determined to apply some aspects of GTD which best served my needs and use Todoist to organize my life. For those of you unfamiliar with GTD, the framework boils down to 5 simple steps:
+After leaving my day job, I decided to take a month and focus on myself. I later found out how short-sited it was and the issues this would bring. Any semblance of a structure I had before was gone. Although completing tasks has never been an issue for me, I do lack the motivation to get started. So after several Google searches, I determined to apply some aspects of GTD which best served my needs and use [Todoist](https://itunes.apple.com/us/app/todoist-todo-list-for-organizing-work-and-errands/id572688855?mt=8) to organize my life. For those of you unfamiliar with GTD, the framework boils down to 5 simple steps:
 
 * Capture: all ideas stored and written down.
 * Clarify: sort items by priority, time, and urgency.
@@ -14,7 +14,7 @@ After leaving my day job, I decided to take a month and focus on myself. I later
 * Reflect: periodically review tasks as to update and plan ahead.
 * Engage: get shit done.
 
-According to David Allen, the goal is to “capture everything that has your attention […] all your to-do’s, projects, things to handle or finish” as to let your brain focus on doing and not so much on the details.
+According to [David Allen](http://gettingthingsdone.com), the goal is to “capture everything that has your attention […] all your to-do’s, projects, things to handle or finish” as to let your brain focus on doing and not so much on the details.
 
 ## The Right Workflow for Me
 Todoist has a very simple UI that streamlines adding tasks with natural language; perfect for dumping everything in quickly. Adding a little GTD flair to it, I came up with a process that has worked efficiently for me for some time now. Let’s break it down.
