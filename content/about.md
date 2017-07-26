@@ -22,4 +22,4 @@ The blog is about automation. And productivity. In case you didn't get it. Ok.
 * Further development on iPad using [Textastic](https://itunes.apple.com/us/app/textastic-code-editor-6/id1049254261?mt=8) and [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8)
 * Articles written in [Markdown](https://daringfireball.net/projects/markdown/syntax) on [Bear](https://itunes.apple.com/us/app/bear/id1016366447?mt=8) and/or [Ulysses](https://itunes.apple.com/us/app/ulysses-the-ultimate-writing-app/id950335311?mt=8) on iOS
 
-You can follow me on Twitter or subscribe to my RSS feed if you're still into that sort of thing; links below. New posts every **Monday**, **Wednesday**, and **Friday**.
+You can follow me on Twitter or subscribe to my RSS feed if you're still into that sort of thing. New posts every **Monday**, **Wednesday**, and **Friday**.
