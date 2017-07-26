@@ -1,8 +1,10 @@
-<nav class="foot-nav">
+
   <div class="social-links-footer">
     {{with .Site.Params.twitter}}
-    <a href="https://twitter.com/{{.}}" title="Follow me on Twitter"><img class="social-link" src="img/twitter.svg" /></a>
+    <a class="twitter" href="https://twitter.com/{{.}}" title="Follow me on Twitter"><div class="social-link">Twitter</div></a>
     {{end}}
-    <a href="{{ .Site.RSSLink }}" target="_blank" title="Subscribe to the feed"><img class="social-link" src="img/rss.svg" /></a>
+    <a href="{{ .Site.RSSLink }}" target="_blank" title="Subscribe to the feed"><div class="social-link">RSS</div></a>
   </div>
-</nav>
+
+<!-- <img class="social-link" src="img/twitter.svg" />
+<img class="social-link" src="img/rss.svg" /> -->
