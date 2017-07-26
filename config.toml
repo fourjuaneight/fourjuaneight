@@ -36,7 +36,7 @@ SectionPagesMenu = "main"
   url = "/license/"
 
 [params.meta]
-  keywords = "automation, iOS, macOS, web, Apple"
+  keywords = "procrastination, automation, iOS, macOS, web, Apple"
   description = "A blog about automation and productivity"
 
 [params]
@@ -44,5 +44,24 @@ SectionPagesMenu = "main"
   Favicon = "favicon.ico"
   OpenLinksInNewWindow = true
 
+  [params.social]
+    facebook = "cleverlaziness"
+    twitter = "cleverlaziness"
+
+  [params.authors]
+    [params.authors.Juan]
+
+      name = "Juan"
+      thumbnail	= "{{ "/logo.png" | relURL }}"
+      images = [{{ "/logo.png" | relURL }}]
+      bio	= "The Empire did nothing wrong"
+      email	= "cleverlaziness@gmail.com"
+
+      [params.authors.Juan.social]
+        github = "theverylastjuan"
+        twitter	= "theverylastjuan"
+
 [outputs]
   home = ["html", "rss"]
+
+{{ "/logo.png" | relURL }}
