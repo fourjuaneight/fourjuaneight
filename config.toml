@@ -52,7 +52,7 @@ SectionPagesMenu = "main"
     [params.authors.Juan]
 
       name = "Juan"
-      thumbnail	= "{{ "/logo.png" | relURL }}"
+      thumbnail	= [{{ "/logo.png" | relURL }}]
       images = [{{ "/logo.png" | relURL }}]
       bio	= "The Empire did nothing wrong"
       email	= "cleverlaziness@gmail.com"
