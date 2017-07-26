@@ -19,10 +19,10 @@ According to [David Allen](http://gettingthingsdone.com), the goal is to “capt
 ## The Right Workflow for Me
 Todoist has a very simple UI that streamlines adding tasks with natural language; perfect for dumping everything in quickly. Adding a little GTD flair to it, I came up with a process that has worked efficiently for me for some time now. Let’s break it down.
 
-* **Inbox**
+* **Inbox:**
 I primarily use this as a mind dump. Any goals I wish to achieve today are thrown in here to be organized afterward.
 
-* **Priority**
+* **Priority:**
 What I’ve done is assign a level of importance to all four levels of priority. Each loosely based on the Eisenhower Matrix, combined with the 2nd step of GTD.
 
     1. Actionable = Important
@@ -32,7 +32,7 @@ What I’ve done is assign a level of importance to all four levels of priority.
 
 If a task can be done promptly, then it's marked as actionable. Any time sensitive tasks are labeled "timed" with a reminder. The last two are self-explanatory.
 
-*  **Labels**
+*  **Labels:**
 These become useful when searching for similar items spread across different projects, which we’ll talk about next. I use generic names that apply to any task.
 
     * call
@@ -42,7 +42,7 @@ These become useful when searching for similar items spread across different pro
     * wife
     * review
 
-* **Projects**
+* **Projects:**
 Tasks are moved from Inbox to their respective projects. You can create sub-projects as well for more granular distribution.
 
     * Home
@@ -59,10 +59,10 @@ Tasks are moved from Inbox to their respective projects. You can create sub-proj
         * Swift
     * Development
 
-* **Today**
+* **Today:**
 As the name indicates, here you can view currently due and past due items. Throughout the day, check back to make sure you’re on top of things and everything is being taken care of as it’s completed.
 
-* **Next 7 days**
+* **Next 7 days:**
 You can view a week ahead and plan accordingly. By the end of the day, if some items were not completed, make sure to review and reschedule all of them.
 
 ### Putting a Task Together
