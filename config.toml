@@ -52,7 +52,7 @@ SectionPagesMenu = "main"
     [params.authors.Juan]
 
       name = "Juan"
-      thumbnail	= [{{ "/logo.png" | relURL }}]
+      thumbnail	= "/static/logo.png"
       images = [{{ "/logo.png" | relURL }}]
       bio	= "The Empire did nothing wrong"
       email	= "cleverlaziness@gmail.com"
@@ -63,5 +63,3 @@ SectionPagesMenu = "main"
 
 [outputs]
   home = ["html", "rss"]
-
-{{ "/logo.png" | relURL }}
