@@ -12,7 +12,7 @@ After leaving my day job, I decided to take a month and focus on myself. I later
 * Clarify: sort items by priority, time, and urgency.
 * Organize: group similar items together, tags accordingly.
 * Reflect: periodically review tasks as to update and plan ahead.
-* Engage: get shit done.
+* Engage: get things done.
 
 According to [David Allen](http://gettingthingsdone.com), the goal is to “capture everything that has your attention […] all your to-do’s, projects, things to handle or finish” as to let your brain focus on doing and not so much on the details.
 
