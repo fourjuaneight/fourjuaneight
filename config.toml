@@ -40,7 +40,7 @@ SectionPagesMenu = "main"
   description = "A blog about automation and productivity"
 
 [params]
-  twitter = "cleverlaziness"
+  twitter = "theverylastjuan"
   Favicon = "favicon.ico"
   OpenLinksInNewWindow = true
 
