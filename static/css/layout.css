@@ -150,17 +150,17 @@ a {
   text-decoration: none;
 }
 
+.post-preview .summary {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
 .post-preview .date {
   font-size: 0.9em;
   color: #999999;
   display: flex;
   justify-content: space-between;
   padding: 1.5em 0;
-}
-
-.post-preview .summary {
-  font-size: 1em;
-  line-height: 1.5em;
 }
 
 
@@ -348,6 +348,18 @@ a {
 
   nav {
     flex-flow: row wrap;
+  }
+
+  .post-preview .title {
+    font-size: 1.9em;
+  }
+
+  .post-preview .summary {
+    font-size: 1em;
+  }
+
+  .post-preview .date {
+    font-size: 0.9em;
   }
 
 }
