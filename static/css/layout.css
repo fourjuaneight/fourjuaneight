@@ -13,6 +13,10 @@ body {
   max-width: 50em;
 }
 
+.stuff {
+  min-height: 40em;
+}
+
 h1 {
   font-size: 2em;
   font-weight: 400;
@@ -218,11 +222,12 @@ a {
   font-size: 0.7em;
   white-space: nowrap;
   color: #bbb;
+  text-align: center;
 }
 
 .post-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .post-list .title {
