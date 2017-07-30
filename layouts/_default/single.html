@@ -1,9 +1,9 @@
 {{ partial "header.html" . }}
 
 <article class="post">
-    <h1 class="title">{{ .Title }}</h1>
-    <div class="content">{{ .Content }}</div>
-    <div class="meta">
+    <h1 class="title start">{{ .Title }}</h1>
+    <div class="content continue">{{ .Content }}</div>
+    <div class="meta end">
       {{ if .Params.showthedate }}
         {{ .Date.Format "Jan 2, 2006" }}
       {{ end }}

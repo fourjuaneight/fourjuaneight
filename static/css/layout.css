@@ -1,92 +1,49 @@
 body {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
-  counter-reset: heading;
   margin: 0;
-  padding: 1em 0.5em 0.5em 0.5em;
+  padding: 20px 10px;
   color: #3d3d3d;
 }
 
 .main {
   margin: 0 auto;
-  padding: 0 1em;
-  max-width: 50em;
+  padding: 0 40px;
+  max-width: 800px;
 }
 
-.stuff {
-  min-height: 40em;
+.explore {
+  font-size: 20px;
 }
 
-h1 {
-  font-size: 2em;
+.start {
+  font-size: 28px;
   font-weight: 400;
 }
 
-h2 {
-  font-size: 1.5em;
-  font-weight: 400;
+.continue {
+  font-size: 19px;
 }
 
-h3 {
-  font-size: 1.2em;
-  font-weight: 400;
+.end {
+  font-size: 16px;
 }
 
-h4 {
-  font-size: 1.15em;
+h2, h3, h4 {
   font-weight: 400;
-}
-
-h5 {
-  font-size: .85em;
-  font-weight: 400;
-}
-
-h6 {
-  font-size: .75em;
-  font-weight: 400;
+  font-size: 25px;
 }
 
 img {
-  max-width: 20em;
+  max-width: 600px;
+  border-radius: 0.5%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 30px;
 }
-
-figcaption {
-  text-align: center;
-  font-size: 0.9em;
-  font-weight: 400;
-}
-
-iframe {
-  max-width: 42em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*li {
-  margin-top: 0.5em;
-}
-
-p {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-}*/
 
 a {
   color: #3d3d3d;
-}
-
-.post .content a {
   text-decoration: none;
-  border-bottom: 1px solid #6DBDFE;
-}
-
-.post .content a:hover {
-  border-bottom: 1px solid #39A4FE;
 }
 
 
@@ -95,38 +52,27 @@ a {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-bottom: 80px;
 }
 
 .siteTitle {
   display: grid;
-  font-size: 3.1em;
+  font-size: 62px;
 }
 
 .brand {
   font-weight: 500;
-}
-
-.brand a {
-  text-decoration: none;
+  padding-bottom: 20px;
 }
 
 .nav-item {
   display: flex;
   justify-content: center;
-  padding-top: 0.2em;
 }
 
 .nav-item-title {
-  font-weight: 400;
-  font-size: .4em;
   border-bottom: 1.5px solid #6DBDFE;
-  margin: 0 .3em;
-}
-
-.nav-item .nav-item-title {
-  text-decoration: none;
+  margin: 0 5px;
 }
 
 .nav-item-title:hover {
@@ -136,93 +82,93 @@ a {
 
 /* Post Preview List */
 .post-preview {
-  font-weight: 400;
-  text-decoration: none;
   padding-bottom: 4em;
   margin: 0;
   display: grid;
 }
 
 .post-preview .title {
-  font-size: 1.9em;
   text-align: center;
   margin: 0;
-  padding-bottom: 1em;
-}
-
-.post-preview a {
-  text-decoration: none;
+  padding-bottom: 27px;
 }
 
 .post-preview .summary {
-  font-size: 1em;
-  line-height: 1.5em;
+  line-height: 26px;
 }
 
 .post-preview .date {
-  font-size: 0.9em;
   color: #999999;
   display: flex;
   justify-content: space-between;
-  padding: 1.5em 0;
+  padding: 25px 0 0;
+}
+
+
+/* Page Navigation */
+.page-nav {
+  display: grid;
+}
+
+.page-nav .page-prev a {
+  color: #999999;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-nav .page-next a {
+  color: #999999;
+  display: flex;
+  justify-content: flex-end;
 }
 
 
 /* Post */
 .post {
-  font-weight: 400;
-  padding-bottom: 3em;
+  padding-bottom: 80px;
   margin: 0;
   display: grid;
 }
 
 .post .title {
   text-align: center;
-  font-size: 1.9em;
   margin: 0;
-  padding-bottom: 0.22em;
+  padding-bottom: 8px;
 }
 
 .post .content {
-  font-size: 1em;
-  line-height: 1.5em;
-  margin: 0;
+  line-height: 26px;
 }
 
-.post .content {
-  margin: 0.5em 0;
+.post .content a {
+  border-bottom: 1px solid #6DBDFE;
+}
+
+.post .content a:hover {
+  border-bottom: 1px solid #39A4FE;
 }
 
 .post .meta {
+  color: #999999;
   display: flex;
   justify-content: space-between;
-  padding: 0.1em 0;
-  text-decoration: none;
-  font-size: 0.9em;
-  color: #999999;
+  padding: 5px 0 0;
 }
 
 
 /* Archive */
 .content-list {
-  font-size: 1.2em;
-  font-weight: 400;
+  padding-bottom: 80px;
+}
+
+.content-list-date {
+  text-align: center;
+  color: #999999;
+  padding-bottom: 27px
 }
 
 .content-item {
-  margin: 0.3em;
-  padding-bottom: 0.5em;
-}
-
-.content-item a {
-  text-decoration: none;
-}
-
-.content-item .date {
-  font-size: 0.7em;
-  white-space: nowrap;
-  color: #bbb;
-  text-align: center;
+  padding-bottom: 15px;
 }
 
 .post-list {
@@ -231,22 +177,18 @@ a {
 }
 
 .post-list .title {
-  margin: 0 0.1em;
-  font-size: 1.15em;
-  text-align: left;
+  margin: 0;
+  padding-bottom: 3px;
 }
 
-/*.content-list-date {
-  font-size: 1.15em;
-  text-align: left;
-}*/
+.content-item .date {
+  text-align: center;
+  color: #bbb;
+}
 
 
 /* Tags */
 .tag a {
-  text-decoration: none;
-  font-size: 1em;
-  font-weight: 400;
   color: #999999;
 }
 
@@ -254,38 +196,8 @@ a {
   color: #3d3d3d;
 }
 
-.terms a {
-  text-decoration: none;
-}
-
 .term-title {
-  font-weight: 400;
-  text-align: left;
-}
-
-
-/* Page Navigation */
-.page-nav {
-  display: grid;
-  padding: 1em;
-  font-weight: 500;
-  color: #999999;
-}
-
-.page-nav a {
-  text-decoration: none;
-}
-
-.page-nav .page-prev a {
-  color: #3d3d3d;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.page-nav .page-next a {
-  color: #3d3d3d;
-  display: flex;
-  justify-content: flex-end;
+  text-align: center;
 }
 
 
@@ -293,9 +205,8 @@ a {
 .foot {
   display: grid;
   font-family: 'Oswald', sans-serif;
-  font-size: 1em;
   font-weight: 400;
-  padding-top: 3em;
+  padding: 50px 0 40px;
 }
 
 .social-links-footer {
@@ -303,14 +214,10 @@ a {
   justify-content: center;
 }
 
-.social-links-footer a {
-  text-decoration: none;
-}
-
 .social-link {
   text-transform: uppercase;
   border-bottom: 1.5px solid #6DBDFE;
-  margin: 0 0.3em;
+  margin: 0 5px;
 }
 
 .social-link:hover {
@@ -318,16 +225,9 @@ a {
 }
 
 .copyright {
-  font-weight: 400;
-  text-decoration: none;
   color: #3d3d3d;
   text-align: center;
-  margin: 1em 0;
-  padding-top: 0.5em;
-}
-
-.copyright a {
-  text-decoration: none;
+  margin: 15px 0 0;
 }
 
 .copyright a:hover {
@@ -336,7 +236,6 @@ a {
 
 /* 404 */
 .err-404 {
-  margin: 3em;
   text-align: center;
 }
 
@@ -353,18 +252,6 @@ a {
 
   nav {
     flex-flow: row wrap;
-  }
-
-  .post-preview .title {
-    font-size: 1.9em;
-  }
-
-  .post-preview .summary {
-    font-size: 1em;
-  }
-
-  .post-preview .date {
-    font-size: 0.9em;
   }
 
 }

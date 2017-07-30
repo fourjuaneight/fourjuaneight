@@ -12,7 +12,7 @@
     <div class="brand">
       <a class="name" href='{{ .Site.BaseURL }}' title="Clever Laziness">Clever Laziness</a>
     </div>
-    <div class="nav-item">
+    <div class="nav-item explore">
       <a class="nav-item-title" href='{{ .Site.BaseURL }}about' title="About this site">{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
       <a class="nav-item-title" href='{{ .Site.BaseURL }}post' title="Previous articles">{{ with .Site.Params.posts }}{{ . }}{{ else }}Posts{{ end }}</a>
       {{with .Site.Params.twitter}}
@@ -23,5 +23,3 @@
   </nav>
 </div>
 </header>
-
-<div class="stuff">
