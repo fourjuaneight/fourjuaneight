@@ -17,16 +17,16 @@ body {
 }
 
 .start {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 400;
 }
 
 .continue {
-  font-size: 19px;
+  font-size: 17px;
 }
 
 .end {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 h2, h3, h4 {
@@ -57,7 +57,7 @@ a {
 
 .siteTitle {
   display: grid;
-  font-size: 62px;
+  font-size: 55px;
 }
 
 .brand {
@@ -126,14 +126,14 @@ a {
 /* Post */
 .post {
   padding-bottom: 80px;
-  margin: 0;
+  margin: 0 auto;
   display: grid;
 }
 
 .post .title {
   text-align: center;
   margin: 0;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
 }
 
 .post .content {
