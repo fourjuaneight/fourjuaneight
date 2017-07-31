@@ -1,7 +1,7 @@
 +++
 title = "Automating RSS Feeds With IFTTT"
 date = "2017-07-31"
-draft = true
+draft = false
 tags = ["ifttt"]
 showthedate = true
 +++
