@@ -82,9 +82,9 @@ a {
 
 /* Post Preview List */
 .post-preview {
-  padding-bottom: 4em;
+  padding-bottom: 40px;
   margin: 0;
-
+  display: grid;
 }
 
 .post-preview .title {
@@ -157,7 +157,7 @@ a {
 
 /* Archive */
 .content-list {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .content-list-date {
@@ -249,17 +249,6 @@ a {
 
 /* Mobile Breakpoint */
 @media only screen and (min-width: 400px) {
-
-  body {
-    margin: 0;
-    padding: 20px 15px;
-  }
-
-  .main {
-    margin: 0 auto;
-    padding: 0;
-    max-width: 800px;
-  }
 
   nav {
     flex-flow: row wrap;
