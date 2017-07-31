@@ -8,7 +8,7 @@ body {
 
 .main {
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 20px;
   max-width: 800px;
 }
 
@@ -177,6 +177,7 @@ a {
 }
 
 .post-list .title {
+  text-align: center;
   margin: 0;
   padding-bottom: 3px;
 }
