@@ -17,21 +17,21 @@ body {
 }
 
 .start {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
 }
 
 .continue {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .end {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 h2, h3, h4 {
   font-weight: 400;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 img {
@@ -132,7 +132,7 @@ a {
 .post .title {
   text-align: center;
   margin: 0;
-  padding-bottom: 9px;
+  padding-bottom: 11px;
 }
 
 .post .content {
