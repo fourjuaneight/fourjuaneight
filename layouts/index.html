@@ -1,14 +1,18 @@
-{{ partial "header.html" . }}
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+{{ partial "head.html" . }}
+<body>
+  <div class="main">
+  {{ partial "header.html" . }}
+  <main>
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 10 }}
+      {{ range $paginator.Pages }}
+        {{ .Render "summary" }}
+    {{ end }}
 
-<main>
-
-{{ $paginator := .Paginate (where .Data.Pages "Type" "post") 10 }}
-  {{ range $paginator.Pages }}
-    {{ .Render "summary" }}
-{{ end }}
-
-{{ partial "paginator-menu.html" . }}
-
-</main>
-
-{{ partial "footer.html" . }}
+    {{ partial "paginator-menu.html" . }}
+  </main>
+  {{ partial "footer.html" . }}
+  </div> <!-- main end -->
+</body>
+</html>

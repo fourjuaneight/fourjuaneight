@@ -1,14 +1,12 @@
 {{ partial "header.html" . }}
-
 <article class="post">
-    <h1 class="title start">{{ .Title }}</h1>
-    <div class="content continue">{{ .Content }}</div>
-    <div class="meta end">
-      {{ if .Params.showthedate }}
-        {{ .Date.Format "Jan 2, 2006" }}
-      {{ end }}
-      {{ partial "tags.html" . }}
-    </div>
+  <h1 class="title start">{{ .Title }}</h1>
+  <div class="content continue">{{ .Content }}</div>
+  <div class="meta end">
+    {{ if .Params.showthedate }}
+      {{ .Date.Format "Jan 2, 2006" }}
+    {{ end }}
+    {{ partial "tags.html" . }}
+  </div>
 </article>
-
 {{ partial "footer.html" . }}
