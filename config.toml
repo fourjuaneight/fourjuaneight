@@ -11,6 +11,9 @@ enableEmoji = "true"
 
 SectionPagesMenu = "main"
 
+[permalinks]
+  post = "/:year/:month/:day/:title/"
+
 [[menu.main]]
   name = "Posts"
   weight = -120

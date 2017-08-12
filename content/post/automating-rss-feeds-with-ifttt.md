@@ -4,6 +4,10 @@ date = "2017-07-31"
 draft = false
 tags = ["ifttt"]
 showthedate = true
+aliases = [
+    "/post/Automating%20RSS%20Feeds%20With%20IFTTT/",
+    "/2017/07/31/automating-rss-feeds-with-ifttt/"
+]
 +++
 
 The surplus of news site today can quickly take over your time with flashy images and clickbait titles. Whether it’s a new gadget or the US president going on a Twitter rant, getting your news has become an overwhelming endeavor.

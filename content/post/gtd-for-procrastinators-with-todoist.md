@@ -4,6 +4,10 @@ date = "2017-07-26"
 draft = false
 tags = ["todoist"]
 showthedate = true
+aliases = [
+    "/post/GTD%20for%20Procrastinators%20with%20Todoist/",
+    "/2017/07/26/gtd-for-procrastinators-with-todoist/"
+]
 +++
 
 After leaving my day job, I decided to take a month and focus on myself. I later found out how short-sited it was and the issues this would bring. Any semblance of a structure I had before was gone. Although completing tasks has never been an issue for me, I do lack the motivation to get started. So after several Google searches, I determined to apply some aspects of GTD which best served my needs and use [Todoist](https://itunes.apple.com/us/app/todoist-todo-list-for-organizing-work-and-errands/id572688855?mt=8) to organize my life. For those of you unfamiliar with GTD, the framework boils down to 5 simple steps:
