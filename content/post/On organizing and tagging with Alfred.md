@@ -21,6 +21,7 @@ This idea was taken directly from one of Brett’s blog [posts](http://brettterp
 Now I won’t dump everything into a single folder and call it a day. What kind of animal would do such a terrible thing? (I did once, don’t judge me).
 
 To classify items, I came up with 4 broad categories:
+
 * Archive
 * Reference
 * Work
