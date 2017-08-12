@@ -18,7 +18,6 @@ I’ve been using [IFTTT](https://ifttt.com/) since day one and have amassed ove
 I’d already setup some applets that took every new post from a feed and saved it on Instapaper to a determined folder. But now, I could do what I’d done on Inoreader and filter out words in title, authors, and content.
 
 With a little JavaScript and Regular Expressions you can go a long way. Take for example the code below:
-
 ``` js
 var string = Feed.newFeedItem.
 EntryTitle,
@@ -28,7 +27,6 @@ if (string.match(expr)) {
   Instapaper.saveItem.skip()
 }
 ```
-
 [Filters](https://platform.ifttt.com/docs/applets#using-filter-code) come with predetermined trigger data and actions specific to the services you are using. What I did was put the title string in a variable and created another with a regular expression that matches the string _[Link]_. The conditional statement then matches the regular expression with the title string _[Link]_. If found, the function is run, which skips the article.
 
 If you’s not familiar with much JavaScript or [Regular Expressions](https://regexone.com), that’s ok. The [subreddit](https://www.reddit.com/r/ifttt/) and [Discord](https://discordapp.com/invite/IFTTT) server for IFTTT are great places to get started and ask for help. You’ll often find pre-made filters that might serve your particular needs.

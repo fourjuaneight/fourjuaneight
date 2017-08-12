@@ -1,10 +1,18 @@
-{{ partial "header.html" . }}
-<div class="content-list">
-{{ range .Data.Pages.GroupByDate "2006" }}
-<div class="content-list-date start">{{ .Key }}</div>
-  {{ range .Pages }}
-  {{ .Render "li"}}
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+{{ partial "head.html" . }}
+<body>
+  <div class="main">
+  {{ partial "header.html" . }}
+  <div class="content-list">
+  {{ range .Data.Pages.GroupByDate "2006" }}
+  <div class="content-list-date start">{{ .Key }}</div>
+    {{ range .Pages }}
+    {{ .Render "li"}}
+    {{ end }}
   {{ end }}
-{{ end }}
-</div>
-{{ partial "footer.html" . }}
+  </div>
+  {{ partial "footer.html" . }}
+  </div> <!-- main end -->
+</body>
+</html>
