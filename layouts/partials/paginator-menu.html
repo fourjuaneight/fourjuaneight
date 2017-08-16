@@ -1,12 +1,12 @@
 
 <div class="page-nav">
-  <div class="page-prev explore">
+  <div class="page-prev">
     {{ if .Paginator.HasPrev }}
         <a href="{{ .Paginator.Prev.URL }}" title="Previous page">Recent</a>
     {{ end }}
   </div>
 
-  <div class="page-next explore">
+  <div class="page-next">
     {{ if .Paginator.HasNext }}
     <a href="{{ .Paginator.Next.URL }}" title="Next page">Older</a>
     {{ end }}
