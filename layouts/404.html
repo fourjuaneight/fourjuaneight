@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-{{ partial "head.html" . }}
 <body>
   <div class="main">
-    {{ partial "header.html" . }}
     <div class="err-404" >
         <h1 id="title">{{ .Title }} :(</h1>
     </div>
@@ -25,7 +23,6 @@
     {{ end }}
     </ul>
     <div>
-    {{ partial "footer.html" . }}
   </div> <!-- main end -->
 </body>
 </html>
