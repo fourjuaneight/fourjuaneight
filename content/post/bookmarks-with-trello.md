@@ -18,6 +18,8 @@ Loosely based on a [Club MacStories](https://club.macstories.net) [Workflow](htt
 
 I’ve broken down my workflow to various chunks as it allows me to reuse Workflows across others. Trello uses the Safari view controller so it's easy to stay in the app. The rich card with an image and title lets you browse naturally. I’ve also included tags for text-only bookmarks for easier classification. Search is quite robust as well so optionally I can just start typing in the search bar and get instant results.
 
+![Trello iOS](../ios-workflow-screenshots.png)
+
 On iOS, Spotlight allows for search within Trello which comes in handy often. Overall I’m fairly pleased with the setup but will later tweak the workflows. At the time of writing this, I’m running iOS 11b9 and Workflow seem fairly stable. Although the future of the app is still uncertain since acquired by Apple. Fingers crossed they don’t kill it.
 - - - -
 I’ve also created a workflow which prompts me to choose the board, list, and card. It then grabs the link embedded in the description of the cars and opens the URL in Safari. I can pull this up from the share sheet in the bottom without leaving the browser. It’s quite handy.
