@@ -12,7 +12,7 @@ My bookmarks are all over the place and I have a hard time keeping anything I bo
 
 I’d like to have a versatile solution where I don’t have to leave Trello to see what I’m looking for. Let me explain. Normally I’d open a Board, look through a List, open a Card, and then click on a link. Which is not all that different than just saving links to Apple Notes. Although I do like the rich text view in Notes with the website title and a preview thumbnail. Let’s do that.
 
-[Trello Bookmark Workflow - YouTube](https://youtu.be/6QBSe6cJd-w)
+{{< youtube 6QBSe6cJd-w >}}
 
 Loosely based on a [Club MacStories](https://club.macstories.net) [Workflow](https://itunes.apple.com/us/app/workflow/id915249334?mt=8), I made several of my own where the URL is taken, expanded, and embedded in the site title; the title is also taken from the expanded URL. The article image taken be optionally taken and used as a thumbnail for the card. I made a few of these that slightly different depending on what I’m saving and where.
 
