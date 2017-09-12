@@ -22,9 +22,9 @@ body {
 .main {
   display: grid;
   grid-template-columns:
-  [full-start] minmax(auto, 1fr) 
+  [full-start] minmax(1em, 1fr) 
   [main-start] minmax(0, 44rem) [main-end]
-  minmax(auto, 1fr) [full-end];
+  minmax(1em, 1fr) [full-end];
 }
 
 .main > * {

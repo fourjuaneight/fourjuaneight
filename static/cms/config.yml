@@ -1,0 +1,7 @@
+backend:
+  name: github
+  repo: theverylastjuan/clever-laziness
+  branch: master
+
+  media_folder: "site/static/img"
+  public_folder: "/img/"
