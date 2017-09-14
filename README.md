@@ -2,9 +2,9 @@
 This blog chronicles my attempt to get things done — lazily — with the help of automation, a bit of code and some creative thinking.
 
 ## Creation
-* Coded on macOS using [Atom](https://atom.io)
-* Further development on iPad using [Textastic](https://itunes.apple.com/us/app/textastic-code-editor-6/id1049254261?mt=8) and [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8)
-* Articles written in [Markdown](https://daringfireball.net/projects/markdown/syntax) on [Bear](https://itunes.apple.com/us/app/bear/id1016366447?mt=8) and/or [Ulysses](https://itunes.apple.com/us/app/ulysses-the-ultimate-writing-app/id950335311?mt=8) on iOS
+* Coded on macOS using [VS Code](https://code.visualstudio.com).
+* Further development on iPad using [Textastic](https://itunes.apple.com/us/app/textastic-code-editor-6/id1049254261?mt=8) and [Working Copy].(https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8)
+* Articles written in [Markdown](https://daringfireball.net/projects/markdown/syntax) on [Bear](https://itunes.apple.com/us/app/bear/id1016366447?mt=8).
 
 ### Made with Hugo
 [Hugo](https://gohugo.io) is a static HTML and CSS website generator written in Go. It is optimized for speed, easy use and configurability. Hugo takes a directory with content and templates and renders them into a full HTML website. Hugo relies on [Markdown](https://daringfireball.net/projects/markdown/syntax) files with front matter for meta data.
