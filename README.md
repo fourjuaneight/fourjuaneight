@@ -3,7 +3,7 @@ This blog chronicles my attempt to get things done — lazily — with the help 
 
 ## Creation
 * Coded on macOS using [VS Code](https://code.visualstudio.com).
-* Further development on iPad using [Textastic](https://itunes.apple.com/us/app/textastic-code-editor-6/id1049254261?mt=8) and [Working Copy].(https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8)
+* Further development on iPad using [Textastic](https://itunes.apple.com/us/app/textastic-code-editor-6/id1049254261?mt=8) and [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8).
 * Articles written in [Markdown](https://daringfireball.net/projects/markdown/syntax) on [Bear](https://itunes.apple.com/us/app/bear/id1016366447?mt=8).
 
 ### Made with Hugo
