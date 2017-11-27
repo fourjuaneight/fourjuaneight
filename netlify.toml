@@ -1,8 +1,8 @@
 [context.production.environment]
-  HUGO_VERSION = "0.19"
+  HUGO_VERSION = "0.20"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.19"
+  HUGO_VERSION = "0.20"
 
 [context.branch-deploy]
-  HUGO_VERSION = "0.19"
+  HUGO_VERSION = "0.20"
