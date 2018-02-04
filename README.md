@@ -1,16 +1,16 @@
 # Clever Laziness
-This blog chronicles my attempt to get things done — lazily — with the help of automation, a bit of code and some creative thinking.
+This blog chronicles my attempt to get things done, some of my coding endevours and stuff.
 
 ## Creation
 * Coded on macOS using [VS Code](https://code.visualstudio.com).
-* Further development on iPad using [Textastic](https://itunes.apple.com/us/app/textastic-code-editor-6/id1049254261?mt=8) and [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8).
-* Articles written in [Markdown](https://daringfireball.net/projects/markdown/syntax) on [Bear](https://itunes.apple.com/us/app/bear/id1016366447?mt=8).
+* Further development on iPad using [Coda](https://itunes.apple.com/us/app/coda/id500906297?mt=8&ign-itsct=500906297-500906297&ign-itscg=0177&ign-mpt=uo%3D4) and [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8).
+* Articles written in [Markdown](https://daringfireball.net/projects/markdown/syntax) on [Drafts](https://itunes.apple.com/app/id905337691?mt=8&ign-mpt=uo%3D4).
 
 ### Made with Hugo
 [Hugo](https://gohugo.io) is a static HTML and CSS website generator written in Go. It is optimized for speed, easy use and configurability. Hugo takes a directory with content and templates and renders them into a full HTML website. Hugo relies on [Markdown](https://daringfireball.net/projects/markdown/syntax) files with front matter for meta data.
 
 ### Look
-Although Hugo has a plethora of community made [themes](https://themes.gohugo.io), I decided on styling the site on my own. The Google Fonts used are [Oswald](https://fonts.google.com/specimen/Oswald) and [Rubik](https://fonts.google.com/specimen/Rubik). The logo was design solely by me with [Affinity Designer](https://itunes.apple.com/us/app/affinity-designer/id824171161?mt=12).
+Although Hugo has a plethora of community made [themes](https://themes.gohugo.io), I decided on styling the site on my own. The Google Fonts used are [Oswald](https://fonts.google.com/specimen/Oswald) and [Rubik](https://fonts.google.com/specimen/Rubik). All graphics were designed with [Affinity Designer](https://itunes.apple.com/us/app/affinity-designer/id824171161?mt=12).
 
 ## Licensing
 Clever Laziness is written and created by [Juan](https://www.twitter.com/theverylastjuan). Links to apps or other items may include affiliate links; this allows me to avoid using ads of any kind to run the site.
