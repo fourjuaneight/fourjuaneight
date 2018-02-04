@@ -13,7 +13,7 @@ This blog chronicles my attempt to get things done, some of my coding endevours 
 Although Hugo has a plethora of community made [themes](https://themes.gohugo.io), I decided on styling the site on my own. The Google Fonts used are [Oswald](https://fonts.google.com/specimen/Oswald) and [Rubik](https://fonts.google.com/specimen/Rubik). All graphics were designed with [Affinity Designer](https://itunes.apple.com/us/app/affinity-designer/id824171161?mt=12).
 
 ## Licensing
-Clever Laziness is written and created by [Juan](https://www.twitter.com/theverylastjuan). Links to apps or other items may include affiliate links; this allows me to avoid using ads of any kind to run the site.
+Clever Laziness is written and created by [Juan](https://www.twitter.com/theverylastjuan). Links to apps or other items may include affiliate links.
 
 ### Text Content License
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
@@ -32,6 +32,4 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Contact
-Feel free to reach out with any questions or concerns.
-
-* Twitter: @[theverylastjuan](https://www.twitter.com/theverylastjuan)
+Feel free to reach out with any questions or concerns on Twitter: @[theverylastjuan](https://www.twitter.com/theverylastjuan)
