@@ -7,5 +7,14 @@
     <div class="divider">•</div>
     <a class="nav-link" href="{{ .Site.RSSLink }}" target="_blank" title="Subscribe to the feed">RSS</a>
   </footer>
+
+  <!-- Footnotes -->
+  <script src={{ "js/barefoot.min.js" | relURL }}></script>
+  <script>
+    var lf = new BareFoot({
+      scope: "article"
+    });
+    lf.init();
+  </script>
 </body>
 </html>

@@ -6,6 +6,8 @@ copyright = " 2017-2018 Clever Laziness"
 enableRobotsTXT = "true"
 enableEmoji = "true"
 
+FootnoteReturnLinkContents = "↩"
+
 [author]
   name = "[Juan](https://www.twitter.com/theverylastjuan)"
   email = "hi@cleverlaziness.com"
