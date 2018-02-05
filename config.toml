@@ -8,6 +8,7 @@ enableEmoji = "true"
 
 [author]
   name = "[Juan](https://www.twitter.com/theverylastjuan)"
+  email = "hi@cleverlaziness.com"
 
 SectionPagesMenu = "main"
 
