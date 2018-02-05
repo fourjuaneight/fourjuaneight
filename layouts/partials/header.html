@@ -1,17 +1,13 @@
 <header>
-<div class="header-bar">
-  <nav class="siteTitle">
-    <div class="brand">
-      <a class="name" href='{{ .Site.BaseURL }}' title="Clever Laziness">Clever Laziness</a>
-    </div>
-    <div class="nav-item">
-      <a class="nav-item-title" href='{{ .Site.BaseURL }}about' title="About this site">{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
-      <a class="nav-item-title" href='{{ .Site.BaseURL }}post' title="Previous articles">{{ with .Site.Params.posts }}{{ . }}{{ else }}Posts{{ end }}</a>
-      {{with .Site.Params.twitter}}
-      <a class="nav-item-title" href="https://twitter.com/{{.}}" title="Follow me on Twitter"><div>Twitter</div></a>
-      {{end}}
-      <a class="nav-item-title" href="{{ .Site.RSSLink }}" target="_blank" title="Subscribe to the feed"><div>RSS</div></a>
-    </div>
-  </nav>
-</div>
+  <div class="header-bar">
+    <nav class="siteTitle">
+      <div class="brand">
+        <a class="name" href='{{ .Site.BaseURL }}' title="Clever Laziness">Clever Laziness</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href='{{ .Site.BaseURL }}about' title="About this site">{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
+        <a class="nav-link" href='{{ .Site.BaseURL }}archive' title="Previous articles">{{ with .Site.Params.archive }}{{ . }}{{ else }}Archive{{ end }}</a>
+      </div>
+    </nav>
+  </div>
 </header>

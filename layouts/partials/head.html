@@ -22,15 +22,21 @@
   {{ template "_internal/twitter_cards.html" . }}
   <meta name="twitter:image" content="https://www.cleverlaziness.com/cl-square.png" />
   {{ template "_internal/opengraph.html" . }}
-  <meta name="og:image" content="https://www.cleverlaziness.com/cl-square.png" />
+  <meta property="og:image" content="https://www.cleverlaziness.com/cl-square.png" />
   {{ template "_internal/schema.html" . }}
 
-  <!-- CSS and Google Fonts -->
+  <!-- CSS -->
   <link rel="stylesheet" href={{ "/css/layout.css" | relURL }} />
-  <link href="https://fonts.googleapis.com/css?family=Oswald:500|Rubik:400,500" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src={{ "js/jquery-2.2.1.min.js" | relURL }}></script>
+    <script type="text/javascript" src={{ "js/bigfoot.min.js" | relURL }}></script>
+    <script type="text/javascript">
+      $.bigfoot();
+    </script>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href={{ "./favicon.ico" | relURL }}>
+  <link rel="shortcut icon" href={{ "./saitajuan-avatar.png" | relURL }}>
 
   <!-- Webclip -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -48,8 +54,7 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-103631497-1', 'auto');
+    ga('create', '{{ .Site.Params.google.analytics.trackerID }}', 'auto');
     ga('send', 'pageview');
   </script>
-
 </head>

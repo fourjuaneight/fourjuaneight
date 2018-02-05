@@ -1,7 +1,7 @@
 baseURL = "https://www.cleverlaziness.com/"
 languageCode = "en-us"
 title = "Clever Laziness"
-copyright = " 2017 Clever Laziness"
+copyright = " 2017-2018 Clever Laziness"
 
 enableRobotsTXT = "true"
 enableEmoji = "true"
@@ -12,13 +12,13 @@ enableEmoji = "true"
 SectionPagesMenu = "main"
 
 [permalinks]
-  post = "/:year/:month/:day/:title/"
+  post = "/:title/"
 
 [[menu.main]]
-  name = "Posts"
+  name = "Archive"
   weight = -120
-  identifier = "post"
-  url = "/post/"
+  identifier = "archive"
+  url = "/archive/"
 
 [[menu.main]]
   name = "Tags"
@@ -39,13 +39,15 @@ SectionPagesMenu = "main"
   url = "/license/"
 
 [params.meta]
-  keywords = "procrastination, automation, iOS, macOS, web, Apple"
-  description = "A blog about automation and productivity"
+  keywords = "coding, productivity, automation"
+  description = "A blog about coding and productivity"
 
 [params]
   twitter = "theverylastjuan"
-  Favicon = "favicon.ico"
   OpenLinksInNewWindow = true
 
 [outputs]
   home = ["html", "rss"]
+
+[params.google.analytics]
+    trackerID = "UA-103631497-1"
