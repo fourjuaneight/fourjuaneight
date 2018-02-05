@@ -1,5 +1,5 @@
 # Clever Laziness
-This blog chronicles my attempt to get things done, some of my coding endevours and stuff.
+I like websites. Occasionally, I make them. Irregularly, I like to write about my appreciation for the internets and other mundane things. This is a blog, in case it wasn't clear. Ok.
 
 ## Creation
 * Coded on macOS using [VS Code](https://code.visualstudio.com).
