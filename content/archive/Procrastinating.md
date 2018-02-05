@@ -2,7 +2,7 @@
 title = "Procrastinating"
 date = "2017-07-23"
 draft = false
-tags = ["automation"]
+tags = ["procrastination"]
 showthedate = true
 +++
 
@@ -42,7 +42,3 @@ Effective planning sets you up for *success*. But remember that procrastinators 
 When I got the opportunity to work from home, I thought it would be all sunshine and double rainbows, but it quickly turned into a challenge. I easily drifted away in my head while working and lost track of time. At one point I came close to losing my job because of this. So a while ago I started to devise clever ways to get work done while being lazy. What has worked for me won't necessarily work for everyone. It’s taken me years of trial and error to tailor a workflow that overcomes my shortcomings and takes advantage of my skills. But I believe I have found something rather wonderful that benefits anyone. I’m fairly good at coding and love solving problems, which is why automation caught my attention.
 
 There’s a plenty of websites covering productivity and automation for iOS, macOS and the web, but none of them focus entirely on the matter. I believe my blog can focus on devising clever ways to achieve something and still be lazy. By no means will writing be easy for me, as I lack the discipline to post on a regular basis. But I've made a challenge for myself to post every Monday, Wednesday, and Friday mornings. Now that I think about it, this sounds like a terrible idea. Why am I like this?
-
-- - - -
-
-I’m not a writer by any means and will make plenty of mistakes. So I’m open to conversation about my posts and will try to answer any questions you might have on Twitter @[theverylastjuan](https://twitter.com/theverylastjuan).

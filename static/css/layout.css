@@ -45,6 +45,19 @@ h1, h2, h3, h4 {
   font-weight: 700;
 }
 
+ul,
+ol {
+  padding-left: 30px;
+}
+
+ol ul {
+  padding-left: 20px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
 a {
   color: #3d3d3d;
   text-decoration: none;
