@@ -1,15 +1,11 @@
-<footer>
-  <div class="copyright">
-    <a href='{{ .Site.BaseURL }}license'>{{ with .Site.Params.license }}{{ . }}{{ else }}&copy {{ end }}</a>{{ .Site.Copyright }}
-  </div>
-
-  <div class="divider">•</div>
-
-  <div class="social-links">
+  <footer>
+    <a href='{{ .Site.BaseURL }}license'>{{ with .Site.Params.license }}{{ . }}{{ else }}&copy {{ end }} {{ .Site.Copyright }}</a>
+    <div class="divider">•</div>
     {{with .Site.Params.twitter}}
     <a class="nav-link" href="https://twitter.com/{{.}}" title="Follow me on Twitter">Twitter</a>
     {{end}}
     <div class="divider">•</div>
     <a class="nav-link" href="{{ .Site.RSSLink }}" target="_blank" title="Subscribe to the feed">RSS</a>
-  </div>
-</footer>
+  </footer>
+</body>
+</html>

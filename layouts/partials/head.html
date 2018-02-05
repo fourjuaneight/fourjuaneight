@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 <head>
   <meta charset="utf-8" />
   <title>
@@ -36,7 +38,7 @@
     </script>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href={{ "./saitajuan-avatar.png" | relURL }}>
+  <link rel="shortcut icon" href={{ "./favicon.png" | relURL }}>
 
   <!-- Webclip -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -58,3 +60,5 @@
     ga('send', 'pageview');
   </script>
 </head>
+<body>
+  {{ partial "header.html" . }}
