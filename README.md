@@ -1,16 +1,12 @@
 # Clever Laziness
 I like websites. Occasionally, I make them. Irregularly, I like to write about my appreciation for the internets and other mundane things. This is a blog, in case it wasn't clear. Ok.
 
-## Creation
-* Coded on macOS using [VS Code](https://code.visualstudio.com).
-* Further development on iPad using [Coda](https://itunes.apple.com/us/app/coda/id500906297?mt=8&ign-itsct=500906297-500906297&ign-itscg=0177&ign-mpt=uo%3D4) and [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8).
+## Colophon
+* Made with [Hugo](https://gohugo.io).
+* Google Font is [Rubik](https://fonts.google.com/specimen/Rubik).
+* All graphics were designed with [Affinity Designer](https://itunes.apple.com/us/app/affinity-designer/id824171161?mt=12).
+* Made using [Coda](https://itunes.apple.com/us/app/coda/id500906297?mt=8&ign-itsct=500906297-500906297&ign-itscg=0177&ign-mpt=uo%3D4) and [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8).
 * Articles written in [Markdown](https://daringfireball.net/projects/markdown/syntax) on [Drafts](https://itunes.apple.com/app/id905337691?mt=8&ign-mpt=uo%3D4).
-
-### Made with Hugo
-[Hugo](https://gohugo.io) is a static HTML and CSS website generator written in Go. It is optimized for speed, easy use and configurability. Hugo takes a directory with content and templates and renders them into a full HTML website. Hugo relies on [Markdown](https://daringfireball.net/projects/markdown/syntax) files with front matter for meta data.
-
-### Look
-Although Hugo has a plethora of community made [themes](https://themes.gohugo.io), I decided on styling the site on my own. The Google Fonts used are [Oswald](https://fonts.google.com/specimen/Oswald) and [Rubik](https://fonts.google.com/specimen/Rubik). All graphics were designed with [Affinity Designer](https://itunes.apple.com/us/app/affinity-designer/id824171161?mt=12).
 
 ## Licensing
 Clever Laziness is written and created by [Juan](https://www.twitter.com/theverylastjuan). Links to apps or other items may include affiliate links.
@@ -32,4 +28,4 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Contact
-Feel free to reach out with any questions or concerns on Twitter: @[theverylastjuan](https://www.twitter.com/theverylastjuan)
+If you must, you can reach me on Twitter: @[theverylastjuan](https://www.twitter.com/theverylastjuan).

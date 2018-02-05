@@ -11,7 +11,7 @@ I like websites. Occasionally, I make them. Irregularly, I like to write about m
 ## Colophon
 * Written and created by Juan.
 * Made with [Hugo](https://gohugo.io).
-* Google Font [Rubik](https://fonts.google.com/specimen/Rubik).
+* Google Font is [Rubik](https://fonts.google.com/specimen/Rubik).
 * All graphics were designed with [Affinity Designer](https://itunes.apple.com/us/app/affinity-designer/id824171161?mt=12).
 * Made using [Coda](https://itunes.apple.com/us/app/coda/id500906297?mt=8&ign-itsct=500906297-500906297&ign-itscg=0177&ign-mpt=uo%3D4) and [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8).
 * Articles written in [Markdown](https://daringfireball.net/projects/markdown/syntax) on [Drafts](https://itunes.apple.com/app/id905337691?mt=8&ign-mpt=uo%3D4).

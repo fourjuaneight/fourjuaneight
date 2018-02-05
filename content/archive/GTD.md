@@ -1,5 +1,5 @@
 +++
-title = "GTD for Procrastinators with Todoist"
+title = "GTD"
 date = "2017-09-24"
 draft = false
 tags = ["productivity"]

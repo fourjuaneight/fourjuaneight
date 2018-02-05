@@ -1,5 +1,5 @@
 +++
-title = "On organizing and tagging with Alfred"
+title = "Tagging"
 date = "2017-08-13"
 draft = false
 tags = ["productivity"]

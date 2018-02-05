@@ -1,5 +1,5 @@
 +++
-title = "Procrastinating With Automation"
+title = "Procrastinating"
 date = "2017-07-23"
 draft = false
 tags = ["automation"]
