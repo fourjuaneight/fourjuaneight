@@ -2,7 +2,7 @@
 title = "GTD for Procrastinators with Todoist"
 date = "2017-09-24"
 draft = false
-tags = ["productivity", "todoist"]
+tags = ["productivity"]
 showthedate = true
 +++
 

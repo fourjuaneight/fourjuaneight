@@ -2,7 +2,7 @@
 title = "On organizing and tagging with Alfred"
 date = "2017-08-13"
 draft = false
-tags = ["alfred", "macos"]
+tags = ["productivity"]
 showthedate = true
 +++
 

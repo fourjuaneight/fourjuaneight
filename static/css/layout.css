@@ -6,7 +6,7 @@
   --hover-color: #39A4FE;
   --underline: 1.5px solid var(--under-color);
   --hover: 1.5px solid var(--hover-color);
-  --title-size: 2.5em;
+  --title-size: 3em;
   --heading-size: 1.75em;
   --body-size: 1rem;
   --meta-size: 15px;
@@ -81,12 +81,12 @@ header {
   justify-items: center;
 }
 
-.name {
+.brand {
   padding: 1.5rem 0;
   font-size: var(--title-size);
 }
 
-.name:hover {
+.brand:hover {
   color: #000;
 }
 
@@ -120,6 +120,14 @@ header {
   margin: 0;
 }
 
+.post-preview .content {
+  padding: 1rem 0;
+}
+
+.post-preview .date {
+  float: left;
+}
+
 .title {
   font-size: var(--heading-size);
   text-align: center;
@@ -144,18 +152,22 @@ header {
   border-bottom: var(--hover);
 }
 
-.post-preview .content {
-  padding: 1rem 0;
-}
-
 .meta {
-  font-size: var(--meta-size);
-  color: var(--meta-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
+}
+
+.meta a:hover {
+  color: var(--main-color);
+}
+
+.date,
+.tag {
+  color: var(--meta-color);
+  font-size: var(--meta-size);
 }
 
 
@@ -189,30 +201,8 @@ header {
   padding-bottom: 1rem;
 }
 
-.post-list .title {
-  font-size: 1.5em;
-  text-align: center;
-  margin: 0;
-  padding-bottom: 0.5rem;
-}
-
 .content-item .date {
-  font-size: var(--meta-size);
-  text-align: center;
-  color: var(--meta-color);
-}
-
-
-/* TAGS */
-.tag a {
-  color: var(--meta-color);
-}
-
-.tag a:hover {
-  color: var(--main-color);
-}
-
-.term-title {
+  padding-top: 10px;
   text-align: center;
 }
 

@@ -2,7 +2,7 @@
 title = "Procrastinating With Automation"
 date = "2017-07-23"
 draft = false
-tags = ["procrastinating", "automation"]
+tags = ["automation"]
 showthedate = true
 +++
 
