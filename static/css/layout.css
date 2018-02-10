@@ -1,7 +1,11 @@
 /* CUSTOM PROPERTIES */
 :root {
-  --underline: 1.5px solid #6DBDFE;
-  --hover: 1.5px solid #39A4FE;
+  --heading: #89F396;
+  --meta: #A0E7FA;
+  --icon: #9687B9;
+  --highlight: #85406B;
+  --underline: 1.5px solid var(--highlight);
+  --hover: 1.5px solid #773785;
 }
 
 
