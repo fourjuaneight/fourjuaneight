@@ -32,7 +32,8 @@ body {
   margin: 0;
   font-family: 'Rubik', Helvetica, sans-serif;
   font-size: 1rem;
-  color: #3d3d3d;
+  color: #BFBFBF;
+  background-color: #353845;
   display: -ms-grid;
   display: grid;
   grid-template-columns:
@@ -47,6 +48,7 @@ body > * {
 
 h1, h2, h3, h4 {
   font-weight: 700;
+  color: var(--heading);
 }
 
 ul,
@@ -63,12 +65,12 @@ ul {
 }
 
 a {
-  color: #3d3d3d;
+  color: var(--meta);
   text-decoration: none;
 }
 
 a:hover {
-  color: #000;
+  color: var(--icon);
 }
 
 .content img {
@@ -97,6 +99,7 @@ header {
   padding: 1.5rem 0;
   font-size: 3rem;
   text-align: center;
+  color: var(--icon);
 }
 
 .nav-item {
@@ -105,6 +108,10 @@ header {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-column-gap: 0.8rem;
+}
+
+.nav-item a {
+  color: var(--icon);
 }
 
 /* POSTS */
@@ -160,7 +167,7 @@ header {
 .page-nav,
 .date,
 .tag {
-  color: #999;
+  color: var(--meta);
   font-size: 0.9rem;
 }
 
@@ -206,6 +213,12 @@ footer {
 
 .divider {
   margin: 0 5px;
+  color: var(--meta);
+}
+
+.separator {
+  color: var(--meta);
+  text-align: center;
 }
 
 /* 404 */

@@ -1,15 +1,16 @@
 .footnote-container {
   display:inline-block;
   position:relative;
-  text-indent:0
+  text-indent:0;
+  color: var(--numbers);
 }
 
 .footnote-backdrop {
-  cursor:pointer
+  cursor:pointer;
 }
 
 .footnote-button {
-  background:hsla(0,0%,43%,.2);
+  background-color: rgba(133, 64, 107, 0.5);
   border:0;
   border-radius:.475em;
   cursor:pointer;
@@ -27,11 +28,11 @@
   transition-property:background;
   vertical-align:super;
   width:1.5em;
-  z-index:1
+  z-index:1;
 }
 
 .footnote-button:after {
-  color:hsla(0,0%,43%,.5);
+  color: var(--meta);
   content:attr(data-fn-number);
   display:block;
   font-size:.57em;
@@ -42,34 +43,29 @@
   -webkit-transform:translate(-50%,-50%);
   transform:translate(-50%,-50%);
   -webkit-transition:color .25s ease;
-  transition:color .25s ease
+  transition:color .25s ease;
 }
 
 .footnote-button:hover {
-  background:hsla(0,0%,43%,.5);
-  outline:none
+  background-color: #85406b;
 }
 
 .footnote-button:hover:after {
-  color:#fafafa
+  color:var(--meta);
 }
 
 .footnote-button.is-active {
-  background:#6e6e6e;
   -webkit-transition-delay:.1s;
-  transition-delay:.1s
+  transition-delay:.1s;
 }
 
 .footnote-button.is-active:after {
-  color:#fafafa
 }
 
 .bf-footnote {
-  background:#fafafa;
-  border:1px solid #d8d8d8;
   border-radius:.25em;
   left:0;
-  margin:1.8em 0 2.2em;
+  margin:2em 0 2.2em;
   max-width:90vw;
   opacity:0;
   position:absolute;
@@ -82,16 +78,16 @@
   transition-property:opacity;
   -webkit-transition-timing-function:ease;
   transition-timing-function:ease;
-  z-index:3
+  z-index:3;
 }
 
 .bf-footnote.footnote-is-active {
-  opacity:.97
+  opacity:.97;
 }
 
 .bf-footnote.footnote-is-top {
   bottom:0;
-  top:auto
+  top:auto;
 }
 
 .footnote-wrapper {
@@ -102,27 +98,28 @@
   overflow:hidden;
   position:relative;
   width:22em;
-  z-index:5
+  z-index:5;
 }
 
 .footnote-tooltip {
-  background:inherit;
-  border:1px solid #d8d8d8;
+  background-color: #21232e;
   height:1.3em;
   position:absolute;
   top:-.49em;
   -webkit-transform:rotate(45deg);
   transform:rotate(45deg);
   width:1.3em;
-  z-index:4
+  z-index:4;
 }
 
 .footnote-is-top .footnote-tooltip {
   bottom:-.49em;
-  top:auto
+  top:auto;
 }
 
 .footnote-content {
+  background-color: #21232e;
+  color: #A0E7FA;
   -webkit-font-smoothing:subpixel-antialiased;
   line-height:1.418em;
   max-height:15em;
@@ -130,15 +127,15 @@
   -webkit-overflow-scrolling:touch;
   padding:1em;
   position:relative;
-  z-index:2
+  z-index:2;
 }
 
 .footnote-content :first-child {
   margin-top:0;
-  padding-top:0
+  padding-top:0;
 }
 
 .footnote-content :last-child {
   margin-bottom:0;
-  padding-bottom:0
+  padding-bottom:0;
 }
