@@ -1,7 +1,7 @@
 baseURL = "https://www.cleverlaziness.com/"
 languageCode = "en-us"
 title = "Clever Laziness"
-copyright = " 2017-2018 Clever Laziness"
+copyright = " 2018 Clever Laziness"
 
 enableRobotsTXT = "true"
 enableEmoji = "true"

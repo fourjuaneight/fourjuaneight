@@ -1,10 +1,10 @@
 <header>
-  <a class="terminal" href="{{ .Site.BaseURL }}"><img src={{ "/terminal.svg" | relURL }} alt=""></a>
+  <a class="terminal" href="{{ .Site.BaseURL }}"><img src={{ "/terminal.svg" | relURL }} alt="Terminal icon"></a>
 
   <nav class="nav-item">
-    <a class="nav-link" href='{{ .Site.BaseURL }}about' title="About this site">{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
-    <a class="nav-link" href='{{ .Site.BaseURL }}archive' title="Previous articles">{{ with .Site.Params.archive }}{{ . }}{{ else }}Archive{{ end }}</a>
+    <a class="nav-link" href='{{ .Site.BaseURL }}about'>{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
+    <a class="nav-link" href='{{ .Site.BaseURL }}archive'>{{ with .Site.Params.archive }}{{ . }}{{ else }}Archive{{ end }}</a>
   </nav>
 
-  <a class="brand" href='{{ .Site.BaseURL }}' title="Clever Laziness">Clever Laziness</a>
+  <a class="brand" href='{{ .Site.BaseURL }}'>Clever Laziness</a>
 </header>

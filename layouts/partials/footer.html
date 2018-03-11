@@ -1,13 +1,13 @@
   <footer>
     <a href='{{ .Site.BaseURL }}license'>{{ with .Site.Params.license }}{{ . }}{{ else }}&copy {{ end }} {{ .Site.Copyright }}</a>
     <div class="divider">•</div>
-    <div>Made with <a href="" class="nav-link">Hugo</a></div>
+    <div>Made with <a class="nav-link" href="https://gohugo.io" target="_blank">Hugo</a></div>
     <div class="divider">•</div>
     {{with .Site.Params.twitter}}
-    <a class="nav-link" href="https://twitter.com/{{.}}" title="Follow me on Twitter">Twitter</a>
+    <a class="nav-link" href="https://twitter.com/{{.}}" target="_blank">Twitter</a>
     {{end}}
     <div class="divider">•</div>
-    <a class="nav-link" href="{{ .Site.RSSLink }}" target="_blank" title="Subscribe to the feed">RSS</a>
+    <a class="nav-link" href="{{ .Site.RSSLink }}" target="_blank">RSS</a>
   </footer>
 
   <!-- Footnotes -->

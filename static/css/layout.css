@@ -77,13 +77,13 @@ a:hover {
   width: 100%;
 }
 
-.nav-link {
+/* .nav-link {
   border-bottom: var(--underline);
 }
 
 .nav-link:hover {
   border-bottom: var(--hover);
-}
+} */
 
 /* HEADER  */
 header {
