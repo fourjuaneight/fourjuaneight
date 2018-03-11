@@ -206,16 +206,12 @@ footer {
   justify-content: center;
   padding: 2.5rem 0;
   font-size: 0.86rem;
+  color: var(--meta);
 }
 
 .divider {
   margin: 0 5px;
   color: var(--meta);
-}
-
-.separator {
-  color: var(--meta);
-  text-align: center;
 }
 
 /* 404 */
