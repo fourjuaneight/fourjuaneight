@@ -76,7 +76,7 @@ a {
 }
 
 a:hover {
-  color: var(--icon);
+  color: var(--heading);
 }
 
 .content img {
@@ -103,15 +103,21 @@ header {
 
 .nav-item {
   font-family: var(--mono-font);
+  color: var(--icon);
   margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-column-gap: 0.8rem;
+  text-transform: lowercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 
-.nav-item a {
-  color: var(--icon);
+.nav-link {
+  color: var(--meta);
+}
+
+.nav-link:hover {
+  color: var(--heading);
 }
 
 /* POSTS */
@@ -211,10 +217,34 @@ footer {
   color: var(--meta);
 }
 
+.cursor,
+.blink {
+  font-weight: bold;
+  color: var(--icon);
+}
+
+.blink {
+  -webkit-animation: blinker 1s step-start infinite;
+  animation: blinker 1s step-start infinite;
+}
+
+@-webkit-keyframes blinker {
+ 50% {
+  opacity:0
+ }
+}
+
+@keyframes blinker {
+ 50% {
+  opacity:0
+ }
+}
+
 .divider {
   margin: 0 5px;
   color: var(--meta);
 }
+
 
 /* 404 */
 .err-404 {
