@@ -1,4 +1,5 @@
 {{ partial "head.html" . }}
+{{ partial "header.html" . }}
 <main>
   {{ $paginator := .Paginate (where .Data.Pages "Type" "archive") 10 }}
     {{ range $paginator.Pages }}
