@@ -1,25 +1,31 @@
 /* CUSTOM PROPERTIES */
 :root {
+  --mono-font: 'Plex Mono', Courier, monospace;
   --heading: #89F396;
   --meta: rgba(160, 230, 250, 0.5);
   --icon: #9687B9;
   --highlight: #85406B;
-  --underline: 1.5px solid var(--highlight);
   --hover: 1.5px solid #773785;
 }
 
 
 /* FONTS */
 @font-face {
-  font-family: "Rubik";
+  font-family: "Plex Mono";
   font-weight: 400;
-  src: local("Rubik"), local("Rubik-Regular"), url(/fonts/Rubik-Regular.woff2) format("woff2");
+  src: local("Plex Mono"), local("Plex-Mono-Regular"), url(/fonts/Plex-Mono-Regular.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: "Rubik";
+  font-family: "Plex Sans";
+  font-weight: 400;
+  src: local("Plex Sans"), local("Plex-Sans-Regular"), url(/fonts/Plex-Sans-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Plex Sans";
   font-weight: 700;
-  src: local("Rubik Bold"), local("Rubik-Bold"), url(/fonts/Rubi-Bold.woff2) format("woff2");
+  src: local("Plex Sans Bold"), local("Plex-Sans-Bold"), url(/fonts/Plex-Sans-Bold.woff2) format("woff2");
 }
 
 
@@ -30,7 +36,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Rubik', Helvetica, sans-serif;
+  font-family: 'Plex Sans', Helvetica, sans-serif;
   font-size: 1rem;
   color: #BFBFBF;
   background-color: #353845;
@@ -77,13 +83,6 @@ a:hover {
   width: 100%;
 }
 
-/* .nav-link {
-  border-bottom: var(--underline);
-}
-
-.nav-link:hover {
-  border-bottom: var(--hover);
-} */
 
 /* HEADER  */
 header {
@@ -103,6 +102,7 @@ header {
 }
 
 .nav-item {
+  font-family: var(--mono-font);
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -166,6 +166,7 @@ header {
 .date,
 .tag {
   color: var(--meta);
+  font-family: var(--mono-font);
   font-size: 0.9rem;
 }
 
@@ -205,6 +206,7 @@ footer {
   display: flex;
   justify-content: center;
   padding: 2.5rem 0;
+  font-family: var(--mono-font);
   font-size: 0.86rem;
   color: var(--meta);
 }
