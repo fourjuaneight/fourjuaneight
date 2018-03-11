@@ -1,7 +1,7 @@
 /* CUSTOM PROPERTIES */
 :root {
   --heading: #89F396;
-  --meta: #A0E7FA;
+  --meta: rgba(160, 230, 250, 0.5);
   --icon: #9687B9;
   --highlight: #85406B;
   --underline: 1.5px solid var(--highlight);
@@ -167,6 +167,10 @@ header {
 .tag {
   color: var(--meta);
   font-size: 0.9rem;
+}
+
+.tag:hover {
+  color: rgb(160, 230, 250);
 }
 
 .page-prev {
