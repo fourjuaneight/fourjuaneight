@@ -16,20 +16,21 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   {{ .Hugo.Generator }}
 
+  <!-- Open Graph -->
   <link rel="canonical" href="{{ .Permalink }}">
   {{ if .RSSLink }}
   <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}"/>
   {{ end }}
   <base href="{{ .Site.BaseURL }}" />
   {{ template "_internal/twitter_cards.html" . }}
-  <meta name="twitter:image" content="https://www.cleverlaziness.com/cl-square.png" />
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}avatar.png" />
   {{ template "_internal/opengraph.html" . }}
-  <meta property="og:image" content="https://www.cleverlaziness.com/cl-square.png" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}avatar.png" />
   {{ template "_internal/schema.html" . }}
 
   <!-- CSS -->
-  <link rel="stylesheet" href={{ "/css/barefoot.css" | relURL }} />
   <link rel="stylesheet" href={{ "/css/layout.css" | relURL }} />
+  <link rel="stylesheet" href={{ "/css/barefoot.css" | relURL }} />
 
   <!-- Favicon -->
   <link rel="shortcut icon" href={{ "./favicon.png" | relURL }}>
@@ -37,7 +38,7 @@
   <!-- Webclip -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Clever Laziness">
+  <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
   <link rel="apple-touch-icon" sizes="152x152" href={{ "/apple-touch-icon-152x152.png" | relURL }}>
   <link rel="apple-touch-icon" sizes="167x167" href={{ "/apple-touch-icon-167x167.png" | relURL }}>
   <link rel="apple-touch-icon" sizes="180x180" href={{ "/apple-touch-icon-180x180.png" | relURL }}>
