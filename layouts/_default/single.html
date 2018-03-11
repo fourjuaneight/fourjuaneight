@@ -1,14 +1,12 @@
 {{ partial "head.html" . }}
 <article class="post">
   <h2 class="title">{{ .Title }}</h2>
-  <div class="content">{{ .Content }}</div>
-  <div class="meta">
-    {{ if .Params.showthedate }}
+  {{ if .Params.showthedate }}
       <div class="date">{{ .Date.Format "Jan 2, 2006" }}</div>
     {{ end }}
-    {{ range .Params.tags }}
-      <a class="tag" href="/tags/{{ . | urlize }}">#{{.}}</a>
-    {{ end }}
-  </div>
+  <div class="content">{{ .Content }}</div>
+  {{ range .Params.tags }}
+    <div class="tag"><a href="/tags/{{ . | urlize }}">#{{.}}</a></div>
+  {{ end }}
 </article>
 {{ partial "footer.html" . }}

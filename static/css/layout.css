@@ -129,10 +129,6 @@ header {
   padding: 1rem 0;
 }
 
-.post-preview .date {
-  float: left;
-}
-
 .title {
   font-size: 1.75em;
   text-align: center;
@@ -156,12 +152,14 @@ header {
   border-bottom: var(--hover);
 }
 
-.meta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
+.date {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.tag {
+  width: 100%;
+  text-align: end;
 }
 
 .page-nav,
@@ -193,11 +191,6 @@ header {
 
 .content-item {
   padding-bottom: 1rem;
-}
-
-.content-item .date {
-  padding-top: 10px;
-  text-align: center;
 }
 
 /* FOOTER */
