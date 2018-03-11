@@ -18,9 +18,6 @@ Irregularly, I like to write about my appreciation for the internets and other m
 
 You can follow me on [Twitter](https://twitter.com/theverylastjuan)[^1] or subscribe to the [RSS]({{ .Site.RSSLink }}) feed[^2].
 
----
-
-For those who feel more passionately than the rest:: Yes, I did copy my blog's style from somewhere else. And yes, the color scheme is based on a widely used theme. If you feel that your comments about this need to be voiced, you are welcome to post them on the official [subreddit](https://www.reddit.com/r/iamverysmart/).
 
 [^1]: I have a love/hate relationship with Twitter. I've cleaned up my feed, removed retweets and refreshed my muffles on Twitterrific in hopes of having a better expirience. If anything chnages, you'll know.
 [^2]: The feed is the smarter option. You might get additional content occasionally. Might being the operative word.
