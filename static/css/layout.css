@@ -251,17 +251,6 @@ footer {
   color: var(--meta);
 }
 
-.cursor,
-.blink {
-  font-weight: bold;
-  color: var(--icon);
-}
-
-.blink {
-  -webkit-animation: blinker 1s step-start infinite;
-  animation: blinker 1s step-start infinite;
-}
-
 .divider {
   margin: 0 5px;
   color: var(--meta);
