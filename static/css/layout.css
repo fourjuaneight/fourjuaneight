@@ -8,20 +8,6 @@
 }
 
 
-/* FONTS */
-@font-face {
-  font-family: "Rubik";
-  font-weight: 400;
-  src: local("Rubik"), local("Rubik-Regular"), url(/fonts/Rubik-Regular.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: "Rubik Bold";
-  font-weight: 700;
-  src: local("Rubik Bold"), local("Rubik-Bold"), url(/fonts/Rubik-Bold.woff2) format("woff2");
-}
-
-
 /* BASE STYLING */
 html {
   overflow: hidden;
@@ -37,8 +23,7 @@ body {
   width: auto;
   overflow: auto;
   overflow-x: hidden;
-  /* font-family: 'Plex Sans', Helvetica, sans-serif; */
-  font-family: 'Rubik', Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: #BFBFBF;
   background-color: #353845;
@@ -55,7 +40,8 @@ body > * {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Rubik Bold', Helvetica, sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
   color: var(--heading);
 }
 
@@ -121,7 +107,8 @@ header {
 }
 
 .nav-item {
-  font-family: 'Rubik Bold', Helvetica, sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
   width: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -187,6 +174,7 @@ header {
 .page-nav,
 .date,
 .tag {
+  font-family: 'Rubik', sans-serif;
   color: var(--meta);
   font-size: 0.9rem;
 }
@@ -221,6 +209,7 @@ header {
 
 /* FOOTER */
 footer {
+  font-family: 'Rubik', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
