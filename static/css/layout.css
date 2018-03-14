@@ -1,6 +1,5 @@
 /* CUSTOM PROPERTIES */
 :root {
-  --mono-font: 'Plex Mono', Courier, monospace;
   --heading: #89F396;
   --meta: #a0e6fa;
   --highlight: #85406B;
@@ -11,27 +10,15 @@
 
 /* FONTS */
 @font-face {
-  font-family: "Plex Mono";
+  font-family: "Rubik";
   font-weight: 400;
-  src: local("Plex Mono"), local("Plex-Mono-Regular"), url(/fonts/Plex-Mono-Regular.woff2) format("woff2");
+  src: local("Rubik"), local("Rubik-Regular"), url(/fonts/Rubik-Regular.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: "Plex Mono";
+  font-family: "Rubik Bold";
   font-weight: 700;
-  src: local("Plex Mono"), local("Plex-Mono-Bold"), url(/fonts/Plex-Mono-Bold.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: "Plex Sans";
-  font-weight: 400;
-  src: local("Plex Sans"), local("Plex-Sans-Regular"), url(/fonts/Plex-Sans-Regular.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: "Plex Sans";
-  font-weight: 700;
-  src: local("Plex Sans Bold"), local("Plex-Sans-Bold"), url(/fonts/Plex-Sans-Bold.woff2) format("woff2");
+  src: local("Rubik Bold"), local("Rubik-Bold"), url(/fonts/Rubik-Bold.woff2) format("woff2");
 }
 
 
@@ -50,11 +37,11 @@ body {
   width: auto;
   overflow: auto;
   overflow-x: hidden;
-  font-family: 'Plex Sans', Helvetica, sans-serif;
+  /* font-family: 'Plex Sans', Helvetica, sans-serif; */
+  font-family: 'Rubik', Helvetica, sans-serif;
   font-size: 1rem;
   color: #BFBFBF;
   background-color: #353845;
-  border: 4px solid #21232e;
   display: -ms-grid;
   display: grid;
   grid-template-columns:
@@ -68,8 +55,7 @@ body > * {
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--mono-font);
-  font-weight: 700;
+  font-family: 'Rubik Bold', Helvetica, sans-serif;
   color: var(--heading);
 }
 
@@ -135,7 +121,7 @@ header {
 }
 
 .nav-item {
-  font-family: var(--mono-font);
+  font-family: 'Rubik Bold', Helvetica, sans-serif;
   width: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -184,10 +170,6 @@ header {
   line-height: 26px;
 }
 
-/* .content a {
-  border-bottom: var(--underline);
-} */
-
 .content a:hover {
   border-bottom: var(--underline);
 }
@@ -206,7 +188,6 @@ header {
 .date,
 .tag {
   color: var(--meta);
-  font-family: var(--mono-font);
   font-size: 0.9rem;
 }
 
@@ -246,7 +227,6 @@ footer {
   display: flex;
   justify-content: center;
   padding: 2.5rem 0;
-  font-family: var(--mono-font);
   font-size: 0.86rem;
   color: var(--meta);
 }
