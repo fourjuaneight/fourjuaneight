@@ -3,22 +3,22 @@ I like websites. Occasionally, I make them. Irregularly, I like to write about m
 
 ## Colophon
 * Made with [Hugo](https://gohugo.io).
-* Font is [IBM Plex](https://ibm.github.io/type/).
+* Font is [Rubik](https://fonts.google.com/specimen/Rubik).
 * Designs made with [Affinity Designer](https://itunes.apple.com/us/app/affinity-designer/id824171161?mt=12).
 * Coded using [Coda](https://itunes.apple.com/us/app/coda/id500906297?mt=8&ign-itsct=500906297-500906297&ign-itscg=0177&ign-mpt=uo%3D4) and [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8).
 * Articles written in [Markdown](https://daringfireball.net/projects/markdown/syntax) on [Bear](https://itunes.apple.com/us/app/bear-beautiful-writing-app/id1016366447?ls=1&mt=8).
 
-## Licensing
-Clever Laziness is written and created by [Juan](https://www.twitter.com/theverylastjuan). Links to apps or other items may include affiliate links.
+## Privacy
+Clever Laziness is written and created by [Juan](https://www.twitter.com/theverylastjuan). Google Analytics is used to get a better understanding viewing behaviors. Links to apps or other items may include affiliate links; this allows me to avoid using ads of any kind to run the site. I promise no ads will ever be used.
 
-### Text Content License
+## Text Content License
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 Unless otherwise noted, the text content on this site is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License, “[CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)”.
 
-### Source License
+## Source License
 Unless otherwise noted, the source content on this site is released under the [MIT License](https://opensource.org/licenses/MIT).
 
-#### MIT License
+## MIT License
 Copyright © 2017 Clever Laziness
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
