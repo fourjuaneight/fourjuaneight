@@ -2,11 +2,10 @@
 :root {
   --mono-font: 'Plex Mono', Courier, monospace;
   --heading: #89F396;
-  --meta: rgba(160, 230, 250, 0.5);
-  --underline: 1.5px solid var(--highlight);
-  --icon: #9687B9;
+  --meta: #a0e6fa;
   --highlight: #85406B;
-  --hover: 1.5px solid #773785;
+  --accent: #9687B9;
+  --underline: 1.5px solid var(--highlight);
 }
 
 
@@ -55,6 +54,7 @@ body {
   font-size: 1rem;
   color: #BFBFBF;
   background-color: #353845;
+  border: 4px solid #21232e;
   display: -ms-grid;
   display: grid;
   grid-template-columns:
@@ -184,12 +184,12 @@ header {
   line-height: 26px;
 }
 
-.content a {
+/* .content a {
   border-bottom: var(--underline);
-}
+} */
 
 .content a:hover {
-  border-bottom: var(--hover);
+  border-bottom: var(--underline);
 }
 
 .date {
