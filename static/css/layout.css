@@ -3,7 +3,6 @@
   --heading: #89F396;
   --meta: #a0e6fa;
   --highlight: #85406B;
-  --accent: #9687B9;
   --underline: 1.5px solid var(--highlight);
 }
 
@@ -115,12 +114,12 @@ header {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: flex-start;
 }
 
 .nav-link {
-  margin: 0 5px;
+  margin: 0 15px;
 }
 
 .nav-link:hover {
@@ -223,6 +222,10 @@ footer {
 .divider {
   margin: 0 5px;
   color: var(--meta);
+}
+
+footer .nav-link {
+  margin: 0;
 }
 
 
