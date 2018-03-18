@@ -3,7 +3,7 @@ I like websites. Occasionally, I make them. Irregularly, I like to write about m
 
 ## Colophon
 * Made with [Hugo](https://gohugo.io).
-* Font is [Rubik](https://fonts.google.com/specimen/Rubik).
+* Fonts are [Rubik](https://fonts.google.com/specimen/Rubik) and [Roboto](https://fonts.google.com/specimen/Roboto).
 * Designs made with [Affinity Designer](https://itunes.apple.com/us/app/affinity-designer/id824171161?mt=12).
 * Coded using [Coda](https://itunes.apple.com/us/app/coda/id500906297?mt=8&ign-itsct=500906297-500906297&ign-itscg=0177&ign-mpt=uo%3D4) and [Working Copy](https://itunes.apple.com/us/app/working-copy-powerful-git-client/id896694807?mt=8).
 * Articles written in [Markdown](https://daringfireball.net/projects/markdown/syntax) on [Bear](https://itunes.apple.com/us/app/bear-beautiful-writing-app/id1016366447?ls=1&mt=8).
