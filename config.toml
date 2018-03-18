@@ -46,7 +46,7 @@ SectionPagesMenu = "main"
   description = "A blog about coding and productivity"
 
 [params]
-  twitter = "theverylastjuan"
+  social = "theverylastjuan"
   OpenLinksInNewWindow = true
 
 [outputs]

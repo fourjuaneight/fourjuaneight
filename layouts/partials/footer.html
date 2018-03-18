@@ -2,6 +2,14 @@
     <div><a href='{{ .Site.BaseURL }}license'>&copy</a>{{ .Site.Copyright }}</div>
     <div class="divider">•</div>
     <div>Made with <a class="nav-link" href="https://gohugo.io" target="_blank">Hugo</a></div>
+    <div class="divider">•</div>
+    {{with .Site.Params.social}}
+      <a class="nav-link" href="https://www.twitter.com/{{.}}" target="_blank">Twitter</a>
+    {{end}}
+    <div class="divider">•</div>
+    {{with .Site.Params.social}}
+      <a class="nav-link" href="https://www.github.com/{{.}}" target="_blank">Github</a>
+    {{end}}
   </footer>
 
   <!-- Footnotes -->
