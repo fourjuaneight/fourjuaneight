@@ -12,8 +12,7 @@ I like websites. Occasionally, I make them. Irregularly, I like to write about m
 Clever Laziness is written and created by [Juan](https://www.twitter.com/theverylastjuan). Google Analytics is used to get a better understanding viewing behaviors. Links to apps or other items may include affiliate links; this allows me to avoid using ads of any kind to run the site. I promise no ads will ever be used.
 
 ## Text Content License
-<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-Unless otherwise noted, the text content on this site is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License, “[CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)”.
+Unless otherwise noted, the text content on this site is licensed under a Creative Commons Attribution-NoDerivatives 4.0 International License, “[CC-BY-ND](http://creativecommons.org/licenses/by-nd/4.0/)”.
 
 ## Source License
 Unless otherwise noted, the source content on this site is released under the [MIT License](https://opensource.org/licenses/MIT).

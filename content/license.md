@@ -10,7 +10,7 @@ showthedate = false
 Google Analytics is used to get a better understanding viewing behaviors. Links to apps or other items may include affiliate links; this allows me to avoid using ads of any kind to run the site. I promise no ads will ever be used.
 
 ## Text Content License
-Unless otherwise noted, the text content on this site is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License, “[CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)”.
+Unless otherwise noted, the text content on this site is licensed under a Creative Commons Attribution-NoDerivatives 4.0 International License, “[CC-BY-ND](http://creativecommons.org/licenses/by-nd/4.0/)”.
 
 ## Source License
 Unless otherwise noted, the source content on this site is released under the [MIT License](https://opensource.org/licenses/MIT).
