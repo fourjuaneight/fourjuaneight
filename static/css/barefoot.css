@@ -2,7 +2,7 @@
   display:inline-block;
   position:relative;
   text-indent:0;
-  color: var(--numbers);
+  color: var(--background);
 }
 
 .footnote-backdrop {
@@ -10,7 +10,7 @@
 }
 
 .footnote-button {
-  background-color: rgba(133, 64, 107, 0.5);
+  background-color: var(--text);
   border:0;
   border-radius:.475em;
   cursor:pointer;
@@ -21,7 +21,7 @@
   margin:0 .1em 0 .2em;
   padding:.35em;
   position:relative;
-  top:-.2em;
+  /* top:-.2em; */
   -webkit-transition-duration:.25s;
   transition-duration:.25s;
   -webkit-transition-property:background;
@@ -32,7 +32,7 @@
 }
 
 .footnote-button:after {
-  color: var(--meta);
+  color: var(--background);
   content:attr(data-fn-number);
   display:block;
   font-size:.57em;
@@ -47,11 +47,7 @@
 }
 
 .footnote-button:hover {
-  background-color: #85406b;
-}
-
-.footnote-button:hover:after {
-  color:var(--meta);
+  background-color: var(--accent);
 }
 
 .footnote-button.is-active {
@@ -59,13 +55,10 @@
   transition-delay:.1s;
 }
 
-.footnote-button.is-active:after {
-}
-
 .bf-footnote {
   border-radius:.25em;
   left:0;
-  margin:2em 0 2.2em;
+  margin:2.2em 0;
   max-width:90vw;
   opacity:0;
   position:absolute;
@@ -102,7 +95,7 @@
 }
 
 .footnote-tooltip {
-  background-color: #21232e;
+  background-color: var(--text);
   height:1.3em;
   position:absolute;
   top:-.49em;
@@ -118,8 +111,8 @@
 }
 
 .footnote-content {
-  background-color: #21232e;
-  color: #A0E7FA;
+  background-color: var(--text);
+  color: var(--background);
   -webkit-font-smoothing:subpixel-antialiased;
   line-height:1.418em;
   max-height:15em;

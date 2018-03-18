@@ -7,7 +7,6 @@
   --underline: 1.5px solid var(--accent);
 }
 
-
 /* BASE STYLING */
 html {
   overflow: hidden;
@@ -83,14 +82,15 @@ a:hover svg {
   transition: fill .2s ease;
 }
 
-.content > a {
+.content li > a,
+.content p > a {
   border-bottom: 1.5px dotted var(--accent);
 }
 
-.content > a:hover,
+.content li > a:hover,
+.content p > a:hover,
 .nav-link:hover {
   border-bottom: 1.5px solid var(--link);
-  transition: border-color .2s ease;
 }
 
 .content img {
