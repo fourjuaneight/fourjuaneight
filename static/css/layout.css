@@ -218,6 +218,10 @@ header {
   border-bottom: unset;
 }
 
+.social-item:hover {
+  border-bottom: unset;
+}
+
 .social-item svg {
   width: auto;
   height: 25px;
@@ -226,6 +230,7 @@ header {
 
 .social-item svg:hover {
   fill: var(--link);
+  transition: fill .2s ease-in-out;
 }
 
 footer {
