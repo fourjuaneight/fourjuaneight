@@ -1,9 +1,10 @@
 /* CUSTOM PROPERTIES */
 :root {
-  --heading: #89F396;
-  --meta: #a0e6fa;
-  --highlight: #85406B;
-  --underline: 1.5px solid var(--highlight);
+  --background: #FCFBFB;
+  --link: #D7545E;
+  --accent: #000000;
+  --text: #414142;
+  --underline: 1.5px solid var(--accent);
 }
 
 
@@ -24,14 +25,14 @@ body {
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  color: #BFBFBF;
-  background-color: #353845;
+  color: var(--text);
+  background-color: var(--background);
   display: -ms-grid;
   display: grid;
   grid-template-columns:
-  [full-start] minmax(1em, 1fr) 
-  [main-start] minmax(0, 44rem) [main-end]
-  minmax(1em, 1fr) [full-end];
+    [full-start] minmax(1em, 1fr) 
+    [main-start] minmax(0, 44rem) [main-end]
+    minmax(1em, 1fr) [full-end];
 }
 
 body > * {
@@ -41,7 +42,6 @@ body > * {
 h1, h2, h3, h4 {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
-  color: var(--heading);
 }
 
 ul,
@@ -58,12 +58,14 @@ ul {
 }
 
 a {
-  color: var(--meta);
+  color: var(--accent);
+  border-bottom: var(--underline);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--heading);
+  color: var(--link);
+  border-bottom-color: var(--link);
 }
 
 .content img {
@@ -120,11 +122,6 @@ header {
 
 .nav-link {
   margin: 0 15px;
-  border-bottom: var(--underline);
-}
-
-.nav-link:hover {
-  border-bottom: var(--underline);
 }
 
 /* POSTS */
@@ -157,10 +154,6 @@ header {
   line-height: 26px;
 }
 
-.content a:hover {
-  border-bottom: var(--underline);
-}
-
 .date {
   padding-top: 10px;
   text-align: center;
@@ -175,12 +168,8 @@ header {
 .date,
 .tag {
   font-family: 'Rubik', sans-serif;
-  color: var(--meta);
+  color: var(--accent);
   font-size: 0.9rem;
-}
-
-.tag:hover {
-  color: rgb(160, 230, 250);
 }
 
 .page-prev {
@@ -199,7 +188,6 @@ header {
 .content-list-date {
   font-size: 2.5rem;
   text-align: center;
-  color: #858585;
   padding-bottom: 2rem;
 }
 
@@ -217,12 +205,11 @@ footer {
   justify-content: center;
   padding: 2.5rem 0;
   font-size: 0.86rem;
-  color: var(--meta);
+  color: var(--accent);
 }
 
 .divider {
   margin: 0 5px;
-  color: var(--meta);
 }
 
 footer .nav-link {
