@@ -159,6 +159,10 @@ header {
   border-bottom: unset;
 }
 
+.title a:hover {
+  transition: color .2s ease-in-out;
+}
+
 .content {
   line-height: 26px;
 }
