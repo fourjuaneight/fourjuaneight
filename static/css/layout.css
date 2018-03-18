@@ -66,6 +66,7 @@ a {
 a:hover {
   color: var(--link);
   border-bottom: 1.5px solid var(--link);
+  transition: color .2s ease, border-color .2s ease;;
 }
 
 .content img {
@@ -118,20 +119,20 @@ header {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   margin: 15px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 
 .nav-item .nav-link {
   border-bottom-style: solid;
-  /* border-bottom: unset; */
 }
 
 .nav-link {
   margin: 0 15px;
-  /* -webkit-transition: color .2s ease-in-out;
-  -moz-transition: color .2s ease-in-out;
-  -o-transition: color .2s ease-in-out;
-  transition: color .2s ease-in-out; */
 }
+
 
 /* POSTS */
 .post {
@@ -175,6 +176,10 @@ header {
 .tag {
   width: 100%;
   text-align: end;
+}
+
+.tag a {
+  border-bottom: unset;
 }
 
 .page-nav,

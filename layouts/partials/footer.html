@@ -25,13 +25,9 @@
   <footer>
     <div>&copy {{ .Site.Copyright }}</div>
     <div class="divider">•</div>
-    <div>Made with <a class="nav-link" href="https://gohugo.io" target="_blank">Hugo</a></div>
-    <div class="divider">•</div>
-    <div>View  
-      {{with .Site.Params.social}}
-        <a class="nav-link" href="https://www.github.com/{{.}}/clever-laziness" target="_blank">source</a>
-      {{end}}
-    </div>
+    {{with .Site.Params.social}}
+      <a class="nav-link" href="https://www.github.com/{{.}}/clever-laziness" target="_blank">Source</a>
+    {{end}}
   </footer>
 
   <!-- Footnotes -->
