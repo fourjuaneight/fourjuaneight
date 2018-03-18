@@ -59,13 +59,13 @@ ul {
 
 a {
   color: var(--accent);
-  border-bottom: var(--underline);
+  border-bottom: 1.5px dotted var(--accent);
   text-decoration: none;
 }
 
 a:hover {
   color: var(--link);
-  border-bottom-color: var(--link);
+  border-bottom: 1.5px solid var(--link);
 }
 
 .content img {
@@ -105,6 +105,10 @@ header {
   border-bottom: unset;
 }
 
+.icon:hover {
+  border-bottom: unset;
+}
+
 .icon img {
   width: 100px;
   height: auto;
@@ -116,8 +120,17 @@ header {
   margin: 15px auto;
 }
 
+.nav-item .nav-link {
+  border-bottom-style: solid;
+  /* border-bottom: unset; */
+}
+
 .nav-link {
   margin: 0 15px;
+  /* -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out; */
 }
 
 /* POSTS */
