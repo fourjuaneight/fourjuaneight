@@ -118,7 +118,7 @@ header {
 }
 
 .icon {
-  margin: 15px auto;
+  margin: 10px auto;
 }
 
 .icon svg {
@@ -158,10 +158,16 @@ header {
 	        animation: slide-up 0.2s ease-in-out both;
 } */
 
+.brand {
+  font: 700 2.5em 'Rubik', sans-serif;
+  color: var(--link);
+  margin: 10px auto;
+}
+
 .nav-item {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
-  margin: 15px auto;
+  margin: 10px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
