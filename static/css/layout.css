@@ -92,32 +92,28 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   padding: 1rem 1rem 3rem;
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.terminal svg {
-  width: 50px;
+.icon {
+  margin: 15px auto;
+  border-bottom: unset;
+}
+
+.icon img {
+  width: 100px;
   height: auto;
-}
-
-#terminal:hover #cursor {
-  -webkit-animation: blinker 1s step-start infinite;
-  animation: blinker 1s step-start infinite;
 }
 
 .nav-item {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
-  width: 100%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  margin: 15px auto;
 }
 
 .nav-link {
