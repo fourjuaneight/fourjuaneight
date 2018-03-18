@@ -120,6 +120,7 @@ header {
 
 .nav-link {
   margin: 0 15px;
+  border-bottom: var(--underline);
 }
 
 .nav-link:hover {
