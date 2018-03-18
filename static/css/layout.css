@@ -192,6 +192,29 @@ header {
 }
 
 /* FOOTER */
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  margin: 0 10px;
+  border-bottom: unset;
+}
+
+.social-item svg {
+  width: auto;
+  height: 25px;
+  fill: var(--accent);
+}
+
+.social-item svg:hover {
+  fill: var(--link);
+}
+
 footer {
   font-family: 'Rubik', sans-serif;
   display: -webkit-box;
