@@ -121,10 +121,42 @@ header {
   margin: 15px auto;
 }
 
-.icon img {
+.icon svg {
   width: 100px;
   height: auto;
+  fill: unset;
 }
+
+.icon svg:hover {
+  fill: unset;
+}
+
+/* @-webkit-keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+}
+@keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+}
+
+.icon:hover #left-eyebrow path,
+.icon:hover #right-eyebrow path {
+  -webkit-animation: slide-up 0.2s ease-in-out both;
+	        animation: slide-up 0.2s ease-in-out both;
+} */
 
 .nav-item {
   font-family: 'Rubik', sans-serif;
@@ -223,7 +255,6 @@ header {
 .social-item {
   margin: 0 10px;
 }
-
 
 footer {
   font-family: 'Rubik', sans-serif;
