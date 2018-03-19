@@ -159,7 +159,7 @@ header {
 } */
 
 .brand {
-  font: 700 2.5em 'Rubik', sans-serif;
+  font: 700 2.2em 'Rubik', sans-serif;
   color: var(--link);
   margin: 10px auto;
 }
@@ -223,7 +223,6 @@ header {
 .tag {
   font-family: 'Rubik', sans-serif;
   color: var(--accent);
-  font-size: 0.9rem;
 }
 
 .page-prev {
@@ -240,7 +239,7 @@ header {
 }
 
 .content-list-date {
-  font-size: 2.5rem;
+  font-size: 1.85rem;
   text-align: center;
   padding-bottom: 2rem;
 }
@@ -270,7 +269,6 @@ footer {
   display: flex;
   justify-content: center;
   padding: 2.5rem 0;
-  font-size: 0.86rem;
   color: var(--accent);
 }
 
@@ -284,6 +282,26 @@ footer .nav-link {
 
 
 /* 404 */
+.home {
+  grid-column: full;
+  margin: 20px 0 0 20px;
+}
+
+.home svg {
+  width: 50px;
+  height: auto;
+}
+
 .err-404 {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 150px);
+}
+
+.err-404 img {
+  max-width: 600px;
+  height: auto;
 }
