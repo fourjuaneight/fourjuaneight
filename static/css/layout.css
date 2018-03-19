@@ -182,6 +182,12 @@ footer .nav-item {
   max-height: 600px;
 }
 
+@media screen and (max-width: 345px) {
+  .brand {
+    text-align: center;
+  }
+}
+
 
 /* STYLING */
 header,
