@@ -261,7 +261,8 @@ a:hover,
 
 .post-content li > a:hover,
 .post-content p > a:hover,
-.nav-item:hover {
+.nav-item:hover,
+.nav-item:focus {
   border-bottom: 2px solid var(--link);
 }
 
