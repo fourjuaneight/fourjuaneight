@@ -1,13 +1,13 @@
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
-<article class="main post">
-  <h2 class="title">{{ .Title }}</h2>
+<article class="post">
+  <h2 class="post-title">{{ .Title }}</h2>
   {{ if .Params.showthedate }}
-    <div class="date">{{ .Date.Format "2006-01-02" }}</div>
+    <div class="post-date">{{ .Date.Format "2006-01-02" }}</div>
   {{ end }}
-  <div class="content">{{ .Content }}</div>
+  <div class="post-content">{{ .Content }}</div>
   {{ range .Params.tags }}
-    <div class="tag"><a href="/tags/{{ . | urlize }}">#{{.}}</a></div>
+    <div class="post-tag"><a href="/tags/{{ . | urlize }}">#{{.}}</a></div>
   {{ end }}
 </article>
 {{ partial "social.html" . }}

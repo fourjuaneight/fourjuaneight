@@ -1,8 +1,8 @@
 .footnote-container {
+  color: var(--background);
   display:inline-block;
   position:relative;
   text-indent:0;
-  color: var(--background);
 }
 
 .footnote-backdrop {
@@ -11,8 +11,8 @@
 
 .footnote-button {
   background-color: var(--text);
-  border:0;
   border-radius:.475em;
+  border:0;
   cursor:pointer;
   display:inline-block;
   font-size:1rem;
@@ -21,12 +21,11 @@
   margin:0 .1em 0 .2em;
   padding:.35em;
   position:relative;
-  /* top:-.2em; */
-  -webkit-transition-duration:.25s;
   transition-duration:.25s;
-  -webkit-transition-property:background;
   transition-property:background;
   vertical-align:super;
+  -webkit-transition-duration:.25s;
+  -webkit-transition-property:background;
   width:1.5em;
   z-index:1;
 }
@@ -40,10 +39,10 @@
   left:50%;
   position:absolute;
   top:50%;
-  -webkit-transform:translate(-50%,-50%);
   transform:translate(-50%,-50%);
-  -webkit-transition:color .25s ease;
   transition:color .25s ease;
+  -webkit-transform:translate(-50%,-50%);
+  -webkit-transition:color .25s ease;
 }
 
 .footnote-button:hover {
@@ -51,8 +50,8 @@
 }
 
 .footnote-button.is-active {
-  -webkit-transition-delay:.1s;
   transition-delay:.1s;
+  -webkit-transition-delay:.1s;
 }
 
 .bf-footnote {
@@ -63,14 +62,14 @@
   opacity:0;
   position:absolute;
   top:0;
-  -webkit-transform-origin:50% 0;
   transform-origin:50% 0;
-  -webkit-transition-duration:.25s;
   transition-duration:.25s;
-  -webkit-transition-property:opacity;
   transition-property:opacity;
-  -webkit-transition-timing-function:ease;
   transition-timing-function:ease;
+  -webkit-transform-origin:50% 0;
+  -webkit-transition-duration:.25s;
+  -webkit-transition-property:opacity;
+  -webkit-transition-timing-function:ease;
   z-index:3;
 }
 
@@ -99,8 +98,8 @@
   height:1.3em;
   position:absolute;
   top:-.49em;
-  -webkit-transform:rotate(45deg);
   transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
   width:1.3em;
   z-index:4;
 }
@@ -113,13 +112,13 @@
 .footnote-content {
   background-color: var(--text);
   color: var(--background);
-  -webkit-font-smoothing:subpixel-antialiased;
   line-height:1.418em;
   max-height:15em;
   overflow:auto;
-  -webkit-overflow-scrolling:touch;
   padding:1em;
   position:relative;
+  -webkit-font-smoothing:subpixel-antialiased;
+  -webkit-overflow-scrolling:touch;
   z-index:2;
 }
 
