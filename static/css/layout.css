@@ -60,16 +60,21 @@ a:hover svg {
 }
 
 .nav-item {
-  border-bottom: 1.5px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
 }
 
 
 /* LAYOUT */
+body,
+.main-content {
+  height: 100%;
+}
+
 header,
 footer,
 .nav-menu,
-.social-menu,
-.err-404 {
+.err-404,
+.social-menu {
   display: -ms-flexbox;
   display: -webkit-box;
   display: -webkit-flex;
@@ -78,14 +83,9 @@ footer,
 
 header,
 footer,
-.social-menu,
-.err-404 {
+.err-404,
+.social-menu {
   justify-content: center;
-}
-
-body,
-.main-content {
-  height: 100%;
 }
 
 footer {
@@ -136,10 +136,10 @@ footer .nav-item {
   width: 100%;
 }
 
-.post,
-.post-preview,
 .content-list,
-.content-list-date {
+.content-list-date,
+.post,
+.post-preview {
   padding-bottom: 2.5rem;
 }
 
@@ -238,9 +238,9 @@ a:hover,
   transition: color .2s ease-in-out;
 }
 
+.content-list-date,
 .post-title,
-.post-date,
-.content-list-date {
+.post-date {
   text-align: center;
 }
 
@@ -250,13 +250,13 @@ a:hover,
 
 .post-content li > a,
 .post-content p > a {
-  border-bottom: 1.5px dotted var(--accent);
+  border-bottom: 2px dotted var(--accent);
 }
 
 .post-content li > a:hover,
 .post-content p > a:hover,
 .nav-item:hover {
-  border-bottom: 1.5px solid var(--link);
+  border-bottom: 2px solid var(--link);
 }
 
 .post-tag {
@@ -265,4 +265,82 @@ a:hover,
 
 .content-list-date {
   font-size: 1.85rem;
+}
+
+
+/* Highlight.js Styling */
+.hljs {
+  background: #fff;
+  border: 1px solid #949393;
+  box-shadow: 8px 8px 0 0 var(--text);
+  color: var(--text);
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string,
+.hljs-regexp,
+.hljs-string {
+  color: #CE5857;
+}
+
+.hljs-attr,
+.hljs-number,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-pseudo,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable {
+  color: #3891CE;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title,
+.hljs-deletion,
+.hljs-name,
+.hljs-section,
+.hljs-selector-tag,
+.hljs-subst {
+  color: var(--link);
+}
+
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-symbol,
+.hljs-title {
+  color: #982C5A;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #949393;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-formula,
+.hljs-keyword {
+  color: #3891CE;
+}
+
+.hljs-literal {
+  color: #58C1E0;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+
+.hljs-strong {
+  font-weight: bold;
 }
