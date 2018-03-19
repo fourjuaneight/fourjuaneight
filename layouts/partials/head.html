@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>
     {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
     {{ if eq $url "/" }}
@@ -10,29 +10,29 @@
       {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}
     {{ end }}
   </title>
-  <meta name="author" content="{{ .Site.Author.name }}" />
-  <meta name="description" content="{{ .Site.Params.meta.description }}" />
-  <meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
+  <meta name="author" content="{{ .Site.Author.name }}">
+  <meta name="description" content="{{ .Site.Params.meta.description }}">
+  <meta name="keywords" content="{{ .Site.Params.meta.keywords }}">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   {{ .Hugo.Generator }}
 
   <!-- Open Graph -->
   <link rel="canonical" href="{{ .Permalink }}">
   {{ if .RSSLink }}
-  <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}"/>
+  <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">
   {{ end }}
-  <base href="{{ .Site.BaseURL }}" />
+  <base href="{{ .Site.BaseURL }}"/>
   {{ template "_internal/twitter_cards.html" . }}
-  <meta name="twitter:image" content="{{ .Site.BaseURL }}avatar.png" />
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}avatar.png">
   {{ template "_internal/opengraph.html" . }}
-  <meta property="og:image" content="{{ .Site.BaseURL }}avatar.png" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}avatar.png">
   {{ template "_internal/schema.html" . }}
 
   <!-- Stylesheets -->
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Rubik:400,700">
-  <link rel="stylesheet" href={{ "/css/layout.css" | relURL }} />
-  <link rel="stylesheet" href={{ "/css/barefoot.css" | relURL }} />
+  <link rel="stylesheet" href={{ "/css/layout.css" | relURL }}>
+  <link rel="stylesheet" href={{ "/css/barefoot.css" | relURL }}>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href={{ "./favicon.png" | relURL }}>
