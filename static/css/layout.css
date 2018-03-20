@@ -240,9 +240,9 @@ a:hover,
   fill: unset;
 }
 
-.post-title a:hover {
+/*.post-title a:hover {
   transition: color .2s ease-in-out;
-}
+}*/
 
 .content-list-date,
 .post-title,
