@@ -50,13 +50,13 @@ header {
   text-transform: uppercase;
 }
 
-a:hover {
+/*a:hover {
   transition: color .2s ease;
-}
+}*/
 
 a:hover svg {
   fill: var(--link);
-  transition: fill .2s ease;
+  /*transition: fill .2s ease;*/
 }
 
 .nav-item {
