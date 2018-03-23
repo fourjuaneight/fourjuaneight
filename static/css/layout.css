@@ -253,6 +253,11 @@ a:hover,
   font-size: 2rem;
 }
 
+.brand:hover,
+.site-preview a:hover {
+  color: unset;
+}
+
 .content-list-date,
 .post-title,
 .post-date {
@@ -298,7 +303,3 @@ a:hover,
 /*.post-title a:hover {
   transition: color .2s ease-in-out;
 }*/
-
-.site-preview a:hover {
-  color: unset;
-}
