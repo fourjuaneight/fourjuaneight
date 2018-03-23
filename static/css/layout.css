@@ -288,7 +288,7 @@ a:hover,
 
 .post-date,
 .post-tag {
-  color: var(--meta);
+  color: var(--meta) !important;
 }
 
 .post-tag {
