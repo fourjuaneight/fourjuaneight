@@ -74,7 +74,8 @@ header,
 footer,
 .nav-menu,
 .err-404,
-.social-menu {
+.social-menu,
+.portfolio {
   display: -ms-flexbox;
   display: -webkit-box;
   display: -webkit-flex;
@@ -143,6 +144,14 @@ footer .nav-item {
   padding-bottom: 2.5rem;
 }
 
+.err-404 {
+  min-height: calc(100vh - 150px);
+}
+
+.err-404 img {
+  max-height: 600px;
+}
+
 .post-preview .post-content {
   padding: 1rem 0;
 }
@@ -163,6 +172,10 @@ footer .nav-item {
   float: right;
 }
 
+.portfolio {
+  justify-content: space-around;
+}
+
 /* Back to homepage icon */
 .return {
   grid-column: full;
@@ -174,12 +187,9 @@ footer .nav-item {
 }
 /****/
 
-.err-404 {
-  min-height: calc(100vh - 150px);
-}
-
-.err-404 img {
-  max-height: 600px;
+.site-preview {
+  height: 400px;
+  margin: 10px;
 }
 
 @media screen and (max-width: 345px) {
@@ -226,11 +236,6 @@ a:hover,
   color: var(--link);
 }
 
-.brand,
-.post-title {
-  font-size: 2rem;
-}
-
 .avatar svg {
   fill: unset;
   height: 100px;
@@ -240,14 +245,26 @@ a:hover,
   fill: unset;
 }
 
-/*.post-title a:hover {
-  transition: color .2s ease-in-out;
-}*/
+.brand,
+.post-title {
+  font-size: 2rem;
+}
 
 .content-list-date,
 .post-title,
 .post-date {
   text-align: center;
+}
+
+.content-list-date {
+  font-size: 1.85rem;
+}
+
+.hljs,
+.site-preview {
+  background: #fff;
+  border: 1px solid #949393;
+  box-shadow: 8px 8px 0 0 var(--text);
 }
 
 .post-content {
@@ -270,84 +287,6 @@ a:hover,
   text-align: end;
 }
 
-.content-list-date {
-  font-size: 1.85rem;
-}
-
-
-/* Highlight.js Styling */
-.hljs {
-  background: #fff;
-  border: 1px solid #949393;
-  box-shadow: 8px 8px 0 0 var(--text);
-  color: var(--text);
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-}
-
-.hljs-addition,
-.hljs-attribute,
-.hljs-meta-string,
-.hljs-regexp,
-.hljs-string {
-  color: #CE5857;
-}
-
-.hljs-attr,
-.hljs-number,
-.hljs-selector-attr,
-.hljs-selector-class,
-.hljs-selector-pseudo,
-.hljs-template-variable,
-.hljs-type,
-.hljs-variable {
-  color: #3891CE;
-}
-
-.hljs-built_in,
-.hljs-class .hljs-title,
-.hljs-deletion,
-.hljs-name,
-.hljs-section,
-.hljs-selector-tag,
-.hljs-subst {
-  color: var(--link);
-}
-
-.hljs-bullet,
-.hljs-link,
-.hljs-meta,
-.hljs-selector-id,
-.hljs-symbol,
-.hljs-title {
-  color: #982C5A;
-}
-
-.hljs-comment,
-.hljs-quote {
-  color: #949393;
-  font-style: italic;
-}
-
-.hljs-doctag,
-.hljs-formula,
-.hljs-keyword {
-  color: #3891CE;
-}
-
-.hljs-literal {
-  color: #58C1E0;
-}
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-link {
-  text-decoration: underline;
-}
-
-.hljs-strong {
-  font-weight: bold;
-}
+/*.post-title a:hover {
+  transition: color .2s ease-in-out;
+}*/
