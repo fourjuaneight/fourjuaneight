@@ -108,7 +108,8 @@ ol ul {
 }
 
 img, 
-svg {
+svg,
+.site-preview {
   width: auto;
 }
 
