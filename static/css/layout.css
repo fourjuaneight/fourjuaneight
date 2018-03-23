@@ -9,6 +9,7 @@ Selectors are using very specific names, so I didn't see a need for commenting t
   --accent: #000000;
   --background: #FCFBFB;
   --link: #D7545E;
+  --meta: #949393;
   --text: #414142;
   --underline: 1.5px solid var(--accent);
 }
@@ -63,7 +64,6 @@ a:hover svg {
   border-bottom: 2px solid var(--accent);
 }
 
-
 /* LAYOUT */
 body,
 .main-content {
@@ -85,6 +85,7 @@ footer,
 header,
 footer,
 .err-404,
+.portfolio,
 .social-menu {
   justify-content: center;
 }
@@ -108,8 +109,7 @@ ol ul {
 }
 
 img, 
-svg,
-.site-preview {
+svg {
   width: auto;
 }
 
@@ -123,19 +123,8 @@ a svg {
   margin: 10px auto;
 }
 
-.nav-item,
-.social-item {
-  margin: 0 10px;
-}
-
-.post-title,
-footer .nav-item {
-  margin: 0;
-}
-
-.post-content img,
-.post-tag {
-  width: 100%;
+.content-item {
+  padding-bottom: 1rem;
 }
 
 .content-list,
@@ -153,28 +142,39 @@ footer .nav-item {
   max-height: 600px;
 }
 
-.post-preview .post-content {
-  padding: 1rem 0;
-}
-
-.post-date {
-  padding-top: 10px;
-}
-
-.content-item {
-  padding-bottom: 1rem;
-}
-
-.page-prev {
-  float: left;
+.nav-item,
+.social-item {
+  margin: 0 10px;
 }
 
 .page-next {
   float: right;
 }
 
+.page-prev {
+  float: left;
+}
+
 .portfolio {
-  justify-content: space-around;
+  flex-direction: column;
+}
+
+.post-content img,
+.post-tag {
+  width: 100%;
+}
+
+.post-date {
+  padding-top: 10px;
+}
+
+.post-preview .post-content {
+  padding: 1rem 0;
+}
+
+.post-title,
+footer .nav-item {
+  margin: 0;
 }
 
 /* Back to homepage icon */
@@ -189,8 +189,9 @@ footer .nav-item {
 /****/
 
 .site-preview {
-  height: 400px;
-  margin: 10px;
+  height: auto;
+  margin: 20px auto;
+  max-width: 600px;
 }
 
 @media screen and (max-width: 345px) {
@@ -198,7 +199,6 @@ footer .nav-item {
     text-align: center;
   }
 }
-
 
 /* STYLING */
 header,
@@ -226,9 +226,7 @@ h1, h2, h3, h4,
 footer,
 h1, h2, h3, h4,
 a,
-.page-nav,
-.post-date,
-.post-tag {
+.page-nav {
   color: var(--accent);
 }
 
@@ -264,7 +262,7 @@ a:hover,
 .hljs,
 .site-preview {
   background: #fff;
-  border: 1px solid #949393;
+  border: 1px solid var(--meta);
   box-shadow: 8px 8px 0 0 var(--text);
 }
 
@@ -284,6 +282,11 @@ a:hover,
   border-bottom: 2px solid var(--link);
 }
 
+.post-date,
+.post-tag {
+  color: var(--meta);
+}
+
 .post-tag {
   text-align: end;
 }
@@ -291,3 +294,7 @@ a:hover,
 /*.post-title a:hover {
   transition: color .2s ease-in-out;
 }*/
+
+.site-preview a:hover {
+  color: unset;
+}

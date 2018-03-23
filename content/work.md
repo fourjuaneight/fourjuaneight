@@ -20,6 +20,6 @@ Fast forward a year later and I’m now working full time as an indie front-end 
 Anyways, here are some of the recent projects I’ve worked on. This site is also built with Hugo, hosted on GitHub, distributed with Netlify, and the code is also nicer. If you’d like to learn how to make your own website as well with Hugo, don’t ask me. There are plenty of resources out there.
 
 <div class="portfolio">
-  {{< img src="/img/spotfire.png" title="Spotfire Reference is a IronPython documentaiton site. The side menu, breadcrumb and navigation arrows are all built with Hugo. Additionally, JaveScript allows for navigation with the keyboard arrow keys." class="site-preview" >}}
-  {{< img src="/img/safespring.png" title="Safesrping was completely refactored to Hugo. The codebase was significantly reduced and optimized for mobile." class="site-preview" >}}
+  {{< img src="/img/spotfire.png" link="https://www.safespring.com" alt="The Sportfire IronPython Quick Reference" title="Spotfire Reference is a IronPython documentaiton site. The side menu, breadcrumb and navigation arrows are all built with Hugo. Additionally, JaveScript allows for navigation with the keyboard arrow keys." class="site-preview" >}}
+  {{< img src="/img/safespring.png" link="https://www.sf-ref.com" alt="Safespring Secure Cloud Services" title="Safesrping was completely refactored to Hugo. The codebase was significantly reduced and optimized for mobile." class="site-preview" >}}
 </div>
