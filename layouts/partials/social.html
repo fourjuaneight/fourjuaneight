@@ -1,4 +1,6 @@
+<!-- Social Icon Links -->
 <div class="social-menu">
+  <!-- Twitter icon and link -->
   {{with .Site.Params.social}}
   <a class="social-item" href="https://www.twitter.com/{{.}}" target="_blank" title="Follow me on Twitter">
     <svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -10,6 +12,8 @@
       </g>
     </svg>
   </a>
+  
+  <!-- Github icon and link -->
   <a class="social-item" href="https://www.github.com/{{.}}" target="_blank" title="See my contributions on GitHub">
     <svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
       xml:space="preserve" xmlns:serif="http://www.serif.com/" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
@@ -20,6 +24,8 @@
       </g>
     </svg>
   </a>
+  
+  <!-- Codepen icon and link -->
   <a class="social-item" href="https://www.codepen.io/{{.}}" target="_blank" title="Checkout my work on Codepen">
     <svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
       xml:space="preserve" xmlns:serif="http://www.serif.com/" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
@@ -31,6 +37,8 @@
     </svg>
   </a>
   {{end}}
+  
+  <!-- RSS icon and link -->
   <a class="social-item" href="{{ .Site.RSSLink }}" target="_blank" title="Subscribe to the feed">
     <svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
       xml:space="preserve" xmlns:serif="http://www.serif.com/" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"

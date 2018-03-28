@@ -2,7 +2,9 @@
 {{ partial "header.html" . }}
 <main class="content-list">
   {{ range .Data.Pages.GroupByDate "2006" }}
+  <!-- Content Year -->
   <div class="content-list-date">{{ .Key }}</div>
+    <!-- List Single Post Items Based on Year -->
     {{ range .Pages }}
       {{ .Render "li"}}
     {{ end }}
