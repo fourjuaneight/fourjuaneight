@@ -3,7 +3,7 @@
 <main class="content-list">
   {{ range .Data.Pages.GroupByDate "2006" }}
   <!-- Content Year -->
-  <div class="content-list-date">{{ .Key }}</div>
+  <h2 class="content-list-date">{{ .Key }}</h2>
     <!-- List Single Post Items Based on Year -->
     {{ range .Pages }}
       {{ .Render "li"}}

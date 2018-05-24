@@ -56,4 +56,4 @@ SectionPagesMenu = "main"
   home = ["html", "rss"]
 
 [params.google.analytics]
-    trackerID = "UA-103631497-1"
+    trackerID = "UA-119777735-1"
