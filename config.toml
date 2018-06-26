@@ -1,59 +1,45 @@
+FootnoteReturnLinkContents = "↩"
+SectionPagesMenu = "main"
 baseURL = "/"
+copyright = " 2018 Clever Laziness"
+enableEmoji = "true"
+enableRobotsTXT = "true"
 languageCode = "en-us"
 title = "Clever Laziness"
-copyright = " 2018 Clever Laziness"
-
-enableRobotsTXT = "true"
-enableEmoji = "true"
-
-FootnoteReturnLinkContents = "↩"
-
-SectionPagesMenu = "main"
-
-[blackfriday]
-  plainIDAnchors = true
-  hrefTargetBlank = true
-
 [author]
-  name = "[Juan](https://www.twitter.com/theverylastjuan)"
-
-[permalinks]
-  archive = "/:title/"
-
+name = "[Juan](https://www.twitter.com/theverylastjuan)"
+[blackfriday]
+hrefTargetBlank = true
+plainIDAnchors = true
 [[menu.main]]
-  name = "Archive"
-  weight = -120
-  identifier = "archive"
-  url = "/archive/"
-
+identifier = "archive"
+name = "Archive"
+url = "/archive/"
+weight = -120
 [[menu.main]]
-  name = "Tags"
-  weight = -110
-  identifier = "tag"
-  url = "/tags/"
-
+identifier = "tag"
+name = "Tags"
+url = "/tags/"
+weight = -110
 [[menu.main]]
-  name = "About"
-  weight = -110
-  identifier = "about"
-  url = "/about/"
-
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = -110
 [[menu.main]]
-  name = "License"
-  weight = -110
-  identifier = "license"
-  url = "/license/"
-
-[params.meta]
-  keywords = "coding, productivity, automation"
-  description = "A blog about coding and productivity"
-
-[params]
-  social = "theverylastjuan"
-  OpenLinksInNewWindow = true
-
+identifier = "license"
+name = "License"
+url = "/license/"
+weight = -110
 [outputs]
-  home = ["html", "rss"]
-
+home = ["html", "rss"]
+[params]
+OpenLinksInNewWindow = true
+social = "fourjuaneight"
 [params.google.analytics]
-    trackerID = "UA-119777735-1"
+trackerID = "UA-119777735-1"
+[params.meta]
+description = "A blog about coding and productivity"
+keywords = "coding, productivity, automation"
+[permalinks]
+archive = "/:title/"
