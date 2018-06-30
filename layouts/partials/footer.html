@@ -1,22 +1,20 @@
-  <footer>
-    <!-- Copyright -->
-    <p>&copy{{ .Site.Copyright }}</p>
-    <p>&nbsp;&ndash;&nbsp;</p>
-    <!-- Link to site source code -->
-    {{with .Site.Params.social}}
-      <a class="nav-item" href="https://www.github.com/{{.}}/clever-laziness" target="_blank">Source</a>
-    {{end}}
-  </footer>
+<footer>
+  <!-- Copyright -->
+  <p>&copy{{ .Site.Copyright }}</p>
+  <p>&nbsp;&ndash;&nbsp;</p>
+  <!-- Link to site source code -->
+  {{with .Site.Params.social}}
+    <a class="nav-item" href="https://www.github.com/{{.}}/clever-laziness" target="_blank">Source</a>
+  {{end}}
+</footer>
 
-  <!-- Footnotes -->
-  <script src={{ "js/highlight.pack.js" | relURL }}></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <script src={{ "js/barefoot.js" | relURL }}></script>
-  <script>
-    var lf = new BareFoot({
-      scope: "article"
-    });
-    lf.init();
-  </script>
-</body>
-</html>
+<!-- Footnotes -->
+<script src={{ "js/highlight.pack.js" | relURL }}></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src={{ "js/barefoot.js" | relURL }}></script>
+<script>
+  var lf = new BareFoot({
+    scope: "article"
+  });
+  lf.init();
+</script>

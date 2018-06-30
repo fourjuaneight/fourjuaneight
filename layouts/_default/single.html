@@ -1,4 +1,4 @@
-{{ partial "head.html" . }}
+{{ define "main" }}
 {{ partial "header.html" . }}
 <article class="post">
   <h2 class="post-title">{{ .Title }}</h2>
@@ -12,3 +12,4 @@
 </article>
 {{ partial "social.html" . }}
 {{ partial "footer.html" . }}
+{{ end }}

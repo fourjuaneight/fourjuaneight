@@ -1,4 +1,4 @@
-{{ partial "head.html" . }}
+{{ define "main" }}
 {{ partial "header.html" . }}
 <main class="content-list">
   {{ range .Data.Pages.GroupByDate "2006" }}
@@ -12,3 +12,4 @@
 </main>
 {{ partial "social.html" . }}
 {{ partial "footer.html" . }}
+{{ end }}
