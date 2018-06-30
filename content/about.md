@@ -9,7 +9,7 @@ showthedate = false
 Irregularly, I like to write about my appreciation for the internets and other mundane things. This is a blog about that.
 
 ## Colophon
-* Written and created by [Juan](https://www.juanvillela.me).
+* Written and created by [Juan Villela](https://www.juanvillela.me).
 * Made with [Hugo](https://gohugo.io).
 * Fonts are [Oswald](https://fonts.google.com/specimen/Oswald) and [Poppins](https://fonts.google.com/specimen/Poppins).
 * Graphics made with [Affinity Designer](https://itunes.apple.com/us/app/affinity-designer/id824171161?mt=12).

@@ -1,7 +1,7 @@
 FootnoteReturnLinkContents = "↩"
 SectionPagesMenu = "main"
 baseURL = "/"
-copyright = " 2018 Clever Laziness"
+copyright = " 2018 Four One Eight LLC"
 enableEmoji = "true"
 enableRobotsTXT = "true"
 languageCode = "en-us"
