@@ -7,6 +7,14 @@ enableRobotsTXT = "true"
 languageCode = "en-us"
 title = "Clever Laziness"
 
+# Pygments Syntax Highlighting
+pygmentsUseClassic = false
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsOptions = "linenos=inline, lineseparator=<br>"
+pygmentsStyle = "monokai"
+
 [author]
   name = "Juan Villela"
 

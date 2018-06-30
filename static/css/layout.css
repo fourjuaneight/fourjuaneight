@@ -79,6 +79,7 @@ footer {
 }
 footer p,
 .content-list h2,
+.post-author,
 .post-date {
   margin: 0;
 }
@@ -86,7 +87,9 @@ main,
 .post {
   min-height: calc(100vh - 400px);
 }
-figcaption {
+figcaption,
+pre {
+  margin-bottom: 21px;
   padding: 5px;
 }
 ul,
@@ -110,6 +113,12 @@ svg {
 }
 .content-item {
   padding-bottom: 1rem;
+}
+.content-list-date {
+  padding-top: 2.5rem;
+}
+.content-list-date:first-child {
+  padding-top: 0;
 }
 .content-list,
 .content-list-date,
@@ -136,10 +145,25 @@ svg {
 .portfolio {
   flex-direction: column;
 }
+.post-author {
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px; width: 1px; 
+  overflow: hidden;
+  position: absolute !important;
+}
+.visually-hidden a:focus,
+.visually-hidden input:focus,
+.visually-hidden button:focus { 
+  position:static; 
+  width:auto; height:auto;  
+}
+}
 .post-content img,
 .post-tag {
   width: 100%;
 }
+.post-author,
 .post-date {
   padding-top: 10px;
 }
@@ -183,10 +207,14 @@ ul {
 a {
   text-decoration: none;
 }
+pre {
+  box-shadow: 8px 8px 0 0 var(--meta);
+}
 header,
 footer,
 h1, h2, h3, h4,
 .page-nav,
+.post-author,
 .post-date,
 .post-tag {
   font-family: 'Oswald', sans-serif;
@@ -216,22 +244,23 @@ a:hover,
   font-size: 2.5em;
   font-weight: 500;
 }
-.post-title {
-  font-size: 2.25em;
+.highlight pre {
+  overflow-x: scroll;
 }
 .content-list-date,
 .post-title,
+.post-author,
 .post-date {
   text-align: center;
 }
+.content-list-date,
+.post-author,
+.post-date,
+.post-tag a {
+  color: var(--meta);
+}
 .content-list-date {
   font-size: 1.85em;
-}
-.hljs,
-.site-preview {
-  background: #fff;
-  border: 1px solid var(--meta);
-  box-shadow: 8px 8px 0 0 var(--text);
 }
 .post-content {
   line-height: 26px;
@@ -246,12 +275,11 @@ a:hover,
 .nav-item:focus {
   border-bottom: 2px solid var(--link);
 }
-.post-date,
-.post-tag a {
-  color: var(--meta);
-}
 .post-tag {
   text-align: end;
+}
+.post-title {
+  font-size: 2.25em;
 }
 .site-preview a:hover {
   color: unset;
