@@ -202,6 +202,10 @@ a:hover,
 .brand {
   color: var(--link);
 }
+.avatar,
+.avatar:hover {
+  color: unset !important;
+}
 .avatar svg {
   fill: unset;
 }
