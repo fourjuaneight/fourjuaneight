@@ -10,6 +10,8 @@ A few months ago a new client approached me about redesigning their Rails app. I
 
 But then I thought about what it would mean to take on a challenge like this. I’ve been feeling my work stagnate lately and wanted to branch out into something new. This was a risky move, but ultimately I agreed to do the job.
 
+{{< ads >}}
+
 I work through UpWork where I get rated on performance, which plays a big role in my ability to gain new clients. I’ve had a solid year so far had reached a level where I felt comfortable taking a risk on something new. 
 
 Now, I wasn’t jumping into this blindly. The client was made aware of my limitations with the framework. I also took a couple courses on Rails and felt comfortable enough in my understanding of its core concepts. Granted, this isn’t the best approach but it gave me the sufficient knowledge to know what I was getting myself into. And although I couldn’t say I was ready to take it head on, I felt competent enough to navigate the code.
