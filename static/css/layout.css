@@ -284,11 +284,3 @@ a:hover,
 .site-preview a:hover {
   color: unset;
 }
-div#ad {
-  background-color: rgba(0,0,0,0.3);
-  height: auto;
-  width: 100%;
-}
-div#ad span.ad-label {
-  text-align:center;
-}
