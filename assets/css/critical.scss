@@ -1,0 +1,385 @@
+@import 'colors';
+@import 'fonts';
+@import 'extends';
+@import 'mixins';
+@import 'reset';
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+*::selection {
+  @include color(background, meta);
+  color: #fff;
+}
+html {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  @include color(background-color, background);
+  @include color(color, text);
+  font-size: 18px;
+  font-weight: 400;
+  height: 100vh;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+  /* Fallback */
+  padding: 0 10px;
+  /* iOS 11 */
+  padding-left: constant(safe-area-inset-left);
+  padding-right: constant(safe-area-inset-right);
+  /* iOS 11.2+ */
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  // Themes
+  &.light {
+    --background: #{map-get($light, background)};
+    --text: #{map-get($light, text)};
+    --meta: #{map-get($light, meta)};
+    --link: #{map-get($light, link)};
+    --accent: #{map-get($light, accent)};
+  }
+  &.dark {
+    --background: #{map-get($dark, background)};
+    --text: #{map-get($dark, text)};
+    --meta: #{map-get($dark, meta)};
+    --link: #{map-get($dark, link)};
+    --accent: #{map-get($dark, accent)};
+  }
+  .hidden {
+    @extend %visually-hidden;
+  }
+  @media screen and (prefers-color-scheme: dark) {
+    &.dark {
+      --background: #{map-get($dark, background)};
+      --text: #{map-get($dark, text)};
+      --meta: #{map-get($dark, meta)};
+      --link: #{map-get($dark, link)};
+      --accent: #{map-get($dark, accent)};
+    }
+  }
+  // Header
+  header#header {
+    @extend %items-flex-end;
+    @extend %content-space-between;
+    min-height: 72px;
+    @include media-query-max(570px) {
+      align-items: flex-start;
+    }
+    a.home {
+      @extend %content-center;
+      @extend %flex;
+      @extend %items-flex-end;
+      @extend %decoration-none;
+      height: 42px;
+      width: 155px;
+      svg {
+        height: 25px;
+        margin-bottom: 2px;
+        width: 65px;
+      }
+      svg#box {
+        margin: 0 15px 2px 0;
+        width: 50px;
+      }
+      svg#open-box-juan {
+        height: 44px;
+        margin-bottom: 2px;
+      }
+      p {
+        line-height: 18px;
+        width: 90px;
+      }
+    }
+    nav a {
+      @extend %decoration-none;
+      line-height: 18px;
+      transition: text-decoration 0.5s ease;
+      @include media-query-max(350px) {
+        font-size: 15px;
+        line-height: 15px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+      &.rss {
+        @extend %content-center;
+        @extend %flex;
+        @extend %items-center;
+        @extend %decoration-none;
+        height: 15px;
+        width: 15px;
+        svg {
+          height: 15px;
+          width: 15px;
+        }
+        @include media-query-max(350px) {
+          height: 13px;
+          width: 13px;
+          svg {
+            height: 13px;
+            width: 13px;
+          }
+        }
+      }
+    }
+    nav.navbar {
+      width: 370px;
+      @include media-query-max(570px) {
+        display: none;
+      }
+    }
+    div#dropdown {
+      @extend %content-flex-end;
+      @extend %flex;
+      @extend %flex-column;
+      @extend %items-flex-end;
+      margin-top: 15px;
+      @include media-query-min(570px) {
+        display: none;
+      }
+      // Hamburger
+      label.hamburger {
+        @extend %content-center;
+        @extend %flex;
+        @extend %flex-column;
+        @extend %items-center;
+        height: 24px;
+        width: 30px;
+        z-index: 10;
+        div {
+          @extend %relative;
+          @include color(background-color, text);
+          height: 3px;
+          margin-top: 5px;
+          transition: all 0.2s ease-in-out;
+          width: 30px;
+        }
+      }
+      input#toggle {
+        @extend %none;
+        &:checked + .hamburger .top {
+          transform: rotate(-45deg);
+          margin-top: 5.5px;
+        }
+        &:checked + .hamburger .meat {
+          transform: rotate(45deg);
+          margin-top: -3.5px;
+        }
+        &:checked + .hamburger .bottom {
+          transform: scale(0);
+        }
+        &:checked ~ .menu {
+          height: 190px;
+          margin-top: 15px;
+        }
+      }
+      nav.menu {
+        @extend %content-center;
+        @extend %flex;
+        @extend %flex-column;
+        @extend %full-width;
+        @extend %grid;
+        @extend %items-flex-end;
+        @include color(background-color, background);
+        clear: both;
+        grid-template-rows: repeat(4, 1fr);
+        height: 0px;
+        list-style: none;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        text-align: center;
+        transition: all 0.3s ease;
+        z-index: 10;
+        a {
+          margin: 10px 0 10px auto;
+          text-align: end;
+        }
+      }
+    }
+  }
+  // Article
+  main.bookshelf {
+    section.book-list {
+      @extend %content-flex-start;
+      @extend %flex;
+      @extend %flex-wrap;
+      @extend %items-center;
+      @include color(border-top-color, meta);
+      border-top-style: solid;
+      border-top-width: 1px;
+      padding-top: 15px;
+      margin: 15px -15px 0;
+      @include media-query-max(370px) {
+        justify-content: center;
+      }
+      article {
+        height: 265px;
+        margin: 0 15px 30px;
+        width: 155px;
+        a.cover {
+          width: 150px;
+          img {
+            height: 150px;
+            width: 150px;
+          }
+        }
+        time.date {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  article {
+    padding: 0;
+    margin-bottom: 30px;
+    h1, h2, p {
+      margin-bottom: 15px;
+    }
+    h2.title {
+      font-size: 36px;
+      a {
+        @extend %decoration-none;
+      }
+    }
+    h2.title,
+    p.content {
+      margin: 0 0 15px;
+    }
+    section.content {
+      margin: 15px 0;
+      div#avatar {
+        @extend %content-flex-start;
+        @extend %flex;
+        height: 250px;
+        margin-bottom: 15px;
+        width: 100%;
+        svg {
+          height: 250px;
+          width: 185px;
+        }
+      }
+    }
+    &.book {
+      margin-bottom: 20px;
+      &:hover h2.title a {
+        @include color(color, link);
+      }
+      h2.book-title {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 5px;
+      }
+      p.author {
+        @include color(color, text);
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 10px;
+      }
+    }
+    &.book-review {
+      @extend %content-space-between;
+      @extend %grid;
+      grid-column-gap: 10px;
+      grid-template-columns: 250px 600px;
+      grid-template-rows: repeat(3,auto);
+      @include media-query-max(900px) {
+        grid-template-columns: 150px minmax(auto,700px);
+      }
+      @include media-query-max(880px) {
+        justify-content: center;
+      }
+      @include media-query-max(340px) {
+        grid-template-rows: 43px 26px 164px repeat(2,auto);
+      }
+      > * {
+        grid-column: 2;
+      }
+      a.purchase-link {
+        grid-column: 1;
+        grid-row: 1/5;
+        @include media-query-max(900px) {
+          grid-row: 1/3;
+        }
+        img.cover {
+          height: 250px;
+          width: 250px;
+          @include media-query-max(900px) {
+            height: 150px;
+            width: 150px;
+          }
+        }
+      }
+      section.info {
+        @extend %content-flex-start;
+        @extend %flex;
+        @extend %flex-column;
+        @extend %items-flex-start;
+        grid-row: 1;
+        h1.book-title {
+          line-height: 38px;
+          margin-bottom: 5px;
+          @include media-query-max(340px) {
+            font-size: 22px;
+            line-height: 28px;
+          }
+        }
+        p.author {
+          margin-bottom: 10px;
+        }
+        p.author,
+        time.date {
+          @include media-query-max(340px) {
+            font-size: 15px;
+            line-height: 15px;
+          }
+        }
+      }
+      section.content {
+        grid-row: 4;
+        @include media-query-max(900px) {
+          grid-column: 1/3;
+        }
+      }
+    }
+  }
+}
+@media print {
+  header#header,
+  footer#footer,
+  section.stuff,
+  button#theme-switcher {
+    display: none;
+  }
+  main.list {
+    > * {
+      color: #333;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    h2 {
+      font-size: 26px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+    h3, h4 {
+      font-weight: normal;
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+      &.email::after {
+        content: ': hi@cleverlaziness.com';
+      }
+    }
+  }
+}

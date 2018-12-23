@@ -1,16 +1,9 @@
 {{ define "main" }}
-{{ partial "header.html" . }}
-<article class="post">
-  <h2 class="post-title">{{ .Title }}</h2>
-  {{ if .Params.showthedate }}
-    <p class="post-date">{{ .Date.Format "2006-01-02" }}</p>
-  {{ end }}
-  <p class="post-author">by {{ .Site.Author.name }}</p>
-  <section class="post-content">{{ .Content }}</section>
-  {{ range .Params.tags }}
-    <section class="post-tag"><a href="/tags/{{ . | urlize }}">#{{.}}</a></section>
-  {{ end }}
-</article>
-{{ partial "social.html" . }}
-{{ partial "footer.html" . }}
+  <main class="list">
+    <article class="post">
+      <h1 class="title">{{ .Title }}</h1>
+      {{ partial "date.html" . }}
+      <section class="content">{{ .Content }}</section>
+    </article>
+  </main>
 {{ end }}

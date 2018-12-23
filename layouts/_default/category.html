@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <main class="list">
+    <h1 class="title page-title">{{ .Name }}</h1>
+    <nav class="all-tags">
+      {{ $s := .Section }}
+      {{ $n := lower .Name }}
+      {{ range $name, $taxonomy := .Site.Taxonomies.category }}
+        <p class="{{ if eq $name $n }}hidden {{ end }}tag"><span>#</span><a class="meta" href="/articles/{{ $s }}/{{ $name }}">{{ $name }}</a></p>
+      {{ end }}
+    </nav>
+    {{ range .Data.Pages.GroupByDate "2006" }}
+    <section class="year-container">
+      <h3 class="title list-date">{{ .Key }}</h3>
+      <div class="posts-list">
+        {{ range .Pages }}
+          {{ .Render "li"}}
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+  </main>
+{{ end }}

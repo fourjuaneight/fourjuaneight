@@ -1,11 +1,11 @@
-FootnoteReturnLinkContents = "↩"
-SectionPagesMenu = "main"
-baseURL = "/"
-copyright = " 2018 Four One Eight LLC"
+baseURL = "https://www.cleverlaziness.com/"
 enableEmoji = "true"
 enableRobotsTXT = "true"
 languageCode = "en-us"
 title = "Clever Laziness"
+
+FootnoteReturnLinkContents = "↩"
+SectionPagesMenu = "main"
 
 # Pygments Syntax Highlighting
 pygmentsUseClassic = false
@@ -16,25 +16,38 @@ pygmentsOptions = "linenos=inline, lineseparator=<br>"
 pygmentsStyle = "monokai"
 
 [author]
-  name = "Juan Villela"
+  name = "Juan"
+  email = "hi@cleverlaziness.com"
 
 [blackfriday]
   hrefTargetBlank = true
   plainIDAnchors = true
 
-[outputs]
-  home = ["html", "rss"]
-
 [params]
-  OpenLinksInNewWindow = true
   social = "fourjuaneight"
-
-[params.google.analytics]
-  trackerID = "UA-119777735-1"
 
 [params.meta]
   description = "A blog about coding and productivity"
-  keywords = "coding, productivity, automation"
+  keywords = "coding, productivity, development, front-end, automation"
+
+[taxonomies]
+  genre = "genre"
+  category = "category"
 
 [permalinks]
-  archive = "/:title/"
+  articles = "/articles/:title/"
+  bookshelf = "/bookshelf/:title/"
+  genre = "/bookshelf/genre/:slug/"
+  category = "/articles/category/:slug/"
+
+[outputFormats.jsonfeed]
+  mediaType = "application/json"
+  baseName = "feed"
+  isPlainText = true
+
+[outputs]
+  home = ["html"]
+  section = ["html", "jsonfeed"]
+
+[params.google]
+  analytics = "UA-119777735-1"

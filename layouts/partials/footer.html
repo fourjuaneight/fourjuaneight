@@ -1,18 +1,11 @@
-<footer>
-  <!-- Copyright -->
-  <p>&copy{{ .Site.Copyright }}</p>
-  <p>&nbsp;&ndash;&nbsp;</p>
-  <!-- Link to site source code -->
-  {{with .Site.Params.social}}
-    <a class="nav-item" href="https://www.github.com/{{.}}/clever-laziness" target="_blank">Source</a>
-  {{end}}
+<footer id="footer">
+  {{ partial "social.html" . }}
+  <section class="copy">
+    <!-- Copyright -->
+    <h5>&copy;&nbsp;{{ time.Now.Format "2006" }}</h5>
+    <p class="divider">&nbsp;&bull;&nbsp;</p>
+    <p>{{ .Site.Title }}</p>
+    <p class="divider">&nbsp;&bull;&nbsp;</p>
+    <a href="{{ .Site.BaseURL }}stuff">Stuff</a>
+  </section>
 </footer>
-
-<!-- Scripts -->
-<script src={{ "js/barefoot.js" | relURL }}></script>
-<script>
-  var lf = new BareFoot({
-    scope: "article"
-  });
-  lf.init();
-</script>

@@ -1,66 +1,159 @@
-<!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<!DOCTYPE HTML>
+<html itemscope lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 <head>
-  <meta charset="utf-8">
-  <!-- Variable Site Title -->
-  <title>
-    {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
-    {{ if eq $url "/" }}
-      {{ .Site.Title }}
-    {{ else }}
-      {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}
-    {{ end }}
-  </title>
+  {{ .Hugo.Generator }}
+  <meta charset="utf-8" />
+  <base href="{{ .Site.BaseURL }}">
+  <title>{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}{{ if eq $url "/" }}{{ .Site.Title }}{{ else }}{{ if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }}{{ end }}{{ end }}</title>
   <meta name="author" content="{{ .Site.Author.name }}">
   <meta name="description" content="{{ .Site.Params.meta.description }}">
   <meta name="keywords" content="{{ .Site.Params.meta.keywords }}">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  {{ .Hugo.Generator }}
-
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1.0,maximum-scale=5.0,viewport-fit=cover">
+  <meta name="theme-color" content="#8F3A6D">
+  
+  <!-- RSS -->
+  {{ $.Scratch.Set "bs" "" }}
+  {{ if eq .Kind "taxonomy" }}
+    {{ if eq .Section "genre" }}
+      {{ $.Scratch.Set "bs" "bookshelf" }}
+    {{ end }}
+  {{ end }}
+  <link
+  href="{{ .Site.BaseURL }}{{ if or (eq .Section "bookshelf") (eq (.Scratch.Get "b") "bookshelf" ) }}bookshelf{{ else }}articles{{ end }}/feed.json"
+  rel="alternate" type="application/json" title="{{ .Site.Title }}" />
+  
   <!-- Open Graph -->
   <link rel="canonical" href="{{ .Permalink }}">
-  {{ with .OutputFormats.Get "rss" -}}
-      {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
-  {{ end -}}
-  <base href="{{ .Site.BaseURL }}"/>
   {{ template "_internal/twitter_cards.html" . }}
-  <meta name="twitter:image" content="{{ .Site.BaseURL }}avatar.png">
+  <meta name="twitter:image" content="{{ "icons/avatar.png" | relURL }}">
   {{ template "_internal/opengraph.html" . }}
-  <meta property="og:image" content="{{ .Site.BaseURL }}avatar.png">
+  <meta property="og:image" content="{{ "icons/avatar.png" | relURL }}">
   {{ template "_internal/schema.html" . }}
 
+  <!-- Fonts -->  
+  {{ $Rubik2 := resources.Get "fonts/Rubik.woff2" }}
+  <link rel="preload" href={{ $Rubik2.Permalink }} as="font" type="font/woff2" crossorigin>
+  {{ $Rubik := resources.Get "fonts/Rubik.woff" }}
+  <link rel="preload" href={{ $Rubik.Permalink }} as="font" type="font/woff" crossorigin>
+  {{ $Rubiki2 := resources.Get "fonts/Rubik-Italic.woff2" }}
+  <link rel="preload" href={{ $Rubiki2.Permalink }} as="font" type="font/woff2" crossorigin>
+  {{ $Rubiki := resources.Get "fonts/Rubik-Italic.woff" }}
+  <link rel="preload" href={{ $Rubiki.Permalink }} as="font" type="font/woff" crossorigin>
+  {{ $Rubikb2 := resources.Get "fonts/Rubik-Bold.woff2" }}
+  <link rel="preload" href={{ $Rubikb2.Permalink }} as="font" type="font/woff2" crossorigin>
+  {{ $Rubikb := resources.Get "fonts/Rubik-Bold.woff" }}
+  <link rel="preload" href={{ $Rubikb.Permalink }} as="font" type="font/woff" crossorigin>
+  
+  <!-- Critical -->
+  {{ partial "critical.html" . }}
+
   <!-- Stylesheets -->
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500|Poppins:400,500" rel="stylesheet">
-  <link rel="stylesheet" href={{ "/css/layout.css" | relURL }}>
-  <link rel="stylesheet" href={{ "/css/barefoot.css" | relURL }}>
-  <link rel="stylesheet" href={{ "/css/syntax.css" | relURL }}>
+  {{ $styles := resources.Get "css/main.scss" | toCSS | postCSS | minify }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+  
+  <!-- Manifest -->
+  {{ $manifest := resources.Get "manifest.json" }}
+  <link rel="manifest" href="{{ $manifest.RelPermalink }}">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href={{ "./favicon.png" | relURL }}>
+  {{ $favicon := resources.Get "icons/favicon.png" }}
+  <link rel="shortcut icon" href="{{ $favicon.RelPermalink }}" i>
 
   <!-- Webclip and Apple Touch Icon -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
-  <link rel="apple-touch-icon" sizes="152x152" href={{ "/apple-touch-icon-152x152.png" | relURL }}>
-  <link rel="apple-touch-icon" sizes="167x167" href={{ "/apple-touch-icon-167x167.png" | relURL }}>
-  <link rel="apple-touch-icon" sizes="180x180" href={{ "/apple-touch-icon-180x180.png" | relURL }}>
-  <link rel="mask-icon" color="#D7545E" href={{ "/safari-pinned-tab.svg" | relURL }}>
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.google.analytics.trackerID }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('set', {'user_id': 'USER_ID'}); // Set the user ID using signed-in user_id.
-    gtag('config', '{{ .Site.Params.google.analytics.trackerID }}');
-  </script>
+  {{ $ati152 := resources.Get "icons/apple-touch-icon-152x152.png" }}
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ $ati152.RelPermalink }}">
+  {{ $ati167 := resources.Get "icons/apple-touch-icon-167x167.png" }}
+  <link rel="apple-touch-icon" sizes="167x167" href="{{ $ati167.RelPermalink }}">
+  {{ $ati180 := resources.Get "icons/apple-touch-icon-180x180.png" }}
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ $ati180.RelPermalink }}">
+  {{ $spt := resources.Get "icons/safari-pinned-tab.svg" | minify }}
+  <link rel="mask-icon" color="#8F3A6D" href="{{ $spt.RelPermalink }}">
+
+  <!-- Icons -->
+  {{ $i128 := resources.Get "icons/icon-128x128.png" }}
+  <link rel="icon" sizes="128x128" href="{{ $i128.RelPermalink }}">
+  {{ $i192 := resources.Get "icons/icon-192x192.png" }}
+  <link rel="icon" sizes="192x192" href="{{ $i192.RelPermalink }}">
+  {{ $i512 := resources.Get "icons/icon-512x512.png" }}
+  <link rel="icon" sizes="512x512" href="{{ $i512.RelPermalink }}">
+
+  <!-- Keybase Proof -->
+  {{ $keybase := resources.Get "keybase.txt" }}
+  <link href="{{ $keybase.RelPermalink }}">
 </head>
-<body>
+<body {{ if .IsHome }}id="home"{{ end }} class="light">
+  {{ partial "header.html" . }}
+
   <!-- Main content -->
   {{ block "main" . }}
   {{ end }}
+
+  {{ partial "footer.html" . }}
+
+  <!-- Stuff -->
+  <section class="stuff">
+    <h5 class="small">Guess what happens when you go smaller?</h5>
+    <h5 class="smaller">Nothing.</h5>
+  </section>
+
+  {{ partial "theme-swticher.html" . }}
+
+  {{ block "lazy" . }}
+  {{ end }}
+  <!-- Lazy Loader -->
+  {{ if .IsPage }}
+    {{ $lazy := resources.Get "js/lazyloading.js" | minify }}
+    <script src="{{ $lazy.Permalink }}"></script>
+    <script>
+      var myLazyLoad = new LazyLoad({
+        elements_selector: ".lazy",
+        threshold: 200,
+        class_loading: "loading",
+        class_error: "error"
+      });
+    </script>
+  {{ end }}
+  <!-- SW -->
+  {{ $sw := resources.Get "sw.js" | minify }}
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register("{{ $sw.RelPermalink }}", { scope: "/" });
+      navigator.serviceWorker.ready.then(registration => {
+        console.log("Service Worker Ready");
+      });
+      window.addEventListener("load", () => {
+        if (navigator.serviceWorker.controller) {
+          navigator.serviceWorker.controller.postMessage({ command: "trimCaches" });
+        }
+      });
+    }
+  </script>
+  <!-- Theme Switcher -->
+  <script>
+    const button = document.querySelector('#theme-switcher');
+    const body = document.querySelector("body");
+    button.onclick = () => {
+      body.classList.toggle('dark');
+      body.classList.toggle('light');
+    }
+  </script>
+  <!-- Console Stuf -->
+  <script>
+    function isIE() {
+      ua = navigator.userAgent;
+      const is_ie = ua.includes("MSIE ") || ua.includes("Trident/");
+      return is_ie;
+    }
+    if (isIE()){
+      console.log('Fuck yeah it works on IE 11.');
+    }
+    console.log('I love to sleep because in my dreams I can finally get revenge on the stingray that strangled Steve Irwin.');
+  </script>
+  <!-- a11y -->
+  <!-- {{ $tota11y := resources.Get "js/tota11y.js" | minify }}
+  <script src="{{ $tota11y.Permalink }}"></script> -->
 </body>
 </html>

@@ -1,12 +1,13 @@
 {{ define "main" }}
-{{ partial "header.html" . }}
-<main>
-  {{ $paginator := .Paginate (where .Data.Pages "Type" "archive") 10 }}
-    {{ range $paginator.Pages }}
-      {{ .Render "summary" }}
+  <!-- Intro Copy -->
+  <main class="list">
+    <h1 class="hidden">Clever Laziness Blog Feed</h1>
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "articles") 10 }}
+      {{ range $paginator.Pages }}
+        {{ .Render "summary"}}
+    {{ end }}
+  </main>
+  {{ if or .Paginator.HasPrev .Paginator.HasNext }}
+    {{ partial "paginator.html" . }}
   {{ end }}
-</main>
-{{ partial "paginator.html" . }}
-{{ partial "social.html" . }}
-{{ partial "footer.html" . }}
 {{ end }}

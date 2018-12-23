@@ -1,0 +1,50 @@
+{
+  "name": "clever-laziness",
+  "version": "1.0.0",
+  "description": "A blog about coding and productivity",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "scripts": {
+    "build": "gulp build; hugo",
+    "start": "concurrently \"gulp\" \"hugo server --disableFastRender\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://fourjuaneight@github.com/fourjuaneight/clever-laziness.git"
+  },
+  "keywords": [
+    "coding",
+    "productivity",
+    "development",
+    "front-end"
+  ],
+  "author": "Juan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fourjuaneight/clever-laziness/issues"
+  },
+  "homepage": "https://github.com/fourjuaneight/clever-laziness#readme",
+  "engines": {
+    "node": "8.14.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "cssnano": "^4.1.4",
+    "gulp": "^4.0.0",
+    "gulp-concat-util": "^0.5.5",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "npm": "6.4.1",
+    "postcss-calc": "^7.0.1",
+    "postcss-cli": "^6.0.0",
+    "postcss-custom-properties": "^8.0.9",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^4.1.0",
+    "postcss-simple-vars": "^5.0.1",
+    "sugarss": "^2.0.0"
+  }
+}
