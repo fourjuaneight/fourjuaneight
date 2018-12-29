@@ -159,6 +159,9 @@ nav.categories {
   }
   label {
     cursor: pointer;
+    &:hover {
+      @include color(color, accent);
+    }
   }
 }
 ul#bookmarks {
@@ -205,11 +208,11 @@ ul#bookmarks {
       width: 335px;
     }
     p.category {
-      @include color(color, link);
+      @include color(color, meta);
       text-align: end;
       width: 100px;
       span {
-        @include color(color, meta);
+        @include color(color, link);
       }
       @include media-query-max(925px) {
         text-align: start;
