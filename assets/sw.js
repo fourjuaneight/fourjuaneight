@@ -6,8 +6,10 @@
   const imagesCacheName = cacheName + 'images';
   const staticAssets = [
     '/',
-    '/archive/',
+    '/articles/',
+    '/bookshelf/',
     '/offline/',
+    '/bookmarks/',
     '/css/main.min.css',
     '/fonts/Rubik.woff',
     '/fonts/Rubik.woff2',
