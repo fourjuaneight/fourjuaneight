@@ -129,9 +129,9 @@ div.about-container {
       margin: 0 0 20px;
     }
   }
-  p {
+  div {
     @extend %full-width;
-    max-width: 485px;
+    max-width: 650px;
     @include media-query-max(670px) {
       max-width: 100%;
     }
@@ -380,13 +380,13 @@ body {
   &.light {
     button#theme-switcher {
       svg path {
-        fill: rgba(#8F3A6D,.7);
-        stroke: rgba(#8F3A6D,.7);
+        fill: rgba(#A32C14,.7);
+        stroke: rgba(#A32C14,.7);
       }
       &:hover {
         svg path {
-          fill: #8F3A6D;
-          stroke: #8F3A6D;
+          fill: #A32C14;
+          stroke: #A32C14;
         }
       }
     }
