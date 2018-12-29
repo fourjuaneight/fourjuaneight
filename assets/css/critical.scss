@@ -79,18 +79,10 @@ body {
       @extend %decoration-none;
       height: 42px;
       width: 155px;
-      svg {
-        height: 25px;
-        margin-bottom: 2px;
-        width: 65px;
-      }
-      svg#box {
-        margin: 0 15px 2px 0;
-        width: 50px;
-      }
-      svg#open-box-juan {
-        height: 44px;
-        margin-bottom: 2px;
+      img {
+        height: 40px;
+        margin: 0 10px 2px 0;
+        width: auto;
       }
       p {
         line-height: 18px;
@@ -249,9 +241,11 @@ body {
         @extend %decoration-none;
       }
     }
-    h2.title,
-    p.content {
+    h2.title {
       margin: 0 0 15px;
+    }
+    p.content {
+      margin: 15px 0
     }
     section.content {
       margin: 15px 0;
@@ -266,6 +260,14 @@ body {
           width: 185px;
         }
       }
+    }
+    time.date {
+      @include color(color, meta);
+    }
+    div.meta-info {
+      @extend %content-space-between;
+      @extend %flex;
+      @extend %items-center;
     }
     &.book {
       margin-bottom: 20px;

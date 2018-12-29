@@ -1,10 +1,10 @@
-+++
-title = "Tagging Automation"
-date = "2017-08-13"
-draft = false
-category = "productivity"
-showthedate = true
-+++
+{
+  "title": "Tagging Automation",
+  "date": "2017-08-13",
+  "draft": false,
+  "category": "productivity",
+  "showthedate": true
+}
 
 With the Files app coming to iOS 11 this fall, I’ve begun a summer cleanup of sorts with my files. Over the years I’ve accumulated – hoarded – plenty of legal and financial documents, as well as other files I feel I might need to reference at some point in the future. The problem I have is that often I can’t find what I’m looking for and end up wasting up to several hours looking through folders on Dropbox and even actual physical folders at times.
 

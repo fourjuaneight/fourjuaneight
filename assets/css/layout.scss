@@ -116,6 +116,31 @@ main.list {
   }
 }
 // About
+div.about-container {
+  @extend %content-flex-start;
+  @extend %flex;
+  @extend %items-flex-start;
+  margin-bottom: 25px;
+  img#avatar {
+    margin-right: 50px;
+    min-width: 200px;
+    width: 200px;
+    @include media-query-max(670px) {
+      margin: 0 0 20px;
+    }
+  }
+  div {
+    @extend %full-width;
+    max-width: 650px;
+    @include media-query-max(670px) {
+      max-width: 100%;
+    }
+  }
+  @include media-query-max(670px) {
+    flex-direction: column;
+    margin: 0;
+  }
+}
 ul.portfolio {
   @extend %content-space-between;
   @extend %flex;
@@ -355,13 +380,13 @@ body {
   &.light {
     button#theme-switcher {
       svg path {
-        fill: rgba(#8F3A6D,.7);
-        stroke: rgba(#8F3A6D,.7);
+        fill: rgba(#A32C14,.7);
+        stroke: rgba(#A32C14,.7);
       }
       &:hover {
         svg path {
-          fill: #8F3A6D;
-          stroke: #8F3A6D;
+          fill: #A32C14;
+          stroke: #A32C14;
         }
       }
     }

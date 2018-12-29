@@ -1,10 +1,10 @@
-+++
-title = "On Procrastinating"
-date = "2017-07-23"
-draft = false
-category = "procrastination"
-showthedate = true
-+++
+{
+  "title": "On Procrastinating",
+  "date": "2017-07-23",
+  "draft": false,
+  "category": "procrastination",
+  "showthedate": true
+}
 
 Have you ever gone down one of those online rabbit holes and end up on {{< link href="https://www.reddit.com/r/disneyvacation/" content="r/disneyvacation" >}} for some odd reason? Yeah, me neither. For a lot of us procrastinating is the norm and actually getting some work done is the accomplishment of the day. So we do a quick Google search on “how to stop procrastinating,” and then you hit 2.3 million results with topics like “7 magical tips” or the “2-minute rule” — whatever that means — but nothing helpful. Now don’t get me wrong, you’ll probably find some wonderful advice on how to master productivity. But these articles are clearly written by sane people, which we are not.
 
