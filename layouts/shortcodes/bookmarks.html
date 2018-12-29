@@ -2,7 +2,7 @@
   {{ range $i, $rec := .Site.Data.bookmarks.records }}
   <li id="record" class="{{ lower $rec.Category }}" data-creator="{{ anchorize $rec.Creator }}" data-year="{{ replaceRE "\\D\\d{2}" "" $rec.Published }}">
     <a class="title" href="{{ $rec.URL }}" target="_blank" rel="noopener">{{ $rec.Title }}</a>
-    <p class="creator">by {{ $rec.Creator }}</p>
+    <p class="creator">{{ $rec.Creator }}</p>
     <p class="category"><span>#</span>{{ lower $rec.Category }}</p>
   </li>
   {{ end }}
