@@ -1,6 +1,9 @@
-+++
-title = "Offline"
-+++
+{
+  "title": "Offline",
+  "menu": "main",
+  "weight": 100,
+  "showthedate": false
+}
 
 It looks like you're offline right now.
 

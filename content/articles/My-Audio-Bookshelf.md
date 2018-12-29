@@ -1,10 +1,10 @@
-+++
-title = "My Audio Bookshelf"
-date = "2018-12-06"
-draft = true
-category = "meta"
-showthedate = true
-+++
+{
+  "title": "My Audio Bookshelf",
+  "date": "2018-12-06",
+  "draft": true,
+  "category": "meta",
+  "showthedate": true
+}
 
 This is an idea stolen directly from Dave Rupert. He has this nice looking bookshelf of all the books he's recently read or is currently reading. And that's all fine and good, but I can never make the time to sit down and read a book. I do, however, listen to quite a lot of audiobooks while I work, do chores or commute. I'm basically always wearing headphones if I'm not with my family. So I thought I'd share some of my thoughts on the recent audiobooks I've heard.
 

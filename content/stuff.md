@@ -1,9 +1,9 @@
-+++
-title = "Stuff"
-menu = "main"
-weight = 100
-showthedate = false
-+++
+{
+  "title": "Stuff",
+  "menu": "main",
+  "weight": 100,
+  "showthedate": false
+}
 
 * Written and created by Juan.
 * Made with {{< link href="https://gohugo.io" content="Hugo" >}}.

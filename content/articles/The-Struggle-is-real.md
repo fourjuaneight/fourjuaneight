@@ -1,10 +1,10 @@
-+++
-title = "The Struggle Is Real"
-date = "2017-12-17"
-draft = false
-categories = "life"
-showthedate = true
-+++
+{
+  "title": "The Struggle Is Real",
+  "date": "2017-12-17",
+  "draft": false,
+  "categories": "life",
+  "showthedate": true
+}
 
 A few weeks ago I read a blog post by Ash Furrow about normalizing struggle. Everything was spot on, but there were a few things that resonated more with my life. preference
 

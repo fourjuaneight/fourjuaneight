@@ -1,10 +1,10 @@
-+++
-title = "My Development Workflow"
-date = "2017-10-15"
-draft = false
-category = "productivity"
-showthedate = true
-+++
+{
+  "title": "My Development Workflow",
+  "date": "2017-10-15",
+  "draft": false,
+  "category": "productivity",
+  "showthedate": true
+}
 
 I’ve been reading other developers workflow as of late. Mainly because my current setup has taken a turn for the worst and I’m reconsidering how I work altogether. The latter being the key point in all of this. Although my MacBook hasn’t been cooperating with me for some time now, I believe my problem lies in my point of view.
 
