@@ -116,6 +116,31 @@ main.list {
   }
 }
 // About
+div.about-container {
+  @extend %content-flex-start;
+  @extend %flex;
+  @extend %items-flex-start;
+  margin-bottom: 25px;
+  img#avatar {
+    margin-right: 50px;
+    min-width: 200px;
+    width: 200px;
+    @include media-query-max(670px) {
+      margin: 0 0 20px;
+    }
+  }
+  p {
+    @extend %full-width;
+    max-width: 485px;
+    @include media-query-max(670px) {
+      max-width: 100%;
+    }
+  }
+  @include media-query-max(670px) {
+    flex-direction: column;
+    margin: 0;
+  }
+}
 ul.portfolio {
   @extend %content-space-between;
   @extend %flex;

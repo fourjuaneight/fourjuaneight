@@ -79,18 +79,10 @@ body {
       @extend %decoration-none;
       height: 42px;
       width: 155px;
-      svg {
-        height: 25px;
-        margin-bottom: 2px;
-        width: 65px;
-      }
-      svg#box {
-        margin: 0 15px 2px 0;
-        width: 50px;
-      }
-      svg#open-box-juan {
-        height: 44px;
-        margin-bottom: 2px;
+      img {
+        height: 40px;
+        margin: 0 10px 2px 0;
+        width: auto;
       }
       p {
         line-height: 18px;
