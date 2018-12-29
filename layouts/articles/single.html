@@ -2,12 +2,14 @@
   <main class="list">
     <article class="post">
       <h1 class="title">{{ .Title }}</h1>
-      {{ partial "date.html" . }}
       <section class="content">{{ .Content }}</section>
-      {{ $s := .Section }}
-      {{ with .Params.category }}
-        <p class="tag"><span>#</span><a class="meta" href="/{{ $s }}/category/{{ . | urlize }}">{{.}}</a></p>
-      {{ end }}
+      <div class="meta-info">
+        {{ partial "date.html" . }}
+        {{ $s := .Section }}
+        {{ with .Params.category }}
+          <p class="tag"><span>#</span><a class="meta" href="/{{ $s }}/category/{{ . | urlize }}">{{.}}</a></p>
+        {{ end }}
+      </div>
     </article>
   </main>
 {{ end }}
