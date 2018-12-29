@@ -52,6 +52,9 @@ body {
   .hidden {
     @extend %visually-hidden;
   }
+  .none {
+    display: none !important;
+  }
   @media screen and (prefers-color-scheme: dark) {
     &.dark {
       --background: #{map-get($dark, background)};

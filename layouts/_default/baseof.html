@@ -104,7 +104,7 @@
   {{ block "lazy" . }}
   {{ end }}
   <!-- Lazy Loader -->
-  {{ if .IsPage }}
+  {{ if eq .Title "About Me" }}
     {{ $lazy := resources.Get "js/lazyloading.js" | minify }}
     <script src="{{ $lazy.Permalink }}"></script>
     <script>
@@ -116,32 +116,15 @@
       });
     </script>
   {{ end }}
-  <!-- SW -->
-  {{ $sw := resources.Get "sw.js" | minify }}
   <script>
-    if (navigator.serviceWorker) {
-      navigator.serviceWorker.register("{{ $sw.RelPermalink }}", { scope: "/" });
-      navigator.serviceWorker.ready.then(registration => {
-        console.log("Service Worker Ready");
-      });
-      window.addEventListener("load", () => {
-        if (navigator.serviceWorker.controller) {
-          navigator.serviceWorker.controller.postMessage({ command: "trimCaches" });
-        }
-      });
-    }
-  </script>
-  <!-- Theme Switcher -->
-  <script>
+    // Theme Switcher
     const button = document.querySelector('#theme-switcher');
     const body = document.querySelector("body");
     button.onclick = () => {
       body.classList.toggle('dark');
       body.classList.toggle('light');
     }
-  </script>
-  <!-- Console Stuf -->
-  <script>
+    // Console Stuff
     function isIE() {
       ua = navigator.userAgent;
       const is_ie = ua.includes("MSIE ") || ua.includes("Trident/");
@@ -152,6 +135,44 @@
     }
     console.log('I love to sleep because in my dreams I can finally get revenge on the stingray that strangled Steve Irwin.');
   </script>
+  <!-- SW -->
+  {{ $sw := resources.Get "sw.js" | minify }}
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register("{{ $sw.RelPermalink }}", { scope: "/" });
+      navigator.serviceWorker.ready.then(registration => {
+        console.log("SW Ready");
+      });
+      window.addEventListener("load", () => {
+        if (navigator.serviceWorker.controller) {
+          navigator.serviceWorker.controller.postMessage({ command: "trimCaches" });
+        }
+      });
+    }
+  </script>
+  {{ if eq .Title "Bookmarks" }}
+  <script>
+    const checkboxes = document.getElementsByName('category');
+    for (var i=0; i<checkboxes.length; i++) {
+      if (checkboxes[i].type == 'checkbox') {
+        checkboxes[i].checked = false;
+      }
+    }
+
+    function cat(id) {
+      const category = document.getElementsByName('category');
+      const liClass = 'li#record.' + id.id;
+      const hidden = document.querySelectorAll('li#record');
+      const active = document.querySelectorAll(liClass);
+      Array.prototype.forEach.call(category,function(el){
+        el.checked = false;
+      });
+      id.checked = true;
+      hidden.forEach(hi => hi.classList.add('none'));
+      active.forEach(ac => ac.classList.remove('none'));
+    }
+  </script>
+  {{ end }}
   <!-- a11y -->
   <!-- {{ $tota11y := resources.Get "js/tota11y.js" | minify }}
   <script src="{{ $tota11y.Permalink }}"></script> -->

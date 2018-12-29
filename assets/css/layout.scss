@@ -149,6 +149,74 @@ ul.portfolio {
     }
   }
 }
+// Bookmarks
+nav.categories {
+  input {
+    @extend %none;
+    &:checked ~ label {
+      @include color(color, meta);
+    }
+  }
+  label {
+    cursor: pointer;
+  }
+}
+ul#bookmarks {
+  @include color(border-top-color, meta);
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding: 0;
+  li#record {
+    @extend %content-flex-start;
+    @extend %flex;
+    @extend %flex-wrap;
+    @extend %items-center;
+    @include color(border-bottom-color, meta);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    @include media-query-max(480px) {
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+    }
+    > * {
+      margin: 0;
+      padding: 0 5px;
+      @include media-query-max(825px) {
+        margin-bottom: 2px;
+        padding: 0 !important;
+        width: 100%;
+      }
+    }
+    a.title {
+      @extend %full-width;
+      @extend %no-decoration;
+      padding-left: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 450px;
+    }
+    p.creator {
+      font-style: italic;
+      width: 335px;
+    }
+    p.category {
+      @include color(color, link);
+      text-align: end;
+      width: 100px;
+      span {
+        @include color(color, meta);
+      }
+      @include media-query-max(925px) {
+        text-align: start;
+      }
+    }
+  }
+}
 // Tags
 p.tag {
   margin: 0;
@@ -252,7 +320,7 @@ footer#footer {
   section.copy {
     @extend %flex;
     margin-top: 30px;
-    max-width: 270px;
+    max-width: 315px;
     @include media-query-max(345px) {
       font-size: 17px;
     }

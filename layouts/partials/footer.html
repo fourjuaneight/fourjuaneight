@@ -4,8 +4,8 @@
     <!-- Copyright -->
     <h5>&copy;&nbsp;{{ time.Now.Format "2006" }}</h5>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
-    <p>{{ .Site.Title }}</p>
+    <a href="{{ .Site.BaseURL }}stuff">{{ .Site.Title }}</a>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
-    <a href="{{ .Site.BaseURL }}stuff">Stuff</a>
+    <a href="{{ .Site.BaseURL }}bookmarks">Bookmarks</a>
   </section>
 </footer>
