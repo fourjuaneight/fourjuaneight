@@ -28,22 +28,18 @@ a:active svg,
 a:hover svg {
   @include color(fill, link);
 }
-a.meta,
 hr,
-p.meta {
+.meta {
   @include color(color, meta);
 }
-a.meta:active,
-a.meta:hover {
-  @include color(color, accent);
+article a,
+p.tag a {
+  @include color(color, link);
 }
-article {
-  a {
-    @include color(color, link);
-  }
-  a:active,
-  a:hover {
-    @include color(color, accent);
+p.tag a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
   }
 }
 article p {

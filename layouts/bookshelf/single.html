@@ -15,7 +15,7 @@
         {{ partial "purchase.html" . }}
         {{ $s := .Section }}
         {{ with .Params.genre }}
-          <p class="tag"><span>#</span><a class="meta" href="/{{ $s }}/genre/{{ . | urlize }}">{{.}}</a></p>
+          <p class="tag"><span class="meta">#</span><a href="/{{ $s }}/genre/{{ . | urlize }}">{{.}}</a></p>
         {{ end }}
       </section>
     </article>

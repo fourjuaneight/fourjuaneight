@@ -4,7 +4,7 @@
     <nav class="all-tags">
       {{ $s := .Section }}
       {{ range $name, $taxonomy := .Site.Taxonomies.genre }}
-        <p class="tag"><span>#</span><a class="meta" href="/{{ $s }}/genre/{{ $name }}">{{ $name }}</a></p>
+        <p class="tag"><span class="meta">#</span><a href="/{{ $s }}/genre/{{ $name }}">{{ $name }}</a></p>
       {{ end }}
     </nav>
     <section class="book-list">

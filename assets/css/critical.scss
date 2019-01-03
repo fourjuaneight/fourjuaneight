@@ -35,19 +35,23 @@ body {
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
   // Themes
-  &.light {
-    --background: #{map-get($light, background)};
-    --text: #{map-get($light, text)};
-    --meta: #{map-get($light, meta)};
-    --link: #{map-get($light, link)};
-    --accent: #{map-get($light, accent)};
+  &.black {
+    --background: #{map-get($black, background)};
+    --text: #{map-get($black, text)};
+    --meta: #{map-get($black, meta)};
+    --link: #{map-get($black, link)};
   }
   &.dark {
     --background: #{map-get($dark, background)};
     --text: #{map-get($dark, text)};
     --meta: #{map-get($dark, meta)};
     --link: #{map-get($dark, link)};
-    --accent: #{map-get($dark, accent)};
+  }
+  &.light {
+    --background: #{map-get($light, background)};
+    --text: #{map-get($light, text)};
+    --meta: #{map-get($light, meta)};
+    --link: #{map-get($light, link)};
   }
   .hidden {
     @extend %visually-hidden;
@@ -56,12 +60,11 @@ body {
     display: none !important;
   }
   @media screen and (prefers-color-scheme: dark) {
-    &.dark {
-      --background: #{map-get($dark, background)};
-      --text: #{map-get($dark, text)};
-      --meta: #{map-get($dark, meta)};
-      --link: #{map-get($dark, link)};
-      --accent: #{map-get($dark, accent)};
+    &.black {
+      --background: #{map-get($black, background)};
+      --text: #{map-get($black, text)};
+      --meta: #{map-get($black, meta)};
+      --link: #{map-get($black, link)};
     }
   }
   // Header

@@ -184,9 +184,6 @@ nav.categories {
   }
   label {
     cursor: pointer;
-    &:hover {
-      @include color(color, accent);
-    }
   }
 }
 ul#bookmarks {
@@ -248,9 +245,6 @@ ul#bookmarks {
 // Tags
 p.tag {
   margin: 0;
-  span {
-    @include color(color, link);
-  }
 }
 // Paginator
 nav.paginate {
