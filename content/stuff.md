@@ -8,11 +8,11 @@
 * Written and created by Juan.
 * Made with {{< link href="https://gohugo.io" content="Hugo" >}}.
 * Fonts used are {{< link href="https://fonts.google.com/specimen/Rubik" content="Rubik" >}} and {{< link href="https://fonts.google.com/specimen/IBM+Plex+Sans" content="Plex" >}}.
-* The intricate box and paint roller icons were designed in {{< link href="https://itunes.apple.com/us/app/affinity-designer/id824171161?mt=12" content="Affinity Designer" >}}.
-* Coded on {{< link href="https://code.visualstudio.com/" content="VSCode" >}}.
+* The icon/avatar was created by the amazing {{< link href="https://instagram.com/levitzo?utm_source=ig_profile_share&igshid=1fmgb2w2c8dla" content="Levitzo" >}}.
+* Coded using {{< link href="https://code.visualstudio.com/" content="VSCode" >}}.
 
 ## About the Site
-The site's look and feel is a shamelessly inspired from {{< link href="https://daverupert.com/" content="Dave Rupert's" >}} blog and some of my previous projects. The themes used are copied from {{< link href="https://itunes.apple.com/us/app/bear-beautiful-writing-app/id1016366447" content="Bear Notes" >}}. The box and avatar where "designed" by me. The box is a generic box. I'm not sure why it's there. And the avatar is based on {{< link href="http://onepunchman.wikia.com/wiki/Saitama" content="Saitama" >}}.
+The site's look and feel is a shamelessly inspired from {{< link href="https://daverupert.com/" content="Dave Rupert's" >}} blog and some of my previous projects. The themes used are copied from {{< link href="https://itunes.apple.com/us/app/bear-beautiful-writing-app/id1016366447" content="Bear Notes" >}}. The box and avatar where "designed" by me.
 
 ## Licensing
 Links to apps or other items may include affiliate links.
@@ -31,8 +31,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-## Contact
-Feel free to reach out with any questions or business inquiries.
-
-Email: {{< link href="mailto:hi@cleverlaziness.com" content="hi@cleverlaziness.com" >}}
