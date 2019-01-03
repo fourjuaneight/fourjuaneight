@@ -118,12 +118,22 @@
   {{ end }}
   <script>
     // Theme Switcher
-    const button = document.querySelector('#theme-switcher');
-    const body = document.querySelector("body");
-    button.onclick = () => {
-      body.classList.toggle('dark');
-      body.classList.toggle('light');
-    }
+    const body = document.querySelector('body');
+    const theme = document.querySelectorAll('p.colors');
+    theme.forEach(function(theme) {
+      theme.addEventListener("click", function(e) {
+        e.preventDefault();
+        var current = body.className;
+        var color = theme.id;
+        body.classList.replace(current, color);
+        localStorage.removeItem('theme');
+        localStorage.setItem('theme', color);
+      })
+      if (localStorage.getItem('theme')) {
+        var theme = localStorage.getItem('theme');
+        body.classList.replace('light', theme);
+      }
+    })
     // Console Stuff
     function isIE() {
       ua = navigator.userAgent;

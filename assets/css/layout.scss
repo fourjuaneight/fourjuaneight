@@ -359,43 +359,53 @@ footer#footer {
 // Theme Switcher
 body {
   button#theme-switcher {
+    @extend %content-center;
+    @extend %flex;
+    @extend %items-center;
     background: none;
     border: none;
     bottom: 15px;
-    right: 15px;
+    flex-direction: column-reverse;
+    outline: none;
     padding: 0;
     position: fixed;
+    right: 15px;
+    width: 37px;
     z-index: 10;
-    svg {
-      height: 40px;
-      width: 40px;
-    }
-  }
-  &.light {
-    button#theme-switcher {
-      svg path {
-        fill: rgba(#A32C14,.7);
-        stroke: rgba(#A32C14,.7);
+    input#palette {
+      @extend %none;
+      &:checked ~ #themes {
+        height: 102px;
+        padding: 10px 0;
       }
-      &:hover {
-        svg path {
-          fill: #A32C14;
-          stroke: #A32C14;
+    }
+    nav#themes {
+      @extend %content-center;
+      @extend %flex;
+      @extend %flex-column;
+      @extend %items-center;
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+      transition: all 0.3s ease;
+      width: 37px;
+      p {
+        @include color(color, link);
+        cursor: pointer;
+        font-size: 15px;
+        padding: 5px 0;
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
-  }
-  &.dark {
-    button#theme-switcher {
-      svg path {
-        fill: rgba(#F2815A,.7);
-        stroke: rgba(#F2815A,.7);
-      }
-      &:hover {
-        svg path {
-          fill: #F2815A;
-          stroke: #F2815A;
-        }
+    label {
+      height: 25px;
+      width: 25px;
+      svg {
+        @include color(fill, button);
+        height: 25px;
+        width: 25px;
       }
     }
   }

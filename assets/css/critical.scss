@@ -37,18 +37,24 @@ body {
   // Themes
   &.black {
     --background: #{map-get($black, background)};
+    --box: #{map-get($black, box)};
+    --button: #{map-get($black, button)};
     --text: #{map-get($black, text)};
     --meta: #{map-get($black, meta)};
     --link: #{map-get($black, link)};
   }
   &.dark {
     --background: #{map-get($dark, background)};
+    --box: #{map-get($dark, box)};
+    --button: #{map-get($dark, button)};
     --text: #{map-get($dark, text)};
     --meta: #{map-get($dark, meta)};
     --link: #{map-get($dark, link)};
   }
   &.light {
     --background: #{map-get($light, background)};
+    --box: #{map-get($light, box)};
+    --button: #{map-get($light, button)};
     --text: #{map-get($light, text)};
     --meta: #{map-get($light, meta)};
     --link: #{map-get($light, link)};
@@ -62,9 +68,11 @@ body {
   @media screen and (prefers-color-scheme: dark) {
     &.black {
       --background: #{map-get($black, background)};
-      --text: #{map-get($black, text)};
-      --meta: #{map-get($black, meta)};
+      --box: #{map-get($black, box)};
+      --button: #{map-get($black, button)};
       --link: #{map-get($black, link)};
+      --meta: #{map-get($black, meta)};
+      --text: #{map-get($black, text)};
     }
   }
   // Header
