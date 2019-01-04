@@ -1,11 +1,15 @@
 <footer id="footer">
   {{ partial "social.html" . }}
+  <nav class="extra">
+    <a href="{{ .Site.BaseURL }}bookshelf" class="extra-items">Bookshelf</a>
+    <p class="divider">&nbsp;&bull;&nbsp;</p>
+    <a href="{{ .Site.BaseURL }}bookmarks" class="extra-items">Bookmarks</a>
+    <p class="divider">&nbsp;&bull;&nbsp;</p>
+    <a href="{{ .Site.BaseURL }}stuff" class="extra-items">Stuff</a>
+  </nav>
   <section class="copy">
     <!-- Copyright -->
-    <h5>&copy;&nbsp;{{ time.Now.Format "2006" }}</h5>
-    <p class="divider">&nbsp;&bull;&nbsp;</p>
-    <a href="{{ .Site.BaseURL }}stuff">{{ .Site.Title }}</a>
-    <p class="divider">&nbsp;&bull;&nbsp;</p>
-    <a href="{{ .Site.BaseURL }}bookmarks">Bookmarks</a>
+    <h5>&copy;&nbsp;{{ time.Now.Format "2006" }}&nbsp;</h5>
+    <p>{{ .Site.Title }}</p>
   </section>
 </footer>

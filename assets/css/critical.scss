@@ -133,7 +133,7 @@ body {
       }
     }
     nav.navbar {
-      width: 370px;
+      width: 260px;
       @include media-query-max(570px) {
         display: none;
       }
@@ -179,7 +179,7 @@ body {
           transform: scale(0);
         }
         &:checked ~ .menu {
-          height: 190px;
+          height: 140px;
           margin-top: 15px;
         }
       }

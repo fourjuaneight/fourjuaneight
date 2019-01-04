@@ -307,8 +307,14 @@ main.err-404 {
 }
 // Footer
 footer#footer {
-  flex-direction: column;
-  min-height: 124px;
+  @extend %content-space-between;
+  @extend %full-width;
+  @extend %flex-column;
+  @extend %items-center;
+  @extend %margin-center;
+  @extend %relative;
+  min-height: 160px;
+  max-width: 345px;
   padding-bottom: 30px !important;
   nav.social,
   nav.social a,
@@ -341,13 +347,14 @@ footer#footer {
   }
   section.copy {
     @extend %flex;
-    margin-top: 30px;
     max-width: 315px;
     @include media-query-max(345px) {
       font-size: 17px;
     }
+    > * {
+      font-size: 16px;
+    }
     h5 {
-      font-size: 18px;
       font-weight: normal;
       margin: 0;
       @include media-query-max(345px) {
@@ -364,7 +371,7 @@ body {
     @extend %items-center;
     background: none;
     border: none;
-    bottom: 15px;
+    bottom: 30px;
     flex-direction: column-reverse;
     outline: none;
     padding: 0;
@@ -388,14 +395,28 @@ body {
       overflow: hidden;
       padding: 0;
       transition: all 0.3s ease;
-      width: 37px;
+      width: 60px;
       p {
-        @include color(color, link);
+        @extend %full-width;
         cursor: pointer;
+        border-radius: 5px;
         font-size: 15px;
-        padding: 5px 0;
+        margin: 2.5px 0;
+        padding: 2.5px 0;
         &:hover {
           text-decoration: underline;
+        }
+        &#black {
+          background-color: #000;
+          color: #EB7760;
+        }
+        &#dark {
+          background-color: #12151B;
+          color: #F2815A;
+        }
+        &#light {
+          background-color: #FFF;
+          color: #A32C14;
         }
       }
     }
