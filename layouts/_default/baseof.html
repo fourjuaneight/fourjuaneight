@@ -119,8 +119,8 @@
   <script>
     // Theme Switcher
     const body = document.querySelector('body');
-    const theme = document.querySelectorAll('p.colors');
-    theme.forEach(function(theme) {
+    const colors = document.querySelectorAll('p.colors');
+    colors.forEach(function(theme) {
       theme.addEventListener("click", function(e) {
         e.preventDefault();
         var current = body.className;
@@ -128,10 +128,10 @@
         body.classList.replace(current, color);
         localStorage.removeItem('theme');
         localStorage.setItem('theme', color);
-      })
+      }, false);
       if (localStorage.getItem('theme')) {
-        var theme = localStorage.getItem('theme');
-        body.classList.replace('light', theme);
+        var newTheme = localStorage.getItem('theme');
+        body.classList.replace('light', newTheme);
       }
     })
     // Console Stuff

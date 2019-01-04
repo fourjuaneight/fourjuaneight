@@ -381,7 +381,7 @@ footer#footer {
 }
 // Theme Switcher
 body {
-  button#theme-switcher {
+  div#theme-switcher {
     @extend %content-center;
     @extend %flex;
     @extend %items-center;
@@ -393,13 +393,22 @@ body {
     padding: 0;
     position: fixed;
     right: 15px;
-    width: 37px;
+    width: 60px;
     z-index: 10;
     input#palette {
       @extend %none;
       &:checked ~ #themes {
         height: 102px;
         padding: 10px 0;
+      }
+    }
+    label {
+      height: 25px;
+      width: 25px;
+      svg {
+        @include color(fill, button);
+        height: 25px;
+        width: 25px;
       }
     }
     nav#themes {
@@ -419,6 +428,7 @@ body {
         font-size: 15px;
         margin: 2.5px 0;
         padding: 2.5px 0;
+        text-align: center;
         &:hover {
           text-decoration: underline;
         }
@@ -436,14 +446,20 @@ body {
         }
       }
     }
-    label {
-      height: 25px;
-      width: 25px;
-      svg {
-        @include color(fill, button);
-        height: 25px;
-        width: 25px;
-      }
+  }
+  &.black {
+    nav#themes p#black {
+      text-decoration: underline;
+    }
+  }
+  &.dark {
+    nav#themes p#dark {
+      text-decoration: underline;
+    }
+  }
+  &.light {
+    nav#themes p#light {
+      text-decoration: underline;
     }
   }
 }
