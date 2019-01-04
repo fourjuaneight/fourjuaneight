@@ -16,6 +16,15 @@
 %content-flex-start {
   justify-content: flex-start;
 }
+%content-self-center {
+  justify-self: center;
+}
+%content-self-end {
+  justify-self: self-end;
+}
+%content-self-start {
+  justify-self: self-start;
+}
 %decoration-none {
   text-decoration: none;
 }

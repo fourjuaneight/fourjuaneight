@@ -211,7 +211,7 @@ body {
   // Article
   main.bookshelf {
     section.book-list {
-      @extend %content-flex-start;
+      @extend %content-space-between;
       @extend %flex;
       @extend %flex-wrap;
       @extend %items-center;
@@ -219,14 +219,24 @@ body {
       border-top-style: solid;
       border-top-width: 1px;
       padding-top: 15px;
-      margin: 15px -15px 0;
+      margin: 15px 0 0;
+      @supports (display:grid) {
+       @extend %grid;
+       grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+       grid-auto-rows: 265px;
+       grid-gap: 30px;
+      }
       @include media-query-max(370px) {
         justify-content: center;
       }
       article {
         height: 265px;
-        margin: 0 15px 30px;
+        margin: 0 0 30px;
         width: 155px;
+        @supports (display:grid) {
+          @extend %content-self-center;
+          margin: 0;
+        }
         a.cover {
           width: 150px;
           img {

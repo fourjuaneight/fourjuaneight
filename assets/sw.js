@@ -1,5 +1,5 @@
 (function () {
-  const version = 'v2';
+  const version = 'v3';
   const cacheName = ':cleverlaziness:';
   const staticCacheName = version + cacheName + 'static';
   const pagesCacheName = cacheName + 'pages';

@@ -176,14 +176,30 @@ ul.portfolio {
 }
 // Bookmarks
 nav.categories {
-  input {
-    @extend %none;
-    &:checked ~ label {
-      @include color(color, meta);
+  div.tag {
+    @extend %content-center;
+    @extend %flex;
+    @extend %items-center;
+    margin-right: 15px;
+    > * {
+      font-style: italic;
     }
-  }
-  label {
-    cursor: pointer;
+    span {
+      margin: 0;
+    }
+    input {
+      @extend %none;
+      &:checked ~ label {
+        @include color(color, meta);
+      }
+    }
+    label {
+      @include color(color, link);
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 ul#bookmarks {
