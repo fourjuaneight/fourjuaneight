@@ -207,6 +207,7 @@ ul#bookmarks {
   border-top-style: solid;
   border-top-width: 1px;
   padding: 0;
+  nav.sorting,
   li#record {
     @extend %content-flex-start;
     @extend %flex;
@@ -215,7 +216,6 @@ ul#bookmarks {
     @include color(border-bottom-color, meta);
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    list-style-type: none;
     margin: 0;
     padding: 5px;
     @include media-query-max(480px) {
@@ -231,29 +231,50 @@ ul#bookmarks {
         padding: 0 !important;
         width: 100%;
       }
+      &:nth-child(1) {
+        @extend %full-width;
+        @extend %no-decoration;
+        padding-left: 0;
+        max-width: 450px;
+      }
+      &:nth-child(2) {
+        width: 335px;
+      }
+      &:nth-child(3) {
+        text-align: end;
+        width: 100px;
+        @include media-query-max(925px) {
+          text-align: start;
+        }
+      }
     }
+  }
+  nav.sorting {
+    @include color(background-color, button);
+    p {
+      @include color(color, background);
+      cursor: pointer;
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  li#record {
+    list-style-type: none;
     a.title {
-      @extend %full-width;
-      @extend %no-decoration;
-      padding-left: 0;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      max-width: 450px;
-    }
-    p.creator {
-      font-style: italic;
-      width: 335px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
     p.category {
       @include color(color, meta);
       text-align: end;
-      width: 100px;
       span {
         @include color(color, link);
-      }
-      @include media-query-max(925px) {
-        text-align: start;
       }
     }
   }

@@ -103,19 +103,6 @@
 
   {{ block "lazy" . }}
   {{ end }}
-  <!-- Lazy Loader -->
-  {{ if eq .Title "About Me" }}
-    {{ $lazy := resources.Get "js/lazyloading.js" | minify }}
-    <script src="{{ $lazy.Permalink }}"></script>
-    <script>
-      var myLazyLoad = new LazyLoad({
-        elements_selector: ".lazy",
-        threshold: 200,
-        class_loading: "loading",
-        class_error: "error"
-      });
-    </script>
-  {{ end }}
   <script>
     // Theme Switcher
     const body = document.querySelector('body');
@@ -135,14 +122,6 @@
       }
     })
     // Console Stuff
-    function isIE() {
-      ua = navigator.userAgent;
-      const is_ie = ua.includes("MSIE ") || ua.includes("Trident/");
-      return is_ie;
-    }
-    if (isIE()){
-      console.log('Fuck yeah it works on IE 11.');
-    }
     console.log('I love to sleep because in my dreams I can finally get revenge on the stingray that strangled Steve Irwin.');
   </script>
   <!-- SW -->
@@ -162,13 +141,13 @@
   </script>
   {{ if eq .Title "Bookmarks" }}
   <script>
+    // Filter by tag
     const checkboxes = document.getElementsByName('category');
     for (var i=0; i<checkboxes.length; i++) {
       if (checkboxes[i].type == 'checkbox') {
         checkboxes[i].checked = false;
       }
     }
-
     function cat(id) {
       const category = document.getElementsByName('category');
       const liClass = 'li#record.' + id.id;
@@ -181,6 +160,26 @@
       hidden.forEach(hi => hi.classList.add('none'));
       active.forEach(ac => ac.classList.remove('none'));
     }
+    // Sort alphabetically by title
+    function sort(par, atr) {
+      const ul = document.getElementById(par);
+      const lis = ul.querySelectorAll("li");
+
+      [].slice
+        .call(lis)
+        .sort(function(a, b) {
+          const textA = a.getAttribute(atr).toLowerCase();
+          const textB = b.getAttribute(atr).toLowerCase();
+          return textA < textB ? -1 : textA > textB ? 1 : 0;
+        })
+        .forEach(function(el) {
+          el.parentNode.appendChild(el);
+        });
+    }
+    // Sort by category alphabetically on page load
+    window.onload = function() {
+      sort('bookmarks','class');
+    };
   </script>
   {{ end }}
   <!-- a11y -->

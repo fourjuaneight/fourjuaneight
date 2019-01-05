@@ -1,6 +1,11 @@
 <ul id="bookmarks">
+  <nav class="sorting">
+    <p class="sort-item" onclick="sort('bookmarks','data-title')">Title</p>
+    <p class="sort-item" onclick="sort('bookmarks','data-creator')">Creator</p>
+    <p class="sort-item" onclick="sort('bookmarks','class')">Category</p>
+  </nav>
   {{ range $i, $rec := .Site.Data.bookmarks.records }}
-  <li id="record" class="{{ lower $rec.Category }}" data-creator="{{ anchorize $rec.Creator }}" data-year="{{ replaceRE "\\D\\d{2}" "" $rec.Published }}">
+  <li id="record" class="{{ lower $rec.Category }}" data-title="{{ anchorize $rec.Title }}" data-creator="{{ anchorize $rec.Creator }}">
     <a class="title" href="{{ $rec.URL }}" target="_blank" rel="noopener">{{ $rec.Title }}</a>
     <p class="creator">{{ $rec.Creator }}</p>
     <p class="category"><span>#</span>{{ lower $rec.Category }}</p>
