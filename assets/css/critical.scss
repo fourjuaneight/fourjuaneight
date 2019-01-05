@@ -84,16 +84,28 @@ body {
       align-items: flex-start;
     }
     a.home {
-      @extend %content-center;
+      @extend %content-flex-start;
       @extend %flex;
       @extend %items-flex-end;
       @extend %decoration-none;
       height: 42px;
       width: 155px;
-      img {
+      svg {
         height: 40px;
-        margin: 0 10px 2px 0;
+        margin-right: 10px;
         width: auto;
+        g#view > path.bg {
+          @include color(fill, background);
+        }
+        g.link path {
+          @include color(fill, link);
+        }
+        g.meta ellipse {
+          @include color(fill, meta);
+        }
+        g#stick path {
+          @include color(stroke, meta);
+        }
       }
       p {
         line-height: 18px;

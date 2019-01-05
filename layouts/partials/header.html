@@ -1,8 +1,7 @@
 <header id="header">
   <!-- Avatar and link to homepage -->
   <a class="home" href="{{ .Site.BaseURL }}" aria-label="Clever Laziness Dot Com Homepage">
-    {{ $logo := resources.Get "img/logo.jpg" }}
-    <img src="{{ $logo.RelPermalink }}" class="logo">
+    {{ partial "row-bot.html" . }}
     <p>Clever Laziness</p>
   </a>
   {{ $.Scratch.Set "b" "" }}
