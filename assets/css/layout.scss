@@ -194,7 +194,7 @@ nav.categories {
       }
     }
     label {
-      @include color(color, link);
+      @include color(color, meta);
       cursor: pointer;
       &:hover {
         text-decoration: underline;
@@ -224,28 +224,32 @@ ul#bookmarks {
       justify-content: center;
     }
     > * {
+      @extend %full-width;
       margin: 0;
       padding: 0 5px;
-      @include media-query-max(825px) {
-        margin-bottom: 2px;
-        padding: 0 !important;
-        width: 100%;
-      }
       &:nth-child(1) {
-        @extend %full-width;
         @extend %no-decoration;
         padding-left: 0;
         max-width: 450px;
+        @include media-query-max(925px) {
+          max-width: 100%;
+        }
       }
       &:nth-child(2) {
-        width: 335px;
+        max-width: 335px;
+        @include media-query-max(925px) {
+          max-width: 434px;
+        }
       }
       &:nth-child(3) {
-        text-align: end;
-        width: 100px;
-        @include media-query-max(925px) {
-          text-align: start;
-        }
+        text-align: start;
+        max-width: 100px;
+      }
+      @include media-query-max(925px) {
+        padding: 0 !important;
+      }
+      @include media-query-max(573px) {
+        max-width: 100% !important;
       }
     }
   }
@@ -272,11 +276,25 @@ ul#bookmarks {
     }
     p.category {
       @include color(color, meta);
-      text-align: end;
-      span {
-        @include color(color, link);
-      }
     }
+  }
+}
+ul#bookmarks,
+nav.categories {
+  .articles span {
+    color: #A2F083;
+  }
+  .comics span {
+    color: #FCB0E6;
+  }
+  .podcasts span {
+    color: #FE9833;
+  }
+  .tweets span {
+    color: #41ACF7;
+  }
+  .videos span {
+    color: #FA6B6B;
   }
 }
 // Tags
