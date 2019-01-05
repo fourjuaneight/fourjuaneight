@@ -1,7 +1,7 @@
 {
   "title": "Binti: Home",
   "author": "Nnedi Okorafor",
-  "date": "2017-12-30",
+  "date": "2018-12-30",
   "length": "4h 10m",
   "cover": "books/binti-home.jpg",
   "audible": "https://www.audible.com/pd/Binti-Home-Audiobook/B078J4JSQR",
