@@ -35,6 +35,9 @@ main.list {
     p.tag {
       margin-right: 15px;
       font-style: italic;
+      span {
+        @include color(color, meta);
+      }
     }
   }
   section.year-container {
@@ -49,7 +52,7 @@ main.list {
       border-top-width: 1px;
       padding-top: 15px;
     }
-    h3 {
+    h2 {
       margin: 0;
       &.list-date {
         width: 85px;
@@ -164,13 +167,6 @@ ul.portfolio {
       @extend %full-width;
       max-width: 300px;
       text-align: center;
-      // a {
-      //   @extend %decoration-none;
-      //   @include color(color, text);
-      //   &:hover {
-      //     @include color(color, link);
-      //   }
-      // }
     }
   }
 }
@@ -185,16 +181,17 @@ nav.categories {
       font-style: italic;
     }
     span {
+      @include color(color, meta);
       margin: 0;
     }
     input {
       @extend %none;
       &:checked ~ label {
-        @include color(color, meta);
+        text-decoration: underline;
       }
     }
     label {
-      @include color(color, meta);
+      @include color(color, link);
       cursor: pointer;
       &:hover {
         text-decoration: underline;
@@ -254,7 +251,7 @@ ul#bookmarks {
     }
   }
   nav.sorting {
-    @include color(background-color, button);
+    @include color(background-color, meta);
     p {
       @include color(color, background);
       cursor: pointer;
@@ -277,24 +274,6 @@ ul#bookmarks {
     p.category {
       @include color(color, meta);
     }
-  }
-}
-ul#bookmarks,
-nav.categories {
-  .articles span {
-    color: #A2F083;
-  }
-  .comics span {
-    color: #FCB0E6;
-  }
-  .podcasts span {
-    color: #FE9833;
-  }
-  .tweets span {
-    color: #41ACF7;
-  }
-  .videos span {
-    color: #FA6B6B;
   }
 }
 // Tags
@@ -406,10 +385,8 @@ footer#footer {
     @include media-query-max(345px) {
       font-size: 17px;
     }
-    > * {
+    p {
       font-size: 16px;
-    }
-    h5 {
       font-weight: normal;
       margin: 0;
       @include media-query-max(345px) {
@@ -440,14 +417,26 @@ body {
         height: 102px;
         padding: 10px 0;
       }
+      &:checked ~ label.drop > svg {
+        @include color(fill, text);
+        transform: rotate(67.5deg);
+      }
     }
     label {
+      @extend %content-center;
+      @extend %flex;
+      @extend %items-center;
+      cursor: pointer;
       height: 25px;
-      width: 25px;
+      width: 30px;
       svg {
         @include color(fill, button);
         height: 25px;
+        transition: all 0.3s ease;
         width: 25px;
+        &:hover {
+          @include color(fill, text);
+        }
       }
     }
     nav#themes {
@@ -522,18 +511,18 @@ body {
       overflow: hidden;
       position: absolute !important;
     }
-    h5 {
+    p {
       font-size: 30px;
       text-transform: uppercase;
       transform: rotate(-90deg);
     }
-    h5.small {
+    p.small {
       @extend %flex;
       @include media-query-max(195px) {
         display: none;
       }
     }
-    h5.smaller {
+    p.smaller {
       @extend %none;
       @include media-query-max(195px) {
         display: flex;

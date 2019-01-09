@@ -3,9 +3,10 @@
     <h1 class="title page-title">{{ .Name }}</h1>
     <nav class="all-tags">
       {{ $s := .Section }}
-      {{ $n := lower .Name }}
+      {{ $rn := replaceRE " " "-" .Name }}
+      {{ $n := lower $rn }}
       {{ range $name, $taxonomy := .Site.Taxonomies.category }}
-        <p class="{{ if eq $name $n }}hidden {{ end }}tag"><span>#</span><a class="meta" href="/articles/{{ $s }}/{{ $name }}">{{ $name }}</a></p>
+        <p class="{{ if eq $name $n }}hidden {{ end }}tag"><span aria-hidden="true">#</span><a class="meta" href="/articles/{{ $s }}/{{ $name }}">{{ $name }}</a></p>
       {{ end }}
     </nav>
     {{ range .Data.Pages.GroupByDate "2006" }}

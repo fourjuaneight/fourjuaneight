@@ -145,7 +145,7 @@ body {
       }
     }
     nav.navbar {
-      width: 260px;
+      width: 290px;
       @include media-query-max(570px) {
         display: none;
       }

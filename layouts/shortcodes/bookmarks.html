@@ -8,7 +8,7 @@
   <li id="record" class="{{ lower $rec.Category }}" data-title="{{ anchorize $rec.Title }}" data-creator="{{ anchorize $rec.Creator }}">
     <a class="title" href="{{ $rec.URL }}" target="_blank" rel="noopener">{{ $rec.Title }}</a>
     <p class="creator">{{ $rec.Creator }}</p>
-    <p class="category"><span>#</span>{{ lower $rec.Category }}</p>
+    <p class="category"><span aria-hidden="true">#</span>{{ lower $rec.Category }}</p>
   </li>
   {{ end }}
 </ul>

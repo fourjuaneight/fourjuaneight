@@ -95,8 +95,8 @@
 
   <!-- Stuff -->
   <section class="stuff">
-    <h5 class="small">Guess what happens when you go smaller?</h5>
-    <h5 class="smaller">Nothing.</h5>
+    <p class="small">Guess what happens when you go smaller?</p>
+    <p class="smaller">Nothing.</p>
   </section>
 
   {{ partial "theme-swticher.html" . }}
@@ -184,7 +184,7 @@
   </script>
   {{ end }}
   <!-- a11y -->
-  <!-- {{ $tota11y := resources.Get "js/tota11y.js" | minify }}
-  <script src="{{ $tota11y.Permalink }}"></script> -->
+  {{ $tota11y := resources.Get "js/tota11y.js" | minify }}
+  <script src="{{ $tota11y.Permalink }}"></script>
 </body>
 </html>

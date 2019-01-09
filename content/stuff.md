@@ -16,10 +16,10 @@ The site's look and feel is a shamelessly inspired from {{< link href="https://d
 
 Links to apps and books may include affiliate links.
 
-### CC License
+## CC License
 Unless otherwise noted, the text content on this site is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License, “{{< link href="https://creativecommons.org/licenses/by-sa/4.0/" content="CC-BY-SA" >}}”.
 
-### MIT License
+## MIT License
 Copyright © 2018 Clever Laziness
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

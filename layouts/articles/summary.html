@@ -5,7 +5,7 @@
     {{ partial "date.html" . }}
     {{ $s := .Section }}
     {{ with .Params.category }}
-      <p class="tag"><span class="meta">#</span><a href="/{{ $s }}/category/{{ . | urlize }}">{{.}}</a></p>
+      <p class="tag"><span aria-hidden="true" class="meta">#</span><a href="/{{ $s }}/category/{{ . | urlize }}">{{.}}</a></p>
     {{ end }}
   </div>
 </article>
