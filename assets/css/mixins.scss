@@ -9,3 +9,7 @@
     @content;
   }
  }
+ @mixin color($property, $varName) {
+  #{$property}: map-get($light, $varName);
+  #{$property}: var(--#{$varName});
+}

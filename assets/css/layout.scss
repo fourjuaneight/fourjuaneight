@@ -82,7 +82,7 @@ main.list {
       max-width: 100%;
       padding: 0;
       li.post-tag {
-        font-size: 20px;
+        font-size: 1.1rem;
         font-weight: bold;
         list-style-type: none;
         margin: 15px 0;
@@ -307,18 +307,18 @@ a.back-home {
     width: auto;
   }
   p {
-    font-size: 40px; 
-    line-height: 60px;
+    font-size: 2.2rem; 
+    line-height: 3.3rem;
     @include media-query-max(675px) {
-      font-size: 30px;
-      line-height: 50px;
+      font-size: 1.7rem;
+      line-height: 2.8rem;
     }
     @include media-query-max(420px) {
-      font-size: 28px;
-      line-height: 40px;
+      font-size: 1.6rem;
+      line-height: 2.2rem;
     }
     @include media-query-max(375px) {
-      font-size: 25px;
+      font-size: 1.4rem;
     }
   }
 }
@@ -329,7 +329,7 @@ main.err-404 {
   @extend %items-center;
   height: calc(100vh - 90px);
   h1 {
-    font-size: 28px;
+    font-size: 1.6rem;
     margin-bottom: 15px;
     text-align: center;
   }
@@ -383,21 +383,21 @@ footer#footer {
     @extend %flex;
     max-width: 315px;
     @include media-query-max(345px) {
-      font-size: 17px;
+      font-size: .95rem;
     }
     p {
-      font-size: 16px;
+      font-size: .9rem;
       font-weight: normal;
       margin: 0;
       @include media-query-max(345px) {
-        font-size: 17px;
+        font-size: .95rem;
       }
     }
   }
 }
 // Theme Switcher
 body {
-  div#theme-switcher {
+  div#ui-options {
     @extend %content-center;
     @extend %flex;
     @extend %items-center;
@@ -409,20 +409,20 @@ body {
     padding: 0;
     position: fixed;
     right: 15px;
-    width: 60px;
+    width: 75px;
     z-index: 10;
-    input#palette {
+    input#settings {
       @extend %none;
-      &:checked ~ #themes {
-        height: 102px;
+      &:checked ~ section.options {
+        height: 162px;
         padding: 10px 0;
       }
-      &:checked ~ label.drop > svg {
-        @include color(fill, text);
+      &:checked ~ label.gear > svg {
+        @include color(fill, meta);
         transform: rotate(67.5deg);
       }
     }
-    label {
+    label.gear {
       @extend %content-center;
       @extend %flex;
       @extend %items-center;
@@ -435,11 +435,11 @@ body {
         transition: all 0.3s ease;
         width: 25px;
         &:hover {
-          @include color(fill, text);
+          @include color(fill, meta);
         }
       }
     }
-    nav#themes {
+    section.options {
       @extend %content-center;
       @extend %flex;
       @extend %flex-column;
@@ -448,31 +448,80 @@ body {
       overflow: hidden;
       padding: 0;
       transition: all 0.3s ease;
-      width: 60px;
-      p {
-        @extend %full-width;
-        cursor: pointer;
+      div.divider {
+        @include color(background-color, meta);
         border-radius: 5px;
-        font-size: 15px;
-        margin: 2.5px 0;
-        padding: 2.5px 0;
-        text-align: center;
-        &:hover {
-          text-decoration: underline;
-        }
-        &#black {
-          background-color: #000;
-          color: #EB7760;
-        }
-        &#dark {
-          background-color: #12151B;
-          color: #F2815A;
-        }
-        &#light {
-          background-color: #FFF;
-          color: #A32C14;
+        height: 1px;
+        margin: 3px 0;
+        width: 75px;
+      }
+      nav {
+        @extend %content-center;
+        @extend %flex-column;
+        @extend %items-center;
+        height: auto;
+        padding: 0;
+        width: 75px;
+        p {
+          @extend %content-center;
+          @extend %flex;
+          @extend %full-width;
+          @extend %items-center;
+          cursor: pointer;
+          border-radius: 5px;
+          font-size: 1rem;
+          height: 22px;
+          line-height: 1rem;
+          margin: 2.5px 0;
+          text-align: center;
+          &:hover {
+            text-decoration: underline;
+          }
+          &#rubik {
+            font-family: 'Rubik', sans-serif;
+            @include color(background-color, text);
+            @include color(color, background);
+          }
+          &#dyslexic {
+            @include color(background-color, text);
+            @include color(color, background);
+            font-family: 'Dyslexic', sans-serif;
+            font-size: .9rem;
+            line-height: .9rem;
+            padding: 0 0 6px;
+          }
+          &#black {
+            background-color: #000;
+            color: #EB7760;
+          }
+          &#dark {
+            background-color: #12151B;
+            color: #F2815A;
+          }
+          &#light {
+            background-color: #FFF;
+            color: #A32C14;
+          }
         }
       }
+    }
+  }
+  &#rubik {
+    nav#fonts p#rubik {
+      text-decoration: underline;
+    }
+  }
+  &#dyslexic {
+    div#ui-options section.options nav p {
+      font-size: .9rem;
+      padding: 0 0 5px;
+    }
+    nav#fonts p#dyslexic {
+      text-decoration: underline;
+    }
+    nav#fonts p#rubik {
+      font-size: 1rem !important;
+      padding: 2.5px 0 !important;
     }
   }
   &.black {
@@ -512,7 +561,7 @@ body {
       position: absolute !important;
     }
     p {
-      font-size: 30px;
+      font-size: 1.7rem;
       text-transform: uppercase;
       transform: rotate(-90deg);
     }

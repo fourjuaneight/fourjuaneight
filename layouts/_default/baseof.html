@@ -44,6 +44,15 @@
   {{ $Rubikb := resources.Get "fonts/Rubik-Bold.woff" }}
   <link rel="preload" href={{ $Rubikb.Permalink }} as="font" type="font/woff" crossorigin>
   
+  {{ $Dys2 := resources.Get "fonts/OpenDyslexic.woff2" }}
+  <link rel="preload" href={{ $Dys2.Permalink }} as="font" type="font/woff2" crossorigin>
+  {{ $Dys := resources.Get "fonts/OpenDyslexic.woff" }}
+  <link rel="preload" href={{ $Dys.Permalink }} as="font" type="font/woff" crossorigin>
+  {{ $Dysb2 := resources.Get "fonts/OpenDyslexic-Bold.woff2" }}
+  <link rel="preload" href={{ $Dysb2.Permalink }} as="font" type="font/woff2" crossorigin>
+  {{ $Dysb := resources.Get "fonts/OpenDyslexic-Bold.woff" }}
+  <link rel="preload" href={{ $Dysb.Permalink }} as="font" type="font/woff" crossorigin>
+  
   <!-- Critical -->
   {{ partial "critical.html" . }}
 
@@ -84,7 +93,7 @@
   {{ $keybase := resources.Get "keybase.txt" }}
   <link href="{{ $keybase.RelPermalink }}">
 </head>
-<body {{ if .IsHome }}id="home"{{ end }} class="light">
+<body id="rubik" class="light">
   {{ partial "header.html" . }}
 
   <!-- Main content -->
@@ -99,29 +108,33 @@
     <p class="smaller">Nothing.</p>
   </section>
 
-  {{ partial "theme-swticher.html" . }}
+  {{ partial "ui-options.html" . }}
 
   {{ block "lazy" . }}
   {{ end }}
   <script>
-    // Theme Switcher
+    // UI Switcher
     const body = document.querySelector('body');
     const colors = document.querySelectorAll('p.colors');
-    colors.forEach(function(theme) {
-      theme.addEventListener("click", function(e) {
-        e.preventDefault();
-        var current = body.className;
-        var color = theme.id;
-        body.classList.replace(current, color);
-        document.getElementById('palette').checked = false;
-        localStorage.removeItem('theme');
-        localStorage.setItem('theme', color);
-      }, false);
-      if (localStorage.getItem('theme')) {
-        var newTheme = localStorage.getItem('theme');
-        body.classList.replace('light', newTheme);
-      }
-    })
+    const fonts = document.querySelectorAll('p.type');
+    function uiSwitcher(item,change,mod) {
+      item.forEach(function(option) {
+        option.addEventListener("click", function(e) {
+          e.preventDefault();
+          var value = option.id;
+          body.setAttribute(mod, value);
+          document.getElementById('settings').checked = false;
+          localStorage.removeItem(change);
+          localStorage.setItem(change, value);
+        }, false);
+        if (localStorage.getItem(change)) {
+          var newTheme = localStorage.getItem(change);
+          body.setAttribute(mod, newTheme);
+        }
+      })
+    }
+    uiSwitcher(colors,'theme','class');
+    uiSwitcher(fonts,'type','id');
     // Console Stuff
     console.log('I love to sleep because in my dreams I can finally get revenge on the stingray that strangled Steve Irwin.');
   </script>

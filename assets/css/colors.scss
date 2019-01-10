@@ -2,7 +2,7 @@
 $black: (
   background: #000,
   box: 8px 8px 0 0 #969696,
-  button: rgba(#FFF,.7),
+  button: rgba(#969696,.7),
   link: #EB7760,
   meta: #969696,
   text: #FFF,
@@ -10,7 +10,7 @@ $black: (
 $dark: (
   background: #12151B,
   box: 8px 8px 0 0 #71ADBC,
-  button: rgba(#9DA1B4,.7),
+  button: rgba(#71ADBC,.7),
   link: #F2815A,
   meta: #71ADBC,
   text: #9DA1B4,
@@ -18,12 +18,8 @@ $dark: (
 $light: (
   background: #FFF,
   box: 8px 8px 0 0 #545454,
-  button: rgba(#12151B,.7),
+  button: rgba(#545454,.7),
   link: #A32C14,
   meta: #545454,
   text: #12151B,
 );
-@mixin color($property, $varName) {
-  #{$property}: map-get($light, $varName);
-  #{$property}: var(--#{$varName});
-}
