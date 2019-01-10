@@ -8,7 +8,7 @@
 
 *Any content I link to is solely for the purpose of reference and/or because it's stuff I like and want to share. I'm not here to promote anyone.*
 
-Every year, the guys over at {{< link href="https://www.relay.fm/cortex" content="Cortex" >}} come up with a theme that sets an overarching idea guiding their decisions. There has been the "Year or Less" and "Year of Positivity" since 2017. Some people have begun to follow along with their own yearly themes, like {{< link href="https://twitter.com/aspiringrobotfm/status/1076594940304601089" content="Quinn Rose" >}} with her "Year of Quality".
+Every year, the guys over at {{< link href="https://www.relay.fm/cortex" content="Cortex" >}} come up with a theme that sets an overarching idea guiding their decisions. There has been the "Year of Less" and "Year of Positivity" since 2017. Some people have begun to follow along with their own yearly themes, like {{< link href="https://twitter.com/aspiringrobotfm/status/1076594940304601089" content="Quinn Rose" >}} with her "Year of Quality".
 
 That got me thinking of some recent changes I've made lately. There's only so much one can consume and there's a vast amount of good content out there. I typically have an extensive backlog of podcasts, videos, shows, articles, and audiobooks I'd like to get through. And although I do enjoy all these things and go through them eventually, I can't recall what most of them were about or if I gained anything valuable from them. Now, I don't want to be a snob about it, but I do value my time and I can do much better. And that was my thinking when I began cutting back on the media I consumed. I slowly started doing this a few months ago and this is what I've done so far and what I plan to do next.
 
