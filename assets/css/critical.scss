@@ -85,11 +85,18 @@ body {
   }
   // Header
   header#header {
-    @extend %items-center;
     @extend %content-space-between;
+    @extend %flex-wrap;
+    @extend %items-center;
     min-height: 72px;
-    @include media-query-max(570px) {
-      align-items: flex-start;
+    @supports (display:grid) {
+      display: grid;
+      grid-template-columns: 155px 290px;
+      grid-template-rows: auto;
+      @include media-query-max(570px) {
+        grid-template-columns: 155px 120px;
+        grid-template-rows: repeat(2,auto);
+      }
     }
     a.home {
       @extend %content-flex-start;
@@ -98,6 +105,12 @@ body {
       @extend %decoration-none;
       height: 42px;
       width: 155px;
+      @supports (display:grid) {
+        grid-column: 1/2;
+        @include media-query-max(570px) {
+          grid-row: 1/2;
+        }
+      }
       svg {
         height: 40px;
         margin-right: 10px;
@@ -120,109 +133,114 @@ body {
         width: 90px;
       }
     }
-    nav a {
-      @extend %decoration-none;
-      line-height: 1rem;
-      transition: text-decoration 0.5s ease;
-      @include media-query-max(350px) {
-        line-height: 1rem;
+    input#toggle {
+      @extend %none;
+      &:checked + .hamburger .top {
+        transform: rotate(-45deg);
+        margin-top: 5.5px;
       }
-      &:hover {
-        text-decoration: underline;
+      &:checked + .hamburger .meat {
+        transform: rotate(45deg);
+        margin-top: -3.5px;
       }
-      &.rss {
-        @extend %content-center;
-        @extend %flex;
-        @extend %items-center;
-        @extend %decoration-none;
-        height: 15px;
-        width: 15px;
-        svg {
-          height: 15px;
-          width: 15px;
+      &:checked + .hamburger .bottom {
+        transform: scale(0);
+      }
+      &:checked ~ nav.navbar {
+        height: 140px;
+        margin-top: 15px;
+      }
+    }
+    label.hamburger {
+      @extend %content-center;
+      @extend %flex;
+      @extend %flex-column;
+      @extend %items-center;
+      height: 24px;
+      width: 30px;
+      z-index: 10;
+      @supports (display:grid) {
+        @include media-query-max(570px) {
+          justify-self: end;
+          grid-column: 2/3;
+          grid-row: 1/2;
         }
-        @include media-query-max(350px) {
-          height: 13px;
-          width: 13px;
-          svg {
-            height: 13px;
-            width: 13px;
-          }
-        }
+      }
+      @include media-query-min(570px) {
+        display: none;
+      }
+      div {
+        @extend %relative;
+        @include color(background-color, text);
+        height: 3px;
+        margin-top: 5px;
+        transition: all 0.2s ease-in-out;
+        width: 30px;
       }
     }
     nav.navbar {
       width: 290px;
+      @supports (display:grid) {
+        grid-column: 2/3;
+        @include media-query-max(570px) {
+          grid-column: 2/3;
+          grid-row: 2/3;
+        }
+      }
       @include media-query-max(570px) {
-        display: none;
-      }
-    }
-    div#dropdown {
-      @extend %content-flex-end;
-      @extend %flex;
-      @extend %flex-column;
-      @extend %items-flex-end;
-      margin-top: 15px;
-      @include media-query-min(570px) {
-        display: none;
-      }
-      // Hamburger
-      label.hamburger {
-        @extend %content-center;
-        @extend %flex;
-        @extend %flex-column;
-        @extend %items-center;
-        height: 24px;
-        width: 30px;
-        z-index: 10;
-        div {
-          @extend %relative;
-          @include color(background-color, text);
-          height: 3px;
-          margin-top: 5px;
-          transition: all 0.2s ease-in-out;
-          width: 30px;
-        }
-      }
-      input#toggle {
-        @extend %none;
-        &:checked + .hamburger .top {
-          transform: rotate(-45deg);
-          margin-top: 5.5px;
-        }
-        &:checked + .hamburger .meat {
-          transform: rotate(45deg);
-          margin-top: -3.5px;
-        }
-        &:checked + .hamburger .bottom {
-          transform: scale(0);
-        }
-        &:checked ~ .menu {
-          height: 140px;
-          margin-top: 15px;
-        }
-      }
-      nav.menu {
-        @extend %content-center;
-        @extend %flex;
-        @extend %flex-column;
-        @extend %full-width;
-        @extend %grid;
-        @extend %items-flex-end;
         @include color(background-color, background);
+        align-items: flex-end;
         clear: both;
-        grid-template-rows: repeat(4, 1fr);
+        flex-direction: column;
         height: 0px;
+        justify-content: center;
         list-style: none;
         margin: 0;
         overflow: hidden;
         padding: 0;
         text-align: center;
         transition: all 0.3s ease;
+        width: 100%;
         z-index: 10;
-        a {
+        @supports (display:grid) {
+          display: grid;
+          justify-content: end;
+          grid-template-rows: repeat(4, 1fr);
+        }
+      }
+      a {
+        @extend %decoration-none;
+        line-height: 1rem;
+        transition: text-decoration 0.5s ease;
+        @include media-query-max(350px) {
+          line-height: 1rem;
+        }
+        @include media-query-max(570px) {
           margin: 10px 0 10px auto;
           text-align: end;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+        &.rss {
+          @extend %content-center;
+          @extend %flex;
+          @extend %items-center;
+          @extend %decoration-none;
+          height: 15px;
+          width: 15px;
+          svg {
+            height: 15px;
+            width: 15px;
+          }
+          @include media-query-max(350px) {
+            height: 13px;
+            width: 13px;
+            svg {
+              height: 13px;
+              width: 13px;
+            }
+          }
         }
       }
     }
