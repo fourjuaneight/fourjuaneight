@@ -3,9 +3,6 @@
   <p class="content">{{ .Summary }}</p>
   <div class="meta-info">
     {{ partial "date.html" . }}
-    {{ $s := .Section }}
-    {{ with .Params.category }}
-      <p class="tag"><span aria-hidden="true" class="meta">#</span><a href="/{{ $s }}/category/{{ . | urlize }}">{{.}}</a></p>
-    {{ end }}
+    {{ partial "category.html" . }}
   </div>
 </article>

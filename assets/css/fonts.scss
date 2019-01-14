@@ -4,8 +4,8 @@
   font-style: normal;
   src: local(Rubik),
        local(Rubik),
-       url("fonts/Rubik.woff2") format("woff2"),
-       url("fonts/Rubik.woff") format("woff");
+       url("/fonts/Rubik.woff2") format("woff2"),
+       url("/fonts/Rubik.woff") format("woff");
   font-display: swap;
 }
 @font-face {
@@ -14,8 +14,8 @@
   font-style: italic;
   src: local(Rubik-Italic),
        local(Rubik-Italic),
-       url("fonts/Rubik-Italic.woff2") format("woff2"),
-       url("fonts/Rubik-Italic.woff") format("woff");
+       url("/fonts/Rubik-Italic.woff2") format("woff2"),
+       url("/fonts/Rubik-Italic.woff") format("woff");
   font-display: swap;
 }
 @font-face {
@@ -24,8 +24,8 @@
   font-style: normal;
   src: local(Rubik-Bold),
        local(Rubik-Bold),
-       url("fonts/Rubik-Bold.woff2") format("woff2"),
-       url("fonts/Rubik-Bold.woff") format("woff");
+       url("/fonts/Rubik-Bold.woff2") format("woff2"),
+       url("/fonts/Rubik-Bold.woff") format("woff");
   font-display: swap;
 }
 @font-face {
@@ -34,8 +34,8 @@
   font-style: normal;
   src: local(OpenDyslexic),
        local(OpenDyslexic),
-       url("fonts/OpenDyslexic.woff2") format("woff2"),
-       url("fonts/OpenDyslexic.woff") format("woff");
+       url("/fonts/OpenDyslexic.woff2") format("woff2"),
+       url("/fonts/OpenDyslexic.woff") format("woff");
   font-display: swap;
 }
 @font-face {
@@ -44,27 +44,27 @@
   font-style: normal;
   src: local(OpenDyslexic-Bold),
        local(OpenDyslexic-Bold),
-       url("fonts/OpenDyslexic-Bold.woff2") format("woff2"),
-       url("fonts/OpenDyslexic-Bold.woff") format("woff");
+       url("/fonts/OpenDyslexic-Bold.woff2") format("woff2"),
+       url("/fonts/OpenDyslexic-Bold.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: 'Plex Mono';
   font-weight: 400;
   font-style: normal;
-  src: local(IBMPlexMono),
-       local(IBMPlexMono),
-       url("fonts/IBMPlexMono.woff2") format("woff2"),
-       url("fonts/IBMPlexMono.woff") format("woff");
+  src: local(PlexMono),
+       local(PlexMono),
+       url("/fonts/PlexMono.woff2") format("woff2"),
+       url("/fonts/PlexMono.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: 'Plex Mono';
   font-weight: 400;
   font-style: italic;
-  src: local(IBMPlexMonoItalic),
-       local(IBMPlexMonoItalic),
-       url("fonts/IBMPlexMonoItalic.woff2") format("woff2"),
-       url("fonts/IBMPlexMonoItalic.woff") format("woff");
+  src: local(PlexMono-Italic),
+       local(PlexMono-Italic),
+       url("/fonts/PlexMono-Italic.woff2") format("woff2"),
+       url("/fonts/PlexMono-Italic.woff") format("woff");
   font-display: swap;
 }

@@ -12,8 +12,8 @@ pygmentsUseClassic = false
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
-pygmentsOptions = "linenos=inline, lineseparator=<br>"
-pygmentsStyle = "monokai"
+pygmentsOptions = "lineseparator=<br>"
+pygmentsStyle = "dracula"
 
 [author]
   name = "Juan"

@@ -2,7 +2,7 @@
   "title": "Year of Quality",
   "date": "2019-01-01",
   "draft": false,
-  "category": "yearly-theme",
+  "category": ["yearly-theme"],
   "showthedate": true
 }
 
@@ -49,6 +49,4 @@ My family consists of me and my partner. It's pretty great. We're thinking of ad
 ## Commitment
 When I first thought about doing this I was hesitant. I'm not particularly bad at commitment; I wouldn't have a job as a freelancer if I did. But I tend to lose interest in things over time. Like anyone I guess. Importance is relevant; what might be critical today can just as likely be nothing tomorrow. Priorities change, quickly. But that's precisely why I think a yearly theme will work. It's not meant to tie me into a set of tasks I need to accomplish within the year, but rather serve as a guide for my decision throughout. So here's hoping for a quality year...of quality.
 
-----
-
-*Any content I link to is solely for the purpose of reference and/or because it's stuff I like and want to share. I'm not here to promote anyone.*
+{{< foot content="Any content I link to is solely for the purpose of reference and/or because it's stuff I like and want to share. I'm not here to promote anyone." >}}

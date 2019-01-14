@@ -56,13 +56,15 @@ ul#portfolio {
 blockquote {
   @include color(border-left-color, link);
   border-left-style: solid;
-  border-left-width: 1px;
-  margin: 0 0 15px 0;
+  border-left-width: 2px;
+  margin: 0 0 15px 15px;
   padding-left: 15px;
 }
-code,
+code span,
 figure {
-  font: 400 17px monospace;
+  font-family: 'Plex Mono', monospace !important;
+  font-size: 16px;
+  line-height: 26px;
 }
 figure {
   @include color(background-color, text);
@@ -77,11 +79,10 @@ p,
 }
 figure,
 pre {
-  @include color(box-shadow, box);
-  margin-bottom: 21px;
+  border-radius: 5px;
+  margin: 20px 0;
 }
-figcaption p,
-pre {
+figcaption p {
   padding: 5px;
 }
 footer,
@@ -109,7 +110,7 @@ h4 {
   font-size: 1.3rem;
 }
 h2, h3, h4 {
-  margin-top: 10px;
+  margin: 10px 0;
 }
 img, 
 svg {
@@ -134,10 +135,15 @@ ul {
 ol ul {
   padding-left: 20px;
 }
+pre {
+  padding: 50px 30px 30px;
+}
 p code {
   @include color(background-color, text);
   @include color(color, background);
-  padding: 0 2px;
+  border-radius: 5px;
+  font-family: 'Plex Mono', monospace !important;
+  padding: 0 4px;
 }
 .brand {
   font-size: 2.3rem;
@@ -146,5 +152,17 @@ p code {
   margin-bottom: 10px;
 }
 .highlight pre {
-  overflow-x: scroll;
+  overflow-x: auto;
+  &.chroma {
+    @extend %relative;
+    code::before {
+      @extend %absolute;
+      @include color(color, link);
+      content: attr(data-lang);
+      font: normal 13px 'Plex Mono', monospace;
+      left: 15px;
+      text-transform: uppercase;
+      top: 15px;
+    }
+  }
 }

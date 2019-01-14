@@ -52,6 +52,17 @@
   <link rel="preload" href={{ $Dysb2.Permalink }} as="font" type="font/woff2" crossorigin>
   {{ $Dysb := resources.Get "fonts/OpenDyslexic-Bold.woff" }}
   <link rel="preload" href={{ $Dysb.Permalink }} as="font" type="font/woff" crossorigin>
+
+  {{ if .IsPage }}
+    {{ $Plex2 := resources.Get "fonts/PlexMono.woff2" }}
+    <link rel="preload" href={{ $Plex2.Permalink }} as="font" type="font/woff2" crossorigin>
+    {{ $Plex := resources.Get "fonts/PlexMono.woff" }}
+    <link rel="preload" href={{ $Plex.Permalink }} as="font" type="font/woff" crossorigin>
+    {{ $Plexi2 := resources.Get "fonts/PlexMono-Italic.woff2" }}
+    <link rel="preload" href={{ $Plexi2.Permalink }} as="font" type="font/woff2" crossorigin>
+    {{ $Plexi := resources.Get "fonts/PlexMono-Italic.woff" }}
+    <link rel="preload" href={{ $Plexi.Permalink }} as="font" type="font/woff" crossorigin>
+  {{ end }}
   
   <!-- Critical -->
   {{ partial "critical.html" . }}
@@ -59,6 +70,10 @@
   <!-- Stylesheets -->
   {{ $styles := resources.Get "css/main.scss" | toCSS | postCSS | minify }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+  {{ if .IsPage }}
+    {{ $syntax := resources.Get "css/syntax.scss" | toCSS | postCSS | minify }}
+    <link rel="stylesheet" href="{{ $syntax.Permalink }}" media="screen">
+  {{ end }}
   
   <!-- Manifest -->
   {{ $manifest := resources.Get "manifest.json" }}

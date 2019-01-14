@@ -2,7 +2,7 @@
   "title": "My Development Workflow",
   "date": "2017-10-15",
   "draft": false,
-  "category": "productivity",
+  "category": ["productivity"],
   "showthedate": true
 }
 

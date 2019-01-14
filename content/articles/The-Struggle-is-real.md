@@ -2,7 +2,7 @@
   "title": "The Struggle Is Real",
   "date": "2017-12-17",
   "draft": false,
-  "category": "life",
+  "category": ["life"],
   "showthedate": true
 }
 

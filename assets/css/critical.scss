@@ -47,6 +47,8 @@ body {
     --background: #{map-get($black, background)};
     --box: #{map-get($black, box)};
     --button: #{map-get($black, button)};
+    --content: #{map-get($black, content)};
+    --contentBG: #{map-get($black, contentBG)};
     --text: #{map-get($black, text)};
     --meta: #{map-get($black, meta)};
     --link: #{map-get($black, link)};
@@ -55,6 +57,8 @@ body {
     --background: #{map-get($dark, background)};
     --box: #{map-get($dark, box)};
     --button: #{map-get($dark, button)};
+    --content: #{map-get($dark, content)};
+    --contentBG: #{map-get($dark, contentBG)};
     --text: #{map-get($dark, text)};
     --meta: #{map-get($dark, meta)};
     --link: #{map-get($dark, link)};
@@ -63,6 +67,8 @@ body {
     --background: #{map-get($light, background)};
     --box: #{map-get($light, box)};
     --button: #{map-get($light, button)};
+    --content: #{map-get($light, content)};
+    --contentBG: #{map-get($light, contentBG)};
     --text: #{map-get($light, text)};
     --meta: #{map-get($light, meta)};
     --link: #{map-get($light, link)};
@@ -78,6 +84,8 @@ body {
       --background: #{map-get($black, background)};
       --box: #{map-get($black, box)};
       --button: #{map-get($black, button)};
+      --content: #{map-get($black, content)};
+      --contentBG: #{map-get($black, contentBG)};
       --text: #{map-get($black, text)};
       --meta: #{map-get($black, meta)};
       --link: #{map-get($black, link)};

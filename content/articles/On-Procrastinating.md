@@ -2,7 +2,7 @@
   "title": "On Procrastinating",
   "date": "2017-07-23",
   "draft": false,
-  "category": "procrastination",
+  "category": ["procrastination"],
   "showthedate": true
 }
 

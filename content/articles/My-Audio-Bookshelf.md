@@ -2,7 +2,7 @@
   "title": "My Audio Bookshelf",
   "date": "2018-12-06",
   "draft": true,
-  "category": "meta",
+  "category": ["meta"],
   "showthedate": true
 }
 
