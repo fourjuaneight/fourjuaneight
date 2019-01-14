@@ -50,5 +50,5 @@ My family consists of me and my partner. It's pretty great. We're thinking of ad
 When I first thought about doing this I was hesitant. I'm not particularly bad at commitment; I wouldn't have a job as a freelancer if I did. But I tend to lose interest in things over time. Like anyone I guess. Importance is relevant; what might be critical today can just as likely be nothing tomorrow. Priorities change, quickly. But that's precisely why I think a yearly theme will work. It's not meant to tie me into a set of tasks I need to accomplish within the year, but rather serve as a guide for my decision throughout. So here's hoping for a quality year...of quality.
 
 {{% fnref %}}
-{{< note 1 "Yes, it is an Apple podcast. But unlike most fanboy podcasts, these are software engeerings that are always critical of the products and have a realistic view on them. So compared to most Apple podcasts, ATP is a niche." >}}
+{{< note 1 "Yes, it is an Apple podcast. But unlike most fanboy podcasts, these are software engineers that are critical of the products and have a realistic view of them. So compared to most Apple podcasts, ATP is a niche." >}}
 {{% /fnref %}}
