@@ -431,28 +431,49 @@ footer#footer {
 // Theme Switcher
 body {
   div#ui-options {
-    @extend %content-center;
+    @extend %content-flex-start;
     @extend %flex;
     @extend %items-center;
-    background: none;
+    @include color(background, button);
     border: none;
+    border-radius: 20px;
     bottom: 30px;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
     outline: none;
     padding: 0;
     position: fixed;
     right: 15px;
-    width: 75px;
+    right: 10px;
+    max-width: 310px;
     z-index: 10;
+    @supports (display:grid) {
+      @extend %grid;
+      grid-template-columns: min-content 35px;
+      grid-template-rows: 35px;
+    }
+    @include media-query-max(380px) {
+      max-width: 300px;
+    }
+    &.active,
+    &:hover {
+      @include color(background, meta);
+    }
+    > * {
+      @supports (display:grid) {
+        grid-row: 1/2;
+      }
+    }
     input#settings {
       @extend %none;
       &:checked ~ section.options {
-        height: 162px;
-        padding: 10px 0;
+        width: 265px;
+        margin-left: 10px;
+        @include media-query-max(380px) {
+          width: 255px;
+        }
       }
       &:checked ~ label.gear > svg {
-        @include color(fill, meta);
-        transform: rotate(67.5deg);
+        transform: rotate(-67.5deg);
       }
     }
     label.gear {
@@ -460,80 +481,103 @@ body {
       @extend %flex;
       @extend %items-center;
       cursor: pointer;
-      height: 25px;
-      width: 30px;
+      height: 35px;
+      transition: all 0.3s ease;
+      width: 35px;
+      @supports (display:grid) {
+        grid-column: 2/3;
+      }
       svg {
-        @include color(fill, button);
+        @include color(fill, background);
         height: 25px;
         transition: all 0.3s ease;
         width: 25px;
-        &:hover {
-          @include color(fill, meta);
-        }
       }
     }
     section.options {
       @extend %content-center;
       @extend %flex;
-      @extend %flex-column;
       @extend %items-center;
-      height: 0;
+      height: 35px;
       overflow: hidden;
       padding: 0;
       transition: all 0.3s ease;
+      width: 0;
+      @supports (display:grid) {
+        @extend %grid;
+        grid-column: 1/2;
+        grid-template-columns: 125px 2.5px 135.5px;
+      }
       div.divider {
-        @include color(background-color, meta);
+        @include color(background-color, background);
         border-radius: 5px;
-        height: 1px;
-        margin: 3px 0;
-        width: 75px;
+        height: 25px;
+        margin: 0 auto;
+        width: 1.5px;
+        @supports (display:grid) {
+          justify-self: center;
+        }
       }
       nav {
         @extend %content-center;
-        @extend %flex-column;
         @extend %items-center;
         height: auto;
         padding: 0;
-        width: 75px;
+        @supports (display:grid) {
+          @extend %grid;
+          grid-column-gap: 8px;
+        }
         p {
           @extend %content-center;
           @extend %flex;
           @extend %full-width;
           @extend %items-center;
+          @include color(color, background);
           cursor: pointer;
           border-radius: 5px;
           font-size: 1rem;
           height: 22px;
           line-height: 1rem;
-          margin: 2.5px 0;
+          margin: 0;
+          padding: 2.5px 0;
           text-align: center;
           &:hover {
             text-decoration: underline;
           }
           &#rubik {
             font-family: 'Rubik', sans-serif;
-            @include color(background-color, text);
-            @include color(color, background);
+            padding-left: 0;
           }
           &#dyslexic {
-            @include color(background-color, text);
-            @include color(color, background);
             font-family: 'Dyslexic', sans-serif;
             font-size: .9rem;
             line-height: .9rem;
             padding: 0 0 6px;
           }
-          &#black {
-            background-color: #000;
-            color: #EB7760;
+          @supports (display:grid) {
+            margin: 0 !important;
           }
-          &#dark {
-            background-color: #12151B;
-            color: #F2815A;
+        }
+        &#fonts {
+          @supports (display:grid) {
+            grid-template-columns: repeat(2,auto);
           }
-          &#light {
-            background-color: #FFF;
-            color: #A32C14;
+          p {
+            margin-right: 8px;
+            @include media-query-max(380px) {
+              margin-right: 6px;
+            }
+          }
+        }
+        &#themes {
+          @supports (display:grid) {
+            grid-template-columns: repeat(3,auto);
+          }
+          p {
+            margin-left: 8px;
+            @include media-query-max(380px) {
+              margin-left: 6px;
+            }
           }
         }
       }
