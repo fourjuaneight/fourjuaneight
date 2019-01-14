@@ -280,6 +280,39 @@ ul#bookmarks {
 p.tag {
   margin: 0;
 }
+// Footnotes
+sup.footnote-ref {
+  a {
+    @extend %no-decoration;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+  }
+}
+div.footnotes {
+  p:empty {
+    @extend %none;
+  }
+  ul {
+    li {
+      @extend %relative;
+      font-size: 1rem;
+      line-height: 20px;
+      list-style-type: none;
+      margin-bottom: 10px;
+      &::before {
+        @extend %absolute;
+        @include color(color, meta);
+        content: attr(data-item);
+        left: -15px;
+        top: 0;
+      }
+      a.footnote-return {
+        @extend %no-decoration;
+        margin-left: 5px;
+      }
+    }
+  }
+}
 // Paginator
 nav.paginate {
   a {

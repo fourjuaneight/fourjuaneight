@@ -1,0 +1,2 @@
+{{ $i := .Get 0 }}
+<li id="fn:{{ $i }}" data-item="{{ $i }}.">{{ .Get 1 }}<a class="footnote-return" href="{{ .Page.Permalink }}#fnref:{{ $i }}">↩</a></li>

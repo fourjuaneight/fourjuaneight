@@ -4,7 +4,6 @@ enableRobotsTXT = "true"
 languageCode = "en-us"
 title = "Clever Laziness"
 
-FootnoteReturnLinkContents = "↩"
 SectionPagesMenu = "main"
 
 # Pygments Syntax Highlighting
@@ -20,7 +19,6 @@ pygmentsStyle = "dracula"
   email = "hi@cleverlaziness.com"
 
 [blackfriday]
-  hrefTargetBlank = true
   plainIDAnchors = true
 
 [params]
