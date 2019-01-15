@@ -72,7 +72,7 @@ You can get the Shortcut  {{<link href ="https://www.icloud.com/shortcuts/564933
 You can get the Shortcut  {{<link href ="https://www.icloud.com/shortcuts/8e8ea1ce538d4653825b6be88df39bb7" content ="here" >}}.
 
 ### Bonus: Reading List 
-{{<link href ="https://www.icloud.com/shortcuts/011881d4b2cc4665ad7b27690fcca915" content ="This" >}} is a simple version of the Web Bookmarks Shortcut. It grabs the webpage name and prompts you for verification. Then passes that, along with the input URL via magic variables, to Pinboard using the "Reading_List"tag. 
+{{<link href ="https://www.icloud.com/shortcuts/011881d4b2cc4665ad7b27690fcca915" content ="This" >}} is a simple version of the Web Bookmarks Shortcut. It grabs the webpage name and prompts you for verification. Then passes that, along with the input URL via magic variables, to Pinboard using the "Reading_List" tag.
 
 ### Getting Your Bookmarks 
 Using tags/categories is a fantastic way to filter your bookmarks. {{<link href ="https://pinboard.in" content ="Pinboard.in" >}} makes it easy to find stuff on the site this way. But this works even better with Shortcuts.
