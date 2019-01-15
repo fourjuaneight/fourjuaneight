@@ -1,5 +1,5 @@
 (function () {
-  const version = 'v3';
+  const version = 'v4';
   const cacheName = ':cleverlaziness:';
   const staticCacheName = version + cacheName + 'static';
   const pagesCacheName = cacheName + 'pages';
@@ -17,6 +17,8 @@
     '/fonts/Rubik-Italic.woff2',
     '/fonts/Rubik-Bold.woff',
     '/fonts/Rubik-Bold.woff2',
+    '/js/barefoot.min.js',
+    '/js/lazyloading.min.js'
   ];
   function updateStaticCache() {
     // These items must be cached for the Service Worker to complete installation
