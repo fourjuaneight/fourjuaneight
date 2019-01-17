@@ -1,7 +1,35 @@
-@import 'colors';
-@import 'extends';
-@import 'mixins';
-/* Background */
+/* Base */
+a code,
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+li code,
+p code {
+  @include color(background-color, contentBG);
+  @include color(color, content);
+  border: 1.5px solid;
+  @include color(border-color, border);
+  border-radius: 5px;
+  font-family: 'Plex Mono', monospace !important;
+  padding: 0 4px;
+}
+/* Parent */
+.highlight pre {
+  overflow-x: auto;
+  &.chroma {
+    @extend %relative;
+    code::before {
+      @extend %absolute;
+      @include color(color, content);
+      content: attr(data-lang);
+      font: normal 13px 'Plex Mono', monospace;
+      left: 15px;
+      text-transform: uppercase;
+      top: 15px;
+    }
+  }
+}
 .chroma {
   @include color(background-color, contentBG);
   color: #f8f8f2;

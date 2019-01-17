@@ -28,18 +28,19 @@ a:active svg,
 a:hover svg {
   @include color(fill, link);
 }
-hr,
-.meta {
-  @include color(color, meta);
+hr {
+  @include color(color, border);
 }
 article a,
 p.tag a {
   @include color(color, link);
 }
-p.tag a {
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
+p.tag {
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 article p {
@@ -138,31 +139,18 @@ ol ul {
 pre {
   padding: 50px 30px 30px;
 }
-p code {
-  @include color(background-color, contentBG);
-  @include color(color, content);
-  border-radius: 5px;
-  font-family: 'Plex Mono', monospace !important;
-  padding: 0 4px;
-}
 .brand {
   font-size: 2.3rem;
 }
 .brand {
   margin-bottom: 10px;
 }
-.highlight pre {
-  overflow-x: auto;
-  &.chroma {
-    @extend %relative;
-    code::before {
-      @extend %absolute;
-      @include color(color, content);
-      content: attr(data-lang);
-      font: normal 13px 'Plex Mono', monospace;
-      left: 15px;
-      text-transform: uppercase;
-      top: 15px;
-    }
-  }
+.hidden {
+  @extend %visually-hidden;
+}
+.meta {
+  @include color(color, meta);
+}
+.none {
+  display: none !important;
 }

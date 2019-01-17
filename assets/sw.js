@@ -1,5 +1,5 @@
 (function () {
-  const version = 'v4';
+  const version = 'v6';
   const cacheName = ':cleverlaziness:';
   const staticCacheName = version + cacheName + 'static';
   const pagesCacheName = cacheName + 'pages';
@@ -11,12 +11,21 @@
     '/offline/',
     '/bookmarks/',
     '/css/main.min.css',
+    '/css/single.min.css',
     '/fonts/Rubik.woff',
     '/fonts/Rubik.woff2',
     '/fonts/Rubik-Italic.woff',
     '/fonts/Rubik-Italic.woff2',
     '/fonts/Rubik-Bold.woff',
     '/fonts/Rubik-Bold.woff2',
+    '/fonts/OpenDyslexic.woff',
+    '/fonts/OpenDyslexic.woff2',
+    '/fonts/OpenDyslexic-Bold.woff',
+    '/fonts/OpenDyslexic-Bold.woff2',
+    '/fonts/PlexMono.woff',
+    '/fonts/PlexMono.woff2',
+    '/fonts/PlexMono-Italic.woff',
+    '/fonts/PlexMono-Italic.woff2',
     '/js/barefoot.min.js',
     '/js/lazyloading.min.js'
   ];

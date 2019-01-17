@@ -68,11 +68,12 @@
   {{ partial "critical.html" . }}
 
   <!-- Stylesheets -->
-  {{ $styles := resources.Get "css/main.scss" | toCSS | postCSS | minify }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
   {{ if .IsPage }}
-    {{ $syntax := resources.Get "css/syntax.scss" | toCSS | postCSS | minify }}
-    <link rel="stylesheet" href="{{ $syntax.Permalink }}" media="screen">
+    {{ $single := resources.Get "css/single.scss" | toCSS | postCSS | minify }}
+    <link rel="stylesheet" href="{{ $single.Permalink }}" media="screen">
+  {{ else }}
+    {{ $main := resources.Get "css/main.scss" | toCSS | postCSS | minify }}
+    <link rel="stylesheet" href="{{ $main.Permalink }}" media="screen">
   {{ end }}
   
   <!-- Manifest -->

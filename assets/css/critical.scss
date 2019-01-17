@@ -9,7 +9,7 @@
   box-sizing: inherit;
 }
 *::selection {
-  @include color(background, meta);
+  @include color(background, button);
   color: #fff;
 }
 html {
@@ -72,12 +72,6 @@ body {
     --text: #{map-get($light, text)};
     --meta: #{map-get($light, meta)};
     --link: #{map-get($light, link)};
-  }
-  .hidden {
-    @extend %visually-hidden;
-  }
-  .none {
-    display: none !important;
   }
   @media screen and (prefers-color-scheme: dark) {
     &.black {
@@ -202,7 +196,6 @@ body {
         flex-direction: column;
         height: 0px;
         justify-content: center;
-        list-style: none;
         margin: 0;
         overflow: hidden;
         padding: 0;
@@ -250,7 +243,50 @@ body {
       }
     }
   }
-  // Article
+  // List
+  main.list {
+    min-height: calc(100vh - 198px);
+    h1.page-title {
+      margin-bottom: 15px;
+    }
+    nav.all-tags {
+      @extend %content-flex-start;
+      @extend %flex;
+      @extend %flex-wrap;
+      @extend %items-center;
+      margin-bottom: 20px;
+      width: auto;
+      p.tag {
+        margin-right: 15px;
+        font-style: italic;
+        span {
+          @include color(color, meta);
+        }
+      }
+    }
+    article {
+      padding: 0;
+      margin-bottom: 30px;
+      h1, h2, p {
+        margin-bottom: 15px;
+      }
+      h2.title {
+        font-size: 2rem;
+        margin: 0 0 15px;
+        a {
+          @extend %decoration-none;
+          font-size: 2rem;
+        }
+      }
+      p.tag {
+        margin: 0;
+      }
+      time.date {
+        @include color(color, meta);
+      }
+    }
+  }
+  // Bookshelf
   main.bookshelf {
     section.book-list {
       @extend %content-space-between;
@@ -273,146 +309,94 @@ body {
       }
     }
   }
-  article {
-    padding: 0;
-    margin-bottom: 30px;
-    h1, h2, p {
-      margin-bottom: 15px;
-    }
-    h2.title {
-      font-size: 2rem;
-      a {
-        font-size: 2rem;
-        @extend %decoration-none;
-      }
-    }
-    h2.title {
-      margin: 0 0 15px;
-    }
-    p.content {
-      margin: 15px 0
-    }
-    section.content {
-      margin: 15px 0;
-      div#avatar {
-        @extend %content-flex-start;
-        @extend %flex;
-        height: 250px;
-        margin-bottom: 15px;
-        width: 100%;
-        svg {
-          height: 250px;
-          width: 185px;
-        }
-      }
-    }
-    time.date {
-      @include color(color, meta);
-    }
-    div.meta-info {
-      @extend %content-space-between;
+  // Bookmarks
+  nav.categories {
+    div.tag {
+      @extend %content-center;
       @extend %flex;
       @extend %items-center;
-    }
-    &.book {
-      height: 265px;
-      margin-bottom: 20px;
-      width: 155px;
-      @supports (display:grid) {
-        @extend %content-self-center;
+      margin-right: 15px;
+      > * {
+        font-style: italic;
+      }
+      span {
+        @include color(color, meta);
         margin: 0;
       }
-      &:hover h2.title a {
+      input {
+        @extend %none;
+        &:checked ~ label {
+          text-decoration: underline;
+        }
+      }
+      label {
         @include color(color, link);
-      }
-      a.cover {
-        width: 150px;
-        img {
-          height: 150px;
-          width: 150px;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
         }
-      }
-      h2.book-title {
-        font-size: 1.1rem;
-        line-height: 1.2rem;
-        margin-bottom: 5px;
-        a {
-          font-size: 1.1rem;
-          line-height: 1.2rem;
-        }
-      }
-      p.author {
-        @include color(color, text);
-        font-size: .9rem;
-        line-height: .9rem;
-        margin-bottom: 10px;
-      }
-      time.date {
-        font-size: .9rem;
       }
     }
-    &.book-review {
-      @extend %content-space-between;
-      @extend %grid;
-      grid-column-gap: 10px;
-      grid-template-columns: 250px 600px;
-      grid-template-rows: repeat(3,auto);
-      @include media-query-max(900px) {
-        grid-template-columns: 150px minmax(auto,700px);
-      }
-      @include media-query-max(880px) {
+  }
+  ul#bookmarks {
+    @include color(border-top-color, border);
+    border-top-style: solid;
+    border-top-width: 1.5px;
+    padding: 0;
+    nav.sorting,
+    li#record {
+      @extend %content-flex-start;
+      @extend %flex;
+      @extend %flex-wrap;
+      @extend %items-center;
+      @include color(border-bottom-color, border);
+      border-bottom-style: solid;
+      border-bottom-width: 1.5px;
+      margin: 0;
+      padding: 5px;
+      @include media-query-max(480px) {
+        align-items: flex-start;
+        flex-direction: column;
         justify-content: center;
       }
-      @include media-query-max(340px) {
-        grid-template-rows: repeat(3,auto);
-      }
       > * {
-        grid-column: 2;
-      }
-      a.purchase-link {
-        grid-column: 1;
-        grid-row: 1/5;
-        @include media-query-max(900px) {
-          grid-row: 1/3;
-        }
-        img.cover {
-          height: 250px;
-          width: 250px;
-          @include media-query-max(900px) {
-            height: 150px;
-            width: 150px;
+        @extend %full-width;
+        margin: 0;
+        padding: 0 5px;
+        &:nth-child(1) {
+          @extend %no-decoration;
+          padding-left: 0;
+          max-width: 450px;
+          @include media-query-max(925px) {
+            max-width: 100%;
           }
         }
-      }
-      section.info {
-        @extend %content-flex-start;
-        @extend %flex;
-        @extend %flex-column;
-        @extend %items-flex-start;
-        grid-row: 1;
-        h1.book-title {
-          line-height: 2.1rem;
-          margin-bottom: 5px;
-          @include media-query-max(340px) {
-            font-size: 1.2rem;
-            line-height: 1.5rem;
+        &:nth-child(2) {
+          max-width: 335px;
+          @include media-query-max(925px) {
+            max-width: 434px;
           }
         }
-        p.author {
-          margin-bottom: 10px;
+        &:nth-child(3) {
+          text-align: start;
+          max-width: 100px;
         }
-        p.author,
-        time.date {
-          @include media-query-max(340px) {
-            font-size: .8rem;
-            line-height: .8rem;
-          }
+        @include media-query-max(925px) {
+          padding: 0 !important;
+        }
+        @include media-query-max(573px) {
+          max-width: 100% !important;
         }
       }
-      section.content {
-        grid-row: 4;
-        @include media-query-max(900px) {
-          grid-column: 1/3;
+    }
+    nav.sorting {
+      @include color(background-color, contentBG);
+      p {
+        @include color(color, content);
+        cursor: pointer;
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
@@ -454,38 +438,39 @@ body {
       }
     }
   }
-}
-@media print {
-  header#header,
-  footer#footer,
-  section.stuff,
-  button#theme-switcher {
-    display: none;
-  }
-  main.list {
-    > * {
-      color: #333;
+  // Print
+  @media print {
+    header#header,
+    footer#footer,
+    section.stuff,
+    button#theme-switcher {
+      display: none;
     }
-    h1 {
-      font-size: 1.5rem;
-    }
-    h2 {
-      font-size: 1.4rem;
-    }
-    h3 {
-      font-size: 1.3rem;
-    }
-    h4 {
-      font-size: 1.1rem;
-    }
-    h3, h4 {
-      font-weight: normal;
-    }
-    a {
-      color: #333;
-      text-decoration: none;
-      &.email::after {
-        content: ': hi@cleverlaziness.com';
+    main.list {
+      > * {
+        color: #333;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      h3 {
+        font-size: 1.3rem;
+      }
+      h4 {
+        font-size: 1.1rem;
+      }
+      h3, h4 {
+        font-weight: normal;
+      }
+      a {
+        color: #333;
+        text-decoration: none;
+        &.email::after {
+          content: ': hi@cleverlaziness.com';
+        }
       }
     }
   }
