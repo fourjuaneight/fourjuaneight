@@ -189,8 +189,8 @@
     }
     function cat(id) {
       const category = document.getElementsByName('category');
-      const liClass = 'li#record.' + id.id;
-      const hidden = document.querySelectorAll('li#record');
+      const liClass = 'li#record-item.' + id.id;
+      const hidden = document.querySelectorAll('li#record-item');
       const active = document.querySelectorAll(liClass);
       Array.prototype.forEach.call(category,function(el){
         el.checked = false;
