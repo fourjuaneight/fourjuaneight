@@ -1,5 +1,5 @@
 {
-  "records":[
+  "records": [
     {
       "Title": "The Web began dying in 2014, here's how",
       "Creator": "André Staltz",
@@ -160,6 +160,36 @@
       "Title": "How to Pick a Career (That Actually Fits You)",
       "Creator": "Tim Urban",
       "URL": "https://waitbutwhy.com/2018/04/picking-career.html",
+      "Category": "Articles"
+    },
+    {
+      "Title": "I Was A Cable Guy. I Saw The Worst Of America.",
+      "Creator": "Lauren Hough",
+      "URL": "https://m.huffpost.com/us/entry/us_5c0ea571e4b06484c9fd4c21?ec_carp=",
+      "Category": "Articles"
+    },
+    {
+      "Title": "Growth Loops: circular causality is real",
+      "Creator": "Jessica Kerr",
+      "URL": "https://medium.com/@jessitron/growth-loops-circular-causality-is-real-586fcc55fcf7",
+      "Category": "Articles"
+    },
+    {
+      "Title": "The Ethics of Web Performance",
+      "Creator": "Tim Kadlec",
+      "URL": "https://timkadlec.com/remembers/2019-01-09-the-ethics-of-performance/",
+      "Category": "Articles"
+    },
+    {
+      "Title": "Securing Web Sites Made Them Less Accessible",
+      "Creator": "Eric Meyer",
+      "URL": "https://meyerweb.com/eric/thoughts/2018/08/07/securing-sites-made-them-less-accessible/",
+      "Category": "Articles"
+    },
+    {
+      "Title": "Women of the Web",
+      "Creator": "Jay Hoffmann",
+      "URL": "https://thehistoryoftheweb.com/postscript/women-of-the-web/",
       "Category": "Articles"
     },
     {
@@ -733,552 +763,6 @@
       "Category": "Comics"
     },
     {
-      "Title": "Never forget we're all just a bunch of apes trying to figure out how to put text and images on a screen and have stuff do stuff when other apes click buttons.",
-      "Creator": "@brad_frost",
-      "URL": "https://mobile.twitter.com/brad_frost/status/994316607236313088",
-      "Category": "Tweets"
-    },
-    {
-      "Title": "Morning routine:  \n1\\. Wake up.  \n2\\. Stretch.  \n3\\. Shake feelings of impending doom.  \n4\\. Coffee.  \n5\\. Breakfast.  \n6\\. Suppress despair.  \n7\\. Check Slack.",
-      "Creator": "@brad_frost",
-      "URL": "https://mobile.twitter.com/brad_frost/status/824985160663851009",
-      "Category": "Tweets"
-    },
-    {
-      "Title": "To be a brilliant jerk, you actually have to be brilliant. Most times, you're just an insufferable prick.",
-      "Creator": "@captainsafia",
-      "URL": "https://mobile.twitter.com/captainsafia/status/903293326593585152",
-      "Category": "Tweets"
-    },
-    {
-      "Title": "omfg there is, there is so much going on and it is beautiful and now when I watch a star war I will hear r2d2's comforting beep and feel more deeply because I will be like, we know, r2d2, it is ok, we know",
-      "Creator": "@emmabo",
-      "URL": "https://mobile.twitter.com/emmabo/status/969271806765957121",
-      "Category": "Tweets"
-    },
-    {
-      "Title": "Rule: If you think you know how to fix a problem that everyone knows about and no one has fixed, you do not understand the whole problem.",
-      "Creator": "@hankgreen",
-      "URL": "https://mobile.twitter.com/hankgreen/status/816791160702255105",
-      "Category": "Tweets"
-    },
-    {
-      "Title": "I was definitely aggressively original with some of the code I wrote today. The fact that it crashes just means that the industry hasn’t caught up with my genius.",
-      "Creator": "@jamesthomson",
-      "URL": "https://mobile.twitter.com/jamesthomson/status/981931936221421573",
-      "Category": "Tweets"
-    },
-    {
-      "Title": "I like to imagine our parents are right and all of us D&D players go straight to hell upon which Satan invites himself into our groups to play a bard who sings Black Sabbath shit every chance he gets and it's pretty metal every single time.",
-      "Creator": "@lucaseuspank",
-      "URL": "https://mobile.twitter.com/lucaseuspank/status/1014386816756080640",
-      "Category": "Tweets"
-    },
-    {
-      "Title": "Why do GUIs exist? When you don't speak the same language (like a person & a computer), it's easier to just point at things to communicate.",
-      "Creator": "@lukew",
-      "URL": "https://mobile.twitter.com/lukew/status/838837365430874112",
-      "Category": "Tweets"
-    },
-    {
-      "Title": "Never trust anyone who sends you a screenshot with 1% battery unplugged",
-      "Creator": "@MKBHD",
-      "URL": "https://mobile.twitter.com/MKBHD/status/877608198902906880",
-      "Category": "Tweets"
-    },
-    {
-      "Title": "Once you start really looking at other people's code, you realize the entire world is held together with scotch tape.",
-      "Creator": "@philzona",
-      "URL": "https://mobile.twitter.com/philzona/status/910673253286293504",
-      "Category": "Tweets"
-    },
-    {
-      "Title": "The Programmers’ Credo: we do these things not because they are easy, but because we thought they were going to be easy",
-      "Creator": "@Pinboard",
-      "URL": "https://mobile.twitter.com/Pinboard/status/761656824202276864",
-      "Category": "Tweets"
-    },
-    {
-      "Title": "The FEYNMAN technique of learning:  \nSTEP 1 - Pick and study a topic  \nSTEP 2 - Explain the topic to someone, like a child, who is unfamiliar with the topic  \nSTEP 3 - Identify any gaps in your understanding   \nSTEP 4 - Review and Simplify!",
-      "Creator": "@ProfFeynman",
-      "URL": "https://mobile.twitter.com/ProfFeynman/status/1076294048837758977",
-      "Category": "Tweets"
-    },
-    {
-      "Title": "Only idiots believe NASA is conducting secret missions. YOU CANT SECRETLY FIRE GIANT ROCKETS INTO SPACE BECAUSE EVERYONE CAN SEE SPACE.",
-      "Creator": "@SarcasticRover",
-      "URL": "https://mobile.twitter.com/SarcasticRover/status/880656949150441474",
-      "Category": "Tweets"
-    },
-    {
-      "Title": "Spaghetti code: confusing or poorly structured.  Ravioli code: neatly separated, but might too separated and thus hard to understand.  Lasagna code: code with easily distinguishable layers.  Campanelle code: built using a hipster framework almost no one has heard of.",
-      "Creator": "@twostraws",
-      "URL": "https://twitter.com/twostraws/status/1063844463976562690",
-      "Category": "Tweets"
-    },
-    {
-      "Title": "Lightningface",
-      "Creator": "A Saboteur",
-      "URL": "https://vimeo.com/224385535",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Human Population Through Time",
-      "Creator": "Museum of Natural History",
-      "URL": "https://youtu.be/PUwmA3Q0_OE",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Rocket Launch as Seen from the Space Station",
-      "Creator": "APOD",
-      "URL": "https://youtu.be/B1R3dTdcpSU",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Every Detail of Grand Central Terminal Explained",
-      "Creator": "Architectural Digest",
-      "URL": "https://youtu.be/_b4XQUE_u8o",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Hidden Details of the New York Public Library",
-      "Creator": "Architectural Digest",
-      "URL": "https://youtu.be/roi5V8ppi7Y",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Why You Don't Actually Want Super Strength!",
-      "Creator": "Because Science",
-      "URL": "https://youtu.be/kD06SQtfA5s",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Why You Don't Want Super Speed",
-      "Creator": "Because Science",
-      "URL": "https://youtu.be/FTEDZQaEIts",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Why You Don't Want Invisibility",
-      "Creator": "Because Science",
-      "URL": "https://youtu.be/4oTa1BabYpE",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Why You Don't Want Teleportation",
-      "Creator": "Because Science",
-      "URL": "https://youtu.be/Nm5QhMH-EXY",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Tea Consent",
-      "Creator": "Blue Seat Studios",
-      "URL": "https://youtu.be/oQbei5JGiT8",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Don't Stay In School",
-      "Creator": "BoyInABand",
-      "URL": "https://youtu.be/E9GRYa_3gno",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Humans Need Not Apply",
-      "Creator": "CGPGrey",
-      "URL": "https://youtu.be/7Pq-S557XQU",
-      "Category": "Videos"
-    },
-    {
-      "Title": "The Lord of the Rings Mythology Explained - Part 1",
-      "Creator": "CGPGrey",
-      "URL": "https://youtu.be/7Pq-S557XQU",
-      "Category": "Videos"
-    },
-    {
-      "Title": "The Lord of the Rings Mythology Explained - Part 2",
-      "Creator": "CGPGrey",
-      "URL": "https://youtu.be/WKU0qDpu3AM",
-      "Category": "Videos"
-    },
-    {
-      "Title": "You Are Two",
-      "Creator": "CGPGrey",
-      "URL": "https://youtu.be/wfYbgdo8e-8",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Brief History of the Royal Family",
-      "Creator": "CGPGrey",
-      "URL": "https://youtu.be/jNgP6d9HraI",
-      "Category": "Videos"
-    },
-    {
-      "Title": "The Trouble with Transporters",
-      "Creator": "CGPGrey",
-      "URL": "https://youtu.be/nQHBAdShgYI",
-      "Category": "Videos"
-    },
-    {
-      "Title": "How Machines Learn",
-      "Creator": "CGPGrey",
-      "URL": "https://youtu.be/R9OHn5ZF4Uo",
-      "Category": "Videos"
-    },
-    {
-      "Title": "The Fable of the Dragon-Tyrant",
-      "Creator": "CGPGrey",
-      "URL": "https://youtu.be/cZYNADOHhVY",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Star Wars - A New Hope Animated",
-      "Creator": "Dmitry Grozov",
-      "URL": "https://youtu.be/Ib_4A2CG2Ag",
-      "Category": "Videos"
-    },
-    {
-      "Title": "A Night at the Garden",
-      "Creator": "Field of Vision",
-      "URL": "https://vimeo.com/237489146",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Vsauce and Sean Evans Test Spicy Food Remedies",
-      "Creator": "First We Feast",
-      "URL": "https://youtu.be/BvogZ88qRTk",
-      "Category": "Videos"
-    },
-    {
-      "Title": "1911 - A Trip Through New York City",
-      "Creator": "Guy Jones",
-      "URL": "https://youtu.be/aohXOpKtns0",
-      "Category": "Videos"
-    },
-    {
-      "Title": "The Country with No Territory",
-      "Creator": "Half as Interesting",
-      "URL": "https://youtu.be/8gYDjWUefI4",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Why There Are Thousands of Giant Arrows Across the US",
-      "Creator": "Half as Interesting",
-      "URL": "https://youtu.be/P7QSYp0bqio",
-      "Category": "Videos"
-    },
-    {
-      "Title": "The $289,500 New York Hot Dog Stand License",
-      "Creator": "Half as Interesting",
-      "URL": "https://youtu.be/nzWDXhXkEQQ",
-      "Category": "Videos"
-    },
-    {
-      "Title": "The Somewhat Secret Subway System Under the US Capitol",
-      "Creator": "Half as Interesting",
-      "URL": "https://youtu.be/1z4CAphVjk0",
-      "Category": "Videos"
-    },
-    {
-      "Title": "How A Massive Dam in China Slowed the Earth's Rotation",
-      "Creator": "Half as Interesting",
-      "URL": "https://youtu.be/JvU3hUSime8",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Where Did Life Come From?",
-      "Creator": "It's Ok To Be Smart",
-      "URL": "https://youtu.be/_uAJY1mqtw4",
-      "Category": "Videos"
-    },
-    {
-      "Title": "They Will All Die in Space",
-      "Creator": "Javier Chillon",
-      "URL": "https://vimeo.com/222939711",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Business",
-      "Creator": "Kati Skelton",
-      "URL": "https://vimeo.com/199950440",
-      "Category": "Videos"
-    },
-    {
-      "Title": "The Most Efficient Way to Destroy the Universe – False Vacuum",
-      "Creator": "Kurzgesagt – In a Nutshell",
-      "URL": "https://youtu.be/ijFm6DxNVyI",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Optimistic Nihilism",
-      "Creator": "Kurzgesagt – In a Nutshell",
-      "URL": "https://youtu.be/MBRqu0YOH14",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Why Alien Life Would be our Doom - The Great Filter",
-      "Creator": "Kurzgesagt – In a Nutshell",
-      "URL": "https://youtu.be/UjtOGPJ0URM",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Time: The History & Future of Everything",
-      "Creator": "Kurzgesagt – In a Nutshell",
-      "URL": "https://youtu.be/5TbUxGZtwGI",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Why Meat is the Best Worst Thing in the World",
-      "Creator": "Kurzgesagt – In a Nutshell",
-      "URL": "https://youtu.be/NxvQPzrg2Wg",
-      "Category": "Videos"
-    },
-    {
-      "Title": "How to Build a Dyson Sphere - The Ultimate Megastructure",
-      "Creator": "Kurzgesagt – In a Nutshell",
-      "URL": "https://youtu.be/pP44EPBMb8A",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Farewell - ETAOIN SHRDLU",
-      "Creator": "Linotype: The Film",
-      "URL": "https://vimeo.com/127605643",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Game of Thrones Anime",
-      "Creator": "Malec",
-      "URL": "https://youtu.be/efD3nmwF-IM",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Culture Rot",
-      "Creator": "Matthew Bischoff",
-      "URL": "https://vimeo.com/259586099",
-      "Category": "Videos"
-    },
-    {
-      "Title": "A Brief History of Everything",
-      "Creator": "minutephysics",
-      "URL": "https://youtu.be/7KYTJ8tBoZ8",
-      "Category": "Videos"
-    },
-    {
-      "Title": "What Is The Shape of Space?",
-      "Creator": "minutephysics",
-      "URL": "https://youtu.be/oCK5oGmRtxQ",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Does time work differently in different languages? - Hopi Time",
-      "Creator": "NativLang",
-      "URL": "https://youtu.be/u6eXw0AAKZ8",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Unforeseen Consequences: A Half-Life Documentary",
-      "Creator": "Noclip",
-      "URL": "https://youtu.be/BQLEW1c-69c",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Only Slightly Exaggerated | Travel Oregon",
-      "Creator": "Oregon",
-      "URL": "https://youtu.be/XXRBLyQQ78A",
-      "Category": "Videos"
-    },
-    {
-      "Title": "TIE Fighter Remastered Animated",
-      "Creator": "Pascal Ramseier",
-      "URL": "https://youtu.be/E9GRYa_3gno",
-      "Category": "Videos"
-    },
-    {
-      "Title": "The Dying Of The Light",
-      "Creator": "Pre-Future LLC",
-      "URL": "https://vimeo.com/243399864",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Stealth - How Does it Work? (Northrop B-2 Spirit)",
-      "Creator": "Real Engineering",
-      "URL": "https://youtu.be/ya8umwgtsLw",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Can We Create Artificial Gravity?",
-      "Creator": "Real Engineering",
-      "URL": "https://youtu.be/im-JM0f_J7s",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Why The Netherlands Isn't Under Water",
-      "Creator": "Real Engineering",
-      "URL": "https://youtu.be/i6DRRHXt-PA",
-      "Category": "Videos"
-    },
-    {
-      "Title": "How NASA Reinvented The Wheel - Shape Memory Alloys",
-      "Creator": "Real Engineering",
-      "URL": "https://youtu.be/2lv6Vs12jLc",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Prospect",
-      "Creator": "Shep Films",
-      "URL": "https://vimeo.com/90049558",
-      "Category": "Videos"
-    },
-    {
-      "Title": "A Baffling Balloon Behavior",
-      "Creator": "SmarterEveryDay",
-      "URL": "https://youtu.be/y8mzDvpKzfY",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Rolling Shutter Explained (Why Do Cameras Do This?)",
-      "Creator": "SmarterEveryDay",
-      "URL": "https://youtu.be/dNVtMmLlnoE",
-      "Category": "Videos"
-    },
-    {
-      "Title": "250,000 DOMINOES! - The American Domino Record",
-      "Creator": "SmarterEveryDay",
-      "URL": "https://youtu.be/96LawfHPh6s",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Dominoes - HARDCORE Mode",
-      "Creator": "SmarterEveryDay",
-      "URL": "https://youtu.be/9hPIobthvHg",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Are Space and Time An Illusion?",
-      "Creator": "Space Time",
-      "URL": "https://youtu.be/YycAzdtUIko",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Hackers - Wizards of the Electronic Age",
-      "Creator": "TheMac6010",
-      "URL": "https://youtu.be/zOP1LNr70aU",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Northbound",
-      "Creator": "Turbin Film",
-      "URL": "https://vimeo.com/208432684",
-      "Category": "Videos"
-    },
-    {
-      "Title": "The Most Amazing Thing About Trees",
-      "Creator": "Veritasium",
-      "URL": "https://youtu.be/BickMFHAZR0",
-      "Category": "Videos"
-    },
-    {
-      "Title": "World's Roundest Object!",
-      "Creator": "Veritasium",
-      "URL": "https://youtu.be/ZMByI4s-D-Y",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Can Silence Actually Drive You Crazy?",
-      "Creator": "Veritasium",
-      "URL": "https://youtu.be/mXVGIb3bzHI",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Anti-Gravity Wheel?",
-      "Creator": "Veritasium",
-      "URL": "https://youtu.be/GeyDf4ooPdo",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Inside the Svalbard Seed Vault",
-      "Creator": "Veritasium",
-      "URL": "https://youtu.be/2_OEsf-1qgY",
-      "Category": "Videos"
-    },
-    {
-      "Title": "The Science of Six Degrees of Separation",
-      "Creator": "Veritasium",
-      "URL": "https://youtu.be/TcxZSmzPw8k",
-      "Category": "Videos"
-    },
-    {
-      "Title": "The Absurdity of Detecting Gravitational Waves",
-      "Creator": "Veritasium",
-      "URL": "https://youtu.be/iphcyNWFD10",
-      "Category": "Videos"
-    },
-    {
-      "Title": "In Search of Forgotten Colours - Sachio Yoshioka and the Art of Natural Dyeing",
-      "Creator": "Victoria and Albert Museum",
-      "URL": "https://youtu.be/7OiG-WjbCQA",
-      "Category": "Videos"
-    },
-    {
-      "Title": "What OCD Is Like (for Me)",
-      "Creator": "vlogbrothers",
-      "URL": "https://youtu.be/jNEUz9v5RYo",
-      "Category": "Videos"
-    },
-    {
-      "Title": "DC’s abandoned fire and police call boxes, explained",
-      "Creator": "Vox",
-      "URL": "https://youtu.be/KSO5vRGsD1M",
-      "Category": "Videos"
-    },
-    {
-      "Title": "The (mostly) true story of hobo graffiti",
-      "Creator": "Vox",
-      "URL": "https://youtu.be/2-MLV_RJ6KQ",
-      "Category": "Videos"
-    },
-    {
-      "Title": "The Zipf Mystery",
-      "Creator": "Vsauce",
-      "URL": "https://youtu.be/fCn8zs912OE",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Messages For The Future",
-      "Creator": "Vsauce",
-      "URL": "https://youtu.be/GDrBIKOR01c",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Time",
-      "Creator": "Vsauce3",
-      "URL": "https://youtu.be/AORsw8NpN4E",
-      "Category": "Videos"
-    },
-    {
-      "Title": "Could You Survive The Movies? MAD MAX",
-      "Creator": "Vsauce3",
-      "URL": "https://youtu.be/pZkCZ4LCO0o",
-      "Category": "Videos"
-    },
-    {
-      "Title": "How the US Government Will Survive Doomsday",
-      "Creator": "Wendover Productions",
-      "URL": "https://youtu.be/j48Z3W35FI0",
-      "Category": "Videos"
-    },
-    {
-      "Title": "How Overnight Shipping Works",
-      "Creator": "Wendover Productions",
-      "URL": "https://youtu.be/y3qfeoqErtY",
-      "Category": "Videos"
-    },
-    {
-      "Title": "The Philosophy of J.R.R. Tolkien: Why Things Keep Getting Worse",
-      "Creator": "Wisecrack",
-      "URL": "https://m.youtube.com/watch?v=_-sTbaH-aA0",
-      "Category": "Videos"
-    },
-    {
       "Title": "Bundyville",
       "Creator": "99% Invisible",
       "URL": "https://overcast.fm/+DDG8Pj0",
@@ -1307,12 +791,6 @@
       "Creator": "99% Invisible",
       "URL": "https://overcast.fm/+DCVzVnU",
       "Category": "Podcasts"
-    },
-    {
-      "Title": "I Was A Cable Guy. I Saw The Worst Of America.",
-      "Creator": "Lauren Hough",
-      "URL": "https://m.huffpost.com/us/entry/us_5c0ea571e4b06484c9fd4c21?ec_carp=",
-      "Category": "Articles"
     },
     {
       "Title": "Something Has Gone Wrong",
@@ -2455,30 +1933,6 @@
       "Category": "Podcasts"
     },
     {
-      "Title": "Growth Loops: circular causality is real",
-      "Creator": "Jessica Kerr",
-      "URL": "https://medium.com/@jessitron/growth-loops-circular-causality-is-real-586fcc55fcf7",
-      "Category": "Articles"
-    },
-    {
-      "Title": "The Ethics of Web Performance",
-      "Creator": "Tim Kadlec",
-      "URL": "https://timkadlec.com/remembers/2019-01-09-the-ethics-of-performance/",
-      "Category": "Articles"
-    },
-    {
-      "Title": "Securing Web Sites Made Them Less Accessible",
-      "Creator": "Eric Meyer",
-      "URL": "https://meyerweb.com/eric/thoughts/2018/08/07/securing-sites-made-them-less-accessible/",
-      "Category": "Articles"
-    },
-    {
-      "Title": "Women of the Web",
-      "Creator": "Jay Hoffmann",
-      "URL": "https://thehistoryoftheweb.com/postscript/women-of-the-web/",
-      "Category": "Articles"
-    },
-    {
       "Title": "Saw something, said nothing",
       "Creator": "Today, Explained",
       "URL": "https://overcast.fm/+L2I4msgZo",
@@ -2555,6 +2009,552 @@
       "Creator": "99% Invisible",
       "URL": "https://overcast.fm/+DClGJ6U",
       "Category": "Podcasts"
+    },
+    {
+      "Title": "Never forget we're all just a bunch of apes trying to figure out how to put text and images on a screen and have stuff do stuff when other apes click buttons.",
+      "Creator": "@brad_frost",
+      "URL": "https://mobile.twitter.com/brad_frost/status/994316607236313088",
+      "Category": "Tweets"
+    },
+    {
+      "Title": "Morning routine:  \n1\\. Wake up.  \n2\\. Stretch.  \n3\\. Shake feelings of impending doom.  \n4\\. Coffee.  \n5\\. Breakfast.  \n6\\. Suppress despair.  \n7\\. Check Slack.",
+      "Creator": "@brad_frost",
+      "URL": "https://mobile.twitter.com/brad_frost/status/824985160663851009",
+      "Category": "Tweets"
+    },
+    {
+      "Title": "To be a brilliant jerk, you actually have to be brilliant. Most times, you're just an insufferable prick.",
+      "Creator": "@captainsafia",
+      "URL": "https://mobile.twitter.com/captainsafia/status/903293326593585152",
+      "Category": "Tweets"
+    },
+    {
+      "Title": "omfg there is, there is so much going on and it is beautiful and now when I watch a star war I will hear r2d2's comforting beep and feel more deeply because I will be like, we know, r2d2, it is ok, we know",
+      "Creator": "@emmabo",
+      "URL": "https://mobile.twitter.com/emmabo/status/969271806765957121",
+      "Category": "Tweets"
+    },
+    {
+      "Title": "Rule: If you think you know how to fix a problem that everyone knows about and no one has fixed, you do not understand the whole problem.",
+      "Creator": "@hankgreen",
+      "URL": "https://mobile.twitter.com/hankgreen/status/816791160702255105",
+      "Category": "Tweets"
+    },
+    {
+      "Title": "I was definitely aggressively original with some of the code I wrote today. The fact that it crashes just means that the industry hasn’t caught up with my genius.",
+      "Creator": "@jamesthomson",
+      "URL": "https://mobile.twitter.com/jamesthomson/status/981931936221421573",
+      "Category": "Tweets"
+    },
+    {
+      "Title": "I like to imagine our parents are right and all of us D&D players go straight to hell upon which Satan invites himself into our groups to play a bard who sings Black Sabbath shit every chance he gets and it's pretty metal every single time.",
+      "Creator": "@lucaseuspank",
+      "URL": "https://mobile.twitter.com/lucaseuspank/status/1014386816756080640",
+      "Category": "Tweets"
+    },
+    {
+      "Title": "Why do GUIs exist? When you don't speak the same language (like a person & a computer), it's easier to just point at things to communicate.",
+      "Creator": "@lukew",
+      "URL": "https://mobile.twitter.com/lukew/status/838837365430874112",
+      "Category": "Tweets"
+    },
+    {
+      "Title": "Never trust anyone who sends you a screenshot with 1% battery unplugged",
+      "Creator": "@MKBHD",
+      "URL": "https://mobile.twitter.com/MKBHD/status/877608198902906880",
+      "Category": "Tweets"
+    },
+    {
+      "Title": "Once you start really looking at other people's code, you realize the entire world is held together with scotch tape.",
+      "Creator": "@philzona",
+      "URL": "https://mobile.twitter.com/philzona/status/910673253286293504",
+      "Category": "Tweets"
+    },
+    {
+      "Title": "The Programmers’ Credo: we do these things not because they are easy, but because we thought they were going to be easy",
+      "Creator": "@Pinboard",
+      "URL": "https://mobile.twitter.com/Pinboard/status/761656824202276864",
+      "Category": "Tweets"
+    },
+    {
+      "Title": "The FEYNMAN technique of learning:  \nSTEP 1 - Pick and study a topic  \nSTEP 2 - Explain the topic to someone, like a child, who is unfamiliar with the topic  \nSTEP 3 - Identify any gaps in your understanding   \nSTEP 4 - Review and Simplify!",
+      "Creator": "@ProfFeynman",
+      "URL": "https://mobile.twitter.com/ProfFeynman/status/1076294048837758977",
+      "Category": "Tweets"
+    },
+    {
+      "Title": "Only idiots believe NASA is conducting secret missions. YOU CANT SECRETLY FIRE GIANT ROCKETS INTO SPACE BECAUSE EVERYONE CAN SEE SPACE.",
+      "Creator": "@SarcasticRover",
+      "URL": "https://mobile.twitter.com/SarcasticRover/status/880656949150441474",
+      "Category": "Tweets"
+    },
+    {
+      "Title": "Spaghetti code: confusing or poorly structured.  Ravioli code: neatly separated, but might too separated and thus hard to understand.  Lasagna code: code with easily distinguishable layers.  Campanelle code: built using a hipster framework almost no one has heard of.",
+      "Creator": "@twostraws",
+      "URL": "https://twitter.com/twostraws/status/1063844463976562690",
+      "Category": "Tweets"
+    },
+    {
+      "Title": "Lightningface",
+      "Creator": "A Saboteur",
+      "URL": "https://vimeo.com/224385535",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Human Population Through Time",
+      "Creator": "Museum of Natural History",
+      "URL": "https://youtu.be/PUwmA3Q0_OE",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Rocket Launch as Seen from the Space Station",
+      "Creator": "APOD",
+      "URL": "https://youtu.be/B1R3dTdcpSU",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Every Detail of Grand Central Terminal Explained",
+      "Creator": "Architectural Digest",
+      "URL": "https://youtu.be/_b4XQUE_u8o",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Hidden Details of the New York Public Library",
+      "Creator": "Architectural Digest",
+      "URL": "https://youtu.be/roi5V8ppi7Y",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Why You Don't Actually Want Super Strength!",
+      "Creator": "Because Science",
+      "URL": "https://youtu.be/kD06SQtfA5s",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Why You Don't Want Super Speed",
+      "Creator": "Because Science",
+      "URL": "https://youtu.be/FTEDZQaEIts",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Why You Don't Want Invisibility",
+      "Creator": "Because Science",
+      "URL": "https://youtu.be/4oTa1BabYpE",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Why You Don't Want Teleportation",
+      "Creator": "Because Science",
+      "URL": "https://youtu.be/Nm5QhMH-EXY",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Tea Consent",
+      "Creator": "Blue Seat Studios",
+      "URL": "https://youtu.be/oQbei5JGiT8",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Don't Stay In School",
+      "Creator": "BoyInABand",
+      "URL": "https://youtu.be/E9GRYa_3gno",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Humans Need Not Apply",
+      "Creator": "CGPGrey",
+      "URL": "https://youtu.be/7Pq-S557XQU",
+      "Category": "Videos"
+    },
+    {
+      "Title": "The Lord of the Rings Mythology Explained - Part 1",
+      "Creator": "CGPGrey",
+      "URL": "https://youtu.be/7Pq-S557XQU",
+      "Category": "Videos"
+    },
+    {
+      "Title": "The Lord of the Rings Mythology Explained - Part 2",
+      "Creator": "CGPGrey",
+      "URL": "https://youtu.be/WKU0qDpu3AM",
+      "Category": "Videos"
+    },
+    {
+      "Title": "You Are Two",
+      "Creator": "CGPGrey",
+      "URL": "https://youtu.be/wfYbgdo8e-8",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Brief History of the Royal Family",
+      "Creator": "CGPGrey",
+      "URL": "https://youtu.be/jNgP6d9HraI",
+      "Category": "Videos"
+    },
+    {
+      "Title": "The Trouble with Transporters",
+      "Creator": "CGPGrey",
+      "URL": "https://youtu.be/nQHBAdShgYI",
+      "Category": "Videos"
+    },
+    {
+      "Title": "How Machines Learn",
+      "Creator": "CGPGrey",
+      "URL": "https://youtu.be/R9OHn5ZF4Uo",
+      "Category": "Videos"
+    },
+    {
+      "Title": "The Fable of the Dragon-Tyrant",
+      "Creator": "CGPGrey",
+      "URL": "https://youtu.be/cZYNADOHhVY",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Star Wars - A New Hope Animated",
+      "Creator": "Dmitry Grozov",
+      "URL": "https://youtu.be/Ib_4A2CG2Ag",
+      "Category": "Videos"
+    },
+    {
+      "Title": "A Night at the Garden",
+      "Creator": "Field of Vision",
+      "URL": "https://vimeo.com/237489146",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Vsauce and Sean Evans Test Spicy Food Remedies",
+      "Creator": "First We Feast",
+      "URL": "https://youtu.be/BvogZ88qRTk",
+      "Category": "Videos"
+    },
+    {
+      "Title": "1911 - A Trip Through New York City",
+      "Creator": "Guy Jones",
+      "URL": "https://youtu.be/aohXOpKtns0",
+      "Category": "Videos"
+    },
+    {
+      "Title": "The Country with No Territory",
+      "Creator": "Half as Interesting",
+      "URL": "https://youtu.be/8gYDjWUefI4",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Why There Are Thousands of Giant Arrows Across the US",
+      "Creator": "Half as Interesting",
+      "URL": "https://youtu.be/P7QSYp0bqio",
+      "Category": "Videos"
+    },
+    {
+      "Title": "The $289,500 New York Hot Dog Stand License",
+      "Creator": "Half as Interesting",
+      "URL": "https://youtu.be/nzWDXhXkEQQ",
+      "Category": "Videos"
+    },
+    {
+      "Title": "The Somewhat Secret Subway System Under the US Capitol",
+      "Creator": "Half as Interesting",
+      "URL": "https://youtu.be/1z4CAphVjk0",
+      "Category": "Videos"
+    },
+    {
+      "Title": "How A Massive Dam in China Slowed the Earth's Rotation",
+      "Creator": "Half as Interesting",
+      "URL": "https://youtu.be/JvU3hUSime8",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Where Did Life Come From?",
+      "Creator": "It's Ok To Be Smart",
+      "URL": "https://youtu.be/_uAJY1mqtw4",
+      "Category": "Videos"
+    },
+    {
+      "Title": "They Will All Die in Space",
+      "Creator": "Javier Chillon",
+      "URL": "https://vimeo.com/222939711",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Business",
+      "Creator": "Kati Skelton",
+      "URL": "https://vimeo.com/199950440",
+      "Category": "Videos"
+    },
+    {
+      "Title": "The Most Efficient Way to Destroy the Universe – False Vacuum",
+      "Creator": "Kurzgesagt – In a Nutshell",
+      "URL": "https://youtu.be/ijFm6DxNVyI",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Optimistic Nihilism",
+      "Creator": "Kurzgesagt – In a Nutshell",
+      "URL": "https://youtu.be/MBRqu0YOH14",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Why Alien Life Would be our Doom - The Great Filter",
+      "Creator": "Kurzgesagt – In a Nutshell",
+      "URL": "https://youtu.be/UjtOGPJ0URM",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Time: The History & Future of Everything",
+      "Creator": "Kurzgesagt – In a Nutshell",
+      "URL": "https://youtu.be/5TbUxGZtwGI",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Why Meat is the Best Worst Thing in the World",
+      "Creator": "Kurzgesagt – In a Nutshell",
+      "URL": "https://youtu.be/NxvQPzrg2Wg",
+      "Category": "Videos"
+    },
+    {
+      "Title": "How to Build a Dyson Sphere - The Ultimate Megastructure",
+      "Creator": "Kurzgesagt – In a Nutshell",
+      "URL": "https://youtu.be/pP44EPBMb8A",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Farewell - ETAOIN SHRDLU",
+      "Creator": "Linotype: The Film",
+      "URL": "https://vimeo.com/127605643",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Game of Thrones Anime",
+      "Creator": "Malec",
+      "URL": "https://youtu.be/efD3nmwF-IM",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Culture Rot",
+      "Creator": "Matthew Bischoff",
+      "URL": "https://vimeo.com/259586099",
+      "Category": "Videos"
+    },
+    {
+      "Title": "A Brief History of Everything",
+      "Creator": "minutephysics",
+      "URL": "https://youtu.be/7KYTJ8tBoZ8",
+      "Category": "Videos"
+    },
+    {
+      "Title": "What Is The Shape of Space?",
+      "Creator": "minutephysics",
+      "URL": "https://youtu.be/oCK5oGmRtxQ",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Does time work differently in different languages? - Hopi Time",
+      "Creator": "NativLang",
+      "URL": "https://youtu.be/u6eXw0AAKZ8",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Unforeseen Consequences: A Half-Life Documentary",
+      "Creator": "Noclip",
+      "URL": "https://youtu.be/BQLEW1c-69c",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Only Slightly Exaggerated | Travel Oregon",
+      "Creator": "Oregon",
+      "URL": "https://youtu.be/XXRBLyQQ78A",
+      "Category": "Videos"
+    },
+    {
+      "Title": "TIE Fighter Remastered Animated",
+      "Creator": "Pascal Ramseier",
+      "URL": "https://youtu.be/E9GRYa_3gno",
+      "Category": "Videos"
+    },
+    {
+      "Title": "The Dying Of The Light",
+      "Creator": "Pre-Future LLC",
+      "URL": "https://vimeo.com/243399864",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Stealth - How Does it Work? (Northrop B-2 Spirit)",
+      "Creator": "Real Engineering",
+      "URL": "https://youtu.be/ya8umwgtsLw",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Can We Create Artificial Gravity?",
+      "Creator": "Real Engineering",
+      "URL": "https://youtu.be/im-JM0f_J7s",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Why The Netherlands Isn't Under Water",
+      "Creator": "Real Engineering",
+      "URL": "https://youtu.be/i6DRRHXt-PA",
+      "Category": "Videos"
+    },
+    {
+      "Title": "How NASA Reinvented The Wheel - Shape Memory Alloys",
+      "Creator": "Real Engineering",
+      "URL": "https://youtu.be/2lv6Vs12jLc",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Prospect",
+      "Creator": "Shep Films",
+      "URL": "https://vimeo.com/90049558",
+      "Category": "Videos"
+    },
+    {
+      "Title": "A Baffling Balloon Behavior",
+      "Creator": "SmarterEveryDay",
+      "URL": "https://youtu.be/y8mzDvpKzfY",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Rolling Shutter Explained (Why Do Cameras Do This?)",
+      "Creator": "SmarterEveryDay",
+      "URL": "https://youtu.be/dNVtMmLlnoE",
+      "Category": "Videos"
+    },
+    {
+      "Title": "250,000 DOMINOES! - The American Domino Record",
+      "Creator": "SmarterEveryDay",
+      "URL": "https://youtu.be/96LawfHPh6s",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Dominoes - HARDCORE Mode",
+      "Creator": "SmarterEveryDay",
+      "URL": "https://youtu.be/9hPIobthvHg",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Are Space and Time An Illusion?",
+      "Creator": "Space Time",
+      "URL": "https://youtu.be/YycAzdtUIko",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Hackers - Wizards of the Electronic Age",
+      "Creator": "TheMac6010",
+      "URL": "https://youtu.be/zOP1LNr70aU",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Northbound",
+      "Creator": "Turbin Film",
+      "URL": "https://vimeo.com/208432684",
+      "Category": "Videos"
+    },
+    {
+      "Title": "The Most Amazing Thing About Trees",
+      "Creator": "Veritasium",
+      "URL": "https://youtu.be/BickMFHAZR0",
+      "Category": "Videos"
+    },
+    {
+      "Title": "World's Roundest Object!",
+      "Creator": "Veritasium",
+      "URL": "https://youtu.be/ZMByI4s-D-Y",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Can Silence Actually Drive You Crazy?",
+      "Creator": "Veritasium",
+      "URL": "https://youtu.be/mXVGIb3bzHI",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Anti-Gravity Wheel?",
+      "Creator": "Veritasium",
+      "URL": "https://youtu.be/GeyDf4ooPdo",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Inside the Svalbard Seed Vault",
+      "Creator": "Veritasium",
+      "URL": "https://youtu.be/2_OEsf-1qgY",
+      "Category": "Videos"
+    },
+    {
+      "Title": "The Science of Six Degrees of Separation",
+      "Creator": "Veritasium",
+      "URL": "https://youtu.be/TcxZSmzPw8k",
+      "Category": "Videos"
+    },
+    {
+      "Title": "The Absurdity of Detecting Gravitational Waves",
+      "Creator": "Veritasium",
+      "URL": "https://youtu.be/iphcyNWFD10",
+      "Category": "Videos"
+    },
+    {
+      "Title": "In Search of Forgotten Colours - Sachio Yoshioka and the Art of Natural Dyeing",
+      "Creator": "Victoria and Albert Museum",
+      "URL": "https://youtu.be/7OiG-WjbCQA",
+      "Category": "Videos"
+    },
+    {
+      "Title": "What OCD Is Like (for Me)",
+      "Creator": "vlogbrothers",
+      "URL": "https://youtu.be/jNEUz9v5RYo",
+      "Category": "Videos"
+    },
+    {
+      "Title": "DC’s abandoned fire and police call boxes, explained",
+      "Creator": "Vox",
+      "URL": "https://youtu.be/KSO5vRGsD1M",
+      "Category": "Videos"
+    },
+    {
+      "Title": "The (mostly) true story of hobo graffiti",
+      "Creator": "Vox",
+      "URL": "https://youtu.be/2-MLV_RJ6KQ",
+      "Category": "Videos"
+    },
+    {
+      "Title": "The Zipf Mystery",
+      "Creator": "Vsauce",
+      "URL": "https://youtu.be/fCn8zs912OE",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Messages For The Future",
+      "Creator": "Vsauce",
+      "URL": "https://youtu.be/GDrBIKOR01c",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Time",
+      "Creator": "Vsauce3",
+      "URL": "https://youtu.be/AORsw8NpN4E",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Could You Survive The Movies? MAD MAX",
+      "Creator": "Vsauce3",
+      "URL": "https://youtu.be/pZkCZ4LCO0o",
+      "Category": "Videos"
+    },
+    {
+      "Title": "How the US Government Will Survive Doomsday",
+      "Creator": "Wendover Productions",
+      "URL": "https://youtu.be/j48Z3W35FI0",
+      "Category": "Videos"
+    },
+    {
+      "Title": "How Overnight Shipping Works",
+      "Creator": "Wendover Productions",
+      "URL": "https://youtu.be/y3qfeoqErtY",
+      "Category": "Videos"
+    },
+    {
+      "Title": "The Philosophy of J.R.R. Tolkien: Why Things Keep Getting Worse",
+      "Creator": "Wisecrack",
+      "URL": "https://m.youtube.com/watch?v=_-sTbaH-aA0",
+      "Category": "Videos"
     }
   ]
 }
