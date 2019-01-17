@@ -34,6 +34,7 @@ pygmentsStyle = "dracula"
 
 [permalinks]
   articles = "/articles/:title/"
+  bookmarks = "/bookmarks/:title/"
   bookshelf = "/bookshelf/:title/"
   genre = "/bookshelf/genre/:slug/"
   category = "/articles/category/:slug/"

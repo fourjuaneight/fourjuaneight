@@ -102,6 +102,34 @@ main.bookshelf {
     }
   }
 }
+// Bookmarks
+main.bookmarks {
+  h1.title {
+    margin-bottom: 15px;
+  }
+  ul#records {
+    @include color(border-top-color, border);
+    border-top-style: solid;
+    border-top-width: 1.5px;
+    padding: 0;
+    li#record-item {
+      list-style-type: none;
+      a.title {
+        @include color(color, text);
+        line-height: 1.6rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:hover {
+          @include color(color, link);
+        }
+      }
+      p.category {
+        @include color(color, meta);
+      }
+    }
+  }
+}
 // Paginator
 nav.paginate {
   a {

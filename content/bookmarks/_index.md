@@ -4,5 +4,3 @@
   "weight": 100,
   "showthedate": false
 }
-
-{{< bookmarks >}}

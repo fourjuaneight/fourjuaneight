@@ -139,28 +139,6 @@ div.about-container {
     margin: 0;
   }
 }
-// Bookmarks
-ul#bookmarks {
-  @include color(border-top-color, border);
-  border-top-style: solid;
-  border-top-width: 1.5px;
-  padding: 0;
-  li#record {
-    list-style-type: none;
-    a.title {
-      @include color(color, text);
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      &:hover {
-        @include color(color, link);
-      }
-    }
-    p.category {
-      @include color(color, meta);
-    }
-  }
-}
 // Footnotes
 sup.footnote-ref {
   a {

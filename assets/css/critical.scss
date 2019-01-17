@@ -343,13 +343,13 @@ body {
       }
     }
   }
-  ul#bookmarks {
+  ul#records {
     @include color(border-top-color, border);
     border-top-style: solid;
     border-top-width: 1.5px;
     padding: 0;
     nav.sorting,
-    li#record {
+    li#record-item {
       @extend %content-flex-start;
       @extend %flex;
       @extend %flex-wrap;
@@ -400,6 +400,7 @@ body {
         @include color(color, content);
         cursor: pointer;
         font-weight: bold;
+        line-height: 1.6rem;
         &:hover {
           text-decoration: underline;
         }
