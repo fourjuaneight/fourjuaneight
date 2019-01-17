@@ -1,0 +1,8 @@
+<article class="list-item">
+  <section class="content">{{ .Content }}</section>
+  {{ if .Params.showthedate }}
+    {{ $rd := .Date.Format "2006-01-02T15:04:05Z" }}
+    {{ $d := replaceRE "[[:punct:]][0-9]{2}(Z)" "" $rd }}
+    <time class="meta date" datetime="{{ $d }}"><a href='{{ .Permalink }}' >{{ $d }}</a></time>
+  {{ end }}
+</article>

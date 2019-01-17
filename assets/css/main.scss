@@ -130,6 +130,26 @@ main.bookmarks {
     }
   }
 }
+// Micro
+main.micro {
+  h1.title {
+    @include color(border-bottom-color, border);
+    border-bottom-style: solid;
+    border-bottom-width: 1.5px;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+  section.micro-container {
+    article.list-item {
+      time.date a {
+        @extend %no-decoration;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
 // Paginator
 nav.paginate {
   a {

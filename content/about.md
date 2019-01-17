@@ -13,6 +13,7 @@
   <ul>
     <li>{{< link href="/articles/feed.json" content="Articles" >}}</li>
     <li>{{< link href="/bookshelf/feed.json" content="Bookshelf" >}}</li>
+    <li>{{< link href="/microposts/feed.json" content="Microposts" >}}</li>
   </ul>
   <p>Yes, I know they're JSON. Yes, they should work on your RSS reader.</p>
 </div>

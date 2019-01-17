@@ -19,7 +19,7 @@
     {{ end }}
   {{ end }}
   <link
-  href="{{ .Site.BaseURL }}{{ if or (eq .Section "bookshelf") (eq (.Scratch.Get "b") "bookshelf" ) }}bookshelf{{ else }}articles{{ end }}/feed.json"
+  href="{{ .Site.BaseURL }}{{ if or (eq .Section "bookshelf") (eq (.Scratch.Get "b") "bookshelf" ) }}bookshelf{{ else if eq .Section "microposts" }}microposts{{ else }}articles{{ end }}/feed.json"
   rel="alternate" type="application/json" title="{{ .Site.Title }}" />
   
   <!-- Open Graph -->

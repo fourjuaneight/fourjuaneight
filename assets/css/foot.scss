@@ -11,7 +11,7 @@ footer#footer {
   @extend %margin-center;
   @extend %relative;
   min-height: 160px;
-  max-width: 345px;
+  max-width: 385px;
   padding-bottom: 30px !important;
   nav.social,
   nav.social a,
@@ -39,6 +39,25 @@ footer#footer {
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       a {
         margin: 0 15px;
+      }
+    }
+  }
+  nav.extra {
+    @extend %content-center;
+    @extend %flex;
+    @extend %flex-wrap;
+    @extend %items-center;
+    > * {
+      line-height: 1.6rem;
+      @include range(328px,300px) {
+        &:nth-child(4) {
+          visibility: hidden;
+        }
+      }
+      @include range(385px,328px) {
+        &:nth-child(6) {
+          visibility: hidden;
+        }
       }
     }
   }

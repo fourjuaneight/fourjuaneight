@@ -36,6 +36,7 @@ pygmentsStyle = "dracula"
   articles = "/articles/:title/"
   bookmarks = "/bookmarks/:title/"
   bookshelf = "/bookshelf/:title/"
+  microposts = "/microposts/:year/:month/:day/:title/"
   genre = "/bookshelf/genre/:slug/"
   category = "/articles/category/:slug/"
 
