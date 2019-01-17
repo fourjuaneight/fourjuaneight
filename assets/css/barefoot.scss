@@ -26,7 +26,7 @@
   z-index: 5;
   &:after {
     @extend %absolute;
-    @include color(background, meta);
+    color: #F6F7EE;
     content: attr(data-fn-number);
     display: block;
     font-size: .57em;
@@ -37,19 +37,17 @@
     transition: color .25s ease;
   }
   &:hover {
-    @include color(background, meta);
     outline: none;
   }
   &.is-active {
-    @include color(background, meta);
     transition-delay: .1s;
   }
 }
 .bf-footnote {
   @extend %absolute;
-  @include color(background, background);
-  border: 1px solid;
-  @include color(border-color, text);
+  @include color(background, contentBG);
+  border: 1.5px solid;
+  @include color(border-color, border);
   border-radius: .25em;
   left: 0;
   margin: 1.618em 0;
@@ -83,7 +81,7 @@
   @extend %absolute;
   background: inherit;
   border: 1px solid;
-  @include color(border-color, text);
+  @include color(border-color, border);
   height: 1.3em;
   top: -.49em;
   transform: rotate(45deg);
@@ -110,5 +108,8 @@
   *:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
+  }
+  p {
+    color: #f8f8f2;
   }
 }

@@ -45,7 +45,7 @@ body {
   // Themes
   &.black {
     --background: #{map-get($black, background)};
-    --box: #{map-get($black, box)};
+    --border: #{map-get($black, border)};
     --button: #{map-get($black, button)};
     --content: #{map-get($black, content)};
     --contentBG: #{map-get($black, contentBG)};
@@ -55,7 +55,7 @@ body {
   }
   &.dark {
     --background: #{map-get($dark, background)};
-    --box: #{map-get($dark, box)};
+    --border: #{map-get($dark, border)};
     --button: #{map-get($dark, button)};
     --content: #{map-get($dark, content)};
     --contentBG: #{map-get($dark, contentBG)};
@@ -65,7 +65,7 @@ body {
   }
   &.light {
     --background: #{map-get($light, background)};
-    --box: #{map-get($light, box)};
+    --border: #{map-get($light, border)};
     --button: #{map-get($light, button)};
     --content: #{map-get($light, content)};
     --contentBG: #{map-get($light, contentBG)};
@@ -82,7 +82,7 @@ body {
   @media screen and (prefers-color-scheme: dark) {
     &.black {
       --background: #{map-get($black, background)};
-      --box: #{map-get($black, box)};
+      --border: #{map-get($black, border)};
       --button: #{map-get($black, button)};
       --content: #{map-get($black, content)};
       --contentBG: #{map-get($black, contentBG)};
@@ -124,16 +124,16 @@ body {
         margin-right: 10px;
         width: auto;
         g#view > path.bg {
-          @include color(fill, background);
+          @include color(fill, contentBG);
         }
         g.link path {
           @include color(fill, link);
         }
         g.meta ellipse {
-          @include color(fill, meta);
+          @include color(fill, link);
         }
         g#stick path {
-          @include color(stroke, meta);
+          @include color(stroke, link);
         }
       }
       p {
@@ -227,9 +227,6 @@ body {
           margin: 10px 0 10px auto;
           text-align: end;
         }
-        &:hover {
-          text-decoration: underline;
-        }
         &.rss {
           @extend %content-center;
           @extend %flex;
@@ -260,9 +257,9 @@ body {
       @extend %flex;
       @extend %flex-wrap;
       @extend %items-center;
-      @include color(border-top-color, meta);
+      @include color(border-top-color, border);
       border-top-style: solid;
-      border-top-width: 1px;
+      border-top-width: 1.5px;
       padding-top: 15px;
       margin: 15px 0 0;
       @supports (display:grid) {

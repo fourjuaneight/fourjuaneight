@@ -54,7 +54,7 @@ ul#portfolio {
   width: 100%;
 }
 blockquote {
-  @include color(border-left-color, link);
+  @include color(border-left-color, border);
   border-left-style: solid;
   border-left-width: 2px;
   margin: 0 0 15px 15px;
@@ -67,8 +67,8 @@ figure {
   line-height: 26px;
 }
 figure {
-  @include color(background-color, text);
-  @include color(color, background);
+  @include color(background-color, contentBG);
+  @include color(color, text);
 }
 figure,
 h1, h2, h3, h4,
@@ -139,8 +139,8 @@ pre {
   padding: 50px 30px 30px;
 }
 p code {
-  @include color(background-color, text);
-  @include color(color, background);
+  @include color(background-color, contentBG);
+  @include color(color, content);
   border-radius: 5px;
   font-family: 'Plex Mono', monospace !important;
   padding: 0 4px;
@@ -157,7 +157,7 @@ p code {
     @extend %relative;
     code::before {
       @extend %absolute;
-      @include color(color, link);
+      @include color(color, content);
       content: attr(data-lang);
       font: normal 13px 'Plex Mono', monospace;
       left: 15px;

@@ -130,7 +130,6 @@
   <script>
     // UI Switcher
     const body = document.querySelector('body');
-    const ui = document.querySelector('div#ui-options');
     const sets = document.getElementById('settings');
     const colors = document.querySelectorAll('p.colors');
     const fonts = document.querySelectorAll('p.type');
@@ -141,7 +140,6 @@
           var value = option.id;
           body.setAttribute(mod, value);
           sets.checked = false;
-          ui.classList.toggle('active');
           localStorage.removeItem(change);
           localStorage.setItem(change, value);
         }, false);
@@ -151,9 +149,6 @@
         }
       })
     }
-    sets.addEventListener("click", function(e) {
-      ui.classList.toggle('active');
-    }, false);
     uiSwitcher(colors,'theme','class');
     uiSwitcher(fonts,'type','id');
     // Console Stuff

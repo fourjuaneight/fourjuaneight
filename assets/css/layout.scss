@@ -200,9 +200,9 @@ nav.categories {
   }
 }
 ul#bookmarks {
-  @include color(border-top-color, meta);
+  @include color(border-top-color, border);
   border-top-style: solid;
-  border-top-width: 1px;
+  border-top-width: 1.5px;
   padding: 0;
   nav.sorting,
   li#record {
@@ -210,9 +210,9 @@ ul#bookmarks {
     @extend %flex;
     @extend %flex-wrap;
     @extend %items-center;
-    @include color(border-bottom-color, meta);
+    @include color(border-bottom-color, border);
     border-bottom-style: solid;
-    border-bottom-width: 1px;
+    border-bottom-width: 1.5px;
     margin: 0;
     padding: 5px;
     @include media-query-max(480px) {
@@ -251,9 +251,9 @@ ul#bookmarks {
     }
   }
   nav.sorting {
-    @include color(background-color, meta);
+    @include color(background-color, contentBG);
     p {
-      @include color(color, background);
+      @include color(color, content);
       cursor: pointer;
       font-weight: bold;
       &:hover {
@@ -264,11 +264,12 @@ ul#bookmarks {
   li#record {
     list-style-type: none;
     a.title {
+      @include color(color, text);
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
       &:hover {
-        text-decoration: underline;
+        @include color(color, link);
       }
     }
     p.category {
@@ -458,10 +459,6 @@ body {
     @include media-query-max(380px) {
       max-width: 300px;
     }
-    &.active,
-    &:hover {
-      @include color(background, meta);
-    }
     > * {
       @supports (display:grid) {
         grid-row: 1/2;
@@ -492,7 +489,7 @@ body {
         grid-column: 2/3;
       }
       svg {
-        @include color(fill, background);
+        fill: #F6F7EE;
         height: 25px;
         transition: all 0.3s ease;
         width: 25px;
@@ -513,7 +510,7 @@ body {
         grid-template-columns: 125px 2.5px 135.5px;
       }
       div.divider {
-        @include color(background-color, background);
+        @include color(background-color, link);
         border-radius: 5px;
         height: 25px;
         margin: 0 auto;
@@ -536,7 +533,7 @@ body {
           @extend %flex;
           @extend %full-width;
           @extend %items-center;
-          @include color(color, background);
+          color: #F6F7EE;
           cursor: pointer;
           border-radius: 5px;
           font-size: 1rem;
