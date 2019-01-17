@@ -59,13 +59,6 @@ main.list {
     }
 
   }
-  article {
-    div.meta-info {
-      @extend %content-space-between;
-      @extend %flex;
-      @extend %items-center;
-    }
-  }
 }
 // Bookshelf
 main.bookshelf {

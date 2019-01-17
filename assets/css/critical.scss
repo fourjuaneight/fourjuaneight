@@ -284,6 +284,11 @@ body {
       time.date {
         @include color(color, meta);
       }
+      div.meta-info {
+        @extend %content-space-between;
+        @extend %flex;
+        @extend %items-center;
+      }
     }
   }
   // Bookshelf
