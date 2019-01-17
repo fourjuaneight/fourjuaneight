@@ -108,7 +108,7 @@
   {{ $keybase := resources.Get "keybase.txt" }}
   <link href="{{ $keybase.RelPermalink }}">
 </head>
-<body id="rubik" class="light">
+<body id="rubik" class="light" data-type="{{ .Kind }}">
   {{ partial "header.html" . }}
 
   <!-- Main content -->
