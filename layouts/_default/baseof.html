@@ -203,13 +203,17 @@
     function sort(par, atr) {
       const ul = document.getElementById(par);
       const lis = ul.querySelectorAll("li");
-
+      ul.classList.toggle('up');
       [].slice
         .call(lis)
         .sort(function(a, b) {
           const textA = a.getAttribute(atr).toLowerCase();
           const textB = b.getAttribute(atr).toLowerCase();
-          return textA < textB ? -1 : textA > textB ? 1 : 0;
+          if (ul.classList.contains('up')) {
+            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+          } else {
+            return (textA > textB) ? -1 : (textA < textB) ? 1 : 0;
+          }
         })
         .forEach(function(el) {
           el.parentNode.appendChild(el);
@@ -218,6 +222,7 @@
     // Sort by category alphabetically on page load
     window.onload = function() {
       sort('bookmarks','class');
+      document.querySelector('ul#bookmarks').classList.add('up');
     };
   </script>
   {{ end }}
