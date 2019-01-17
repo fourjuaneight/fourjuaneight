@@ -3,6 +3,7 @@ a,
 article h2 a,
 ul#portfolio h4 a {
   @include color(color, text);
+  outline : none;
 }
 a.back-home,
 article,
