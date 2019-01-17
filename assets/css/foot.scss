@@ -215,16 +215,23 @@ body {
     }
   }
   &#dyslexic {
-    div#ui-options section.options nav p {
-      font-size: .9rem;
-      padding: 0 0 5px;
-    }
-    nav#fonts p#dyslexic {
-      text-decoration: underline;
-    }
-    nav#fonts p#rubik {
-      font-size: 1rem !important;
-      padding: 2.5px 0 !important;
+    div#ui-options {
+      section.options {
+        @supports (display:grid) {
+          grid-template-columns: 125px 2.5px 145.5px;
+        }
+        nav p {
+          font-size: .9rem;
+          padding: 0 0 5px;
+        }
+        nav#fonts p#dyslexic {
+          text-decoration: underline;
+        }
+        nav#fonts p#rubik {
+          font-size: 1rem !important;
+          padding: 2.5px 0 !important;
+        }
+      }
     }
   }
   &.black {
