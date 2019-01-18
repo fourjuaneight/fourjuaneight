@@ -1,8 +1,9 @@
 {
-  "title": "About",
+  "title": "About Me",
   "menu": "main",
   "weight": 100,
-  "showthedate": false
+  "showthedate": false,
+  "aliases": ["/about"]
 }
 
 <div class="about-container">

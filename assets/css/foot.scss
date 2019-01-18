@@ -69,6 +69,7 @@ footer#footer {
     @extend %flex-wrap;
     @extend %items-center;
     > * {
+      font-size: 1rem;
       line-height: 1.6rem;
       @include range(328px,300px) {
         &:nth-child(4) {
