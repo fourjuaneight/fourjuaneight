@@ -149,8 +149,11 @@ body {
         transform: scale(0);
       }
       &:checked ~ nav.navbar {
-        height: 215px;
+        height: 216px;
         margin-top: 15px;
+        @supports (display:grid) {
+          height: 180px;
+        }
       }
     }
     label.hamburger {
@@ -206,7 +209,8 @@ body {
         @supports (display:grid) {
           display: grid;
           justify-content: end;
-          grid-template-rows: repeat(4, 1fr);
+          grid-template-columns: auto repeat(2,30px);
+          grid-template-rows: repeat(5, 36px);
         }
       }
       a {
@@ -218,6 +222,7 @@ body {
           line-height: 1rem;
         }
         @include media-query-max(700px) {
+          grid-column: 1/4;
           margin: 10px 0 10px auto;
           text-align: end;
         }
@@ -240,6 +245,16 @@ body {
               height: 13px;
               width: 13px;
             }
+          }
+        }
+        &.rss {
+          @include media-query-max(700px) {
+            grid-column: 3/4;
+          }
+        }
+        &.twitter {
+          @include media-query-max(700px) {
+            grid-column: 2/3;
           }
         }
       }

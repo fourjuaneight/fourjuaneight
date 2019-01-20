@@ -21,15 +21,15 @@ footer#footer {
   nav.social {
     @extend %content-center;
     max-width: 150px;
-    min-height: 30px;
+    min-height: 25px;
     width: 100%;
     a,
     a svg {
-      width: 30px;
+      width: 25px;
     }
     a {
       @extend %relative;
-      height: 40px;
+      height: 35px;
       padding-top: 10px;
       &::before {
         @extend %absolute;
