@@ -25,11 +25,12 @@ footer#footer {
     width: 100%;
     a,
     a svg {
-      height: 30px;
       width: 30px;
     }
     a {
       @extend %relative;
+      height: 40px;
+      padding-top: 10px;
       &::before {
         @extend %absolute;
         @include color(background-color, contentBG);
@@ -49,11 +50,12 @@ footer#footer {
 
       }
       &:hover::before {
-        transform: translate(-30%,-150%);
+        transform: translate(-30%,-120%);
         opacity: 1;
       }
       svg {
         @extend %relative;
+        height: 30px;
         margin: 0;
       }
     }
