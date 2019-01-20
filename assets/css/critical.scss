@@ -93,7 +93,7 @@ body {
     min-height: 72px;
     @supports (display:grid) {
       display: grid;
-      grid-template-columns: 155px 485px;
+      grid-template-columns: 155px 475px;
       grid-template-rows: auto;
       @include media-query-max(700px) {
         grid-template-columns: 155px 140px;
@@ -181,7 +181,7 @@ body {
       }
     }
     nav.navbar {
-      width: 485px;
+      width: 475px;
       @supports (display:grid) {
         grid-column: 2/3;
         @include media-query-max(700px) {
@@ -221,7 +221,8 @@ body {
           margin: 10px 0 10px auto;
           text-align: end;
         }
-        &.rss {
+        &.rss,
+        &.twitter {
           @extend %content-center;
           @extend %flex;
           @extend %items-center;
