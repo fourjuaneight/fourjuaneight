@@ -22,11 +22,9 @@ pygmentsStyle = "dracula"
   plainIDAnchors = true
 
 [params]
-  social = "fourjuaneight"
-
-[params.meta]
   description = "A blog about coding and productivity"
   keywords = "coding, productivity, development, front-end, automation"
+  social = "fourjuaneight"
 
 [taxonomies]
   genre = "genre"

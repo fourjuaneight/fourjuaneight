@@ -6,8 +6,8 @@
   <base href="{{ .Site.BaseURL }}">
   <title>{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}{{ if eq $url "/" }}{{ .Site.Title }}{{ else }}{{ if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }}{{ end }}{{ end }}</title>
   <meta name="author" content="{{ .Site.Author.name }}">
-  <meta name="description" content="{{ .Site.Params.meta.description }}">
-  <meta name="keywords" content="{{ .Site.Params.meta.keywords }}">
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="keywords" content="{{ .Site.Params.keywords }}">
   <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1.0,maximum-scale=5.0,viewport-fit=cover">
   <meta name="theme-color" content="#8F3A6D">
   
