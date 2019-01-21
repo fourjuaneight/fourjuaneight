@@ -13,7 +13,7 @@ But still, I thought I'd feel more comfortable having an alternative where I kne
 ## Homebrewed
 I'd been thinking about making my own bookmarking solution for quite some time now. I was originally inspired by {{< link href="https://leancrew.com/all-this/2017/10/feed-reading/" content="Dr. Drang's own homemade RSS reader" >}}, which he built because he didn't feel completely satisfied with the 3rd party offerings at the time. So I figured I'd give it shot with my situation.
 
-Although I will be getting into some of the code I'm using to make this happen, I'll be the first to admit that it's not the best solution, but it works exactly as I need it to for my use-case. You're welcome to copy my code and make it your own. Feel free to share your "constructive criticism" about my coding skills in the comments below.
+Although I will be getting into some of the code I'm using to make this happen, I'll be the first to admit that it's not the best solution, but it works exactly as I need it to for my use-case. You're welcome to copy my code and make it your own. Feel free to direct your "constructive criticism" about my coding skills to `/dev/null`.
 
 ### Back-End
 Bookmarks are meant to be hosted and accessible through this site. The site is built entirely using {{< link href="https://gohugo.io" content="Hugo" >}}. One solution would be to build an SQL database. But I have no idea how to do that. So, I opted for using Hugo's {{< link href="https://gohugo.io/templates/data-templates/" content="data templates" >}}.
