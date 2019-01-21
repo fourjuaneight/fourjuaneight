@@ -28,6 +28,9 @@
 %decoration-none {
   text-decoration: none;
 }
+%fixed {
+  position: fixed;
+}
 %flex {
   display: flex;
 }
@@ -63,6 +66,9 @@
 }
 %relative {
   position: relative;
+}
+%sticky {
+  position: sticky;
 }
 %underline {
   border-bottom: 2px solid #414142;
