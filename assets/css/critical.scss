@@ -296,15 +296,25 @@ body {
         }
       }
       p.tag {
+        @extend %content-flex-start;
+        @extend %flex;
+        @extend %items-flex-start;
         margin: 0;
+        span:nth-child(n+2) {
+          margin-right: 3px;
+        }
       }
       time.date {
         @include color(color, meta);
+        line-height: 1.6rem;
+        margin-right: 5px;
+        min-width: 100px;
       }
       div.meta-info {
         @extend %content-space-between;
         @extend %flex;
-        @extend %items-center;
+        @extend %flex-wrap;
+        @extend %items-flex-start;
       }
     }
   }
