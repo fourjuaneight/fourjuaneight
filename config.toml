@@ -1,8 +1,8 @@
-baseURL = "https://www.cleverlaziness.com/"
+baseURL = "https://www.fourjuaneight.com/"
 enableEmoji = "true"
 enableRobotsTXT = "true"
 languageCode = "en-us"
-title = "Clever Laziness"
+title = "Fourjuaneight"
 
 SectionPagesMenu = "main"
 
@@ -16,7 +16,7 @@ pygmentsStyle = "dracula"
 
 [author]
   name = "Juan"
-  email = "hi@cleverlaziness.com"
+  email = "hi@fourjuaneight.com"
 
 [blackfriday]
   plainIDAnchors = true
@@ -48,4 +48,4 @@ pygmentsStyle = "dracula"
   section = ["html", "jsonfeed"]
 
 [params.google]
-  analytics = "UA-119777735-1"
+  analytics = ""

@@ -23,11 +23,12 @@
   rel="alternate" type="application/json" title="{{ .Site.Title }}" />
   
   <!-- Open Graph -->
+  {{ $avatar := resources.Get "icons/avatar.png" }}
   <link rel="canonical" href="{{ .Permalink }}">
   {{ template "_internal/twitter_cards.html" . }}
-  <meta name="twitter:image" content="{{ "icons/avatar.png" | relURL }}">
+  <meta name="twitter:image" content="{{ $avatar.RelPermalink }}">
   {{ template "_internal/opengraph.html" . }}
-  <meta property="og:image" content="{{ "icons/avatar.png" | relURL }}">
+  <meta property="og:image" content="{{ $avatar.RelPermalink }}">
   {{ template "_internal/schema.html" . }}
 
   <!-- Fonts -->  

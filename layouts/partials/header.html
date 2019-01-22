@@ -1,8 +1,10 @@
 <header id="header">
   <!-- Avatar and link to homepage -->
   <a class="home" href="{{ .Site.BaseURL }}" aria-label="Clever Laziness Dot Com Homepage">
-    {{ partial "row-bot.html" . }}
-    <p>Clever Laziness</p>
+    <p>4</p>
+    {{ $logo := resources.Get "icons/logo.jpg" }}
+    <img src="{{ $logo.RelPermalink }}" alt="Juan">
+    <p>8</p>
   </a>
   {{ $.Scratch.Set "b" "" }}
   {{ if eq .Kind "taxonomy" }}

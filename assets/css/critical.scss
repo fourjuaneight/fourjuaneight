@@ -113,26 +113,14 @@ body {
           grid-row: 1/2;
         }
       }
-      svg {
+      img {
         height: 40px;
-        margin-right: 10px;
+        margin: 0 2px;
         width: auto;
-        g#view > path.bg {
-          @include color(fill, contentBG);
-        }
-        g.link path {
-          @include color(fill, link);
-        }
-        g.meta ellipse {
-          @include color(fill, link);
-        }
-        g#stick path {
-          @include color(stroke, link);
-        }
       }
       p {
-        line-height: 1.2rem;
-        width: 90px;
+        font-size: 50px;
+        line-height: 2.5rem;
       }
     }
     input#toggle {
