@@ -2,6 +2,7 @@
   "title": "Bookmarking the Web - Making Your Own Solution with Hugo",
   "date": "2019-01-20",
   "draft": false,
+  "description": "I'd been thinking about making my own bookmarking solution for quite some time now. inspired by Dr. Drang's own homemade RSS reader, I've decided to build my own bookmarking site on this website. ",
   "category": ["shortcuts", "meta", "hugo"],
   "showthedate": true
 }

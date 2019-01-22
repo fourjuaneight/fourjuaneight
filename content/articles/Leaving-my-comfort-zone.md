@@ -2,6 +2,7 @@
   "title": "Leaving My Comfort Zone",
   "date": "2018-06-29",
   "draft": false,
+  "description": "It was the first time I’ve stepped out of my comfort zone like this, but I’m glad I did. I’ve come out a better developer. That’s not something I can say often about a job.",
   "category": ["developement"],
   "showthedate": true
 }

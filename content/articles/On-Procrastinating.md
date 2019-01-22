@@ -2,6 +2,7 @@
   "title": "On Procrastinating",
   "date": "2017-07-23",
   "draft": false,
+  "description": "For a lot of us procrastinating is the norm and actually getting some work done is the accomplishment of the day. Here's my approach at dealing with it and then giving up and just working with it.",
   "category": ["procrastination"],
   "showthedate": true
 }

@@ -2,6 +2,7 @@
   "title": "Tagging Automation",
   "date": "2017-08-13",
   "draft": false,
+  "description": "Over the years I’ve accumulated – hoarded – plenty of documents. The problem I have is that often I can’t find what I’m looking for. So, inspired by Brett terpstra, I decided to borrow from his organizational structure and tailor this to my own needs",
   "category": ["productivity"],
   "showthedate": true
 }

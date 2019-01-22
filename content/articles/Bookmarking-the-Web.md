@@ -2,6 +2,7 @@
  "title": "Bookmarking the Web",
  "date": "2019-01-14",
  "draft": false,
+ "description": "There's content I like to bookmark to either consume later or refer to. This is my attempt at bookmarking the web.",
  "category": ["shortcuts"],
  "showthedate": true 
 }

@@ -2,6 +2,7 @@
   "title": "The Struggle Is Real",
   "date": "2017-12-17",
   "draft": false,
+  "description": "Maybe if all talk about this a little more, we’ll be able to feel more comfortable in our roles and do a better job. Maybe, I don’t know. Adulting can be hard. And there’s nothing wrong about that.",
   "category": ["life"],
   "showthedate": true
 }

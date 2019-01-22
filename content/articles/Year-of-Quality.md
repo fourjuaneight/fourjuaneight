@@ -2,6 +2,7 @@
   "title": "Year of Quality",
   "date": "2019-01-01",
   "draft": false,
+  "description": "There's too much, not enough time, and even less for other important stuff. But now, I consume only the best of each and have time to focus on other important stuff. I'm consuming less stuff, to do more of other stuff, because the other stuff, is more important.",
   "category": ["yearly-theme"],
   "showthedate": true
 }

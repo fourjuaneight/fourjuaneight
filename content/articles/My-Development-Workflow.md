@@ -2,6 +2,7 @@
   "title": "My Development Workflow",
   "date": "2017-10-15",
   "draft": false,
+  "description": "There’s always a new shiny tool that provides a solution to a problem we didn’t know we needed. But if we didn’t know we had that problem, do we really need it? This realization has fundamentally changed how I view my toolset.",
   "category": ["productivity"],
   "showthedate": true
 }
