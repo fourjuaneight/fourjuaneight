@@ -16,7 +16,7 @@ pygmentsStyle = "dracula"
 
 [author]
   name = "Juan"
-  email = "hi@fourjuaneight.com"
+  email = "hello@fourjuaneight.com"
 
 [blackfriday]
   plainIDAnchors = true
