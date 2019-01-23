@@ -179,6 +179,20 @@
     lf.init();
   </script>
   {{ end }}
+  {{ if .IsPage }}
+  <script>
+    const chroma = document.querySelectorAll('pre.chroma');
+    chroma.forEach(function(el) {
+      const code = el.childNodes;
+      const name = code[0].getAttribute('data-lang');
+      const label = document.createElement('span');
+      const lang = document.createTextNode(name);
+      label.appendChild(lang);
+      label.classList.add('lang');
+      el.parentNode.prepend(label);
+    });
+  </script>
+  {{ end }}
   {{ if eq .Title "Bookmarks" }}
   <script>
     // Filter by tag
