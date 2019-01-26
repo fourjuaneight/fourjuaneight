@@ -227,12 +227,12 @@
         checkboxes[i].checked = false;
       }
     }
-    function cat(id) {
+    var cat = (id) => {
       const category = document.getElementsByName('category');
       const liClass = 'li#record-item.' + id.id;
       const hidden = document.querySelectorAll('li#record-item');
       const active = document.querySelectorAll(liClass);
-      Array.prototype.forEach.call(category,function(el){
+      Array.prototype.forEach.call(category,el => {
         el.checked = false;
       });
       id.checked = true;
@@ -240,13 +240,13 @@
       active.forEach(ac => ac.classList.remove('none'));
     }
     // Sort alphabetically by title
-    function sort(par, atr) {
+    var sort = (par, atr) => {
       const ul = document.getElementById(par);
       const lis = ul.querySelectorAll("li");
       ul.classList.toggle('up');
       [].slice
         .call(lis)
-        .sort(function(a, b) {
+        .sort((a,b) => {
           const textA = a.getAttribute(atr).toLowerCase();
           const textB = b.getAttribute(atr).toLowerCase();
           if (ul.classList.contains('up')) {
@@ -255,7 +255,7 @@
             return (textA > textB) ? -1 : (textA < textB) ? 1 : 0;
           }
         })
-        .forEach(function(el) {
+        .forEach(el => {
           el.parentNode.appendChild(el);
         });
     }
