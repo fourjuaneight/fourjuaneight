@@ -136,9 +136,9 @@
     const sets = document.getElementById('settings');
     const colors = document.querySelectorAll('p.colors');
     const fonts = document.querySelectorAll('p.type');
-    function uiSwitcher(item,change,mod) {
-      item.forEach(function(option) {
-        option.addEventListener("click", function(e) {
+    var uiSwitcher = (item,change,mod) => {
+      item.forEach(option => {
+        option.addEventListener("click", e => {
           e.preventDefault();
           var value = option.id;
           body.setAttribute(mod, value);
