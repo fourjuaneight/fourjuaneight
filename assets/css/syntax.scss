@@ -24,7 +24,6 @@ p code {
       @extend %relative;
       code::before {
         @extend %absolute;
-        @extend %none;
         @include color(color, content);
         content: attr(data-lang);
         font: normal 13px 'Plex Mono', monospace;
@@ -33,15 +32,6 @@ p code {
         top: 15px;
       }
     }
-  }
-  span.lang {
-    @extend %absolute;
-    @include color(color, content);
-    font: normal 13px 'Plex Mono', monospace;
-    left: 15px;
-    text-transform: uppercase;
-    top: 15px;
-    z-index: 10;
   }
 }
 .chroma {
