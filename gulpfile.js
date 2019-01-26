@@ -8,6 +8,7 @@ const gulp = require('gulp');
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
+const replace = require('gulp-replace');
 const sass = require('gulp-sass');
 
 // Critical CSS
@@ -32,6 +33,15 @@ function critical() {
       .pipe(gulp.dest('layouts/partials'))
 }
 
+// Replace
+function code() {
+  return gulp
+  .src(['public/articles/**/*.html'])
+  .pipe(plumber())
+  .pipe(replace('<pre class="chroma">', '<pre class="chroma"><span class="copy"><div></div><div></div></span>'))
+  .pipe(gulp.dest('public/articles/'));
+}
+
 // Watch asset folder for changes
 function watchFiles() {
   gulp.watch('assets/css/colors.scss', critical);
@@ -44,6 +54,7 @@ function watchFiles() {
 
 // Tasks
 gulp.task("critical", critical);
+gulp.task("code", code);
 
 // Run Watch as default
 gulp.task('watch', watchFiles);

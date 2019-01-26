@@ -36,6 +36,7 @@
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.1",
     "npm": "6.4.1",
     "postcss-calc": "^7.0.1",

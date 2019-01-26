@@ -22,14 +22,39 @@ p code {
     overflow-x: auto;
     &.chroma {
       @extend %relative;
-      code::before {
-        @extend %absolute;
-        @include color(color, content);
-        content: attr(data-lang);
-        font: normal 13px 'Plex Mono', monospace;
-        left: 15px;
-        text-transform: uppercase;
-        top: 15px;
+    }
+  }
+  span.copy {
+    @extend %absolute;
+    @include color(color, content);
+    cursor: pointer;
+    font: normal 13px 'Plex Mono', monospace;
+    min-height: 18.5px;
+    min-width: 16.5px;
+    right: 15px;
+    text-transform: uppercase;
+    top: 15px;
+    z-index: 10;
+    div {
+      @extend %absolute;
+      height: 16px;
+      width: 14px;
+      &:first-child {
+        border-right: 1px solid;
+        border-top: 1px solid;
+        border-radius: 3px;
+        right: 0;
+        top: 0;
+        z-index: 5;
+        @include color(border-color, content);
+      }
+      &:last-child {
+        border: 1px solid;
+        border-radius: 3px;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        @include color(border-color, content);
       }
     }
   }

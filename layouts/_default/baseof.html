@@ -129,6 +129,7 @@
 
   {{ block "lazy" . }}
   {{ end }}
+
   <script>
     // UI Switcher
     const body = document.querySelector('body');
@@ -172,6 +173,44 @@
     }
   </script>
   {{ if .IsPage }}
+  <script>
+    const highlight = document.querySelectorAll('div.highlight');
+    highlight.forEach(el => {
+      const span = document.createElement('span');
+      const div1 = document.createElement('div');
+      const div2 = div1.cloneNode(true);
+      span.appendChild(div1);
+      span.appendChild(div2);
+      span.classList.add('copy');
+      el.prepend(span);
+    });
+    const label = document.querySelectorAll('span.copy');
+    label.forEach(copy => {
+      copy.addEventListener('click', () => {
+        const selection = window.getSelection();
+        const range = document.createRange();
+        const pre = copy.nextSibling;
+        const code = pre.querySelector('code');
+        const original = copy.innerHTML;
+        range.selectNodeContents(code);
+        selection.removeAllRanges();
+        selection.addRange(range);
+        try {
+          document.execCommand('copy');
+          selection.removeAllRanges();
+          copy.innerHTML = 'Copied!';
+          setTimeout(() => {
+            copy.innerHTML = original;
+          }, 1200);
+        } catch(e) {
+          copy.innerHTML = "Can't copy, hit Ctrl+C!";
+          setTimeout(() => {
+            copy.innerHTML = original;
+          }, 1200);
+        }
+      });
+    });
+  </script>
   {{ $footnotes := resources.Get "js/barefoot.js" | minify }}
   <script src="{{ $footnotes.Permalink }}"></script>
   <script>
