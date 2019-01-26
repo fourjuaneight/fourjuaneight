@@ -464,8 +464,12 @@ body {
     header#header,
     footer#footer,
     section.stuff,
-    button#theme-switcher {
-      display: none;
+    div#ui-options,
+    div.footnote-container,
+    button.footnote-button {
+      display: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
     }
     main.list {
       > * {
