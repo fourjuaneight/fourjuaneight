@@ -2,7 +2,7 @@
 <nav class="social">
   {{with .Site.Params.social}}
   <!-- Github icon and link -->
-  <a class="github" href="https://www.github.com/{{.}}" target="_blank" rel="noopener" aria-label="GitHub">
+  <a class="github icon" href="https://www.github.com/{{.}}" target="_blank" rel="noopener" aria-label="GitHub">
     <svg width="55" height="55" viewBox="0 0 200 200" version="1.1" aria-labelledby="githubTitle" aria-describedby="githubDesc">
       <title id="githubTitle">View my github profile</title>
       <desc id="githubDesc">link to github profile</desc>
@@ -13,7 +13,7 @@
     </svg>
   </a>
   <!-- Twitter icon and link -->
-  <a class="twitter" href="https://www.twitter.com/{{.}}" target="_blank" rel="noopener" aria-label="Twitter">
+  <a class="twitter icon" href="https://www.twitter.com/{{.}}" target="_blank" rel="noopener" aria-label="Twitter">
     <svg width="55" height="55" viewBox="0 0 200 200" version="1.1" role="img" aria-labelledby="twitterTitle" aria-describedby="twitterDesc">
       <title id="twitterTitle">View my twitter profile</title>
       <desc id="twitterDesc">link to twitter profile</desc>
@@ -25,7 +25,7 @@
   </a>
   {{end}}
   <!-- RSS link -->
-  <a class="rss" href="{{ .Site.BaseURL }}{{ if or (eq .Section "bookshelf") (eq (.Scratch.Get "b") "bookshelf" ) }}bookshelf{{ else if eq .Section "microposts" }}microposts{{ else }}articles{{ end }}/feed.json" target="_blank" rel="noopener" aria-label="RSS">
+  <a class="rss icon" href="{{ .Site.BaseURL }}{{ if or (eq .Section "bookshelf") (eq (.Scratch.Get "b") "bookshelf" ) }}bookshelf{{ else if eq .Section "microposts" }}microposts{{ else }}articles{{ end }}/feed.json" target="_blank" rel="noopener" aria-label="RSS">
     <svg width="55" height="55" viewBox="0 0 200 200" version="1.1" aria-labelledby="rssTitle" aria-describedby="rssDesc">
       <title id="rssTitle">link to rss feed</title>
       <desc id="rssDesc">link to rss feed</desc>

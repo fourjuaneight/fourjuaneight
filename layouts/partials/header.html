@@ -1,10 +1,10 @@
 <header id="header">
   <!-- Avatar and link to homepage -->
   <a class="home" href="{{ .Site.BaseURL }}" aria-label="Clever Laziness Dot Com Homepage">
-    <p>4</p>
+    {{ partial "4.html" . }}
     {{ $logo := resources.Get "icons/logo.jpg" }}
     <img src="{{ $logo.RelPermalink }}" alt="Juan">
-    <p>8</p>
+    {{ partial "8.html" . }}
   </a>
   {{ $.Scratch.Set "b" "" }}
   {{ if eq .Kind "taxonomy" }}
@@ -14,7 +14,7 @@
   {{ end }}
 
   <input id="toggle" type="checkbox" />
-  <label class="hamburger" for="toggle">
+  <label class="hamburger" for="toggle" tabindex="0">
     <div class="top"></div>
     <div class="meat"></div>
     <div class="bottom"></div>
@@ -26,7 +26,7 @@
     <a href="{{ .Site.BaseURL }}microposts">Microposts</a>
     <a href="{{ .Site.BaseURL }}bookshelf">Bookshelf</a>
     <a href="{{ .Site.BaseURL }}about-me">About Me</a>
-    <a href="https://www.twitter.com/{{ .Site.Params.social }}" class="twitter" target="_blank" rel="noopener" aria-label="Twitter">
+    <a href="https://www.twitter.com/{{ .Site.Params.social }}" class="twitter icon" target="_blank" rel="noopener" aria-label="Twitter">
       <svg width="15" height="15" viewBox="0 0 200 200" version="1.1" role="img" aria-labelledby="twitterTitle" aria-describedby="twitterDesc">
         <title id="twitterTitle">View my twitter profile</title>
         <desc id="twitterDesc">link to twitter profile</desc>
@@ -36,7 +36,7 @@
         </g>
       </svg>
     </a>
-    <a href="{{ .Site.BaseURL }}{{ if or (eq .Section "bookshelf") (eq (.Scratch.Get "b") "bookshelf" ) }}bookshelf{{ else if eq .Section "microposts" }}microposts{{ else }}articles{{ end }}/feed.json" class="rss" target="_blank" rel="noopener" aria-label="RSS">
+    <a href="{{ .Site.BaseURL }}{{ if or (eq .Section "bookshelf") (eq (.Scratch.Get "b") "bookshelf" ) }}bookshelf{{ else if eq .Section "microposts" }}microposts{{ else }}articles{{ end }}/feed.json" class="rss icon" target="_blank" rel="noopener" aria-label="RSS">
       <svg  width="15" height="15" viewBox="0 0 200 200" version="1.1" role="img" aria-labelledby="rssTitle" aria-describedby="rssDesc">
         <title id="rssTitle">View my rss profile</title>
         <desc id="rssDesc">link to rss profile</desc>

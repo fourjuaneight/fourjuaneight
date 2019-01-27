@@ -90,13 +90,14 @@ body {
     @extend %content-space-between;
     @extend %flex-wrap;
     @extend %items-center;
+    @extend %relative;
     min-height: 72px;
     @supports (display:grid) {
       display: grid;
-      grid-template-columns: 155px 475px;
+      grid-template-columns: 115px 475px;
       grid-template-rows: auto;
       @include media-query-max(700px) {
-        grid-template-columns: 155px 140px;
+        grid-template-columns: 115px 140px;
         grid-template-rows: repeat(2,auto);
       }
     }
@@ -106,25 +107,30 @@ body {
       @extend %items-center;
       @extend %decoration-none;
       height: 42px;
-      width: 155px;
+      width: 115px;
       @supports (display:grid) {
         grid-column: 1/2;
         @include media-query-max(700px) {
           grid-row: 1/2;
         }
       }
+      svg,
       img {
         height: 40px;
-        margin: 0 2px;
         width: auto;
       }
-      p {
-        font-size: 50px;
-        line-height: 2.5rem;
+      img {
+        margin: 0 2px;
       }
     }
     input#toggle {
       @extend %none;
+      @extend %absolute;
+      height: 24px;
+      margin: 0;
+      right: 15px;
+      top: 25px;
+      width: 30px;
       &:checked + .hamburger .top {
         transform: rotate(-45deg);
         margin-top: 5.5px;

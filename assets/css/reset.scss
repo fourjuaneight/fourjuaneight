@@ -1,9 +1,12 @@
 // Reset
 a,
 article h2 a,
+label,
 ul#portfolio h4 a {
   @include color(color, text);
-  outline : none;
+  &:focus {
+    @include color(outline-color, link);
+  }
 }
 a.back-home,
 article,
@@ -29,7 +32,15 @@ a:active svg,
 a:hover svg {
   @include color(fill, link);
 }
-hr {
+a.icon {
+  &:focus {
+    outline: none;
+    svg {
+      @include color(fill, link);
+    }
+  }
+}
+hr { 
   @include color(color, border);
 }
 article a,
@@ -118,6 +129,11 @@ img,
 svg {
   height: auto;
   width: 100%;
+}
+input[type="checkbox"]:active + label,
+input[type="checkbox"]:hover + label,
+label:active {
+  outline: none;
 }
 li {
   line-height: 1.65rem;
