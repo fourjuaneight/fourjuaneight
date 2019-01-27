@@ -1,5 +1,5 @@
 (function () {
-  const version = 'v1';
+  const version = 'v2';
   const cacheName = ':fourjuaneight:';
   const staticCacheName = version + cacheName + 'static';
   const pagesCacheName = cacheName + 'pages';
@@ -11,6 +11,7 @@
     '/bookmarks/',
     '/microposts/',
     '/offline/',
+    '/icons/logo.jpg',
     '/css/main.min.css',
     '/css/single.min.css',
     '/fonts/Rubik.woff',
