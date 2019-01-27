@@ -2,7 +2,7 @@ baseURL = "https://www.fourjuaneight.com/"
 enableEmoji = "true"
 enableRobotsTXT = "true"
 languageCode = "en-us"
-title = "Fourjuaneight"
+title = "fourjuaneight"
 
 SectionPagesMenu = "main"
 

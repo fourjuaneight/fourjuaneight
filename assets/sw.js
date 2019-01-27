@@ -1,6 +1,6 @@
 (function () {
-  const version = 'v6';
-  const cacheName = ':cleverlaziness:';
+  const version = 'v1';
+  const cacheName = ':fourjuaneight:';
   const staticCacheName = version + cacheName + 'static';
   const pagesCacheName = cacheName + 'pages';
   const imagesCacheName = cacheName + 'images';
@@ -84,7 +84,7 @@
   self.addEventListener('fetch', event => {
     const request = event.request;
     const url = new URL(request.url);
-    if (url.href.indexOf('https://www.cleverlaziness.com') !== 0) return;
+    if (url.href.indexOf('https://www.fourjuaneight.com') !== 0) return;
     if (request.method !== 'GET') return;
     if (url.href.indexOf('?') !== -1) return;
     if (request.headers.get('Accept').includes('text/html')) {

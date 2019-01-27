@@ -1,6 +1,6 @@
 {
-  "short_name": "CL",
-  "name": "Clever Laziness",
+  "short_name": "418",
+  "name": "fourjuaneight",
   "icons": [
     {
       "src": "/icons/icon-128x128.png",
@@ -19,7 +19,7 @@
     }
   ],
   "display": "standalone",
-  "theme_color": "#BB3117",
-  "background_color": "#BB3117",
+  "theme_color": "#8F3A6D",
+  "background_color": "#8F3A6D",
   "start_url": "/"
 }
