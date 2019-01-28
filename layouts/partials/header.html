@@ -13,19 +13,11 @@
     {{ end }}
   {{ end }}
 
-  <input id="toggle" type="checkbox" />
-  <label class="hamburger" for="toggle" tabindex="0">
-    <div class="top"></div>
-    <div class="meat"></div>
-    <div class="bottom"></div>
-  </label>
-
   <!-- Site navigation menu -->
   <nav class="navbar">
     <a href="{{ .Site.BaseURL }}articles">Articles</a>
-    <a href="{{ .Site.BaseURL }}microposts">Microposts</a>
-    <a href="{{ .Site.BaseURL }}bookshelf">Bookshelf</a>
-    <a href="{{ .Site.BaseURL }}about-me">About Me</a>
+    <a href="{{ .Site.BaseURL }}microposts">Micro</a>
+    <a href="{{ .Site.BaseURL }}about-me" aria-label="About me">About</a>
     <a href="https://www.twitter.com/{{ .Site.Params.social }}" class="twitter icon" target="_blank" rel="noopener" aria-label="Twitter">
       <svg width="15" height="15" viewBox="0 0 200 200" version="1.1" role="img" aria-labelledby="twitterTitle" aria-describedby="twitterDesc">
         <title id="twitterTitle">View my twitter profile</title>
