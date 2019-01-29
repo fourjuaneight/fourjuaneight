@@ -259,7 +259,6 @@ body {
     }
   }
   // Bookmarks
-  // Reading List
   nav.categories {
     div.tag {
       @extend %content-center;
@@ -288,14 +287,12 @@ body {
       }
     }
   }
-  ul#pins,
   ul#records {
     @include color(border-top-color, border);
     border-top-style: solid;
     border-top-width: 1.5px;
     padding: 0;
     nav.sorting,
-    li#pin-item,
     li#record-item {
       @extend %content-flex-start;
       @extend %flex;

@@ -103,19 +103,16 @@ main.bookshelf {
   }
 }
 // Bookmarks
-// Reading List
 main.bookmarks,
 main.reading {
   h1.title {
     margin-bottom: 15px;
   }
-  ul#pins,
   ul#records {
     @include color(border-top-color, border);
     border-top-style: solid;
     border-top-width: 1.5px;
     padding: 0;
-    li#pin-item,
     li#record-item {
       list-style-type: none;
       a.title {
