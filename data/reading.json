@@ -7,12 +7,6 @@
       "Category": "Articles"
     },
     {
-      "Title": "Product Design in the Era of the Algorithm",
-      "Creator": "Josh Clark",
-      "URL": "https://vimeo.com/237454650",
-      "Category": "Videos"
-    },
-    {
       "Title": "The Fermi Paradox",
       "Creator": "Tim Urban",
       "URL": "https://waitbutwhy.com/2014/05/fermi-paradox.html",
@@ -73,12 +67,6 @@
       "Category": "Articles"
     },
     {
-      "Title": "In a Nutshell",
-      "Creator": "YK Animation",
-      "URL": "https://vimeo.com/307578337",
-      "Category": "Videos"
-    },
-    {
       "Title": "A Complete React Boilerplate Tutorial — From Zero to Hero",
       "Creator": "Leonardo Maldonado",
       "URL": "https://medium.freecodecamp.org/a-complete-react-boilerplate-tutorial-from-zero-to-hero-20023e086c4a",
@@ -107,12 +95,6 @@
       "Creator": "James Nielsen",
       "URL": "https://blog.jim-nielsen.com/2019/building-a-progressively-enhanced-site/",
       "Category": "Articles"
-    },
-    {
-      "Title": "Mountain Monks",
-      "Creator": "Fritz Schumann",
-      "URL": "https://vimeo.com/311714692",
-      "Category": "Videos"
     },
     {
       "Title": "The Secrets of Lyndon Johnson’s Archives",
@@ -155,6 +137,30 @@
       "Creator": "Andrew Liptak",
       "URL": "https://www.theverge.com/2019/1/24/18129437/front-porch-forum-vermont-social-network-listserv-local-online-community",
       "Category": "Articles"
+    },
+    {
+      "Title": "Accessible Page Navigation in Single Page Apps",
+      "Creator": "Dave Rupert",
+      "URL": "https://daverupert.com/2019/01/accessible-page-navigations-in-single-page-apps/",
+      "Category": "Articles"
+    },
+    {
+      "Title": "Product Design in the Era of the Algorithm",
+      "Creator": "Josh Clark",
+      "URL": "https://vimeo.com/237454650",
+      "Category": "Videos"
+    },
+    {
+      "Title": "In a Nutshell",
+      "Creator": "YK Animation",
+      "URL": "https://vimeo.com/307578337",
+      "Category": "Videos"
+    },
+    {
+      "Title": "Mountain Monks",
+      "Creator": "Fritz Schumann",
+      "URL": "https://vimeo.com/311714692",
+      "Category": "Videos"
     }
   ]
 }
