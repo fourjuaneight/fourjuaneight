@@ -218,7 +218,7 @@
     lf.init();
   </script>
   {{ end }}
-  {{ if eq .Title "Bookmarks" }}
+  {{ if or (eq .Title "Bookmarks") (eq .Title "Reading List") }}
   <script>
     // Filter by tag
     const checkboxes = document.getElementsByName('category');

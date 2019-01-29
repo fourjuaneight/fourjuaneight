@@ -3,7 +3,7 @@
     <article class="post">
       <h1 class="title">{{ .Title }}</h1>
       {{ if eq .Title "Bookmarks" }}
-        {{ partial "book-cats.html" . }}
+        {{ partial "categories.html" . }}
       {{ end }}
       {{ partial "date.html" . }}
       <section class="content">{{ .Content }}</section>

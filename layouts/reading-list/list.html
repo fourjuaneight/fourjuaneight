@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <main class="list reading">
+    <h1 class="title">Reading List</h1>
+    <ul id="pins">
+      <nav class="sorting">
+        <p class="sort-item" onclick="sort('pins','data-title')">Title</p>
+        <p class="sort-item" onclick="sort('pins','data-creator')">Creator</p>
+        <p class="sort-item" onclick="sort('pins','class')">Category</p>
+      </nav>
+      {{ range $i, $rec := .Site.Data.reading.pins }}
+      <li id="pin-item" class="{{ lower $rec.Category }}" data-title="{{ anchorize $rec.Title }}" data-creator="{{ anchorize $rec.Creator }}">
+        <a class="title" href="{{ $rec.URL }}" target="_blank" rel="noopener">{{ $rec.Title }}</a>
+        <p class="creator">{{ $rec.Creator }}</p>
+        <p class="category"><span aria-hidden="true">#</span>{{ lower $rec.Category }}</p>
+      </li>
+      {{ end }}
+    </ul>
+  </main>
+{{ end }}

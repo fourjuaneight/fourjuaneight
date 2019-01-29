@@ -78,12 +78,12 @@ footer#footer {
     > * {
       font-size: 1rem;
       line-height: 1.6rem;
-      @include range(328px,300px) {
+      @include media-query-max(305px) {
         &:nth-child(4) {
           visibility: hidden;
         }
       }
-      @include range(385px,328px) {
+      @include range(355px,305px) {
         &:nth-child(6) {
           visibility: hidden;
         }
