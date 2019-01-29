@@ -94,7 +94,7 @@ body {
     min-height: 72px;
     @supports (display:grid) {
       display: grid;
-      grid-template-columns: 115px 300px;
+      grid-template-columns: 95px 330px;
       grid-template-rows: auto;
       @include media-query-max(450px) {
         grid-row-gap: 15px;
@@ -109,7 +109,7 @@ body {
       @extend %items-center;
       @extend %decoration-none;
       height: 42px;
-      width: 115px;
+      width: 95px;
       @supports (display:grid) {
         grid-column: 1/2;
         @include media-query-max(450px) {
@@ -117,23 +117,17 @@ body {
           justify-self: center;
         }
       }
-      @include media-query-max(450px) {
-        width: 95px;
-      }
       svg,
       img {
-        height: 40px;
+        height: 35px;
         width: auto;
-        @include media-query-max(450px) {
-          height: 35px;
-        }
       }
       img {
         margin: 0 2px;
       }
     }
     nav.navbar {
-      width: 300px;
+      width: 330px;
       @supports (display:grid) {
         grid-column: 2/3;
         @include media-query-max(450px) {
@@ -141,14 +135,14 @@ body {
           grid-row: 2/3;
         }
       }
-      @include media-query-max(335px) {
+      @include media-query-max(365px) {
         width: 270px;
       }
       a {
         @extend %decoration-none;
         font-size: 1.15rem;
         transition: text-decoration 0.5s ease;
-        @include media-query-max(335px) {
+        @include media-query-max(365px) {
           font-size: 1rem;
         }
         &.rss,
@@ -204,12 +198,12 @@ body {
       h1, h2, p {
         margin-bottom: 15px;
       }
-      h2.title {
-        font-size: 1.75rem;
+      .title {
+        font-size: 1.8rem;
         margin: 0 0 15px;
         a {
           @extend %decoration-none;
-          font-size: 1.75rem;
+          font-size: 1.8rem;
         }
       }
       p.tag {
