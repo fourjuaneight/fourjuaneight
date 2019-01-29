@@ -157,6 +157,12 @@
       "Category": "Articles"
     },
     {
+      "Title": "What self.skipWaiting() does to the service worker lifecycle",
+      "Creator": "Ire Aderinokun",
+      "URL": "https://bitsofco.de/what-self-skipwaiting-does-to-the-service-worker-lifecycle/",
+      "Category": "Articles"
+    },
+    {
       "Title": "Product Design in the Era of the Algorithm",
       "Creator": "Josh Clark",
       "URL": "https://vimeo.com/237454650",
