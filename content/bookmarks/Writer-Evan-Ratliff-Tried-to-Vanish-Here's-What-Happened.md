@@ -5,7 +5,6 @@
   "category": ["articles"],
   "draft": false,
   "showthedate": true
-  "
 }
 
 Shedding Your Identity in the Digital Age [Stories From the Hunt](https://www.wired.com/vanish/2009/11/stories-from-the-hunt/) [Evan's Daily Costume Change](https://www.wired.com/vanish/2009/11/evans-daily-costume-change/) [Media, From TV to Mags to Blogs, Followed the Hunt](https://www.wired.com/vanish/2009/11/vanish-the-press) [Social Networking Sites at Center of Coast-to-Coast Coordinated Search](https://www.wired.com/vanish/2009/11/vanish-the-hunters) [Wired Tests Writer With a Series of Bold Challenges](https://www.wired.com/vanish/2009/11/vanish-the-challenges/) **1**

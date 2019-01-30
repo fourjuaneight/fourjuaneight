@@ -5,7 +5,6 @@
   "category": ["articles"],
   "draft": false,
   "showthedate": true
-  "
 }
 
 Before the year 2014, there were many people using Google, Facebook, and Amazon. Today, there are still many people using services from those three tech giants (respectively, GOOG, FB, AMZN). Not much has changed, and quite literally the user interface and features on those sites has remained mostly untouched. However, the underlying dynamics of power on the Web have drastically changed, and those three companies are at the center of a fundamental transformation of the Web.

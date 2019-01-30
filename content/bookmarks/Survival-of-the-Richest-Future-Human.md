@@ -5,7 +5,6 @@
   "category": ["articles"],
   "draft": false,
   "showthedate": true
-  "
 }
 
 Last year, I got invited to a super-deluxe private resort to deliver a keynote speech to what I assumed would be a hundred or so investment bankers. It was by far the largest fee I had ever been offered for a talk — about half my annual professor’s salary — all to deliver some insight on the subject of “the future of technology.”

@@ -5,7 +5,6 @@
   "category": ["articles"],
   "draft": false,
   "showthedate": true
-  "
 }
 
 When you interact with someone online – GitHub, Twitter, whatever – you don’t often see them discuss struggle. They’ll be witty, or share something cool they’ve done, or maybe a recording of a talk they gave. But they don’t normally talk about struggling to write their pithy tweet, or falling out of love with their side project, or pushing against writer’s block. I think that’s a shame, because those struggles are normal.

@@ -5,7 +5,6 @@
   "category": ["articles"],
   "draft": false,
   "showthedate": true
-  "
 }
 
 By the fall of 1983, we had committed to announcing and shipping the Macintosh at Apple's next annual shareholder's meeting, to be held on January 24th, 1984. The failure of the Twiggy disk drive almost caused us to be late (see [Quick, Hide In This Closet!](https://www.folklore.org/StoryView.py?project=Macintosh&story=Hide_Under_This_Desk.txt)), but it seemed like the new Sony 3.5 inch drive solved all of our problems, and the rest of the hardware was ready to go. The Macintosh ROM was frozen in early September and sent out for fabrication. All that remained was finishing the System Disk, and our two applications, MacWrite and MacPaint.

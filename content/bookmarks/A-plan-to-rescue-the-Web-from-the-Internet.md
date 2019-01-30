@@ -5,7 +5,6 @@
   "category": ["articles"],
   "draft": false,
   "showthedate": true
-  "
 }
 
 My previous article, [The Web began dying in 2014, here’s how](https://staltz.com/the-web-began-dying-in-2014-heres-how.html), raised much more awareness than I thought it would. Many people found it to be an insightful analysis of the Web under the control of tech giants, but the article ended without providing anything positive to hold on to.
