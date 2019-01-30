@@ -1,7 +1,7 @@
 {
   "title": "A plan to rescue the Web from the Internet",
   "creator": "André Staltz",
-  "url": "https://staltz.com/a-plan-to-rescue-the-web-from-the-internet.html",
+  "original": "https://staltz.com/a-plan-to-rescue-the-web-from-the-internet.html",
   "category": ["articles"],
   "draft": false,
   "showthedate": true

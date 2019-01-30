@@ -1,7 +1,7 @@
 {
   "title": "Normalizing Struggle",
   "creator": "Ash Furrow",
-  "url": "https://ashfurrow.com/blog/normalizing-struggle/",
+  "original": "https://ashfurrow.com/blog/normalizing-struggle/",
   "category": ["articles"],
   "draft": false,
   "showthedate": true

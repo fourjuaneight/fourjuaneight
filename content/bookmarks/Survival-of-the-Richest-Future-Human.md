@@ -1,7 +1,7 @@
 {
   "title": "Survival of the Richest – Future Human",
   "creator": "Douglas Rushkoff",
-  "url": "https://medium.com/s/futurehuman/survival-of-the-richest-9ef6cddd0cc1",
+  "original": "https://medium.com/s/futurehuman/survival-of-the-richest-9ef6cddd0cc1",
   "category": ["articles"],
   "draft": false,
   "showthedate": true

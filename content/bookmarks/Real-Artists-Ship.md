@@ -1,7 +1,7 @@
 {
   "title": "Real Artists Ship",
   "creator": "Andy Hertzfeld",
-  "url": "https://www.folklore.org/StoryView.py?story=Real_Artists_Ship.txt",
+  "original": "https://www.folklore.org/StoryView.py?story=Real_Artists_Ship.txt",
   "category": ["articles"],
   "draft": false,
   "showthedate": true

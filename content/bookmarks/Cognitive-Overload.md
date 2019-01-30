@@ -1,7 +1,7 @@
 {
   "title": "Cognitive Overload",
   "creator": "Dave Rupert",
-  "url": "https://daverupert.com/2017/12/cognitive-overload/",
+  "original": "https://daverupert.com/2017/12/cognitive-overload/",
   "category": ["articles"],
   "draft": false,
   "showthedate": true

@@ -1,7 +1,7 @@
 {
   "title": "Writer Evan Ratliff Tried to Vanish Here's What Happened",
   "creator": "Evan Ratliff",
-  "url": "https://www.wired.com/2009/11/ff-vanish2/",
+  "original": "https://www.wired.com/2009/11/ff-vanish2/",
   "category": ["articles"],
   "draft": false,
   "showthedate": true

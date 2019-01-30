@@ -1,7 +1,7 @@
 {
   "title": "The Web began dying in 2014, here's how",
   "creator": "André Staltz",
-  "url": "https://staltz.com/the-web-began-dying-in-2014-heres-how.html",
+  "original": "https://staltz.com/the-web-began-dying-in-2014-heres-how.html",
   "category": ["articles"],
   "draft": false,
   "showthedate": true
