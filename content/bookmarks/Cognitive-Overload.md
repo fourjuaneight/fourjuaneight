@@ -38,7 +38,7 @@ Given a page with a white background, we could count all the pixels in the viewp
 
 Here’s a rough draft attempt on measuring Cognitive Load. Take a screenshot of a website, use <canvas> to create a high-contrasted black-and-white image, count the number of black and white pixels, get a ratio.
 
-# Trying to Measure Cognitive Load [WIP]
+## Trying to Measure Cognitive Load [WIP]
 Somewhat related is the work of Vidhya Navalpakkam[1](https://daverupert.com/2017/12/cognitive-overload/), a Researcher at Yahoo, who wrote a paper called [On Saliency, Affect, and Focused Attention](http://www.dcs.gla.ac.uk/~mounia/Papers/Chi2012.pdf) (2012) which tried to answer a similar question. What effect does “Saliency” (the degree to which something stands out on a given page) have on user comprehension. The results are a bit inconclusive in the paper, but there seems to be a link between visual density and task completion.
 
 Does the ability to measure the amount of brainpower needed to parse a webpage improve our designs? Eric Meyer in his talk [Designing for Crisis](https://aneventapart.com/news/post/eric-meyer-designing-for-crisis) speaks personally and eloquently about how user context changes when people are preoccupied with an immediate emergency. They need information but don’t have the auxiliary patience or cognitive ability to navigate your complex website. Understanding the mental computing power of your site could make lives better.
