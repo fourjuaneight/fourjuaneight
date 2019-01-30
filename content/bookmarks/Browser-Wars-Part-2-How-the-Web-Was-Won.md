@@ -1,11 +1,10 @@
 {
   "title": "Browser Wars Part 2 How the Web Was Won",
   "creator": "Jay Hoffmann",
-  "url": "http://thehistoryoftheweb.com/browser-wars-part-2/",
+  "original": "http://thehistoryoftheweb.com/browser-wars-part-2/",
   "category": ["articles"],
   "draft": false,
   "showthedate": true
-  "
 }
 
 This part 2 of the story of browser wars. Be sure to [check out part 1](https://thehistoryoftheweb.com/browser-wars/) to get all caught up.

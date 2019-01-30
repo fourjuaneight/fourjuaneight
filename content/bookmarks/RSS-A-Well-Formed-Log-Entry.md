@@ -1,11 +1,10 @@
 {
   "title": "RSS: A Well Formed Log Entry",
   "creator": "Jay Hoffmann",
-  "url": "http://thehistoryoftheweb.com/rss-well-formed-log-entry/",
+  "original": "http://thehistoryoftheweb.com/rss-well-formed-log-entry/",
   "category": ["articles"],
   "draft": false,
   "showthedate": true
-  "
 }
 
 How would *you* structure a feed for syndicating blog content? Remember, it would need to be standard enough for a computer to read and parse it, but simple enough for a developer to implement. Specific enough for web publishers, blogs, podcasts and all sorts of media, but universal enough for edge cases. Not to mention well documented and easy to extend.

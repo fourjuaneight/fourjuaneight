@@ -1,11 +1,10 @@
 {
   "title": "Browser Wars When Netscape Met Microsoft",
   "creator": "Jay Hoffmann",
-  "url": "http://thehistoryoftheweb.com/browser-wars/",
+  "original": "http://thehistoryoftheweb.com/browser-wars/",
   "category": ["articles"],
   "draft": false,
   "showthedate": true
-  "
 }
 
 Let’s talk about about the “Browser Wars.” They kicked off in the mid-90s, at a time when the world was just starting to come online. The web was still a fuzzy, undefined medium. Those who did decide to visit the web for the first time found themselves standing at the precipice of a technological arms race between two behemoth browsers. It was a conflict that was public, publicized and wide reaching. Its repercussions would ripple out to web designers, web users and the software community at large for years to come.

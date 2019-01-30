@@ -1,11 +1,10 @@
 {
   "title": "The Evolution of Blogging",
   "creator": "Jay Hoffmann",
-  "url": "https://thehistoryoftheweb.com/the-evolution-of-blogging/",
+  "original": "https://thehistoryoftheweb.com/the-evolution-of-blogging/",
   "category": ["articles"],
   "draft": false,
   "showthedate": true
-  "
 }
 
 By 2001, the world blog had entered Internet vernacular, both as a noun and a verb. Mena Trott was one of these bloggers. Her site, A Dollar Short, went up in April of 2001. With the launch of her site, Trott aimed big. She loved blogging, and she aspired to be one of the best. So she set her sights on winning the SXSW weblog award and, at the end of 2002, she did just that. Which, incidentally, was right around the time that she was changing the blogging world forever.

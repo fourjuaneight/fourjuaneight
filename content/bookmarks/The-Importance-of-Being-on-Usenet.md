@@ -1,11 +1,10 @@
 {
   "title": "The Importance of Being on Usenet",
   "creator": "Jay Hoffmann",
-  "url": "http://thehistoryoftheweb.com/the-importance-of-being-on-usenet/",
+  "original": "http://thehistoryoftheweb.com/the-importance-of-being-on-usenet/",
   "category": ["articles"],
   "draft": false,
   "showthedate": true
-  "
 }
 
 The Internet, right from the very start, has always been a medium of communication. Almost as soon as there were networks to connect computers, programmers began to figure out ways to transmit information between them. Take Usenet, for instance. Usenet was an early Internet discussion platform, a system akin to modern day message boards. And for a lot of early Internet adopters, it was a platform for conversations that spanned the globe and their preferred method of contact with like-minded spirits.
