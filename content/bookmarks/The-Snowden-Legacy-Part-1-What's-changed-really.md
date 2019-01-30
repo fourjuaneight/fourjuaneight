@@ -1,5 +1,5 @@
 {
-  "title": "The Snowden Legacy Part 1 What’s changed really?",
+  "title": "The Snowden Legacy Part 1 What's changed really?",
   "creator": "Sean Gallagher",
   "original": "https://arstechnica.com/tech-policy/2018/11/the-snowden-legacy-part-one-whats-changed-really/",
   "category": ["articles"],
