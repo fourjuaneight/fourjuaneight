@@ -1,6 +1,7 @@
 // Reset
 a,
 article h2 a,
+button,
 label,
 ul#portfolio h4 a {
   @include color(color, text);

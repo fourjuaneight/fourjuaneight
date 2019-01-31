@@ -137,33 +137,39 @@ body {
         grid-row: 1/2;
       }
     }
-    input#settings {
-      @extend %none;
-      &:checked ~ section.options {
-        width: 265px;
-        margin-left: 10px;
-        @include media-query-max(380px) {
-          width: 255px;
-        }
-      }
-      &:checked ~ label.gear > svg {
-        transform: rotate(-67.5deg);
-      }
-    }
-    label.gear {
+    button#settings {
       @extend %content-center;
       @extend %flex;
       @extend %items-center;
+      @include color(background, button);
+      border: none;
+      border-radius: 20px;
       cursor: pointer;
       height: 35px;
+      padding: 0;
       transition: all .25s ease;
       width: 35px;
       @supports (display:grid) {
         grid-column: 2/3;
       }
+      &:active,
+      &:focus,
+      &:hover {
+        svg {
+          fill: #FFF;
+        }
+      }
+      &.active {
+        transform: rotate(-90deg);
+        svg {
+          fill: #FFF;
+        }
+      }
       svg {
-        fill: #F6F7EE;
+        fill: #dfe5e7;
         height: 25px;
+        min-height: 25px;
+        min-width: 25px;
         transition: all .25s ease;
         width: 25px;
       }
@@ -172,7 +178,10 @@ body {
       @extend %content-center;
       @extend %flex;
       @extend %items-center;
+      @include color(background, button);
+      border-radius: 20px;
       height: 35px;
+      opacity: 0;
       overflow: hidden;
       padding: 0;
       transition: all .25s ease;
@@ -181,6 +190,14 @@ body {
         @extend %grid;
         grid-column: 1/2;
         grid-template-columns: 125px 2.5px 135.5px;
+      }
+      &.active {
+        margin-left: 10px;
+        opacity: 1;
+        width: 265px;
+        @include media-query-max(380px) {
+          width: 255px;
+        }
       }
       div.divider {
         @include color(background-color, link);
