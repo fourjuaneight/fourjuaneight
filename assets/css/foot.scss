@@ -152,21 +152,11 @@ body {
       @supports (display:grid) {
         grid-column: 2/3;
       }
-      &:active,
-      &:focus,
-      &:hover {
-        svg {
-          fill: #FFF;
-        }
-      }
       &.active {
         transform: rotate(-67.5deg);
-        svg {
-          fill: #FFF;
-        }
       }
       svg {
-        fill: #dfe5e7;
+        fill: #F6F7EE;
         height: 25px;
         min-height: 25px;
         min-width: 25px;

@@ -58,9 +58,7 @@
   opacity: 0;
   top: 3px;
   transform-origin: 50% 0;
-  transition-duration: .25s;
-  transition-property: opacity;
-  transition-timing-function: ease;
+  transition: opacity .25s ease;
   z-index: 10;
   &.footnote-is-active {
     opacity: .97;
