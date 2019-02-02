@@ -1,5 +1,5 @@
 (function () {
-  const version = 'v3';
+  const version = 'v4';
   const cacheName = ':fourjuaneight:';
   const staticCacheName = version + cacheName + 'static';
   const pagesCacheName = cacheName + 'pages';
@@ -28,8 +28,8 @@
     '/fonts/PlexMono.woff2',
     '/fonts/PlexMono-Italic.woff',
     '/fonts/PlexMono-Italic.woff2',
-    '/js/barefoot.min.js',
-    '/js/lazyloading.min.js'
+    '/js/scripts.min.js',
+    '/js/ui.min.js'
   ];
   function updateStaticCache() {
     // These items must be cached for the Service Worker to complete installation
