@@ -67,12 +67,6 @@
       "Category": "Articles"
     },
     {
-      "Title": "A console.log() adventure",
-      "Creator": "Secret Geek",
-      "URL": "http://www.secretgeek.net/console_log",
-      "Category": "Articles"
-    },
-    {
       "Title": "How to Create a RSS Reader App in JavaScript",
       "Creator": "Preethi Ranjit",
       "URL": "https://www.hongkiat.com/blog/rss-reader-in-javascript/",
@@ -85,21 +79,9 @@
       "Category": "Articles"
     },
     {
-      "Title": "The Secrets of Lyndon Johnson’s Archives",
-      "Creator": "Robert A. Caro",
-      "URL": "https://www.newyorker.com/magazine/2019/01/28/the-secrets-of-lyndon-johnsons-archives",
-      "Category": "Articles"
-    },
-    {
       "Title": "Sharpen your Vim with snippets",
       "Creator": "Joe Lencioni",
       "URL": "https://brigade.engineering/sharpen-your-vim-with-snippets-767b693886db",
-      "Category": "Articles"
-    },
-    {
-      "Title": "My CSS Reset/Base",
-      "Creator": "Ire Aderinokun",
-      "URL": "https://bitsofco.de/my-css-reset-base/",
       "Category": "Articles"
     },
     {
@@ -133,12 +115,6 @@
       "Category": "Articles"
     },
     {
-      "Title": "Linting HTML using CSS",
-      "Creator": "Ire Aderinokun",
-      "URL": "https://bitsofco.de/linting-html-using-css/",
-      "Category": "Articles"
-    },
-    {
       "Title": "HTML, CSS and our vanishing industry entry points",
       "Creator": "Rachel Andrews",
       "URL": "https://rachelandrew.co.uk/archives/2019/01/30/html-css-and-our-vanishing-industry-entry-points/",
@@ -148,12 +124,6 @@
       "Title": "OOP Before OOP with Simula",
       "Creator": "TwoBitHistory",
       "URL": "https://twobithistory.org/2019/01/31/simula.html",
-      "Category": "Articles"
-    },
-    {
-      "Title": "The Perfect Blog Setup with Hugo Webpack 4 and Babel 7",
-      "Creator": "Zihao Zhang",
-      "URL": "https://zihao.me/post/building-a-blog-with-hugo-and-webpack/",
       "Category": "Articles"
     },
     {
@@ -172,12 +142,6 @@
       "Title": "The Service Worker Lifecycle",
       "Creator": "Ire Aderinokun",
       "URL": "https://bitsofco.de/the-service-worker-lifecycle/",
-      "Category": "Articles"
-    },
-    {
-      "Title": "Integrating Prettier + ESLint + Airbnb Style Guide in VSCode",
-      "Creator": "Jeffrey Zhen",
-      "URL": "https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a",
       "Category": "Articles"
     },
     {
