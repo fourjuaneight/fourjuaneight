@@ -146,6 +146,9 @@ sup.footnote-ref {
     @extend %no-decoration;
     font-size: 0.85rem;
     letter-spacing: 2px;
+    span {
+      @extend %visually-hidden;
+    }
   }
 }
 div.footnotes {
@@ -174,6 +177,9 @@ div.footnotes {
       a.footnote-return {
         @extend %no-decoration;
         margin-left: 5px;
+        span {
+          @extend %visually-hidden;
+        }
       }
     }
   }

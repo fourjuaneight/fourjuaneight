@@ -76,6 +76,10 @@
     {{ $main := resources.Get "css/main.scss" | toCSS | postCSS | minify }}
     <link rel="stylesheet" href="{{ $main.Permalink }}" media="screen">
   {{ end }}
+
+  <!-- Linting -->
+  <!-- {{ $linting := resources.Get "css/linting.scss" | toCSS | postCSS | minify }}
+  <link rel="stylesheet" href="{{ $linting.Permalink }}" media="screen"> -->
   
   <!-- Manifest -->
   {{ $manifest := resources.Get "manifest.json" }}
@@ -130,8 +134,8 @@
   {{ block "lazy" . }}
   {{ end }}
 
+  <!-- UI Switcher -->
   <script>
-    // UI Switcher
     const body = document.querySelector('body');
     const sets = document.getElementById('settings');
     const ops = document.querySelector('section.options');
@@ -179,18 +183,17 @@
     }
   </script>
   {{ if .IsPage }}
+  <!-- Code to Clipboard -->
   <script>
     const highlight = document.querySelectorAll('div.highlight');
     highlight.forEach(el => {
-      const span = document.createElement('span');
-      const div1 = document.createElement('div');
-      const div2 = div1.cloneNode(true);
-      span.appendChild(div1);
-      span.appendChild(div2);
-      span.classList.add('copy');
-      el.prepend(span);
+      const button = document.createElement('button');
+      button.innerHTML = 'COPY';
+      button.classList.add('copy');
+      button.setAttribute('aria-label', 'Copy to clipboard');
+      el.prepend(button);
     });
-    const label = document.querySelectorAll('span.copy');
+    const label = document.querySelectorAll('button.copy');
     label.forEach(copy => {
       copy.addEventListener('click', () => {
         const selection = window.getSelection();
@@ -225,6 +228,7 @@
   </script>
   {{ end }}
   {{ if or (eq .Title "Bookmarks") (eq .Title "Reading List") }}
+  <!-- Filter and Sort -->
   <script>
     // Filter by tag
     const checkboxes = document.getElementsByName('category');

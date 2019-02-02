@@ -38,7 +38,7 @@ An object would look like this:
 
 Each object is inside an array called `records`. Using a JSON file with easily recognizable and accessible objects means the data can be updated in various ways; for example, the Shortcut used to save to Pinboard on [Part 1](/articles/bookmarking-the-web#web-bookmarks).
 
-The code for this site is open sourced and you can view the whole data file {{< link href="https://github.com/fourjuaneight/clever-laziness/blob/master/data/bookmarks.json" content="here" >}}.
+The code for this site is open sourced and you can view the {{< link href="https://github.com/fourjuaneight/clever-laziness/blob/master/data/bookmarks.json" content="whole data file" >}}.
 
 ### Front-End
 Hugo has a nice {{< link href="https://gohugo.io/functions/range/" content="range function" >}} that we can use to iterate over each object and place the value where we need them. Values can be called like so:
@@ -182,9 +182,9 @@ webbrowser.open('shortcuts://')
 
 This process can happen right after we pull the data file contents from the repo (step 2) and add the new bookmark item (step 3).
 
-You can get the Shortcut {{< link href="https://www.icloud.com/shortcuts/e28b7c8d948c43a1b0c1929e8827620c" content="here" >}}.
+{{< link href="https://www.icloud.com/shortcuts/e28b7c8d948c43a1b0c1929e8827620c" content="Download Shortcut here" >}}.
 
-As mentioned in [Part 1](/articles/bookmarking-the-web#tweet-bookmarks), there is a separate Shortcut for saving tweets due to the nature of how they are retrieved via an HTTP request. You can get that Shortcut {{< link href="https://www.icloud.com/shortcuts/afd1dbb2ce2f40f583c3e7a3905397e2" content="here" >}}.
+As mentioned in [Part 1](/articles/bookmarking-the-web#tweet-bookmarks), there is a separate Shortcut for saving tweets due to the nature of how they are retrieved via an HTTP request. {{< link href="https://www.icloud.com/shortcuts/afd1dbb2ce2f40f583c3e7a3905397e2" content="Download Shortcut here" >}}.
 
 ## Enhancements
 Currently, clicking/tapping on the bookmark title opens up a new window with the bookmark link. I'd like to add an option to either open or copy the link to the clipboard. Adding the functionally with JavaScript isn't that hard, but making the layout for without adding too much to it might take some tinkering. I was thinking of a slide-out menu with two icons. I dunno; we'll see.
