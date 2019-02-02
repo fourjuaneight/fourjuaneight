@@ -61,12 +61,6 @@
       "Category": "Articles"
     },
     {
-      "Title": "Python Logging Tutorial",
-      "Creator": "Patrick Kennedy",
-      "URL": "https://www.patricksoftwareblog.com/python-logging-tutorial/",
-      "Category": "Articles"
-    },
-    {
       "Title": "A Complete React Boilerplate Tutorial — From Zero to Hero",
       "Creator": "Leonardo Maldonado",
       "URL": "https://medium.freecodecamp.org/a-complete-react-boilerplate-tutorial-from-zero-to-hero-20023e086c4a",
@@ -85,11 +79,6 @@
       "Category": "Articles"
     },
     {
-      "Title": "Converting Color Spaces in JavaScript",
-      "Creator": "Jon Kantner",
-      "URL": "https://css-tricks.com/converting-color-spaces-in-javascript/",
-      "Category": "Articles"
-    },
     {
       "Title": "Building a Progressively-Enhanced Site",
       "Creator": "James Nielsen",
