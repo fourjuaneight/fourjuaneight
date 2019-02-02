@@ -1,17 +1,17 @@
 {
-  "name": "clever-laziness",
+  "name": "fourjuaneight",
   "version": "1.0.0",
   "description": "A blog about coding and productivity",
   "main": "gulpfile.js",
-  "dependencies": {},
   "scripts": {
     "build": "gulp build; hugo",
-    "start": "concurrently \"gulp\" \"hugo server --disableFastRender\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "concurrent": "concurrently \"gulp\" \"hugo server --disableFastRender\"",
+    "start-gulp": "nvm install;nvm use --delete-prefix;gulp critical;gulp watch",
+    "start-hugo": "hugo; hugo server --disableFastRender"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://fourjuaneight@github.com/fourjuaneight/clever-laziness.git"
+    "url": "git+https://fourjuaneight@github.com/fourjuaneight/fourjuaneight.git"
   },
   "keywords": [
     "coding",
@@ -22,9 +22,9 @@
   "author": "Juan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fourjuaneight/clever-laziness/issues"
+    "url": "https://github.com/fourjuaneight/fourjuaneight/issues"
   },
-  "homepage": "https://github.com/fourjuaneight/clever-laziness#readme",
+  "homepage": "https://github.com/fourjuaneight/fourjuaneight#readme",
   "engines": {
     "node": "8.14.0"
   },
