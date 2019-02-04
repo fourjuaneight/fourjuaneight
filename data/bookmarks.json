@@ -517,6 +517,18 @@
       "Category": "Comics"
     },
     {
+      "Title": "White Lies",
+      "Creator": "Port Sherry",
+      "URL": "http://portsherry.com/comic/white-lies/",
+      "Category": "Comics"
+    },
+    {
+      "Title": "Origin Story",
+      "Creator": "Port Sherry",
+      "URL": "http://portsherry.com/comic/origin-story/",
+      "Category": "Comics"
+    },
+    {
       "Title": "The Adventure Zone",
       "Creator": "Sarah Graley",
       "URL": "https://www.instagram.com/p/BoRYsEvFC5L/",
@@ -628,6 +640,12 @@
       "Title": "Footprints and Photos",
       "Creator": "The Other End",
       "URL": "http://www.kohney.com/comic/footprints-and-photos/",
+      "Category": "Comics"
+    },
+    {
+      "Title": "Everything Bagel",
+      "Creator": "The Other End",
+      "URL": "http://www.kohney.com/comic/everything-bagel/",
       "Category": "Comics"
     },
     {
