@@ -140,7 +140,38 @@
     if (navigator.serviceWorker) {
       navigator.serviceWorker.register("{{ $sw.RelPermalink }}", { scope: "/" });
       navigator.serviceWorker.ready.then(registration => {
-        console.log("SW Ready");
+        console.log(`                                  ....
+                                .'' .'''
+.                             .'   :
+\\                          .:    :
+ \\                        _:    :       ..----.._
+  \\                    .:::.....:::.. .'         ''.
+   \\   -----------   .'  #-. .-######'     #        '.
+    \\ | SW Ready! |    '.##'/ ' ################       :
+     \\ -----------      #####################         :
+      \\               ..##.-.#### .''''###'.._        :
+       \\             :--:########:            '.    .' :
+        \\..__...--.. :--:#######.'   '.         '.     :
+        :     :  : : '':'-:'':'::        .         '.  .'
+        '---'''..: :    ':    '..'''.      '.        :'
+           \\  :: : :     '      ''''''.     '.      .:
+            \\ ::  : :     '            '.      '      :
+             \\::   : :           ....' ..:       '     '.
+              \\::  : :    .....####\\ .~~.:.             :
+               \\':.:.:.:'#########.===. ~ |.'-.   . '''.. :
+                \\    .'  ########## \ \ _.' '. '-.       '''.
+                :\\  :     ########   \ \      '.  '-.        :
+               :  \\'    '   #### :    \ \      :.    '-.      :
+              :  .'\\   :'  :     :     \ \       :      '-.    :
+             : .'  .\\  '  :      :     :\ \       :        '.   :
+             ::   :  \\'  :.      :     : \ \      :          '. :
+             ::. :    \\  : :      :    ;  \ \     :           '.:
+              : ':    '\\ :  :     :     :  \:\     :        ..'
+                 :    ' \\ :        :     ;  \|      :   .'''
+                 '.   '  \\:                         :.''
+                  .:..... \\:       :            ..''
+                 '._____|'.\\......'''''''.:..'''
+                            \\`);
       });
       window.addEventListener("load", () => {
         if (navigator.serviceWorker.controller) {
@@ -148,7 +179,6 @@
         }
       });
     }
-    console.log('I love to sleep because in my dreams I can finally get revenge on the stingray that strangled Steve Irwin.');
   </script>
 
   <!-- UI Switcher -->
