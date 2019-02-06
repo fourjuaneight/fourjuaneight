@@ -23,6 +23,28 @@ article {
         width: 185px;
       }
     }
+    div#update {
+      @include color(background-color, contentBG);
+      @include color(color, content);
+      border: 1.5px solid;
+      @include color(border-color, border);
+      border-radius: 5px;
+      margin-bottom: 15px;
+      padding: 15px;
+      p {
+        display: inline;
+        margin: 0;
+        &.heading {
+          font-weight: bold;
+          time {
+            margin: 0;
+          }
+        }
+        &.body {
+          @include color(color, text);
+        }
+      }
+    }
   }
   &.book-review {
     @extend %content-space-between;
