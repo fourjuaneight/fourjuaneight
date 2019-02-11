@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "build": "gulp build; hugo",
-    "clean": "rm -rf public",
+    "clean": "rm -rf public resources",
     "concurrent": "concurrently \"gulp\" \"hugo server --disableFastRender\"",
     "start-gulp": "nvm install;nvm use --delete-prefix;gulp critical;gulp watch",
     "start-hugo": "hugo; hugo server --disableFastRender"
