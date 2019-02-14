@@ -1,22 +1,36 @@
-// Filter by tag
+// Check one at a time
 let checkboxes = document.getElementsByName('category');
 for (var i=0; i<checkboxes.length; i++) {
   if (checkboxes[i].type == 'checkbox') {
     checkboxes[i].checked = false;
   }
 }
+// Filter by tag
+let close = document.querySelector('button.tag.close');
 var cat = (id) => {
-  let category = document.getElementsByName('category');
   const liClass = 'li#record-item.' + id.id;
   const hidden = document.querySelectorAll('li#record-item');
   const active = document.querySelectorAll(liClass);
-  Array.prototype.forEach.call(category,el => {
+  Array.prototype.forEach.call(checkboxes,el => {
     el.checked = false;
   });
   id.checked = true;
   hidden.forEach(hi => hi.classList.add('none'));
   active.forEach(ac => ac.classList.remove('none'));
+  close.classList.add('active')
+  close.setAttribute('aria-hidden', 'false');
 }
+close.addEventListener('click', () => {
+  let records = document.querySelectorAll('li#record-item')
+  close.classList.remove('active');
+  close.setAttribute('aria-hidden', 'true');
+  records.forEach(item => {
+    item.classList.remove('none')
+  })
+  checkboxes.forEach(box => {
+    box.checked = false;
+  })
+})
 // Sort alphabetically by title
 var sort = (par, atr) => {
   let ul = document.getElementById(par);

@@ -2,7 +2,7 @@
   <main class="list bookmarks">
     <h1 class="title">Bookmarks</h1>
     {{ partial "categories.html" . }}
-    <ul id="records">
+    <ul id="records" aria-live="polite">
       <nav class="sorting">
         <p class="sort-item" onclick="sort('records','data-title')">Title</p>
         <p class="sort-item" onclick="sort('records','data-creator')">Creator</p>

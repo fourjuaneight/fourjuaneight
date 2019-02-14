@@ -1,7 +1,7 @@
 {{ define "main" }}
   <main class="list reading">
     <h1 class="title">Reading List</h1>
-    <ul id="records">
+    <ul id="records" aria-live="polite">
       <nav class="sorting">
         <p class="sort-item" onclick="sort('records','data-title')">Title</p>
         <p class="sort-item" onclick="sort('records','data-creator')">Creator</p>
