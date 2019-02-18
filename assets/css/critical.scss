@@ -201,6 +201,10 @@ body {
         }
       }
     }
+    &.articles nav.all-tags p.tag:first-child,
+    &.tags nav.all-tags p.tag:first-child {
+      @extend %none;
+    }
     article {
       padding: 0;
       margin-bottom: 30px;

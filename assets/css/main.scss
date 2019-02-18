@@ -148,6 +148,12 @@ main.micro {
           text-decoration: underline;
         }
       }
+      section.content {
+        margin-bottom: 15px;
+        > * {
+          word-break: break-word;
+        }
+      }
     }
   }
 }

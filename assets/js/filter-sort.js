@@ -20,17 +20,19 @@ var cat = (id) => {
   close.classList.add('active')
   close.setAttribute('aria-hidden', 'false');
 }
-close.addEventListener('click', () => {
-  let records = document.querySelectorAll('li#record-item')
-  close.classList.remove('active');
-  close.setAttribute('aria-hidden', 'true');
-  records.forEach(item => {
-    item.classList.remove('none')
+if (close) {
+  close.addEventListener('click', () => {
+    let records = document.querySelectorAll('li#record-item')
+    close.classList.remove('active');
+    close.setAttribute('aria-hidden', 'true');
+    records.forEach(item => {
+      item.classList.remove('none')
+    })
+    checkboxes.forEach(box => {
+      box.checked = false;
+    })
   })
-  checkboxes.forEach(box => {
-    box.checked = false;
-  })
-})
+}
 // Sort alphabetically by title
 var sort = (par, atr) => {
   let ul = document.getElementById(par);
