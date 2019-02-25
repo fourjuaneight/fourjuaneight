@@ -1,5 +1,5 @@
 {
-  "title": "Week Notes *",
+  "title": "Week Notes 8",
   "date": "2019-02-24",
   "draft": false,
   "category": ["weeknotes"],
@@ -42,7 +42,7 @@ I came across this old article from 2009{{< fn 4 >}} on {{< link href="https://w
 
 {{% fnref %}}
 {{< note 1 "I am by no means any sort of expert or professional. If you have trouble sleeping, please talk to a doctor and don't take the advice of some rando on the internet." >}}
-{{< note 1 "Don't judge. Works for me." >}}
-{{< note 1 "Hot take!" >}}
+{{< note 2 "Don't judge. Works for me." >}}
+{{< note 3 "Hot take!" >}}
 {{< note 4 "That was a decade ago, if you can believe it." >}}
 {{% /fnref %}}
