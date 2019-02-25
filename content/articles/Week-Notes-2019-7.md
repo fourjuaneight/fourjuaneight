@@ -29,7 +29,7 @@ I'm using rclone and the Node Slack SDK. These run via child processes. SimpleNo
 
 {{< link href="https://github.com/fourjuaneight/backup-and-sync" content="You can view the code for the app here." >}}
 
-## Media
+## Digest
 ### Listen
 20K Hertz never disappoints. And this weeks episode, {{< link href="https://www.20k.org/episodes/donotdisturb" content="Do Not Disturb" >}}, was a dive into the effects that the incessant barrage of notifications has to our brains. It's not good; that's the effect.
 
