@@ -26,9 +26,9 @@
   {{ $avatar := resources.Get "icons/avatar.png" }}
   <link rel="canonical" href="{{ .Permalink }}">
   {{ template "_internal/twitter_cards.html" . }}
-  <meta name="twitter:image" content="{{ $avatar.RelPermalink }}">
+  <meta name="twitter:image" content="{{ $avatar.Permalink }}">
   {{ template "_internal/opengraph.html" . }}
-  <meta property="og:image" content="{{ $avatar.RelPermalink }}">
+  <meta property="og:image" content="{{ $avatar.Permalink }}">
   {{ template "_internal/schema.html" . }}
 
   <!-- Fonts -->  
@@ -83,36 +83,36 @@
   
   <!-- Manifest -->
   {{ $manifest := resources.Get "manifest.json" }}
-  <link rel="manifest" href="{{ $manifest.RelPermalink }}">
+  <link rel="manifest" href="{{ $manifest.Permalink }}">
 
   <!-- Favicon -->
   {{ $favicon := resources.Get "icons/favicon.png" }}
-  <link rel="shortcut icon" href="{{ $favicon.RelPermalink }}" i>
+  <link rel="shortcut icon" href="{{ $favicon.Permalink }}" i>
 
   <!-- Webclip and Apple Touch Icon -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
   {{ $ati152 := resources.Get "icons/apple-touch-icon-152x152.png" }}
-  <link rel="apple-touch-icon" sizes="152x152" href="{{ $ati152.RelPermalink }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ $ati152.Permalink }}">
   {{ $ati167 := resources.Get "icons/apple-touch-icon-167x167.png" }}
-  <link rel="apple-touch-icon" sizes="167x167" href="{{ $ati167.RelPermalink }}">
+  <link rel="apple-touch-icon" sizes="167x167" href="{{ $ati167.Permalink }}">
   {{ $ati180 := resources.Get "icons/apple-touch-icon-180x180.png" }}
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ $ati180.RelPermalink }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ $ati180.Permalink }}">
   {{ $spt := resources.Get "icons/safari-pinned-tab.svg" | minify }}
-  <link rel="mask-icon" color="#BB3117" href="{{ $spt.RelPermalink }}">
+  <link rel="mask-icon" color="#BB3117" href="{{ $spt.Permalink }}">
 
   <!-- Icons -->
   {{ $i128 := resources.Get "icons/icon-128x128.png" }}
-  <link rel="icon" sizes="128x128" href="{{ $i128.RelPermalink }}">
+  <link rel="icon" sizes="128x128" href="{{ $i128.Permalink }}">
   {{ $i192 := resources.Get "icons/icon-192x192.png" }}
-  <link rel="icon" sizes="192x192" href="{{ $i192.RelPermalink }}">
+  <link rel="icon" sizes="192x192" href="{{ $i192.Permalink }}">
   {{ $i512 := resources.Get "icons/icon-512x512.png" }}
-  <link rel="icon" sizes="512x512" href="{{ $i512.RelPermalink }}">
+  <link rel="icon" sizes="512x512" href="{{ $i512.Permalink }}">
 
   <!-- Keybase Proof -->
   {{ $keybase := resources.Get "keybase.txt" }}
-  <link href="{{ $keybase.RelPermalink }}">
+  <link href="{{ $keybase.Permalink }}">
 </head>
 <body id="rubik" class="light" data-type="{{ .Kind }}">
   {{ partial "header.html" . }}
@@ -135,7 +135,7 @@
   {{ $sw := resources.Get "sw.js" | minify }}
   <script>
     if (navigator.serviceWorker) {
-      navigator.serviceWorker.register("{{ $sw.RelPermalink }}", { scope: "/" });
+      navigator.serviceWorker.register("{{ $sw.Permalink }}", { scope: "/" });
       navigator.serviceWorker.ready.then(registration => {
         console.log(`                                  ....
                                 .'' .'''
