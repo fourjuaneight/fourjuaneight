@@ -16,18 +16,3 @@
     </section>
   </main>
 {{ end }}
-{{ define "lazy" }}
-  <!-- Scripts -->
-  {{ $lazy := resources.Get "js/lazyloading.js" | minify }}
-  <script src="{{ $lazy.Permalink }}"></script>
-
-  <!-- Lazy Loading -->
-  <script>
-    var myLazyLoad = new LazyLoad({
-      elements_selector: ".lazy",
-      threshold: 200,
-      class_loading: "loading",
-      class_error: "error"
-    });
-  </script>
-{{ end }}

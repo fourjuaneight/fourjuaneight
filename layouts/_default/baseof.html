@@ -131,9 +131,6 @@
 
   {{ partial "ui-options.html" . }}
 
-  {{ block "lazy" . }}
-  {{ end }}
-
   <!-- SW -->
   {{ $sw := resources.Get "sw.js" | minify }}
   <script>
@@ -181,26 +178,9 @@
     }
   </script>
 
-  <!-- UI Switcher -->
-  {{ $ui := resources.Get "js/ui.js" | minify }}
-  <script src="{{ $ui.Permalink }}"></script>
-  
   <!-- Scripts -->
-  {{ if or (.IsPage) (eq .Kind "section") }}
-  {{ $barefoot := resources.Get "js/barefoot.js" }}
-  {{ $copy := resources.Get "js/copy.js" }}
-  {{ $filterSort := resources.Get "js/filter-sort.js" }}
-  {{ $scripts := slice $barefoot $copy $filterSort | resources.Concat "js/scripts.js" | minify }}
+  {{ $scripts := resources.Get "js/bundle.js" }}
   <script src="{{ $scripts.Permalink }}"></script>
-  {{ end }}
-  
-  <!-- Barefoot -->
-  {{ if .IsPage }}
-  <script>
-    lf = new BareFoot();
-    lf.init();
-  </script>
-  {{ end }}
   <!-- a11y -->
   <!-- {{ $tota11y := resources.Get "js/tota11y.js" | minify }}
   <script src="{{ $tota11y.Permalink }}"></script> -->

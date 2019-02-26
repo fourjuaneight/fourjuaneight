@@ -4,9 +4,9 @@
     {{ partial "categories.html" . }}
     <ul id="records" aria-live="polite">
       <nav class="sorting">
-        <p class="sort-item" onclick="sort('records','data-title')">Title</p>
-        <p class="sort-item" onclick="sort('records','data-creator')">Creator</p>
-        <p class="sort-item" onclick="sort('records','class')">Category</p>
+        <p class="sort-item title">Title</p>
+        <p class="sort-item creator">Creator</p>
+        <p class="sort-item category">Category</p>
       </nav>
       {{ range $i, $rec := .Site.Data.bookmarks.records }}
       <li id="record-item" class="{{ lower $rec.Category }}" data-title="{{ anchorize $rec.Title }}" data-creator="{{ anchorize $rec.Creator }}">

@@ -1,6 +1,6 @@
 const highlight = document.querySelectorAll('div.highlight');
 highlight.forEach(el => {
-  let button = document.createElement('button');
+  const button = document.createElement('button');
   button.innerHTML = 'COPY';
   button.classList.add('copy');
   button.setAttribute('aria-label', 'Copy to clipboard');
@@ -23,12 +23,12 @@ label.forEach(copy => {
       copy.innerHTML = 'Copied!';
       setTimeout(() => {
         copy.innerHTML = original;
-      }, 1200);
-    } catch(e) {
+      }, 1000);
+    } catch {
       copy.innerHTML = "Can't copy, hit Ctrl+C!";
       setTimeout(() => {
         copy.innerHTML = original;
-      }, 1200);
+      }, 1000);
     }
   });
 });

@@ -1,50 +1,53 @@
-"use strict";
-
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["removeBackLinks","removeFootnoteChild","debounce","calculateMargins"] }] */
 class BareFoot {
   /**
-   * @param  {Object} options [Options to configure the script]
+   * @param {Object} options [Options to configure the script]
    * @constructor
    */
-  constructor(options={}) {
+  constructor(options = {}) {
     const DEFAULTS = {
-      scope: 'body',
-      divFootnotesQuery: ".footnotes",
-      footnotesQuery: "[id^='fn']",
-      supQuery: 'a[data-href^="#fnref"]',
-      fnButtonMarkup: "<button class=\"footnote-button\" id=\"{{FOOTNOTEREFID}}\" data-footnote=\"{{FOOTNOTEID}}\" alt=\"See Footnote {{FOOTNOTENUMBER}}\" aria-label=\"Button for Footnote {{FOOTNOTENUMBER}}\" rel=\"footnote\" data-fn-number=\"{{FOOTNOTENUMBER}}\" data-fn-content=\"{{FOOTNOTECONTENT}}\"></button>",
-      fnContentMarkup: "<div class=\"bf-footnote\" id=\"{{FOOTNOTEID}}\"><div class=\"footnote-wrapper\"><div class=\"footnote-content\" tabindex=\"0\">{{FOOTNOTECONTENT}}</div></div><div class=\"footnote-tooltip\" aria-hidden=\"true\"></div>",
-      activeCallback: null,
       activeBtnClass: 'is-active',
+      activeCallback: null,
       activeFnClass: 'footnote-is-active',
       backdropClass: 'footnote-backdrop',
       buttonClass: 'footnote-button',
-      fnContainer: 'footnote-container',
+      divFootnotesQuery: '.footnotes',
+      fnButtonMarkup:
+        "<button class='footnote-button' id='{{FOOTNOTEREFID}}' data-footnote='{{FOOTNOTEID}}' alt='See Footnote {{FOOTNOTENUMBER}}' aria-label='Button for Footnote {{FOOTNOTENUMBER}}' rel='footnote' data-fn-number='{{FOOTNOTENUMBER}}' data-fn-content='{{FOOTNOTECONTENT}}'></button>",
       fnClass: 'bf-footnote',
+      fnContainer: 'footnote-container',
       fnContentClass: 'footnote-content',
+      fnContentMarkup:
+        "<div class='bf-footnote' id='{{FOOTNOTEID}}'><div class='footnote-wrapper'><div class='footnote-content' tabindex='0'>{{FOOTNOTECONTENT}}</div></div><div class='footnote-tooltip' aria-hidden='true'></div>",
+      fnOnTopClass: 'footnote-is-top',
       fnWrapperClass: 'footnote-wrapper',
+      footnotesQuery: "[id^='fn']",
+      scope: 'body',
+      supQuery: "a[data-href^='#fnref']",
       tooltipClass: 'footnote-tooltip',
-      fnOnTopClass: 'footnote-is-top'
-    }
-
+    };
     // Merges defaults with custom options
     this.config = Object.assign({}, DEFAULTS, options);
 
     // A selector could select multiple containers
-    this.divFootnotes = [].slice.call(document.querySelectorAll(this.config.divFootnotesQuery));
+    this.divFootnotes = [].slice.call(
+      document.querySelectorAll(this.config.divFootnotesQuery)
+    );
 
     // Returns if no container
     if (!this.divFootnotes) return false;
 
     // Groups all footnotes within every group.
-    this.footnotes = this.divFootnotes.map((el) => {
+    this.footnotes = this.divFootnotes.map(el => {
       return el.querySelectorAll(this.config.footnotesQuery);
     });
 
     // Calculate vertical scrollbar width
     // Inspired by https://davidwalsh.name/detect-scrollbar-width
 
-    let scrollDiv = document.createElement('div');
-    scrollDiv.style.cssText = 'width: 100px; height: 100px; overflow: scroll; position: absolute; top: -9999px; visibility: hidden;'
+    const scrollDiv = document.createElement('div');
+    scrollDiv.style.cssText =
+      'width: 100px; height: 100px; overflow: scroll; position: absolute; top: -9999px; visibility: hidden;';
     document.body.appendChild(scrollDiv);
     this.scrollBarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
     document.body.removeChild(scrollDiv);
@@ -57,29 +60,31 @@ class BareFoot {
    * @return {String}        [Clean Html]
    */
   removeBackLinks(fnHtml, backId) {
-    if (backId.indexOf(' ') >= 0) {
-      backId = backId.trim().replace(/\s+/g, "|").replace(/(.*)/g, "($1)");
-    }
-
     if (backId.indexOf('#') === 0) {
-      backId = backId.slice(1);
+      backId = backId.slice(1); // eslint-disable-line no-param-reassign
     }
 
-    let regex = new RegExp(`(\\s|&nbsp;)*<\\s*a[^#<]*#${backId}[^>]*>(.*?)<\\s*/\\s*a>`, "g");
+    const regex = new RegExp(
+      `(\\s|&nbsp;)*<\\s*a[^#<]*#${backId}[^>]*>(.*?)<\\s*/\\s*a>`,
+      'g'
+    );
 
-    return fnHtml.replace(regex, "").replace("[]", "");
+    return fnHtml.replace(regex, '').replace('[]', '');
   }
 
   /**
    * Builds the buttons for each footnote based on the configured template.
    * @param  {String} ref     [ID this element refers to]
-   * @param  {String} id      [ID for this element]
-   * @param  {String} n       [Number that illustrates the footnote]
+   * @param  {String} id      [ID for this element]   * @param  {String} n       [Number that illustrates the footnote]
    * @param  {String} content [Footnote content]
    * @return {String}         [Html Markup]
    */
-  buildButton(ref, id, n, content) {
-    return this.config.fnButtonMarkup.replace(/\{\{FOOTNOTEREFID\}\}/g, ref).replace(/\{\{FOOTNOTEID\}\}/g, id).replace(/\{\{FOOTNOTENUMBER\}\}/g, n).replace(/\{\{FOOTNOTECONTENT\}\}/g, content);
+  buildButton(ref, id, num, content) {
+    return this.config.fnButtonMarkup
+      .replace(/\{\{FOOTNOTEREFID\}\}/g, ref)
+      .replace(/\{\{FOOTNOTEID\}\}/g, id)
+      .replace(/\{\{FOOTNOTENUMBER\}\}/g, num)
+      .replace(/\{\{FOOTNOTECONTENT\}\}/g, content);
   }
 
   /**
@@ -89,31 +94,33 @@ class BareFoot {
    * @return {String}         [Html Markup]
    */
   buildContent(id, content) {
-    return this.config.fnContentMarkup.replace(/\{\{FOOTNOTEID\}\}/g, id).replace(/\{\{FOOTNOTECONTENT\}\}/g, content);
+    return this.config.fnContentMarkup
+      .replace(/\{\{FOOTNOTEID\}\}/g, id)
+      .replace(/\{\{FOOTNOTECONTENT\}\}/g, content);
   }
 
   /**
    * Triggers whenever an user clicks a footnote button and is responsible to coordinate all the necessary steps to show and position the footnotes.
    * @param  {Event} e [Event]
    */
-  clickAction(e) {
-    let btn, content, id, fnHtml, fn, windowHeight, scrollHeight, returnOnDismiss;
-
-    btn = e.target;
-    content = btn.getAttribute('data-fn-content');
-    id = btn.getAttribute("data-footnote");
-    returnOnDismiss = btn.classList.contains('is-active');
+  clickAction(err) {
+    const btn = err.target;
+    const content = btn.getAttribute('data-fn-content');
+    const id = btn.getAttribute('data-footnote');
+    const returnOnDismiss = btn.classList.contains('is-active');
 
     // We calculate the document.documentElement.scrollHeight before inserting the footnote, so later (at the calculateSpacing function to be more specific), we can check if there's any overflow to the bottom of the page, if so it flips the footnote to the top.
-    scrollHeight = this.getScrollHeight();
+    const scrollHeight = this.getScrollHeight();
 
     this.dismissFootnotes();
 
-    if (returnOnDismiss) { return; }
+    if (returnOnDismiss) {
+      return;
+    }
 
-    fnHtml = this.buildContent(id, content);
+    const fnHtml = this.buildContent(id, content);
     btn.insertAdjacentHTML('afterend', fnHtml);
-    fn = btn.nextElementSibling;
+    const fn = btn.nextElementSibling;
 
     // Position and flip the footnote on demand.
     this.calculateOffset(fn, btn);
@@ -142,34 +149,37 @@ class BareFoot {
    * @param  {Element} btn [Button Node]
    */
   calculateOffset(fn, btn) {
-    let tooltip, container, btnOffset, btnWidth, contWidth, contOffset, wrapWidth, wrapMove, wrapOffset, tipWidth, tipOffset, windowWidth;
-
-    btn = btn || fn.previousElementSibling;
-
-    btnOffset = btn.offsetLeft;
-    btnWidth = btn.offsetWidth;
-    tooltip = fn.querySelector(`.${this.config.tooltipClass}`);
-    tipWidth = tooltip.clientWidth;
-    container = fn.parentNode;
-    contWidth = container.clientWidth;
-    contOffset = container.offsetLeft;
-    wrapWidth = fn.offsetWidth;
-    wrapMove = -((wrapWidth / 2) - (contWidth / 2));
-    windowWidth = window.innerWidth || window.availWidth;
+    const tooltip = fn.querySelector(`.${this.config.tooltipClass}`);
+    const tipWidth = tooltip.clientWidth;
+    const container = fn.parentNode;
+    const contWidth = container.clientWidth;
+    const contOffset = container.offsetLeft;
+    const wrapWidth = fn.offsetWidth;
+    let wrapMove = -(wrapWidth / 2 - contWidth / 2);
+    const windowWidth = window.innerWidth || window.availWidth;
 
     // Footnote overflows to the left
-    if ((contOffset + wrapMove) < 0) {
-      wrapMove = (wrapMove - (contOffset + wrapMove));
-    } 
+    if (contOffset + wrapMove < 0) {
+      wrapMove -= contOffset + wrapMove;
+    }
     // Footnote overflows to the right
-    else if ((contOffset + wrapMove + wrapWidth + this.scrollBarWidth) > windowWidth) {
-      wrapMove = (wrapMove - (contOffset + wrapMove + wrapWidth + this.scrollBarWidth + (contWidth / 2) - windowWidth));
+    else if (
+      contOffset + wrapMove + wrapWidth + this.scrollBarWidth >
+      windowWidth
+    ) {
+      wrapMove -=
+        contOffset +
+        wrapMove +
+        wrapWidth +
+        this.scrollBarWidth +
+        contWidth / 2 -
+        windowWidth;
     }
 
-    fn.style.left = wrapMove + "px";
-    wrapOffset = contOffset + wrapMove;
-    tipOffset = (contOffset - wrapOffset + (contWidth / 2) - (tipWidth / 2));
-    tooltip.style.left = tipOffset + "px";
+    fn.style.left = `${wrapMove}px`;
+    const wrapOffset = contOffset + wrapMove;
+    const tipOffset = contOffset - wrapOffset + contWidth / 2 - tipWidth / 2;
+    tooltip.style.left = `${tipOffset}px`;
   }
 
   /**
@@ -188,28 +198,28 @@ class BareFoot {
    * @return {Function}           [It's a closure, what did you expect?]
    */
   debounce(func, wait, immediate) {
-    var timeout;
+    let timeout;
     return function(...args) {
-
-      let later = () => {
+      const later = () => {
         timeout = null;
         if (!immediate) func.apply(this, args);
       };
-
       clearTimeout(timeout);
       timeout = setTimeout(later, wait);
       if (immediate && !timeout) func.apply(this, args);
-    }
+    };
   }
 
   /**
    * Action to be attached to the resize event and recalculate the position of the active footnotes.
    */
   resizeAction() {
-    let footnotes = document.querySelectorAll(`.${this.config.activeFnClass}`);
+    const footnotes = document.querySelectorAll(
+      `.${this.config.activeFnClass}`
+    );
 
     if (footnotes.length) {
-      [].forEach.call(footnotes, (fn) => {
+      [].forEach.call(footnotes, fn => {
         this.calculateOffset(fn);
         this.calculateSpacing(fn);
       });
@@ -221,7 +231,7 @@ class BareFoot {
    * @return {Number} [see description]
    */
   getScrollHeight() {
-    return document.documentElement.scrollHeight;
+    return this.scrollHeight;
   }
 
   /**
@@ -230,17 +240,22 @@ class BareFoot {
    * @param  {Number}   height [By now the footnote is about to show up and we use the previous value, this one, to check if the footnote is overflow the document]
    */
   calculateSpacing(fn, height) {
-    let bcr, bch, bcb, margins, windowHeight;
-    margins = this.calculateMargins(fn);
-    windowHeight = window.innerHeight || window.availHeight;
+    const margins = this.calculateMargins(fn);
+    const windowHeight = window.innerHeight || window.availHeight;
 
-    bcr = fn.getBoundingClientRect();
-    bch = bcr.height;
-    bcb = bcr.bottom;
+    const bcr = fn.getBoundingClientRect();
+    const bch = bcr.height;
+    const bcb = bcr.bottom;
 
-    if (height < this.getScrollHeight() || bcb > (windowHeight - margins.bottom)) {
+    if (
+      height < this.getScrollHeight() ||
+      bcb > windowHeight - margins.bottom
+    ) {
       fn.classList.add(this.config.fnOnTopClass);
-    } else if (windowHeight  - (bch + margins.top) > bcb && fn.classList.contains(this.config.fnOnTopClass)) {
+    } else if (
+      windowHeight - (bch + margins.top) > bcb &&
+      fn.classList.contains(this.config.fnOnTopClass)
+    ) {
       fn.classList.remove(this.config.fnOnTopClass);
     }
   }
@@ -249,13 +264,11 @@ class BareFoot {
    * Action to be attached to the scroll event to verify if we should change the position of the footnote using the available space.
    */
   scrollAction() {
-    let footnotes = document.querySelectorAll(`.${this.config.activeFnClass}`);
-
+    const footnotes = document.querySelectorAll(
+      `.${this.config.activeFnClass}`
+    );
     if (footnotes.length) {
-      let windowHeight = window.innerHeight || window.availHeight
-        , margins = this.calculateMargins(footnotes[0]);
-
-      [].forEach.call(footnotes, (el) => {
+      [].forEach.call(footnotes, el => {
         this.calculateSpacing(el);
       });
     }
@@ -267,13 +280,13 @@ class BareFoot {
    * @return {Object}      [An object containing all margins]
    */
   calculateMargins(fn) {
-    let computedStyle = window.getComputedStyle(fn, null);
+    const computedStyle = window.getComputedStyle(fn, null);
     return {
-      top: parseFloat(computedStyle.marginTop),
-      right: parseFloat(computedStyle.marginRight),
       bottom: parseFloat(computedStyle.marginBottom),
-      left: parseFloat(computedStyle.marginLeft)
-    }
+      left: parseFloat(computedStyle.marginLeft),
+      right: parseFloat(computedStyle.marginRight),
+      top: parseFloat(computedStyle.marginTop),
+    };
   }
 
   /**
@@ -281,35 +294,51 @@ class BareFoot {
    * @param  {Event}
    */
   documentAction(ev) {
-    if (!ev.target.closest(`.${this.config.fnContainer}`)) this.dismissFootnotes();
+    if (!ev.target.closest(`.${this.config.fnContainer}`)) {
+      this.dismissFootnotes();
+    }
   }
 
   /**
-   * Dismisses active footnotes when the ESC key is hit and the current active element is a footnote. Returns focus to the footnote button. 
-   * @param  {Event} e 
+   * Dismisses active footnotes when the ESC key is hit and the current active element is a footnote. Returns focus to the footnote button.
+   * @param  {Event} e
    */
   dismissOnEsc(ev) {
-    if (ev.keyCode === 27 && document.activeElement.matches(`.${this.config.fnContentClass}`)) {
-        document.activeElement.closest(`.${this.config.activeFnClass}`).previousElementSibling.focus();
-        return this.dismissFootnotes();
-      }
+    if (
+      ev.keyCode === 27 &&
+      document.activeElement.matches(`.${this.config.fnContentClass}`)
+    ) {
+      document.activeElement
+        .closest(`.${this.config.activeFnClass}`)
+        .previousElementSibling.focus();
+      return this.dismissFootnotes();
+    }
+    return ev;
   }
 
   /**
    * Removes all open footnotes (and also the backdrop, remember it?)
    */
   dismissFootnotes() {
-    let footnotes = document.querySelectorAll(`.${this.config.activeFnClass}`);
+    const footnotes = document.querySelectorAll(
+      `.${this.config.activeFnClass}`
+    );
 
     if (footnotes.length) {
-      [].forEach.call(footnotes, (el) => {
+      [].forEach.call(footnotes, el => {
         el.previousElementSibling.classList.remove(this.config.activeBtnClass);
-        el.addEventListener('transitionend', this.removeFootnoteChild(el), false);
+        el.addEventListener(
+          'transitionend',
+          this.removeFootnoteChild(el),
+          false
+        );
         el.classList.remove(this.config.activeFnClass);
-      })
+      });
     }
 
-    if (document.body.classList.contains(this.config.backdropClass)) document.body.classList.remove(this.config.backdropClass);
+    if (document.body.classList.contains(this.config.backdropClass)) {
+      document.body.classList.remove(this.config.backdropClass);
+    }
   }
 
   /**
@@ -317,24 +346,30 @@ class BareFoot {
    */
   init() {
     [].forEach.call(this.footnotes, (fns, i) => {
-      var currentScope = fns[0].closest(this.config.scope);
+      const currentScope = fns[0].closest(this.config.scope);
 
-      [].forEach.call(fns, (fn, i) => {
-        let fnContent, fnHrefId, fnId, ref, fnRefN, footnote;
+      [].forEach.call(fns, (fn, dex) => {
+        const fnRefN = dex + 1;
+        const fnHrefId = fn
+          .querySelector(this.config.supQuery)
+          .getAttribute('data-href');
 
-        fnRefN = i + 1;
-        fnHrefId = fn.querySelector(this.config.supQuery).getAttribute('data-href');
+        let fnContent = this.removeBackLinks(fn.innerHTML.trim(), fnHrefId);
 
-        fnContent = this.removeBackLinks(fn.innerHTML.trim(), fnHrefId);
+        fnContent = fnContent
+          .replace(/'/g, '&quot;')
+          .replace(/&lt;/g, '&ltsym;')
+          .replace(/&gt;/g, '&gtsym;');
 
-        fnContent = fnContent.replace(/"/g, "&quot;").replace(/&lt;/g, "&ltsym;").replace(/&gt;/g, "&gtsym;");
-
-        if (fnContent.indexOf("<") !== 0) fnContent = "<p>" + fnContent + "</p>";
-
+        if (fnContent.indexOf('<') !== 0) {
+          fnContent = `<p>${fnContent}</p>`;
+        }
         // Gotta escape `:` used within a querySelector so JS doesn't think you're looking for a pseudo-element.
-        ref = currentScope.querySelector(fnHrefId.replace(':', '\\:'));
+        const ref = currentScope.querySelector(fnHrefId.replace(':', '\\:'));
 
-        footnote = `<div class="${this.config.fnContainer}">${this.buildButton(fnHrefId, fn.id, fnRefN, fnContent)}</div>`;
+        const footnote = `<div class='
+        ${this.config.fnContainer}'>
+        ${this.buildButton(fnHrefId, fn.id, fnRefN, fnContent)}</div>`;
 
         ref.insertAdjacentHTML('afterend', footnote);
         ref.parentNode.removeChild(ref);
@@ -342,19 +377,31 @@ class BareFoot {
     });
 
     // Setting up events
-    
-    [].forEach.call(document.querySelectorAll(`.${this.config.buttonClass}`), (el) => {
-      el.addEventListener("click", this.clickAction.bind(this));
-    });
 
-    window.addEventListener("resize", this.debounce(this.resizeAction.bind(this), 100));
-    window.addEventListener("scroll", this.debounce(this.scrollAction.bind(this), 100));
-    window.addEventListener("keyup", this.dismissOnEsc.bind(this));
-    document.body.addEventListener("click", this.documentAction.bind(this));
-    document.body.addEventListener("touchend", this.documentAction.bind(this));
+    [].forEach.call(
+      document.querySelectorAll(`.${this.config.buttonClass}`),
+      el => {
+        el.addEventListener('click', this.clickAction.bind(this));
+      }
+    );
 
-    this.divFootnotes.forEach((el) => {
+    window.addEventListener(
+      'resize',
+      this.debounce(this.resizeAction.bind(this), 100)
+    );
+    window.addEventListener(
+      'scroll',
+      this.debounce(this.scrollAction.bind(this), 100)
+    );
+    window.addEventListener('keyup', this.dismissOnEsc.bind(this));
+    document.body.addEventListener('click', this.documentAction.bind(this));
+    document.body.addEventListener('touchend', this.documentAction.bind(this));
+
+    this.divFootnotes.forEach(el => {
       return el.parentNode.removeChild(el);
     });
   }
 }
+
+const lf = new BareFoot();
+lf.init();
