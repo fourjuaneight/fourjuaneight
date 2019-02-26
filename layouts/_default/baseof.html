@@ -113,6 +113,8 @@
   <!-- Keybase Proof -->
   {{ $keybase := resources.Get "keybase.txt" }}
   <link href="{{ $keybase.Permalink }}">
+  
+  {{ partial "analytics.html" . }}
 </head>
 <body id="rubik" class="light" data-type="{{ .Kind }}">
   {{ partial "header.html" . }}
