@@ -4,7 +4,7 @@
   "description": "A blog about coding and productivity",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "webpack; gulp build; hugo",
+    "build": "gulp build; webpack; hugo",
     "clean": "rm -rf public resources",
     "concurrent": "concurrently \"gulp\" \"hugo server --disableFastRender\"",
     "start-gulp": "nvm install;nvm use --delete-prefix;gulp critical;gulp watch",

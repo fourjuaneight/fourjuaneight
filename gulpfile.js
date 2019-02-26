@@ -36,14 +36,14 @@ function critical() {
 // Image Conversion
 function convert() {
   return gulp
-    .src('assets/img/bookmarks/*.png')
+    .src(['assets/img/*.jpg','assets/img/*.png'])
     .pipe(plumber())
     .pipe(
       gm(function(gmfile) {
-        return gmfile.setFormat('jpg');
+        return gmfile.setFormat('webp');
       })
     )
-    .pipe(gulp.dest('assets/img/bookmarks'))
+    .pipe(gulp.dest('assets/img'));
 }
 
 // Watch asset folder for changes
