@@ -180,9 +180,5 @@ module.exports = {
     "sort-vars": 2,
     "space-before-function-paren": 0,
     "strict": [2, "global"]
-  },
-  "settings": {
-    "import/no-unresolved": "off",
-    "import/resolver": "webpack"
   }
 }

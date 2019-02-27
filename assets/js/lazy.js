@@ -1,4 +1,3 @@
-// Lazy Loader: https://github.com/verlok/lazyload#-recipes
 import LazyLoad from 'vanilla-lazyload';
 
 // Options
