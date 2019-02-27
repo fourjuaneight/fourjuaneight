@@ -74,9 +74,11 @@ blockquote {
   margin: 0 0 15px 15px;
   padding-left: 15px;
 }
+code,
 code span,
-figure {
-  font-family: 'Plex Mono', monospace !important;
+figure,
+pre {
+  font-family: 'Fira Code', monospace !important;
   font-size: 16px;
   line-height: 26px;
 }

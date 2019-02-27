@@ -11,11 +11,11 @@
 @font-face {
   font-family: 'Rubik';
   font-weight: 400;
-  font-style: italic;
-  src: local(Rubik-Italic),
-       local(Rubik-Italic),
-       url("/fonts/Rubik-Italic.woff2") format("woff2"),
-       url("/fonts/Rubik-Italic.woff") format("woff");
+  font-style: Light;
+  src: local(Rubik-Light),
+       local(Rubik-Light),
+       url("/fonts/Rubik-Light.woff2") format("woff2"),
+       url("/fonts/Rubik-Light.woff") format("woff");
   font-display: swap;
 }
 @font-face {
@@ -49,22 +49,32 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'Plex Mono';
+  font-family: 'Fira Code';
   font-weight: 400;
   font-style: normal;
-  src: local(PlexMono),
-       local(PlexMono),
-       url("/fonts/PlexMono.woff2") format("woff2"),
-       url("/fonts/PlexMono.woff") format("woff");
+  src: local(FiraCode-Regular),
+       local(FiraCode-Regular),
+       url("/fonts/FiraCode-Regular.woff2") format("woff2"),
+       url("/fonts/FiraCode-Regular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: 'Plex Mono';
-  font-weight: 400;
-  font-style: italic;
-  src: local(PlexMono-Italic),
-       local(PlexMono-Italic),
-       url("/fonts/PlexMono-Italic.woff2") format("woff2"),
-       url("/fonts/PlexMono-Italic.woff") format("woff");
+  font-family: 'Fira Code';
+  font-weight: 300;
+  font-style: light;
+  src: local(FiraCode-Light),
+       local(FiraCode-Light),
+       url("/fonts/FiraCode-Light.woff2") format("woff2"),
+       url("/fonts/FiraCode-Light.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-weight: 700;
+  font-style: normal;
+  src: local(FiraCode-Bold),
+       local(FiraCode-Bold),
+       url("/fonts/FiraCode-Bold.woff2") format("woff2"),
+       url("/fonts/FiraCode-Bold.woff") format("woff");
   font-display: swap;
 }

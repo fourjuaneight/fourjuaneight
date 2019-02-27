@@ -25,10 +25,12 @@
     '/fonts/OpenDyslexic.woff2',
     '/fonts/OpenDyslexic-Bold.woff',
     '/fonts/OpenDyslexic-Bold.woff2',
-    '/fonts/PlexMono.woff',
-    '/fonts/PlexMono.woff2',
-    '/fonts/PlexMono-Italic.woff',
-    '/fonts/PlexMono-Italic.woff2',
+    '/fonts/FiraCode-Regular.woff',
+    '/fonts/FiraCode-Regular.woff2',
+    '/fonts/FiraCode-Light.woff',
+    '/fonts/FiraCode-Light.woff2',
+    '/fonts/FiraCode-Bold.woff',
+    '/fonts/FiraCode-Bold.woff2',
     '/js/bundle.js',
   ];
   function updateStaticCache() {

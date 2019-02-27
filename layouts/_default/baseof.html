@@ -55,14 +55,18 @@
   <link rel="preload" href={{ $Dysb.Permalink }} as="font" type="font/woff" crossorigin>
 
   {{ if .IsPage }}
-    {{ $Plex2 := resources.Get "fonts/PlexMono.woff2" }}
-    <link rel="preload" href={{ $Plex2.Permalink }} as="font" type="font/woff2" crossorigin>
-    {{ $Plex := resources.Get "fonts/PlexMono.woff" }}
-    <link rel="preload" href={{ $Plex.Permalink }} as="font" type="font/woff" crossorigin>
-    {{ $Plexi2 := resources.Get "fonts/PlexMono-Italic.woff2" }}
-    <link rel="preload" href={{ $Plexi2.Permalink }} as="font" type="font/woff2" crossorigin>
-    {{ $Plexi := resources.Get "fonts/PlexMono-Italic.woff" }}
-    <link rel="preload" href={{ $Plexi.Permalink }} as="font" type="font/woff" crossorigin>
+    {{ $Fira2 := resources.Get "fonts/FiraCode-Regular.woff2" }}
+    <link rel="preload" href={{ $Fira2.Permalink }} as="font" type="font/woff2" crossorigin>
+    {{ $Fira := resources.Get "fonts/FiraCode-Regular.woff" }}
+    <link rel="preload" href={{ $Fira.Permalink }} as="font" type="font/woff" crossorigin>
+    {{ $Firal2 := resources.Get "fonts/FiraCode-Light.woff2" }}
+    <link rel="preload" href={{ $Firal2.Permalink }} as="font" type="font/woff2" crossorigin>
+    {{ $Firal := resources.Get "fonts/FiraCode-Light.woff" }}
+    <link rel="preload" href={{ $Firal.Permalink }} as="font" type="font/woff" crossorigin>
+    {{ $Firab2 := resources.Get "fonts/FiraCode-Bold.woff2" }}
+    <link rel="preload" href={{ $Firab2.Permalink }} as="font" type="font/woff2" crossorigin>
+    {{ $Firab := resources.Get "fonts/FiraCode-Bold.woff" }}
+    <link rel="preload" href={{ $Firab.Permalink }} as="font" type="font/woff" crossorigin>
   {{ end }}
   
   <!-- Critical -->

@@ -11,7 +11,7 @@ p code {
   border: 1.5px solid;
   @include color(border-color, border);
   border-radius: 5px;
-  font-family: 'Plex Mono', monospace !important;
+  font-family: 'Fira Code', monospace !important;
   font-size: 1rem;
   padding: 0 4px;
 }
@@ -30,7 +30,7 @@ p code {
     background: none;
     border: none;
     cursor: pointer;
-    font: bold 13px 'Plex Mono', monospace;
+    font: bold 13px 'Fira Code', monospace;
     min-height: 18.5px;
     min-width: 16.5px;
     right: 15px;
