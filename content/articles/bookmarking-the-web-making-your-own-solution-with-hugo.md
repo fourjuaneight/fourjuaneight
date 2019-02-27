@@ -73,25 +73,24 @@ The HTML `ul` has a top row with headers that also serve as buttons to sort each
 
 When one of them is clicked, the following function runs:
 ```javascript
-function sort(par, atr) {
+const sort = (par, atr) => {
   const ul = document.getElementById(par);
-  const lis = ul.querySelectorAll("li");
+  const lis = ul.querySelectorAll('li');
   ul.classList.toggle('up');
   [].slice
     .call(lis)
-    .sort(function(a, b) {
+    .sort((a, b) => {
       const textA = a.getAttribute(atr).toLowerCase();
       const textB = b.getAttribute(atr).toLowerCase();
       if (ul.classList.contains('up')) {
-        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-      } else {
-        return (textA > textB) ? -1 : (textA < textB) ? 1 : 0;
+        return textA < textB ? -1 : textA > textB ? 1 : 0;
       }
+      return textA > textB ? -1 : textA < textB ? 1 : 0;
     })
-    .forEach(function(el) {
+    .forEach(el => {
       el.parentNode.appendChild(el);
     });
-}
+};
 ```
 1. The function takes two parameters: the list is sorted and the data attribute is used to do so.
 2. Every list item is captured and then sliced, called, and sorted through a function.
@@ -123,18 +122,19 @@ Continuing with the site's aesthetic, I added the categories above the bookmarks
 
 These are HTML checkboxes which run a JavaScript function on click (check).
 ```javascript
-function cat(id) {
-  const category = document.getElementsByName('category');
-  const liClass = 'li#record-item.' + id.id;
+const cat = id => {
+  const liClass = `li#record-item.${id.id}`;
   const hidden = document.querySelectorAll('li#record-item');
   const active = document.querySelectorAll(liClass);
-  Array.prototype.forEach.call(category,function(el){
+  Array.prototype.forEach.call(checkboxes, el => {
     el.checked = false;
   });
   id.checked = true;
   hidden.forEach(hi => hi.classList.add('none'));
   active.forEach(ac => ac.classList.remove('none'));
-}
+  close.classList.add('active');
+  close.setAttribute('aria-hidden', 'false');
+};
 ```
 
 1. The function is passed a parameter which is the input's name. The name corresponds to one of the bookmarks' categories. These categories are also used as classes for the list items. So they match.
@@ -197,6 +197,8 @@ Now, the shortcut isn't without its shortcomings. The main issue with using x-ca
 **Sidenote:** This is the first time I've ever shared my code with anyone outside of work. So it's a little nerve-wracking for me and hope you're gentle. Fair warnings, my JavaScript can be better and I am by no means a Python developer{{< fn 4 >}}.
 
 If you have any thoughts on this or suggestions, hit me up on {{< link href="https://www.twitter.com/fourjuaneight" content="Twitter" >}}. You can also see all of this in action over at [/bookmarks](/bookmarks) on this site.
+
+{{< update date="2019-02-27" content="JS code might look a bit different from the original time of posting; some linting was done." >}}
 
 {{% fnref %}}
 {{< note 1 "The JavaScript can be transpiled with Babel if you'd like to support older browsers." >}}
