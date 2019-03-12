@@ -5,7 +5,7 @@
   "showthedate": false
 }
 
-* Written and created by Juan.
+* Written and created by Juan Villela.
 * Made with {{< link href="https://gohugo.io" content="Hugo" >}}.
 * Fonts used are {{< link href="https://fonts.google.com/specimen/Rubik" content="Rubik" >}} and {{< link href="https://fonts.google.com/specimen/IBM+Plex+Sans" content="Plex" >}}.
 * The avatar was created by the amazing {{< link href="https://instagram.com/levitzo?utm_source=ig_profile_share&igshid=1fmgb2w2c8dla" content="Levitzo" >}}.
@@ -19,7 +19,7 @@ Links to apps and books may include affiliate links.
 Unless otherwise noted, the text content on this site is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License, “{{< link href="https://creativecommons.org/licenses/by-sa/4.0/" content="CC-BY-SA" >}}”.
 
 ## MIT License
-Copyright © 2018 fourjuaneight
+Copyright © 2018 Juan Villela
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
