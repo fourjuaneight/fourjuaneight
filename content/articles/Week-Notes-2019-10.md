@@ -7,7 +7,7 @@
 }
 
 ## Code
-- {{< content="Dotfiles" href="https://github.com/fourjuaneight/dotfiles" >}}
+- {{< link content="Dotfiles" href="https://github.com/fourjuaneight/dotfiles" >}}
 I've been looking to improve my dotfiles setup. For those unfamiliar, these are the configuration files used by various apps. They host your preferences and setup. I've seen them more commonly use for development software like text editors, linters, and terminal apps.
 
 I don't change machines often, but the few times I've had to have been tedious; spending several hours getting everything downloaded and configured. Of course, this sounds like a terrible first world problem, but it's also an opportunity to automate things. So that's what I've been trying to do with this repo. At its core, the repo does the following:
@@ -15,7 +15,7 @@ I don't change machines often, but the few times I've had to have been tedious; 
 1. Keep an up to date version of all config file.
 2. Host a script which downloads all the necessary files for my local development setup.
 
-There are a few shell scripts that do the automatic download and setup part, while there's another repo with {{< content="backup and sync" href="https://github.com/fourjuaneight/backup-and-sync" >}} scripts that handle the sync between the repo and local files on my machine.
+There are a few shell scripts that do the automatic download and setup part, while there's another repo with {{< link content="backup and sync" href="https://github.com/fourjuaneight/backup-and-sync" >}} scripts that handle the sync between the repo and local files on my machine.
 
 I spent an inordinate amount of time this week getting this done and I'm still not 100% sure on the outcome. But hey, what's automation without spending more time on the configuration than what could've been a fraction of the time actually doing the task manually?
 
@@ -25,7 +25,7 @@ One of the greatest joys of being a programmer is that you can usually make a to
 So, yeah, making your our shit. I like it. And sometimes it's the only solution for your needs.
 
 ### Read
-- {{< content="How a group of neighbors created their own Internet service" href="https://arstechnica.com/information-technology/2015/11/how-a-group-of-neighbors-created-their-own-internet-service/" >}}
+- {{< link content="How a group of neighbors created their own Internet service" href="https://arstechnica.com/information-technology/2015/11/how-a-group-of-neighbors-created-their-own-internet-service/" >}}
 The internet is an amazing thing that has brought me numerous opportunities. It allows many people worldwide to make a living by creating their own business with little to no infrastructure. But at times a solid and accessible connection is not available to many. And that doesn't necessarily mean a place with little resources; it can also be a small island in Washington state.
 
 That's the case in this article. It chronicles groups of neighbors build a network of their own with consumer products for providing accessible and relatively inexpensive internet to everyone in the town. The alternative would be a slow and expensive consumer service which simply wasn't worth it.
@@ -33,11 +33,11 @@ That's the case in this article. It chronicles groups of neighbors build a netwo
 I find this attitude fascinating. It goes back to what I said earlier, "you can usually make a tool yourself if you don't like what the consumer options are out there".
 
 ### Listen
-- {{< content="Homebrew" href="https://overcast.fm/+HZUedxjPo" >}}
-The guys over at the Changelog had {{< content="Homebrew" href="https://brew.sh/" >}} project lead {{< content="Mike McQuaid" href="https://twitter.com/MikeMcQuaid" >}} to talk about how the package manager now supports Linux and Windows (via WSL). This on its own is a great reason to listen to the episode. They also had a great discussion towards the end about how then automate their new machine setup with a modified version of {{< content="Thoughtbot's Laptop script" href="https://github.com/thoughtbot/laptop" >}}. I was completely unaware of this repo and it has some awesome stuff that could be useful if you're looking to create a similar setup yourself.
+- {{< link content="Homebrew" href="https://overcast.fm/+HZUedxjPo" >}}
+The guys over at the Changelog had {{< link content="Homebrew" href="https://brew.sh/" >}} project lead {{< link content="Mike McQuaid" href="https://twitter.com/MikeMcQuaid" >}} to talk about how the package manager now supports Linux and Windows (via WSL). This on its own is a great reason to listen to the episode. They also had a great discussion towards the end about how then automate their new machine setup with a modified version of {{< link content="Thoughtbot's Laptop script" href="https://github.com/thoughtbot/laptop" >}}. I was completely unaware of this repo and it has some awesome stuff that could be useful if you're looking to create a similar setup yourself.
 
 ### Watch
-- {{< content="Goodbye Social Media" href="https://youtu.be/6DfP10OeDP0" >}}
+- {{< link content="Goodbye Social Media" href="https://youtu.be/6DfP10OeDP0" >}}
 Oh god, not another "leaving social media" video. At this point, it's become a trend to badmouth social media explain to others why you're leaving and why everyone else should. Are these the new vegans? Don't at me.
 
 Anyways, I don't have a problem with social media. My Instagram feed is filled with webcomics and illustrators. That's the sort of thing I want to see and it's the least app I spend time on. 
