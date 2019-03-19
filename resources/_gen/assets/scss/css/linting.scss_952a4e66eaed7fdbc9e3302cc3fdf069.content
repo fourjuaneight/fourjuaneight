@@ -1,1 +1,0 @@
-[style],a:empty,a:not([href]),a[href*="javascript:void(0)"],a[href=""],a[href="#"],button:empty,form:not([name]):not([id]),html:not([lang]),html[lang=""],img:not([alt]),img[alt=""],input:not([id]),input:not([name]),label:not([for]),select:not([id]),select:not([name]),textarea:not([id]),textarea:not([name]){border:5px solid red}
