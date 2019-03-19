@@ -1,31 +1,31 @@
-const highlight = document.querySelectorAll('div.highlight');
+const highlight = document.querySelectorAll(`div.highlight`);
 highlight.forEach(el => {
-  const button = document.createElement('button');
-  button.innerHTML = 'COPY';
-  button.classList.add('copy');
-  button.setAttribute('aria-label', 'Copy to clipboard');
+  const button = document.createElement(`button`);
+  button.innerHTML = `COPY`;
+  button.classList.add(`copy`);
+  button.setAttribute(`aria-label`, `Copy to clipboard`);
   el.prepend(button);
 });
-const label = document.querySelectorAll('button.copy');
+const label = document.querySelectorAll(`button.copy`);
 label.forEach(copy => {
-  copy.addEventListener('click', () => {
+  copy.addEventListener(`click`, () => {
     const selection = window.getSelection();
     const range = document.createRange();
     const pre = copy.nextSibling;
-    const code = pre.querySelector('code');
+    const code = pre.querySelector(`code`);
     const original = copy.innerHTML;
     range.selectNodeContents(code);
     selection.removeAllRanges();
     selection.addRange(range);
     try {
-      document.execCommand('copy');
+      document.execCommand(`copy`);
       selection.removeAllRanges();
-      copy.innerHTML = 'Copied!';
+      copy.innerHTML = `Copied!`;
       setTimeout(() => {
         copy.innerHTML = original;
       }, 1000);
     } catch {
-      copy.innerHTML = "Can't copy, hit Ctrl+C!";
+      copy.innerHTML = `Can't copy, hit Ctrl+C!`;
       setTimeout(() => {
         copy.innerHTML = original;
       }, 1000);

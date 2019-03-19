@@ -7,6 +7,8 @@
     "build": "gulp build; webpack; hugo",
     "clean": "rm -rf public resources",
     "concurrent": "concurrently \"gulp\" \"hugo server --disableFastRender\"",
+    "format": "prettier --write assets/js/*.js",
+    "lint": "eslint --fix assets/js/*.js",
     "start-gulp": "nvm install;nvm use --delete-prefix;gulp critical;gulp watch",
     "start-hugo": "hugo; hugo server --disableFastRender"
   },

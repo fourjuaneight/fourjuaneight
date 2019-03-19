@@ -3,3 +3,4 @@ gulpfile.js
 postcss.config.js
 assets/js/bundle.js
 assets/js/barefoot.js
+assets/js/totally.js
