@@ -157,34 +157,46 @@ The code is hosted on Github, which can be manage through {{< link href="https:/
 5. Finally, we push our changes and update the site.
 
 ### BONUS
-The data file array will not have our bookmarks in any sort of order; new items as simply added to the bottom. I couldn't come up with a way to sort them by category value with Shortcuts, but I do have a Python script that can easily do that. So with the help of {{< link href="https://itunes.apple.com/us/app/pythonista-3/id1085978097?mt=8" content="Pythonista" >}} and some URL schemes, we can do this:
-```python
-import clipboard
-import json
-import operator
-import webbrowser
+The data file array will not have our bookmarks in any sort of order; new items as simply added to the bottom. I couldn't come up with a way to sort them by category value with Shortcuts, but I do have some JavaScript that can easily do that. So with the help of {{< link href="https://itunes.apple.com/us/app/scriptable/id1405459188?mt=8" content="Scriptable" >}}, {{< link href="https://itunes.apple.com/us/app/jayson/id1447750768?mt=8" content="Jayson" >}}, and some URL schemes, we can do this:
+```javascript
+const cont = Pasteboard.paste();
+const json = JSON.parse(cont);
+const { records } = json;
 
-cont = clipboard.get()
-data = json.loads(cont)
-records = data['records']
-records.sort(key=operator.itemgetter('Category'))
-clipboard.set(json.dumps(data, indent=2, ensure_ascii=False))
+const sortByKey = (array, key) => {
+  const arr = array.sort((a, b) => {
+    const x = a[key];
+    const y = b[key];
+    return x < y ? -1 : x > y ? 1 : 0;
+  });
+  return JSON.stringify(arr);
+};
 
-webbrowser.open('shortcuts://')
+const sorted = sortByKey(records, 'Category');
+const objected = `{"records":${sorted}}`;
+const parsed = JSON.parse(objected);
+const pretty = JSON.stringify(parsed, undefined, 2);
+const shortcuts = 'shortcuts://';
+
+Pasteboard.copy(pretty);
+Safari.open(shortcuts);
+
 ```
 
 1. Pass the updated data file contents to the clipboard.
-2. Have Shortcuts run the Python script through Pythonista{{< fn 2 >}}.
-2. Have Python pull the clipboard contents.
+2. Have Shortcuts run the JavaScript through Scriptable{{< fn 2 >}}.
+2. Have Scriptable pull the clipboard contents.
 3. Sort the array alphabetically based on the `category` value.
 4. Save the changes to the clipboard.
 5. Head back to Shortcuts and finish saving the changes to the repo.
+6. Have Jayson organize and format the JSON.
+7. Pass that to the clipboard one last time for Working Copy to take over.
 
 This process can happen right after we pull the data file contents from the repo (step 2) and add the new bookmark item (step 3).
 
-{{< link href="https://www.icloud.com/shortcuts/e28b7c8d948c43a1b0c1929e8827620c" content="Download Shortcut here" >}}.
+{{< link href="https://www.icloud.com/shortcuts/f5fed93b24364d3eb4f3e0f6d5655faf" content="Download Shortcut here" >}}.
 
-As mentioned in [Part 1](/articles/bookmarking-the-web#tweet-bookmarks), there is a separate Shortcut for saving tweets due to the nature of how they are retrieved via an HTTP request. {{< link href="https://www.icloud.com/shortcuts/afd1dbb2ce2f40f583c3e7a3905397e2" content="Download Shortcut here" >}}.
+As mentioned in [Part 1](/articles/bookmarking-the-web#tweet-bookmarks), there is a separate Shortcut for saving tweets due to the nature of how they are retrieved via an HTTP request. {{< link href="https://www.icloud.com/shortcuts/132ab242040f48ea923778d4daf8d792" content="Download Shortcut here" >}}.
 
 ## Enhancements
 Currently, clicking/tapping on the bookmark title opens up a new window with the bookmark link. I'd like to add an option to either open or copy the link to the clipboard. Adding the functionally with JavaScript isn't that hard, but making the layout for without adding too much to it might take some tinkering. I was thinking of a slide-out menu with two icons. I dunno; we'll see.
@@ -192,17 +204,18 @@ Currently, clicking/tapping on the bookmark title opens up a new window with the
 ## Final Thoughts
 This is an over-engineered solution. It requires you to know a whole lot to make it happen. But this solution isn't intended for an everyday user, but rather for the programmer that prefers making their own solution than use someone else's. The JavaScript can be used with any front-end framework of your choosing; aside from Hugo, Jekyll and Gatsby can easily achieve the same outcome{{< fn 3 >}}. The Shortcut can be modified to use any 3rd party service instead of Pinboard and run alongside the repo update. You can update the repo name in a text field, as well as the Working Copy Key ID.
 
-Now, the shortcut isn't without its shortcomings. The main issue with using x-callback-url this way is that any external app will open when running an action. So you'll see multiple back and fourths between Shortcuts, Working Copy, and Pythonista. But at least they all happen quite fast and you're taken back to where you started when it's done.
+Now, the shortcut isn't without its shortcomings. The main issue with using x-callback-url this way is that any external app will open when running an action. So you'll see multiple back and fourths between Shortcuts, Working Copy, and Scriptable. But at least they all happen quite fast and you're taken back to where you started when it's done.
 
-**Sidenote:** This is the first time I've ever shared my code with anyone outside of work. So it's a little nerve-wracking for me and hope you're gentle. Fair warnings, my JavaScript can be better and I am by no means a Python developer{{< fn 4 >}}.
+**Sidenote:** This is the first time I've ever shared my code with anyone outside of work. So it's a little nerve-wracking for me and hope you're gentle.
 
 If you have any thoughts on this or suggestions, hit me up on {{< link href="https://www.twitter.com/fourjuaneight" content="Twitter" >}}. You can also see all of this in action over at [/bookmarks](/bookmarks) on this site.
 
 {{< update date="2019-02-27" content="JS code might look a bit different from the original time of posting; some linting was done." >}}
 
+{{< update date="2019-03-19" content="A previous version of this used a Python script for sorting JSON. That was changed to use JavaScript for consistency." >}}
+
 {{% fnref %}}
 {{< note 1 "The JavaScript can be transpiled with Babel if you'd like to support older browsers." >}}
-{{< note 2 "The Python script is named `sortJSON` in this Shortcut." >}}
+{{< note 2 "The Scriptable script is named `sortJSON` in this Shortcut. It runs via Siri shortcuts. It is important that you save the Scriptable JavaScript and name it correctly. Otherwise the Shortcut won't know what you're calling for." >}}
 {{< note 3 "Doesn't even have to be a static-site generator. You can setup your own front and back-end and use the JS for sorting and slightly modify the Shortcuts to post the content to via HTTPS or even SSH." >}}
-{{< note 4 "I've actually never taken a single course or read any books on Python. All the script I've built have been learning as I go and what I need at the time. So my Python can definitely be better." >}}
 {{% /fnref %}}
