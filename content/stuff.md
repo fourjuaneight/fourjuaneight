@@ -7,7 +7,7 @@
 
 * Written and created by Juan Villela.
 * Made with {{< link href="https://gohugo.io" content="Hugo" >}}.
-* Fonts used are {{< link href="https://fonts.google.com/specimen/Rubik" content="Rubik" >}} and {{< link href="https://fonts.google.com/specimen/IBM+Plex+Sans" content="Plex" >}}.
+* Fonts used are {{< link href="https://fonts.google.com/specimen/Rubik" content="Rubik" >}}, {{< link href="https://www.opendyslexic.org/" content="OpenDyslexic" >}}, and {{< link href="https://github.com/tonsky/FiraCode" content="Fira Code" >}}.
 * The avatar was created by the amazing {{< link href="https://instagram.com/levitzo?utm_source=ig_profile_share&igshid=1fmgb2w2c8dla" content="Levitzo" >}}.
 * Coded using {{< link href="https://code.visualstudio.com/" content="VSCode" >}}.
 

@@ -5,8 +5,8 @@ I like websites. Occasionally, I make them. Irregularly, I like to write about m
 
 ## Colophon
 * Made with [Hugo](https://gohugo.io).
-* Fonts are [Rubik](https://fonts.google.com/specimen/Rubik) and [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono).
-* Designs made with [Affinity Designer](https://itunes.apple.com/us/app/affinity-designer/id824171161?mt=12).
+* Fonts are [Rubik](https://fonts.google.com/specimen/Rubik), [OpenDyslexic](https://www.opendyslexic.org/), and [Fira Code](https://github.com/tonsky/FiraCode).
+* The avatar was created by the amazing [Levitzo](https://instagram.com/levitzo?utm_source=ig_profile_share&igshid=1fmgb2w2c8dla).
 * Coded in [VSCode](https://code.visualstudio.com/).
 * Articles written in [Markdown](https://daringfireball.net/projects/markdown/syntax).
 
