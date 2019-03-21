@@ -110,7 +110,6 @@ footer#footer {
 body {
   div#ui-options {
     @extend %content-flex-start;
-    @extend %fixed;
     @extend %flex;
     @extend %items-center;
     @include color(background, button);
@@ -120,10 +119,10 @@ body {
     flex-direction: row-reverse;
     outline: none;
     padding: 0;
+    position: fixed;
+    right: 15px;
     right: 10px;
     max-width: 310px;
-    min-width: 35px;
-    width: auto;
     z-index: 10;
     @supports (display:grid) {
       @extend %grid;
@@ -163,29 +162,6 @@ body {
         min-width: 25px;
         transition: all .25s ease;
         width: 25px;
-      }
-    }
-    button#left-handed {
-      @extend %fixed;
-      @extend %none;
-      @include color(background, contentBG);
-      @include color(color, link);
-      border: 1px solid;
-      @include color(border-color, border);
-      border-radius: 5px;
-      bottom: 75px;
-      cursor: pointer;
-      font-size: .95rem;
-      line-height: 1.4rem;
-      margin: 0;
-      opacity: 0;
-      padding: 4px;
-      right: 10px;
-      transition: opacity .25s ease;
-      width: 100px;
-      &.active {
-        display: block;
-        opacity: 1;
       }
     }
     section.options {
@@ -284,29 +260,6 @@ body {
               margin-left: 6px;
             }
           }
-        }
-      }
-    }
-    &.left {
-      left: 10px;
-      right: unset;
-      @supports (display:grid) {
-        grid-template-columns: 35px min-content;
-      }
-      button#settings {
-        @supports (display:grid) {
-          grid-column: 1/2;
-        }
-        &.active {
-          transform: rotate(67.5deg);
-        }
-      }
-      section.options {
-        @supports (display:grid) {
-          grid-column: 2/3;
-        }
-        &.active {
-          margin: 0 10px 0 0;
         }
       }
     }
