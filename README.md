@@ -1,4 +1,5 @@
 # FOURJUANEIGHT
+[![Netlify Status](https://api.netlify.com/api/v1/badges/016b87ad-fed5-41fd-b651-d0b174c00aab/deploy-status)](https://app.netlify.com/sites/fourjuaneight/deploys)
 I like websites. Occasionally, I make them. Irregularly, I like to write about my appreciation for the internets and other mundane things. This is a blog, in case it wasn't clear. Ok.
 
 ## Colophon
