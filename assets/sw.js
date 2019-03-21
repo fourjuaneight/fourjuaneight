@@ -1,45 +1,47 @@
 /* global self */
 (function() {
-  const version = 'v5';
-  const cacheName = ':fourjuaneight:';
+  const version = `v5`;
+  const cacheName = `:fourjuaneight:`;
   const staticCacheName = `${version}${cacheName}static`;
   const pagesCacheName = `${cacheName}pages`;
   const imagesCacheName = `${cacheName}images`;
   const staticAssets = [
-    '/',
-    '/articles/',
-    '/bookshelf/',
-    '/bookmarks/',
-    '/microposts/',
-    '/offline/',
-    '/icons/logo.jpg',
-    '/css/main.min.css',
-    '/css/single.min.css',
-    '/fonts/Rubik.woff',
-    '/fonts/Rubik.woff2',
-    '/fonts/Rubik-Italic.woff',
-    '/fonts/Rubik-Italic.woff2',
-    '/fonts/Rubik-Bold.woff',
-    '/fonts/Rubik-Bold.woff2',
-    '/fonts/OpenDyslexic.woff',
-    '/fonts/OpenDyslexic.woff2',
-    '/fonts/OpenDyslexic-Bold.woff',
-    '/fonts/OpenDyslexic-Bold.woff2',
-    '/fonts/FiraCode-Regular.woff',
-    '/fonts/FiraCode-Regular.woff2',
-    '/fonts/FiraCode-Light.woff',
-    '/fonts/FiraCode-Light.woff2',
-    '/fonts/FiraCode-Bold.woff',
-    '/fonts/FiraCode-Bold.woff2',
-    '/js/bundle.js',
+    `/`,
+    `/articles/`,
+    `/bookshelf/`,
+    `/bookmarks/`,
+    `/microposts/`,
+    `/offline/`,
+    `/icons/logo.jpg`,
+    `/css/main.min.css`,
+    `/css/single.min.css`,
+    `/fonts/Rubik.woff`,
+    `/fonts/Rubik.woff2`,
+    `/fonts/Rubik-Italic.woff`,
+    `/fonts/Rubik-Italic.woff2`,
+    `/fonts/Rubik-Bold.woff`,
+    `/fonts/Rubik-Bold.woff2`,
+    `/fonts/OpenDyslexic.woff`,
+    `/fonts/OpenDyslexic.woff2`,
+    `/fonts/OpenDyslexic-Bold.woff`,
+    `/fonts/OpenDyslexic-Bold.woff2`,
+    `/fonts/FiraCode-Regular.woff`,
+    `/fonts/FiraCode-Regular.woff2`,
+    `/fonts/FiraCode-Light.woff`,
+    `/fonts/FiraCode-Light.woff2`,
+    `/fonts/FiraCode-Bold.woff`,
+    `/fonts/FiraCode-Bold.woff2`,
+    `/js/bundle.js`,
   ];
   function updateStaticCache() {
     // These items must be cached for the Service Worker to complete installation
-    return caches.open(staticCacheName).then(cache => {
-      return cache.addAll(
-        staticAssets.map(url => new Request(url, {credentials: 'include'}))
+    return caches
+      .open(staticCacheName)
+      .then(cache =>
+        cache.addAll(
+          staticAssets.map(url => new Request(url, {credentials: `include`}))
+        )
       );
-    });
   }
   function stashInCache(name, request, response) {
     caches.open(name).then(cache => cache.put(request, response));
@@ -56,34 +58,36 @@
   }
   // Remove caches whose name is no longer valid
   function clearOldCaches() {
-    return caches.keys().then(keys => {
-      return Promise.all(
-        keys
-          .filter(key => key.indexOf(version) !== 0)
-          .map(key => caches.delete(key))
+    return caches
+      .keys()
+      .then(keys =>
+        Promise.all(
+          keys
+            .filter(key => key.indexOf(version) !== 0)
+            .map(key => caches.delete(key))
+        )
       );
-    });
   }
   // Events!
-  self.addEventListener('message', event => {
-    if (event.data.command === 'trimCaches') {
+  self.addEventListener(`message`, event => {
+    if (event.data.command === `trimCaches`) {
       trimCache(pagesCacheName, 35);
       trimCache(imagesCacheName, 20);
     }
   });
-  self.addEventListener('install', event => {
+  self.addEventListener(`install`, event => {
     event.waitUntil(updateStaticCache().then(() => self.skipWaiting()));
   });
-  self.addEventListener('activate', event => {
+  self.addEventListener(`activate`, event => {
     event.waitUntil(clearOldCaches().then(() => self.clients.claim()));
   });
-  self.addEventListener('fetch', event => {
+  self.addEventListener(`fetch`, event => {
     const {request} = event;
     const url = new URL(request.url);
-    if (url.href.indexOf('https://www.fourjuaneight.com') !== 0) return;
-    if (request.method !== 'GET') return;
-    if (url.href.indexOf('?') !== -1) return;
-    if (request.headers.get('Accept').includes('text/html')) {
+    if (url.href.indexOf(`https://www.fourjuaneight.com`) !== 0) return;
+    if (request.method !== `GET`) return;
+    if (url.href.indexOf(`?`) !== -1) return;
+    if (request.headers.get(`Accept`).includes(`text/html`)) {
       event.respondWith(
         fetch(request)
           .then(response => {
@@ -98,30 +102,30 @@
             }
             return response;
           })
-          .catch(() => {
+          .catch(() =>
             // CACHE or FALLBACK
-            return caches
+            caches
               .match(request)
-              .then(response => response || caches.match('/offline/'));
-          })
+              .then(response => response || caches.match(`/offline/`))
+          )
       );
       return;
     }
     event.respondWith(
       fetch(request)
         .then(response => {
-          if (request.headers.get('Accept').includes('image')) {
+          if (request.headers.get(`Accept`).includes(`image`)) {
             const copy = response.clone();
             stashInCache(imagesCacheName, request, copy);
           }
           return response;
         })
-        .catch(() => {
-          return caches
+        .catch(() =>
+          caches
             .match(request)
             .then(response => response)
-            .catch(console.error);
-        })
+            .catch(console.error)
+        )
     );
   });
 })();

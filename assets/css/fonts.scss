@@ -11,11 +11,11 @@
 @font-face {
   font-family: 'Rubik';
   font-weight: 400;
-  font-style: Light;
-  src: local(Rubik-Light),
-       local(Rubik-Light),
-       url("/fonts/Rubik-Light.woff2") format("woff2"),
-       url("/fonts/Rubik-Light.woff") format("woff");
+  font-style: italic;
+  src: local(Rubik-Italic),
+       local(Rubik-Italic),
+       url("/fonts/Rubik-Italic.woff2") format("woff2"),
+       url("/fonts/Rubik-Italic.woff") format("woff");
   font-display: swap;
 }
 @font-face {
