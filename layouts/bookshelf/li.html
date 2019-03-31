@@ -1,9 +1,0 @@
-<article class="list-item book">
-  {{ $cover := resources.Get (print "img/" (.Params.cover)) | fingerprint }}
-  <a class="cover" href="{{ .Permalink }}">
-    <img src="{{ $cover.Permalink }}" alt="{{ .Title }} by {{ .Params.author }}">
-  </a>
-  <h2 class="title book-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-  {{ partial "author.html" . }}
-  {{ partial "read-date.html" . }}
-</article>

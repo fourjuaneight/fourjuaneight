@@ -6,85 +6,37 @@
   <base href="{{ .Site.BaseURL }}">
   <title>{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}{{ if eq $url "/" }}{{ .Site.Title }}{{ else }}{{ if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }}{{ end }}{{ end }}</title>
   <meta name="author" content="{{ .Site.Author.name }}">
-  <meta name="description" content="{{ .Site.Params.description }}">
-  <meta name="keywords" content="{{ .Site.Params.keywords }}">
+  <meta name="description" content="{{ .Site.Params.meta.description }}">
+  <meta name="keywords" content="{{ .Site.Params.meta.keywords }}">
   <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1.0,maximum-scale=5.0,viewport-fit=cover">
   <meta name="theme-color" content="#8F3A6D">
-  
-  <!-- RSS -->
-  {{ $.Scratch.Set "bs" "" }}
-  {{ if eq .Kind "taxonomy" }}
-    {{ if eq .Section "genre" }}
-      {{ $.Scratch.Set "bs" "bookshelf" }}
-    {{ end }}
-  {{ end }}
-  <link
-  href="{{ .Site.BaseURL }}{{ if or (eq .Section "bookshelf") (eq (.Scratch.Get "b") "bookshelf" ) }}bookshelf{{ else if eq .Section "microposts" }}microposts{{ else }}articles{{ end }}/feed.json"
-  rel="alternate" type="application/json" title="{{ .Site.Title }}" />
-  
+
   <!-- Open Graph -->
-  {{ $avatar := resources.Get "icons/avatar.png" }}
   <link rel="canonical" href="{{ .Permalink }}">
   {{ template "_internal/twitter_cards.html" . }}
+  {{ $avatar := resources.Get "icons/avatar.png" }}
   <meta name="twitter:image" content="{{ $avatar.Permalink }}">
   {{ template "_internal/opengraph.html" . }}
   <meta property="og:image" content="{{ $avatar.Permalink }}">
   {{ template "_internal/schema.html" . }}
 
   <!-- Fonts -->  
-  {{ $Rubik2 := resources.Get "fonts/Rubik.woff2" }}
-  <link rel="preload" href={{ $Rubik2.Permalink }} as="font" type="font/woff2" crossorigin>
-  {{ $Rubik := resources.Get "fonts/Rubik.woff" }}
-  <link rel="preload" href={{ $Rubik.Permalink }} as="font" type="font/woff" crossorigin>
-  {{ $Rubiki2 := resources.Get "fonts/Rubik-Italic.woff2" }}
-  <link rel="preload" href={{ $Rubiki2.Permalink }} as="font" type="font/woff2" crossorigin>
-  {{ $Rubiki := resources.Get "fonts/Rubik-Italic.woff" }}
-  <link rel="preload" href={{ $Rubiki.Permalink }} as="font" type="font/woff" crossorigin>
-  {{ $Rubikb2 := resources.Get "fonts/Rubik-Bold.woff2" }}
-  <link rel="preload" href={{ $Rubikb2.Permalink }} as="font" type="font/woff2" crossorigin>
-  {{ $Rubikb := resources.Get "fonts/Rubik-Bold.woff" }}
-  <link rel="preload" href={{ $Rubikb.Permalink }} as="font" type="font/woff" crossorigin>
-  
-  {{ $Dys2 := resources.Get "fonts/OpenDyslexic.woff2" }}
-  <link rel="preload" href={{ $Dys2.Permalink }} as="font" type="font/woff2" crossorigin>
-  {{ $Dys := resources.Get "fonts/OpenDyslexic.woff" }}
-  <link rel="preload" href={{ $Dys.Permalink }} as="font" type="font/woff" crossorigin>
-  {{ $Dysb2 := resources.Get "fonts/OpenDyslexic-Bold.woff2" }}
-  <link rel="preload" href={{ $Dysb2.Permalink }} as="font" type="font/woff2" crossorigin>
-  {{ $Dysb := resources.Get "fonts/OpenDyslexic-Bold.woff" }}
-  <link rel="preload" href={{ $Dysb.Permalink }} as="font" type="font/woff" crossorigin>
+  {{ $Plex2 := resources.Get "fonts/IBMPlexSans.woff2" }}
+  <link rel="preload" href={{ $Plex2.Permalink }} as="font" type="font/woff2" crossorigin>
+  {{ $Plex := resources.Get "fonts/IBMPlexSans.woff" }}
+  <link rel="preload" href={{ $Plex.Permalink }} as="font" type="font/woff" crossorigin>
+  {{ $Plexsb2 := resources.Get "fonts/IBMPlexSans-SemiBold.woff2" }}
+  <link rel="preload" href={{ $Plexsb2.Permalink }} as="font" type="font/woff2" crossorigin>
+  {{ $Plexsb := resources.Get "fonts/IBMPlexSans-SemiBold.woff" }}
+  <link rel="preload" href={{ $Plexsb.Permalink }} as="font" type="font/woff" crossorigin>
 
-  {{ if .IsPage }}
-    {{ $Fira2 := resources.Get "fonts/FiraCode-Regular.woff2" }}
-    <link rel="preload" href={{ $Fira2.Permalink }} as="font" type="font/woff2" crossorigin>
-    {{ $Fira := resources.Get "fonts/FiraCode-Regular.woff" }}
-    <link rel="preload" href={{ $Fira.Permalink }} as="font" type="font/woff" crossorigin>
-    {{ $Firal2 := resources.Get "fonts/FiraCode-Light.woff2" }}
-    <link rel="preload" href={{ $Firal2.Permalink }} as="font" type="font/woff2" crossorigin>
-    {{ $Firal := resources.Get "fonts/FiraCode-Light.woff" }}
-    <link rel="preload" href={{ $Firal.Permalink }} as="font" type="font/woff" crossorigin>
-    {{ $Firab2 := resources.Get "fonts/FiraCode-Bold.woff2" }}
-    <link rel="preload" href={{ $Firab2.Permalink }} as="font" type="font/woff2" crossorigin>
-    {{ $Firab := resources.Get "fonts/FiraCode-Bold.woff" }}
-    <link rel="preload" href={{ $Firab.Permalink }} as="font" type="font/woff" crossorigin>
-  {{ end }}
-  
   <!-- Critical -->
   {{ partial "critical.html" . }}
 
   <!-- Stylesheets -->
-  {{ if .IsPage }}
-    {{ $single := resources.Get "css/single.scss" | toCSS | postCSS | minify }}
-    <link rel="stylesheet" href="{{ $single.Permalink }}" media="screen">
-  {{ else }}
-    {{ $main := resources.Get "css/main.scss" | toCSS | postCSS | minify }}
-    <link rel="stylesheet" href="{{ $main.Permalink }}" media="screen">
-  {{ end }}
+  {{ $styles := resources.Get "css/main.scss" | toCSS | postCSS | minify }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
-  <!-- Linting -->
-  <!-- {{ $linting := resources.Get "css/linting.scss" | toCSS | postCSS | minify }}
-  <link rel="stylesheet" href="{{ $linting.Permalink }}" media="screen"> -->
-  
   <!-- Manifest -->
   {{ $manifest := resources.Get "manifest.json" }}
   <link rel="manifest" href="{{ $manifest.Permalink }}">
@@ -104,7 +56,7 @@
   {{ $ati180 := resources.Get "icons/apple-touch-icon-180x180.png" }}
   <link rel="apple-touch-icon" sizes="180x180" href="{{ $ati180.Permalink }}">
   {{ $spt := resources.Get "icons/safari-pinned-tab.svg" | minify }}
-  <link rel="mask-icon" color="#BB3117" href="{{ $spt.Permalink }}">
+  <link rel="mask-icon" color="#8F3A6D" href="{{ $spt.Permalink }}">
 
   <!-- Icons -->
   {{ $i128 := resources.Get "icons/icon-128x128.png" }}
@@ -113,68 +65,27 @@
   <link rel="icon" sizes="192x192" href="{{ $i192.Permalink }}">
   {{ $i512 := resources.Get "icons/icon-512x512.png" }}
   <link rel="icon" sizes="512x512" href="{{ $i512.Permalink }}">
-
-  <!-- Keybase Proof -->
-  {{ $keybase := resources.Get "keybase.txt" }}
-  <link href="{{ $keybase.Permalink }}">
-  
-  {{ partial "analytics.html" . }}
 </head>
-<body id="rubik" class="light" data-type="{{ .Kind }}">
-  {{ partial "header.html" . }}
+<body {{ if .IsHome }}id="home"{{ end }} class="light">
 
   <!-- Main content -->
   {{ block "main" . }}
   {{ end }}
 
-  {{ partial "footer.html" . }}
-
   <!-- Stuff -->
   <section class="stuff">
-    <p class="small">Guess what happens when you go smaller?</p>
-    <p class="smaller">Nothing.</p>
+    <h5 class="small">Guess what happens when you go smaller?</h5>
+    <h5 class="smaller">Nothing.</h5>
   </section>
 
-  {{ partial "ui-options.html" . }}
-
+  {{ partial "theme-swticher.html" . }}
   <!-- SW -->
   {{ $sw := resources.Get "sw.js" | minify }}
   <script>
     if (navigator.serviceWorker) {
       navigator.serviceWorker.register("{{ $sw.Permalink }}", { scope: "/" });
       navigator.serviceWorker.ready.then(registration => {
-        console.log(`                                  ....
-                                .'' .'''
-.                             .'   :
-\\                          .:    :
- \\                        _:    :       ..----.._
-  \\                    .:::.....:::.. .'         ''.
-   \\   -----------   .'  #-. .-######'     #        '.
-    \\ | SW Ready! |    '.##'/ ' ################       :
-     \\ -----------      #####################         :
-      \\               ..##.-.#### .''''###'.._        :
-       \\             :--:########:            '.    .' :
-        \\..__...--.. :--:#######.'   '.         '.     :
-        :     :  : : '':'-:'':'::        .         '.  .'
-        '---'''..: :    ':    '..'''.      '.        :'
-           \\  :: : :     '      ''''''.     '.      .:
-            \\ ::  : :     '            '.      '      :
-             \\::   : :           ....' ..:       '     '.
-              \\::  : :    .....####\\ .~~.:.             :
-               \\':.:.:.:'#########.===. ~ |.'-.   . '''.. :
-                \\    .'  ########## \ \ _.' '. '-.       '''.
-                :\\  :     ########   \ \      '.  '-.        :
-               :  \\'    '   #### :    \ \      :.    '-.      :
-              :  .'\\   :'  :     :     \ \       :      '-.    :
-             : .'  .\\  '  :      :     :\ \       :        '.   :
-             ::   :  \\'  :.      :     : \ \      :          '. :
-             ::. :    \\  : :      :    ;  \ \     :           '.:
-              : ':    '\\ :  :     :     :  \:\     :        ..'
-                 :    ' \\ :        :     ;  \|      :   .'''
-                 '.   '  \\:                         :.''
-                  .:..... \\:       :            ..''
-                 '._____|'.\\......'''''''.:..'''
-                            \\`);
+        console.log("Service Worker Ready");
       });
       window.addEventListener("load", () => {
         if (navigator.serviceWorker.controller) {
@@ -183,12 +94,8 @@
       });
     }
   </script>
-
-  <!-- Scripts -->
-  {{ $scripts := resources.Get "js/bundle.js" }}
-  <script src="{{ $scripts.Permalink }}"></script>
-  <!-- a11y -->
-  <!-- {{ $tota11y := resources.Get "js/tota11y.js" | minify }}
-  <script src="{{ $tota11y.Permalink }}"></script> -->
+  <!-- Theme Switcher -->
+  {{ $bundle := resources.Get "js/bundle.js" | minify }}
+  <script src="{{ $bundle.Permalink }}"></script>
 </body>
 </html>

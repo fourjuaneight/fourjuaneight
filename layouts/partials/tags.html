@@ -1,8 +1,0 @@
-{{ $s := .Section }}
-<p class="tag">
-  <span aria-hidden="true" class="meta">#</span>
-  {{ range $key, $cat := .Params.category }}
-    {{- if ne $key 0 }}<span>, </span>{{ end }}
-    <a href="/{{ $s }}/category/{{ $cat }}">{{ $cat }}</a>
-  {{ end }}
-</p>
