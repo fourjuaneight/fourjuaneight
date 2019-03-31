@@ -4,48 +4,19 @@ enableRobotsTXT = "true"
 languageCode = "en-us"
 title = "fourjuaneight"
 
-SectionPagesMenu = "main"
-
-# Pygments Syntax Highlighting
-pygmentsUseClassic = false
-pygmentsUseClasses = true
-pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
-pygmentsOptions = "lineseparator=<br>"
-pygmentsStyle = "dracula"
-
 [author]
-  name = "Juan"
-  email = "hello@fourjuaneight.com"
+  name = "Juan Villela"
+  email = "hello@juanvillela.me"
 
 [blackfriday]
+  hrefTargetBlank = true
   plainIDAnchors = true
 
 [params]
-  description = "A blog about coding and productivity"
-  keywords = "coding, productivity, development, front-end, automation"
   social = "fourjuaneight"
 
-[taxonomies]
-  genre = "genre"
-  category = "category"
-
-[permalinks]
-  articles = "/articles/:title/"
-  bookmarks = "/bookmarks/:title/"
-  bookshelf = "/bookshelf/:title/"
-  microposts = "/microposts/:year/:month/:day/:title/"
-  genre = "/bookshelf/genre/:slug/"
-  category = "/articles/category/:slug/"
-
-[outputFormats.jsonfeed]
-  mediaType = "application/json"
-  baseName = "feed"
-  isPlainText = true
+[params.meta]
+  description = "Hi, I'm Juan and this is a site about Juan."
 
 [outputs]
   home = ["html"]
-  section = ["html", "jsonfeed"]
-
-[params.google]
-  analytics = ""

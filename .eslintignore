@@ -1,6 +1,11 @@
+# Ignoring as following the linter rules will break some of the rules
 webpack.config.babel.js
 gulpfile.js
 postcss.config.js
+.eslintrc.js
+# Ignoring to keep bundle minified
 assets/js/bundle.js
-assets/js/barefoot.js
-assets/js/tota11y.js
+# Ignoring to avoid touching Wufoo's specified code for the forms.
+assets/js/wufoo.js
+# Ignoring bundle JS to avoid undoing minification
+assets/js/bundle.js

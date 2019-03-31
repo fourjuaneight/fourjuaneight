@@ -1,17 +1,13 @@
 # FOURJUANEIGHT
 [![Netlify Status](https://api.netlify.com/api/v1/badges/016b87ad-fed5-41fd-b651-d0b174c00aab/deploy-status)](https://app.netlify.com/sites/fourjuaneight/deploys)
 
-I like websites. Occasionally, I make them. Irregularly, I like to write about my appreciation for the internets and other mundane things. This is a blog, in case it wasn't clear. Ok.
+This site serves as a contact point for my social links.
 
 ## Colophon
 * Made with [Hugo](https://gohugo.io).
-* Fonts are [Rubik](https://fonts.google.com/specimen/Rubik), [OpenDyslexic](https://www.opendyslexic.org/), and [Fira Code](https://github.com/tonsky/FiraCode).
+* Font is [IBM Plex](https://www.ibm.com/plex/).
 * The avatar was created by the amazing [Levitzo](https://instagram.com/levitzo?utm_source=ig_profile_share&igshid=1fmgb2w2c8dla).
 * Coded in [VSCode](https://code.visualstudio.com/).
-* Articles written in [Markdown](https://daringfireball.net/projects/markdown/syntax).
-
-## Privacy
-Fourjuaneight is written and created by [Juan Villela](https://www.twitter.com/fourjuaneight). Google Analytics is used to get a better understanding viewing behaviors. Links to apps or other items may include affiliate links; this allows me to avoid using ads of any kind to run the site. I promise no ads will ever be used.
 
 ## Text Content License
 Unless otherwise noted, the text content on this site is licensed under a Creative Commons Attribution-NoDerivatives 4.0 International License, “[CC-BY-ND](http://creativecommons.org/licenses/by-nd/4.0/)”.

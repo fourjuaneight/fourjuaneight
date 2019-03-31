@@ -4,11 +4,13 @@
 const autoprefixer = require('autoprefixer');
 const concat = require('gulp-concat-util');
 const cssnano = require('cssnano');
-const gm = require('gulp-gm');
 const gulp = require('gulp');
+const htmlbeautify = require('gulp-jsbeautifier');
+const htmlmin = require('gulp-htmlmin');
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
+const replace = require('gulp-replace');
 const sass = require('gulp-sass');
 
 // Critical CSS
@@ -33,17 +35,33 @@ function critical() {
       .pipe(gulp.dest('layouts/partials'))
 }
 
-// Image Conversion
-function convert() {
+// Run Webpack
+function webpack() {
+  return cp.spawn('webpack', {
+    err: true,
+    stderr: true,
+    stdout: true
+  });
+}
+
+/*
+HTML Cleanup:
+- Removed HTML comments.
+- Removed extra <p> tags.
+*/
+function clean() {
   return gulp
-    .src(['assets/img/*.jpg','assets/img/*.png'])
-    .pipe(plumber())
-    .pipe(
-      gm(function(gmfile) {
-        return gmfile.setFormat('webp');
-      })
-    )
-    .pipe(gulp.dest('assets/img'));
+  .src(['public/**/*.html'])
+  .pipe(plumber())
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(replace(/<p><(p|a|div|section|h1|h2|h3|h4|ul|li|img|figure|picture)(.*?)>/g, '<$1$2>'))
+  .pipe(replace(/<\/(p|a|div|section|h1|h2|h3|h4|ul|li|img|figure|picture)(.*?)><\/p>/g, '</$1$2>'))
+  .pipe(replace(/<p><\/p>/g, ''))
+  .pipe(htmlbeautify({
+    indent_char: ' ',
+    indent_size: 2
+  }))
+  .pipe(gulp.dest('public'));
 }
 
 // Watch asset folder for changes
@@ -57,8 +75,9 @@ function watchFiles() {
 }
 
 // Tasks
+gulp.task('cleanup', clean);
+gulp.task('webpack', webpack);
 gulp.task("critical", critical);
-gulp.task("convert", convert);
 
 // Run Watch as default
 gulp.task('watch', watchFiles);
