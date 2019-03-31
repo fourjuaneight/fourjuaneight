@@ -8,7 +8,7 @@ showthedate = false
 * Created by Juan Villela.
 * Made with {{< link href="https://gohugo.io" content="Hugo" >}}.
 * Font used is {{< link href="https://fonts.google.com/specimen/IBM+Plex+Sans" content="Plex" >}}.
-* The intricate box and paint roller icons were designed using {{< link href="https://itunes.apple.com/us/app/affinity-designer/id824171161?mt=12" content="Affinity Designer" >}}.
+* The avatar was created by the amazing {{< link href="https://instagram.com/levitzo?utm_source=ig_profile_share&igshid=1fmgb2w2c8dla" content="Levitzo" >}}.
 * Coded on {{< link href="https://code.visualstudio.com/" content="VSCode" >}}.
 
 ## Licensing
@@ -21,7 +21,7 @@ Unless otherwise noted, the text content on this site is licensed under a Creati
 Unless otherwise noted, the source content on this site is released under the {{< link href="https://opensource.org/licenses/MIT" content="MIT License" >}}.
 
 ### MIT License
-Copyright © 2018 <span>Juan C Villela</span>
+Copyright © 2018-2019 <span>Juan C Villela</span>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
