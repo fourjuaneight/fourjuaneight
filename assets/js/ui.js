@@ -1,34 +1,22 @@
 const body = document.querySelector(`body`);
-const sets = document.getElementById(`settings`);
-const ops = document.querySelector(`section.options`);
-const colors = document.querySelectorAll(`p.colors`);
-const fonts = document.querySelectorAll(`p.type`);
+const themeSwitcher = document.getElementById(`theme-switcher`);
 
-sets.addEventListener(`click`, () => {
-  ops.classList.toggle(`active`);
-  sets.classList.toggle(`active`);
-});
+if (localStorage.getItem(`color`)) {
+  const newTheme = localStorage.getItem(`color`);
+  body.setAttribute(`class`, newTheme);
+}
 
-const uiSwitcher = (item, change, mod) => {
-  item.forEach(option => {
-    option.addEventListener(
-      `click`,
-      () => {
-        const value = option.id;
-        body.setAttribute(mod, value);
-        sets.classList.remove(`active`);
-        ops.classList.remove(`active`);
-        localStorage.removeItem(change);
-        localStorage.setItem(change, value);
-      },
-      false
-    );
-    if (localStorage.getItem(change)) {
-      const newTheme = localStorage.getItem(change);
-      body.setAttribute(mod, newTheme);
-    }
-  });
+themeSwitcher.onclick = () => {
+  const currentTheme = body.className;
+  if (currentTheme === `light`) {
+    body.removeAttribute(`class`);
+    body.classList.add(`dark`);
+    localStorage.removeItem(`color`);
+    localStorage.setItem(`color`, `dark`);
+  } else if (currentTheme === `dark`) {
+    body.removeAttribute(`class`);
+    body.classList.add(`light`);
+    localStorage.removeItem(`color`);
+    localStorage.setItem(`color`, `light`);
+  }
 };
-
-uiSwitcher(colors, `theme`, `class`);
-uiSwitcher(fonts, `type`, `id`);
