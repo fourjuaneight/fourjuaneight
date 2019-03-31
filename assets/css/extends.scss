@@ -16,20 +16,8 @@
 %content-flex-start {
   justify-content: flex-start;
 }
-%content-self-center {
-  justify-self: center;
-}
-%content-self-end {
-  justify-self: self-end;
-}
-%content-self-start {
-  justify-self: self-start;
-}
 %decoration-none {
   text-decoration: none;
-}
-%fixed {
-  position: fixed;
 }
 %flex {
   display: flex;
@@ -61,14 +49,8 @@
 %none {
   display: none;
 }
-%no-decoration {
-  text-decoration: none;
-}
 %relative {
   position: relative;
-}
-%sticky {
-  position: sticky;
 }
 %underline {
   border-bottom: 2px solid #414142;

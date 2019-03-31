@@ -1,28 +1,73 @@
 // Reset
-a,
-article h2 a,
-button,
-label,
-ul#portfolio h4 a {
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+*::selection {
+  @include color(background, meta);
+  color: #fff;
+}
+html {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  @include color(background-color, background);
   @include color(color, text);
-  &:focus {
-    @include color(outline-color, link);
+  font-size: 18px;
+  font-weight: 400;
+  height: 100vh;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+  /* Fallback */
+  padding: 0 10px;
+  /* iOS 11 */
+  padding-left: constant(safe-area-inset-left);
+  padding-right: constant(safe-area-inset-right);
+  /* iOS 11.2+ */
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  // Themes
+  &.light {
+    --background: #{map-get($light, background)};
+    --text: #{map-get($light, text)};
+    --meta: #{map-get($light, meta)};
+    --link: #{map-get($light, link)};
+    --accent: #{map-get($light, accent)};
+  }
+  &.dark {
+    --background: #{map-get($dark, background)};
+    --text: #{map-get($dark, text)};
+    --meta: #{map-get($dark, meta)};
+    --link: #{map-get($dark, link)};
+    --accent: #{map-get($dark, accent)};
+  }
+  .hidden {
+    @extend %visually-hidden;
+  }
+  @media screen and (prefers-color-scheme: dark) {
+    &.dark {
+      --background: #{map-get($dark, background)};
+      --text: #{map-get($dark, text)};
+      --meta: #{map-get($dark, meta)};
+      --link: #{map-get($dark, link)};
+      --accent: #{map-get($dark, accent)};
+    }
   }
 }
+a {
+  @include color(color, text);
+}
 a.back-home,
-article,
-footer,
-header,
 main,
 nav.paginate {
   padding: 15px;
 }
 a:active,
-a:hover,
-article h2 a:active,
-article h2 a:hover,
-ul#portfolio h4 a:active,
-ul#portfolio h4 a:hover {
+a:hover {
   @include color(color, link);
   text-decoration: underline;
 }
@@ -33,114 +78,40 @@ a:active svg,
 a:hover svg {
   @include color(fill, link);
 }
-a.icon {
-  &:focus {
-    outline: none;
-    svg {
-      @include color(fill, link);
-    }
-  }
-}
-hr { 
-  @include color(color, border);
-}
-article a,
-p.tag a {
-  @include color(color, link);
-}
-p.tag {
-  a {
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-article p {
-  line-height: 1.65rem;
-}
-article,
-main,
-nav.paginate,
-ul#portfolio {
+main {
   @extend %margin-center;
   max-width: 930px;
   width: 100%;
 }
-blockquote {
-  @include color(border-left-color, border);
-  border-left-style: solid;
-  border-left-width: 2px;
-  margin: 0 0 15px 15px;
-  padding-left: 15px;
-}
-code,
-code span,
-figure,
-pre {
-  font-family: 'Fira Code', monospace !important;
-  font-size: 16px;
-  line-height: 26px;
-}
-figure {
-  @include color(background-color, contentBG);
-  @include color(color, text);
-}
-figure,
 h1, h2, h3, h4,
-nav > *,
-p,
-.brand {
+nav > * {
   margin: 0;
 }
-figure,
-pre {
-  border-radius: 5px;
-  margin: 20px 0;
-}
-figcaption p {
-  padding: 5px;
-}
-footer,
-header,
 nav {
   @extend %flex;
 }
-header {
-  text-transform: uppercase;
-}
-header,
 h1, h2, h3, h4 {
   font-weight: 600;
 }
 h1 {
-  font-size: 1.8rem;
+  font-size: 36px;
 }
 h2 {
-  font-size: 1.75rem;
+  font-size: 32px;
 }
 h3 {
-  font-size: 1.7rem;
+  font-size: 28px;
 }
 h4 {
-  font-size: 1.65rem;
+  font-size: 24px;
 }
 h2, h3, h4 {
-  margin: 10px 0;
+  margin-top: 10px;
 }
 img, 
 svg {
   height: auto;
   width: 100%;
-}
-input[type="checkbox"]:active + label,
-input[type="checkbox"]:hover + label,
-label:active {
-  outline: none;
-}
-li {
-  line-height: 1.65rem;
-  margin-bottom: 5px;
 }
 nav {
   @extend %items-center;
@@ -150,29 +121,9 @@ nav {
     width: 55px;
   }
 }
-ol,
-ul {
-  padding-left: 30px;
-}
-ol ul {
-  padding-left: 20px;
-}
-pre {
-  padding: 30px;
-}
-.brand {
-  font-size: 2.3rem;
-}
-.brand {
-  margin-bottom: 10px;
-}
-.hidden {
-  @extend %visually-hidden;
-}
-.meta {
-  @include color(color, meta);
-}
-.none {
-  display: none !important;
-  visibility: hidden !important;
+@media print {
+  section.stuff,
+  button#theme-switcher {
+    display: none;
+  }
 }
