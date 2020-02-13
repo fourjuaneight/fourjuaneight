@@ -82,6 +82,6 @@
     "sugarss": "^2.0.0",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.0"
+    "webpack-dev-server": "^3.10.3"
   }
 }
