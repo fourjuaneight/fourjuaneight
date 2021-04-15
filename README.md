@@ -1,25 +1,9 @@
-# FOURJUANEIGHT
-[![Netlify Status](https://api.netlify.com/api/v1/badges/016b87ad-fed5-41fd-b651-d0b174c00aab/deploy-status)](https://app.netlify.com/sites/fourjuaneight/deploys)
+<img
+  width="300"
+  alt="An illustration of Juan sitting on a coach, coding on his laptop."
+  src="https://raw.githubusercontent.com/fourjuaneight/fourjuaneight/master/assets/avatar.png"
+/>
 
-This site serves as a contact point for my social links.
+Hi, I'm Juan and I like websites. Most of my time is spent making them for strangers online. I work as a Senior Full-Stack Developer over at [Big Pixel](https://thebigpixel.net). When I'm not working, I'm usually still coding. There's always something to automate.
 
-## Colophon
-* Made with [Hugo](https://gohugo.io).
-* Font is [IBM Plex](https://www.ibm.com/plex/).
-* The avatar was created by the amazing [Levitzo](https://instagram.com/levitzo?utm_source=ig_profile_share&igshid=1fmgb2w2c8dla).
-* Coded in [VSCode](https://code.visualstudio.com/).
-
-## Text Content License
-Unless otherwise noted, the text content on this site is licensed under a Creative Commons Attribution-NoDerivatives 4.0 International License, “[CC-BY-ND](http://creativecommons.org/licenses/by-nd/4.0/)”.
-
-## Source License
-Unless otherwise noted, the source content on this site is released under the [MIT License](https://opensource.org/licenses/MIT).
-
-## MIT License
-Copyright © 2018-2019 Juan Villela
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Links are over on the left if you wanna take reach out.
