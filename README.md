@@ -1,8 +1,18 @@
-<img
-  width="300"
-  alt="An illustration of Juan sitting on a coach, coding on his laptop."
-  src="https://raw.githubusercontent.com/fourjuaneight/fourjuaneight/master/assets/avatar.png"
-/>
+<picture>
+  <source
+    srcset="https://raw.githubusercontent.com/fourjuaneight/fourjuaneight/master/assets/avatar.avif"
+    type="image/avif"
+  />
+  <source
+    srcset="https://raw.githubusercontent.com/fourjuaneight/fourjuaneight/master/assets/avatar.webp"
+    type="image/webp"
+  />
+  <img
+    width="350"
+    src="https://raw.githubusercontent.com/fourjuaneight/fourjuaneight/master/assets/avatar.png"
+    alt="An illustration of Juan sitting on a coach, coding on his laptop."
+  />
+</picture>
 
 Hi, I'm Juan and I like websites. Most of my time is spent making them for strangers online. I work as a Senior Full-Stack Developer over at [Big Pixel](https://thebigpixel.net). When I'm not working, I'm usually still coding. There's always something to automate.
 
