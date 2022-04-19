@@ -11,19 +11,3 @@ Not currently looking for employment, but you can see what I've recently worked 
 
 [![Juan’s Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=fourjuaneight&layout=compact&theme=dracula)](https://github.com/fourjuaneight/github-readme-stats)
 <br/>
-
-<picture>
-  <source
-    srcset="https://raw.githubusercontent.com/fourjuaneight/fourjuaneight/master/assets/avatar.avif"
-    type="image/avif"
-  />
-  <source
-    srcset="https://raw.githubusercontent.com/fourjuaneight/fourjuaneight/master/assets/avatar.webp"
-    type="image/webp"
-  />
-  <img
-    width="350"
-    src="https://raw.githubusercontent.com/fourjuaneight/fourjuaneight/master/assets/avatar.png"
-    alt="An illustration of Juan sitting on a coach, coding on his laptop."
-  />
-</picture>
