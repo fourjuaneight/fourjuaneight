@@ -1,7 +1,7 @@
 # About Me :
-Hi, I'm Juan and I like websites. Most of my time is spent making them for strangers online. I work as a Senior Full-Stack Engineer over at [Big Pixel](https://thebigpixel.net). When I'm not working, I'm usually still coding. Though these days I've been going through my Steam backlog thanks to the Steam Deck.
+Hi, I'm Juan and I like websites. Most of my time is spent making them for strangers online. Currently, I work as a Software Engineer in healthcare. When I'm not working, I'm usually still coding. Though these days I've been going through my Steam backlog thanks to the Steam Deck.
 
-- Links are over on the left (top on mobile?) if you want to reach out.
+- Links are over on the left (top on mobile) if you want to reach out.
 - If you're interested in what I'm currently messing around with, take a look at my pinned repos underneath.
 - For a more professional breakdown of what I do, you can checkout [resume.juanvillela.dev](https://resume.juanvillela.dev).
 
